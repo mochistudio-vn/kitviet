@@ -64,6 +64,8 @@ Gõ trong Claude Code:
 
 Thay `ke-toan` bằng nghề của bạn, xem tên ở bảng [20 bộ theo nghề](#20-bộ-theo-nghề), ví dụ `kv-xay-dung@kitviet` hay `kv-y-te@kitviet`. Cài xong gõ `/kv:` để xem skill. Cập nhật bằng `/plugin marketplace update kitviet`.
 
+> Nếu báo lỗi *Host key verification failed*, dùng địa chỉ HTTPS: `/plugin marketplace add https://github.com/nguyenducthang1997/kitviet.git`. Trên Windows mà báo *Filename too long* thì chạy một lần `git config --global core.longpaths true`.
+
 ### Cách 2: CLI `kitviet` (khuyên dùng)
 
 Cần Node.js 18 trở lên. Chạy thẳng, không cần cài:
