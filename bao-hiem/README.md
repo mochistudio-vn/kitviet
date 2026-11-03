@@ -114,7 +114,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Báo cáo tháng: nộp, phát hành, phí quy năm, % mục tiêu, hồ sơ treo, chất lượng soát | `kv:bao-cao-hieu-suat-doi-bao-hiem-thang` |
 | Lộ trình 90 ngày cho từng đại lý mới, theo dõi tuần, đánh giá mốc 30/60/90 có bằng chứng | `kv:huan-luyen-dai-ly-moi-90-ngay` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -210,7 +210,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ 3 agent mới, trong đó 1 điều phối lô chạy nhiều hồ sơ claim, khách rà soát hoặc đề xuất cả nhóm và gộp bảng trạng thái theo đại lý
 - ⭐ Mẫu sẵn dùng: giáo án kèm cặp 12 tuần, slide giới thiệu nghề 20 trang, thẻ chấm phỏng vấn 10 câu, lịch nội dung 12 tuần, 30 kịch bản video, 20 tin nhắn chăm sóc
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

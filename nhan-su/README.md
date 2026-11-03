@@ -114,7 +114,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Từ dữ liệu nghỉ việc ra chương trình giữ chân có ngân sách, qua gác cổng | `kv:day-chuyen-giu-chan-nhan-tai` |
 | Lịch mốc nghỉ việc, chuyển giao tri thức, thu hồi quyền, quyết toán | `kv:offboarding-ban-giao-cong-viec` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -211,7 +211,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Bảng kiểm HĐLĐ 45 điểm, bộ 4 văn bản kỷ luật có ghi chú pháp lý, sổ tay nhân viên 22 mục có căn cứ - mọi mức luật để ô chờ xác nhận bản hiện hành
 - ⭐ Mọi báo cáo nhóm tự ẩn dưới 5 người (360 dưới 3 phiếu), script dừng khi dữ liệu có cột tuổi, giới, hôn nhân
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

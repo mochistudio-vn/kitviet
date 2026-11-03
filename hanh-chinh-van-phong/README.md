@@ -135,7 +135,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Thông báo, thư cảm ơn, sổ tay bản Việt - Anh giữ nguyên số liệu | `kv:viet-song-ngu` |
 | Slide giao ban quý, slide điều hành đại hội | `kv:tao-slide` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -233,7 +233,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Kho mẫu viết sẵn: 25 công văn, 18 quyết định, 12 tờ trình, 20 thông báo, 10 khung quy chế, 15 thư cảm ơn song ngữ, danh mục hồ sơ 60 loại, checklist sự kiện 80 mục
 - ⭐ Nâng cấp cả 19 skill free với phần Pro: đọc hàng loạt văn bản đến, báo giá, hợp đồng; bộ mẫu họp HĐQT - HĐTV - ĐHĐCĐ; quyết toán công tác và sự kiện
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

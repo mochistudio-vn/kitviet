@@ -127,7 +127,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Thống nhất mã SKU và tên phân loại giữa các sàn, bảng đổi mã cũ - mới | `kv:chuan-hoa-danh-muc-sku` |
 | Tin tự động, trả lời nhanh, cây rẽ nhánh và điểm chuyển người thật cho chat sàn, Fanpage, Zalo OA | `kv:kich-ban-cskh-tu-dong-shop` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -225,7 +225,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện nội dung có số đếm: 80 tin chốt đơn, 100 câu móc video, 60 góc nội dung, 60 câu xử lý bình luận live, 40 câu trả lời đánh giá
 - ⭐ Nghiên cứu thị trường ngành hàng theo 4 bậc nguồn, mỗi con số có tên - đơn vị - năm - link - ngày truy cập
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

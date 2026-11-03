@@ -125,7 +125,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Quyết toán đoàn: gom chứng từ -> đối chiếu dự toán, lãi lỗ -> gác cổng -> bàn giao | `kv:day-chuyen-quyet-toan-doan-tour` |
 | Mở tuyến mới: nghiên cứu nhiều điểm song song -> lịch trình + giá thành 3 mùa -> gác cổng | `kv:day-chuyen-mo-tuyen-tour-moi` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -222,7 +222,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Danh bạ nguồn bậc 1 đủ 63 tỉnh cũ theo 34 đơn vị hành chính mới, lịch lễ Tết 2027-2029 tính bằng thuật toán âm lịch
 - ⭐ Thêm tiếng Hàn, Trung, Nhật cho email, listing, câu chào lễ tân; giá vé, giờ mở cửa luôn [cần xác nhận], an toàn khách luôn đặt trước lịch trình
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

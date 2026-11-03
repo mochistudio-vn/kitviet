@@ -116,7 +116,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Mở chi nhánh: khảo sát mặt bằng -> dự toán, hòa vốn - hoàn vốn 3 kịch bản -> gác cổng dự toán độc lập | `kv:day-chuyen-mo-chi-nhanh-fnb` |
 | Audit chuỗi: 29 tiêu chí, gom phiếu có bằng chứng -> chấm, xếp hạng -> gác cổng không cho lỗi ATTP bị bù điểm | `kv:day-chuyen-audit-chat-luong-chuoi` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -212,7 +212,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ 2 dây chuyền mới có gác cổng độc lập: mở chi nhánh (hoàn vốn 3 kịch bản) và audit chuỗi (29 tiêu chí, lỗi ATTP không được bù điểm)
 - ⭐ 9 skill chuyên sâu chỉ có ở Pro: P&L tháng, giảm hao hụt 8 tuần, thẻ thành viên, chiến dịch mùa lễ, tuyển - đào tạo bếp theo bậc, rà hợp đồng nhà cung cấp
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

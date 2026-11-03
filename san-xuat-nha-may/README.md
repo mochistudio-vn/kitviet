@@ -130,7 +130,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Slide KPI tháng 9 trang, A3 Kaizen, báo cáo TPM | `kv:tao-slide` |
 | Dựng file Excel OEE 4 sheet có công thức và thác nước | `kv:xu-ly-bang-tinh` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -227,7 +227,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện dựng sẵn: mối nguy 7 ngành, nguyên nhân tiềm năng 6 công nghệ, checklist 5S 6 khu, chỉ tiêu IQC 6 loại vật tư, 8D D0-D8, giấy phép làm việc 3 loại
 - ⭐ Song ngữ Việt - Anh / Trung / Hàn cho WI, đào tạo, thư 8D và thư nhà cung cấp, cùng bảng thuật ngữ an toàn thống nhất
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

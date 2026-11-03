@@ -132,7 +132,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Tự đánh giá chuẩn nghề nghiệp: ghép minh chứng từng tiêu chí, đề xuất mức, kế hoạch bồi dưỡng | `kv:danh-gia-chuan-nghe-nghiep-giao-vien` |
 | Thiết kế khóa đào tạo doanh nghiệp và kế hoạch đánh giá 4 cấp Kirkpatrick | `kv:khoa-dao-tao-doanh-nghiep-kirkpatrick` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -227,7 +227,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ 25+ script chạy trên máy: trộn 4-24 mã đề, phân tích độ khó - độ phân biệt câu hỏi, t-test và SMD cho NCKHSPƯD, xuất Azota - Kahoot - Quizizz, đổi mã - tên học sinh an toàn
 - ⭐ Thư viện dựng sẵn: 30 trò chơi, 21 rubric, 40 tình huống nhắn phụ huynh, 35 tiết sinh hoạt lớp, hơn 150 cụm từ nhận xét học bạ
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

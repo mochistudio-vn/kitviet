@@ -124,7 +124,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Đọc ảnh sổ, giấy tờ, dự thảo cọc -> bảng kiểm dòng đỏ -> gác cổng trước khi chuyển cọc | `kv:day-chuyen-phap-ly-truoc-coc` |
 | Nhu cầu -> so sánh căn -> phương án vay -> gác cổng số liệu, ra một PDF gửi khách | `kv:day-chuyen-tu-van-khach-tron-goi` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -222,7 +222,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện 40 câu từ chối, 4 kịch bản cuộc gọi, 20 + 30 tin chăm sóc theo dịp và bài đóng vai chấm điểm 10 tiêu chí trung thực
 - ⭐ 12 skill Pro mới: phân tích đầu tư cho thuê, so gói vay, sales kit, kế hoạch mở bán, đàm phán giá, đào tạo 30-60-90 ngày, báo cáo thị trường quý...
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 

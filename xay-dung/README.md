@@ -131,7 +131,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Đọc HĐ, KL, biên bản -> lập bảng giá trị -> soát khối lượng và hợp đồng song song -> bàn giao | `kv:day-chuyen-thanh-toan-dot-xay-dung` |
 | Rà thư mục hồ sơ -> danh mục đủ/thiếu + kế hoạch bổ sung -> soát trình tự ngày tháng -> bàn giao | `kv:day-chuyen-nghiem-thu-hoan-thanh` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/kit-viet-pro
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -227,7 +227,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện dựng sẵn: 22 mẫu nội dung nghiệm thu, 15 checklist an toàn, 4 mẫu giấy phép làm việc, 12 dàn ý biện pháp, 4 danh mục hồ sơ hoàn công dạng CSV, 3 mẫu tiến độ
 - ⭐ Mọi đơn giá, định mức, tỷ lệ tạm ứng - giữ lại để [cần xác nhận theo văn bản hiện hành]; AI không tính kết cấu, không tự ký, không sửa ngày cho khớp
 
-**Nâng cấp Pro:** https://mochistudio.io.vn/kit-viet-pro
+**Nâng cấp Pro:** https://mochistudio.io.vn
 
 ## Ba nguyên tắc khi dùng
 
