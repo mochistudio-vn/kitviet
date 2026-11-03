@@ -16,6 +16,19 @@ Bộ skill cho giáo viên phổ thông và giảng viên: soạn kế hoạch b
 
 ## Cài đặt
 
+### Cài nhanh bằng lệnh
+
+```text
+# Trong Claude Code
+/plugin marketplace add nguyenducthang1997/kitviet
+/plugin install kv-giao-duc@kitviet
+
+# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+npx github:nguyenducthang1997/kitviet init giao-duc --ai claude
+```
+
+Cài thủ công từng nền tảng như dưới đây.
+
 ### 1. Claude Desktop và Claude web (chat, Cowork) - dễ nhất
 
 1. Vào claude.ai hoặc ứng dụng Claude Desktop -> **Customize -> Skills** (cần gói Pro trở lên, bật Code execution).

@@ -1,0 +1,88 @@
+{
+  "brand": "Kit Việt",
+  "version": "1.1.1",
+  "website": "https://mochistudio.io.vn",
+  "repo": "nguyenducthang1997/kitviet",
+  "nghe": [
+    {
+      "slug": "ke-toan",
+      "ten": "Kế toán - Thuế"
+    },
+    {
+      "slug": "nhan-su",
+      "ten": "Nhân sự - Tuyển dụng"
+    },
+    {
+      "slug": "marketing",
+      "ten": "Marketing - Content"
+    },
+    {
+      "slug": "ban-hang-online",
+      "ten": "Bán hàng online - Thương mại điện tử"
+    },
+    {
+      "slug": "kinh-doanh",
+      "ten": "Kinh doanh B2B - Chăm sóc khách hàng"
+    },
+    {
+      "slug": "giao-duc",
+      "ten": "Giáo viên - Đào tạo"
+    },
+    {
+      "slug": "xay-dung",
+      "ten": "Xây dựng - Kỹ sư công trường"
+    },
+    {
+      "slug": "y-te",
+      "ten": "Y tế - Phòng khám, Điều dưỡng, Quản lý y tế"
+    },
+    {
+      "slug": "bat-dong-san",
+      "ten": "Môi giới bất động sản"
+    },
+    {
+      "slug": "phap-ly",
+      "ten": "Pháp chế - Văn phòng luật"
+    },
+    {
+      "slug": "hanh-chinh-van-phong",
+      "ten": "Hành chính - Văn phòng"
+    },
+    {
+      "slug": "xuat-nhap-khau",
+      "ten": "Xuất nhập khẩu - Logistics"
+    },
+    {
+      "slug": "nha-hang-fnb",
+      "ten": "Nhà hàng - F&B"
+    },
+    {
+      "slug": "du-lich-khach-san",
+      "ten": "Du lịch - Khách sạn"
+    },
+    {
+      "slug": "tai-chinh-ngan-hang",
+      "ten": "Tài chính - Ngân hàng"
+    },
+    {
+      "slug": "bao-hiem",
+      "ten": "Tư vấn bảo hiểm"
+    },
+    {
+      "slug": "cong-nghe-thong-tin",
+      "ten": "Công nghệ thông tin - Phần mềm"
+    },
+    {
+      "slug": "bao-chi-truyen-thong",
+      "ten": "Báo chí - Truyền thông - PR"
+    },
+    {
+      "slug": "hoc-thuat-nghien-cuu",
+      "ten": "Học thuật - Nghiên cứu"
+    },
+    {
+      "slug": "san-xuat-nha-may",
+      "ten": "Sản xuất - Nhà máy"
+    }
+  ]
+}

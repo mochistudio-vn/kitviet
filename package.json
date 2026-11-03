@@ -1,0 +1,29 @@
+{
+  "name": "kitviet-cli",
+  "version": "1.1.1",
+  "description": "Kit Việt - cài bộ AI Agent tiếng Việt cho 20 nghề vào Claude Code, ChatGPT Codex, Claude Desktop.",
+  "type": "module",
+  "bin": {
+    "kitviet": "cli/kitviet.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT",
+  "author": "MochiStudio (https://mochistudio.io.vn)",
+  "homepage": "https://mochistudio.io.vn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenducthang1997/kitviet.git"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "ai-agents",
+    "vietnamese",
+    "tieng-viet",
+    "kitviet"
+  ]
+}

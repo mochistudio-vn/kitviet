@@ -16,6 +16,19 @@ Bộ skill và agent tiếng Việt cho phóng viên, biên tập viên, chuyên
 
 ## Cài đặt
 
+### Cài nhanh bằng lệnh
+
+```text
+# Trong Claude Code
+/plugin marketplace add nguyenducthang1997/kitviet
+/plugin install kv-bao-chi-truyen-thong@kitviet
+
+# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+npx github:nguyenducthang1997/kitviet init bao-chi-truyen-thong --ai claude
+```
+
+Cài thủ công từng nền tảng như dưới đây.
+
 ### 1. Claude Desktop và Claude web (chat, Cowork) - dễ nhất
 
 1. Vào claude.ai hoặc ứng dụng Claude Desktop -> **Customize -> Skills** (cần gói Pro trở lên, bật Code execution).
