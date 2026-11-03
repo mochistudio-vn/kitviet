@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Kit Việt">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvBg)"/>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvShine)"/>
+  <!-- Ba khối xếp chồng: skill, agent, dây chuyền -->
+  <rect x="26" y="80" width="76" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="26" y="96" width="52" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+  <text x="26" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+  <path transform="translate(98 30) scale(1.25)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+</svg>

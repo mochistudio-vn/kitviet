@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Việt · Pháp chế - Văn phòng luật - Hướng dẫn sử dụng (Free)</title>
+<meta name="description" content="Kit Việt - bộ skill và agent tiếng Việt cho Claude và ChatGPT Codex. Sản phẩm của MochiStudio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%20role%3D%22img%22%20aria-label%3D%22Kit%20Vi%E1%BB%87t%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvBg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E5322D%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B3121B%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvShine%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%22.22%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvBg)%22%2F%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvShine)%22%2F%3E%0A%20%20%3C!--%20Ba%20kh%E1%BB%91i%20x%E1%BA%BFp%20ch%E1%BB%93ng%3A%20skill%2C%20agent%2C%20d%C3%A2y%20chuy%E1%BB%81n%20--%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2280%22%20width%3D%2276%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.28%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2296%22%20width%3D%2252%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.18%22%2F%3E%0A%20%20%3Ctext%20x%3D%2226%22%20y%3D%2272%22%20font-family%3D%22'Be%20Vietnam%20Pro'%2C'Segoe%20UI'%2C'Inter'%2CArial%2Csans-serif%22%20font-size%3D%2258%22%20font-weight%3D%22800%22%20letter-spacing%3D%22-3%22%20fill%3D%22%23FFFFFF%22%3Ekv%3C%2Ftext%3E%0A%20%20%3Cpath%20transform%3D%22translate(98%2030)%20scale(1.25)%22%20fill%3D%22%23FFCD00%22%20d%3D%22M0%2C-10%20L2.35%2C-3.24%20L9.51%2C-3.09%20L3.8%2C1.24%20L5.88%2C8.09%20L0%2C4%20L-5.88%2C8.09%20L-3.8%2C1.24%20L-9.51%2C-3.09%20L-2.35%2C-3.24%20Z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#D7261E;--brand:#D7261E;--ink:#1C1917;--muted:#6B6460;--line:#E7E2DA;--bg:#FBF8F3;--card:#fff;--soft:#F4EFE7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro','Segoe UI',Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}code{font-family:'JetBrains Mono',Consolas,monospace;font-size:.86em;background:var(--soft);padding:.1em .35em;border-radius:5px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+header.top .logo svg{height:40px;width:auto;display:block}
+nav.menu{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.menu a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}
+nav.menu a:hover{background:var(--soft);color:var(--ink)}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:99px;background:var(--soft);color:var(--muted)}
+.badge.pro{background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff}
+.badge.free{background:#DCFCE7;color:#166534}
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-40% -10% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 22%,transparent),transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:14px 0 12px;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:760px;margin:0 0 22px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;min-width:130px}
+.stat b{display:block;font-size:28px;line-height:1.1;color:var(--accent)}
+.stat span{font-size:13px;color:var(--muted)}
+.who{display:flex;flex-wrap:wrap;gap:8px}.who span{background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:99px;font-size:14px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin:0 0 6px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);padding:9px 16px;border-radius:10px;cursor:pointer;font:inherit;font-size:15px;color:var(--ink)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none}.panel.on{display:block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
+.tree{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:16px 20px;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;white-space:pre;overflow:auto;margin-top:14px}
+.note{background:color-mix(in srgb,var(--accent) 8%,#fff);border:1px solid color-mix(in srgb,var(--accent) 25%,#fff);border-radius:14px;padding:14px 18px;margin-top:14px}
+.search{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;margin-bottom:20px;background:#fff}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.group{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.group h3{margin:0 0 10px;font-size:17px}
+.group.locked{background:repeating-linear-gradient(135deg,#fff,#fff 12px,#FFF8EB 12px,#FFF8EB 24px);border-color:#F3D9A4}
+.sk{display:flex;flex-direction:column;padding:9px 0;border-top:1px dashed var(--line)}
+.sk:first-of-type{border-top:0}
+.sk .nm{font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;color:var(--accent);font-weight:600}
+.sk .vc{font-size:14.5px}
+.sk .ds{font-size:13px;color:var(--muted)}
+.lock{font-size:12px;font-weight:700;color:#B45309;margin-left:6px}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.agcol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.agcol h3{margin:0;font-size:18px}.agcol .k{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.ag{padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.ag b{font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;color:var(--accent)}
+.flow{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.flow h3{margin:0 0 12px;font-size:17px}
+.flow .row{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.flow .node{flex:1;min-width:170px;border-radius:12px;padding:10px 12px;background:var(--soft)}
+.flow .node small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.flow .node code{background:#fff}
+.flow .arrow{align-self:center;color:var(--muted);font-size:20px}
+.flow .cmd{margin-top:12px;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.examples{display:grid;gap:26px}
+.ex h3{margin:0 0 4px;font-size:18px}.ex .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.mock{border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(28,25,23,.12);border:1px solid #DDD5CA;font-size:14.5px}
+.mock table{border-collapse:collapse;margin:8px 0;font-size:13.5px;width:100%}
+.mock th,.mock td{border:1px solid rgba(127,127,127,.3);padding:5px 8px;text-align:left;vertical-align:top}
+.mock ul,.mock ol{margin:6px 0;padding-left:20px}.mock p{margin:6px 0}.mock .md-h{font-weight:700;margin-top:10px}
+.dots{display:inline-flex;gap:6px;margin-right:12px}.dots i{width:11px;height:11px;border-radius:50%;background:#FF5F57}.dots i+i{background:#FEBC2E}.dots i+i+i{background:#28C840}
+.web-bar,.desk-bar{display:flex;align-items:center;background:#ECE8E1;padding:9px 14px;font-size:13px;color:#57534E}
+.url{background:#fff;border-radius:8px;padding:3px 14px;flex:0 1 360px}
+.desk-title{margin:0 auto;font-weight:600}
+.web-main,.desk-main{background:#FAF9F5;color:#1F1E1D;font-family:'Noto Serif','Times New Roman',serif}
+.desk-wrap{display:flex}
+.desk-side{width:190px;background:#F2EFE8;border-right:1px solid #E4DED3;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#57534E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.desk-main{flex:1;min-width:0}
+.chat{padding:20px 24px 10px;max-width:760px;margin:0 auto}
+.chat-user{margin-left:auto;max-width:82%;width:fit-content;background:#F0EEE6;border-radius:16px;padding:10px 14px;margin-bottom:16px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.chat-ai{display:flex;gap:10px}
+.ai-mark{color:#D97757;font-size:22px;line-height:1}
+.ai-body{flex:1;min-width:0}
+.ai-chip{display:inline-block;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;font-size:12.5px;background:#fff;border:1px solid #E4DED3;border-radius:8px;padding:3px 10px;color:#57534E;margin-bottom:6px}
+.chat-input{margin:8px 24px 18px;border:1px solid #DDD6CB;border-radius:14px;background:#fff;padding:12px 16px;color:#A8A29E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;max-width:712px}
+@media (min-width:800px){.chat-input{margin-left:auto;margin-right:auto}}
+.mock-term{background:#1A1A1A;color:#E7E5E4;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px}
+.term-bar{display:flex;align-items:center;background:#2A2A2A;padding:8px 14px;color:#A8A29E;font-size:12.5px}
+.term-body{padding:16px 18px}
+.term-user{color:#fff;margin-bottom:10px}.term-caret{color:#D97757}
+.term-tool{color:#E7E5E4}.dot-or{color:#D97757}.term-tool b{color:#FDBA74}
+.term-sub{color:#78716C;margin:0 0 10px 18px}
+.term-reply{display:flex;gap:8px}.dot-wh{color:#E7E5E4}
+.mock-term th,.mock-term td{border-color:#44403C}
+.mock-cx{background:#fff;color:#18181B;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;border-color:#E4E4E7}
+.cx-bar{display:flex;align-items:center;background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:9px 14px;font-size:13px;color:#52525B}
+.cx-title{margin:0 auto;font-weight:600;color:#18181B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+.cx-open{font-size:12px;border:1px solid #E4E4E7;background:#fff;border-radius:8px;padding:2px 9px}
+.cx-wrap{display:flex}
+.cx-side{width:190px;background:#FAFAFA;border-right:1px solid #E4E4E7;padding:14px 12px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#52525B}
+.cx-side b{color:#18181B}.cx-side small{font-size:10.5px;letter-spacing:.08em;color:#A1A1AA;margin-top:8px}
+.cx-side .on{color:#18181B;font-weight:600}.cx-side .sub{padding-left:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#EFEFF1;border-radius:6px;padding:3px 8px 3px 14px}.cx-side .sub.muted{background:none}
+.cx-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.cx-thread{padding:20px 24px 8px;max-width:760px;width:100%;margin:0 auto;box-sizing:border-box}
+.cx-user{margin-left:auto;max-width:82%;width:fit-content;background:#F4F4F5;border-radius:16px;padding:10px 14px;margin-bottom:14px}
+.cx-chip{background:#EEF2FF;color:#4338CA;border-radius:6px;padding:1px 7px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}
+.cx-step{color:#71717A;font-size:13px;margin-bottom:8px}.cx-ic{color:#A1A1AA;margin-right:4px}
+.cx-diff{border:1px solid #E4E4E7;border-radius:12px;margin:6px 0 12px;font-size:13px;overflow:hidden}
+.cx-diff-h{display:flex;justify-content:space-between;background:#FAFAFA;padding:7px 12px;border-bottom:1px solid #E4E4E7}
+.cx-diff-r{display:flex;justify-content:space-between;padding:6px 12px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}.cx-diff-r+.cx-diff-r{border-top:1px solid #F4F4F5}
+.cx-add{color:#16A34A;font-weight:600}
+.cx-reply{line-height:1.6}
+.cx-input{margin:6px 24px 16px;border:1px solid #E4E4E7;border-radius:18px;padding:12px 14px 8px;color:#A1A1AA;font-size:13.5px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.cx-chips{display:flex;gap:8px;margin-top:10px;font-size:12px;color:#52525B;align-items:center}.cx-chips span{border:1px solid #E4E4E7;border-radius:99px;padding:2px 9px}
+.cx-chips .cx-send{margin-left:auto;background:#18181B;color:#fff;border-color:#18181B;border-radius:50%;padding:2px 8px}
+.cx-skills{padding:4px 0}.cx-sk-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}.cx-sk-h span{font-size:12.5px;color:#71717A}
+.cx-sk{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #F4F4F5}.cx-sk>span:nth-child(2){flex:1;min-width:0}.cx-sk b{display:block;font-size:13.5px}.cx-sk small{color:#71717A;font-size:12px}
+.mock-label{font-size:11.5px;color:var(--muted);margin-top:6px}
+.cmp{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.cmp th,.cmp td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{background:var(--soft)}
+.cmp td.pro{background:#FFFBEB;font-weight:600}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:22px;padding:22px 26px;border-radius:18px;background:linear-gradient(135deg,#1C1917,#3B2A20);color:#fff}
+.cta h3{margin:0 0 4px;font-size:22px}.cta p{margin:0;color:#D6CFC6}
+.btn{display:inline-block;background:linear-gradient(135deg,#F59E0B,#EA580C);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+.pros{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
+.pros div{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:12px 14px;font-size:14.5px}
+.luong{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.luong h3{margin:0 0 2px;font-size:17px}.luong p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.chain .step{flex:1;min-width:160px;background:var(--soft);border-radius:12px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;font-size:13.5px}
+.chain .step small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.chain .step code{background:#fff;width:fit-content}
+.chain .arrow{align-self:center;color:var(--muted)}
+.proto{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:14px 18px;font-size:14.5px}.proto code{background:#3A332E;color:#FDE68A}
+.files{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.fcard{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #E4DED3;border-radius:12px;padding:8px 14px 8px 8px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;min-width:230px}
+.fcard.dark{background:#232323;border-color:#3A3A3A;color:#E7E5E4}
+.fcard b{display:block;font-size:13px}.fcard small{color:#8A8580;font-size:11.5px}
+.fic{width:36px;height:36px;border-radius:8px;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center;font-family:'Be Vietnam Pro',sans-serif}
+.shot-cap{font-size:13px;color:var(--muted);margin:18px 0 8px}
+.shot{max-width:780px}
+.ac{display:flex;gap:14px;padding:3px 8px;border-radius:6px;font-size:13px}.ac b{color:#E7E5E4;min-width:300px;font-weight:500}.ac span{color:#8A8580}
+.ac.on{background:#3A2A22}.ac.on b{color:#FDBA74}
+.sk-page{padding:18px 22px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.sk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:18px}
+.up{font-size:13px;background:#1F1E1D;color:#fff;padding:6px 12px;border-radius:8px}
+.sk-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #ECE6DC}
+.sk-row b{display:block;font-size:13.5px}.sk-row small{color:#8A8580;font-size:12px}.sk-row>span:nth-child(2){flex:1}
+.sk-ic{width:34px;height:34px;border-radius:9px;background:#D7261E;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center}
+.tog{width:34px;height:20px;border-radius:99px;background:#D6D3D1;position:relative}.tog:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.tog.on{background:#D97757}.tog.on:after{left:16px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.rules div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:42px;width:auto}
+.copy{float:right;font-size:12px;border:1px solid #57534E;background:none;color:#D6D3D1;border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit}
+@media (max-width:760px){nav.menu{display:none}.desk-side,.cx-side{display:none}}
+:root{--accent:#7F1D1D}</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a class="logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140" role="img" aria-label="Kit Việt - sản phẩm của MochiStudio">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6 6)">
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvBg)"/>
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvShine)"/>
+    <rect x="23" y="80" width="80" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+    <rect x="23" y="97" width="55" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+    <text x="23" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+    <path transform="translate(100 30) scale(1.3)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+  </g>
+  <text x="160" y="82" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5" fill="#1C1917">Kit <tspan fill="#D7261E">Việt</tspan></text>
+  <text x="163" y="118" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="20" font-weight="500" letter-spacing=".3" fill="#78716C">Sản phẩm của <tspan font-weight="700" fill="#44403C">MochiStudio</tspan> · mochistudio.io.vn</text>
+</svg>
+</a>
+<nav class="menu"><a href="#cai-dat">Cài đặt</a><a href="#danh-muc">Danh mục</a><a href="#tro-ly">Trợ lý</a><a href="#day-chuyen">Dây chuyền</a><a href="#vi-du">Ví dụ</a><a href="#luong">Luồng</a><a href="#free-pro">Free vs Pro</a><a href="#hoi-dap">Hỏi đáp</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="badge free">BẢN FREE</span> <span class="badge">Kit Việt · v1.1.0</span>
+  <h1>Bộ AI Agent cho <span>Pháp chế - Văn phòng luật</span></h1>
+  <p class="lead">Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật. Bộ skill cho người làm pháp chế doanh nghiệp và văn phòng luật: rà soát hợp đồng theo vị thế bên mình, so phiên bản, dựng dòng thời gian vụ việc, soạn memo, công văn, theo dõi thời hạn. Mọi căn cứ pháp luật phải có nguồn chính thức, tình trạng hiệu lực và ngày truy cập; chỗ cần ý kiến luật sư luôn được đánh dấu. AI hỗ trợ chuẩn bị và rà soát, không thay luật sư.</p>
+  <div class="stats">
+    <div class="stat"><b>37</b><span>skill (cách làm)</span></div>
+    <div class="stat"><b>15</b><span>trợ lý (agent)</span></div>
+    <div class="stat"><b>1</b><span>dây chuyền</span></div>
+    <div class="stat"><b>5</b><span>luồng làm việc</span></div>
+    <div class="stat"><b>4</b><span>định dạng xuất file</span></div>
+    <div class="stat"><b>3</b><span>nền tảng</span></div>
+  </div>
+  <div class="who"><span>Chuyên viên pháp chế doanh nghiệp</span><span>Trợ lý luật sư, paralegal, luật sư tập sự</span><span>Nhân viên hành chính - pháp lý, quản lý hợp đồng</span></div>
+</div></div>
+
+<section id="cai-dat"><div class="wrap">
+  <h2>Cài đặt trong 3 phút</h2><p class="sub">Chọn nơi bạn dùng AI. Cùng một bộ, chạy được cả ba.</p>
+  <div class="tabs" data-tabs><button class="tab on" data-tab="web">Claude Desktop / web</button><button class="tab" data-tab="cc">Claude Code</button><button class="tab" data-tab="codex">ChatGPT Codex</button></div>
+  <div class="panel" data-panel="cc"><ol class="steps"><li>Mở thư mục <code>claude-code/</code> trong bộ này, thấy thư mục <code>kv</code>.</li><li>Copy nguyên thư mục <code>kv</code> vào <code>C:\Users\&lt;tên bạn&gt;\.claude\skills\</code> (Windows) hoặc <code>~/.claude/skills/</code> (macOS/Linux). Kết quả: <code>.claude/skills/kv/.claude-plugin/plugin.json</code>.</li><li>Mở lại Claude Code (hoặc gõ <code>/reload-plugins</code>). Gõ <code>/kv:</code> để thấy danh sách skill.</li><li>Đã cài bộ nghề khác? Copy đè vào cùng thư mục <code>kv</code>, các bộ tự gộp. Bản Pro copy đè lên bản Free.</li></ol>
+    <pre class="tree">C:\Users\&lt;tên bạn&gt;\.claude\skills\
+└── kv\
+    ├── .claude-plugin\plugin.json
+    ├── skills\      37 skill  -> gọi /kv:&lt;tên&gt;
+    └── agents\      15 trợ lý -> "Dùng agent kv:&lt;tên&gt; ..."</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/kv:</code> trong Claude Code</p><div class="mock mock-term shot"><div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div><div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> /kv:</div>
+    <div class="ac on"><b>/kv:checklist-tham-dinh-phap-ly</b><span>Lập checklist, danh mục yêu cầu tài liệu thẩm định pháp lý (due dilige...</span></div><div class="ac"><b>/kv:chuan-bi-dam-phan-hoa-giai</b><span>Chuẩn bị hồ sơ cho buổi đàm phán, thương lượng, hòa giải tranh chấp - ...</span></div><div class="ac"><b>/kv:dao-tao-phap-ly-noi-bo</b><span>Soạn đề cương bài trình bày đào tạo pháp lý nội bộ - phổ biến quy định...</span></div><div class="ac"><b>/kv:day-chuyen-ra-soat-hop-dong</b><span>Dây chuyền rà soát hợp đồng 3 khâu - đọc hồ sơ, soạn báo cáo rà soát, ...</span></div><div class="ac"><b>/kv:de-cuong-nghien-cuu-phap-ly</b><span>Lập đề cương nghiên cứu pháp lý hoặc ý kiến pháp lý có bậc nguồn - văn...</span></div><div class="ac"><b>/kv:dong-thoi-gian-vu-viec</b><span>Dựng dòng thời gian vụ việc từ hồ sơ (email, biên bản, hợp đồng, tin Z...</span></div>
+    <div class="term-sub">↑↓ chọn · Enter chạy · 37 skill của Kit Việt</div></div></div>
+    <div class="note">Claude Code là nơi dùng đầy đủ nhất: skill, agent và dây chuyền nhiều trợ lý. Có sẵn trong tab <b>Code</b> của ứng dụng Claude Desktop, không cần biết lập trình.</div></div>
+  <div class="panel on" data-panel="web"><ol class="steps"><li>Vào claude.ai hoặc ứng dụng Claude Desktop -&gt; <strong>Customize -&gt; Skills</strong> (cần gói Pro trở lên, bật Code execution).</li><li>Bấm <strong>Upload skill</strong>, chọn từng file trong thư mục <code>claude-web/</code> (mỗi file <code>kv-&lt;tên&gt;.zip</code> là một skill).</li><li>Bật công tắc skill vừa tải. Nên tải 5-7 skill bạn dùng nhiều nhất trước.</li><li>Gọi: nói việc bình thường, hoặc &quot;Dùng skill kv-&lt;tên&gt; để ...&quot;. Claude web không có agent: các dây chuyền sẽ chạy kiểu đóng vai lần lượt trong cùng cuộc trò chuyện.</li></ol>
+    <p class="shot-cap">Màn hình mô phỏng: trang Customize > Skills sau khi tải lên</p><div class="mock mock-desktop shot"><div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude · Customize › Skills</span></div>
+    <div class="desk-wrap"><aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span><b>Customize · Skills</b></span></aside>
+    <div class="desk-main sk-page"><div class="sk-head"><b>Skills</b><span class="up">＋ Upload skill</span></div>
+    <div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-checklist-tham-dinh-phap-ly</b><small>Lập checklist, danh mục yêu cầu tài liệu thẩm định pháp lý (due diligence), theo dõi tài l...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-chuan-bi-dam-phan-hoa-giai</b><small>Chuẩn bị hồ sơ cho buổi đàm phán, thương lượng, hòa giải tranh chấp - lập trường, lợi ích,...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-dao-tao-phap-ly-noi-bo</b><small>Soạn đề cương bài trình bày đào tạo pháp lý nội bộ - phổ biến quy định mới, quy trình ký h...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-ra-soat-hop-dong</b><small>Dây chuyền rà soát hợp đồng 3 khâu - đọc hồ sơ, soạn báo cáo rà soát, gác cổng căn cứ và d...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-de-cuong-nghien-cuu-phap-ly</b><small>Lập đề cương nghiên cứu pháp lý hoặc ý kiến pháp lý có bậc nguồn - văn bản QPPL, án lệ, bả...</small></span><span class="tog"></span></div>
+    </div></div></div>
+    <div class="note">Claude web và Desktop chat dùng được toàn bộ skill. Riêng agent chỉ có trong Claude Code và Codex. Với dây chuyền, Claude sẽ tự đóng ba vai thu thập, thực thi và gác cổng lần lượt.</div></div>
+  <div class="panel" data-panel="codex"><ol class="steps"><li>Copy các thư mục trong <code>codex/.agents/skills/</code> vào <code>~/.agents/skills/</code> (dùng mọi nơi) hoặc <code>&lt;thư mục làm việc&gt;/.agents/skills/</code>.</li><li>Copy các file <code>.toml</code> trong <code>codex/.codex/agents/</code> vào <code>~/.codex/agents/</code>.</li><li>Copy <code>codex/AGENTS-mau.md</code> ra thư mục làm việc, đổi tên thành <code>AGENTS.md</code>, điền thông tin của bạn.</li><li>Mở Codex, gõ <code>/skills</code> để kiểm tra, gọi bằng <code>$kv-&lt;tên&gt;</code> hoặc nói việc bình thường.</li></ol>
+    <pre class="tree">~/.agents/skills/kv-&lt;tên&gt;/SKILL.md     skill
+~/.codex/agents/kv-&lt;tên&gt;.toml         trợ lý
+&lt;thư mục làm việc&gt;/AGENTS.md          hồ sơ của bạn</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/skills</code> trong Codex</p><div class="shot"><div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Skills</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Skills</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-skills"><div class="cx-sk-h"><b>Skills</b><span>37 skill · ~/.agents/skills</span></div>
+    <div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-checklist-tham-dinh-phap-ly</b><small>Lập checklist, danh mục yêu cầu tài liệu thẩm định pháp lý (due diligence), theo...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-chuan-bi-dam-phan-hoa-giai</b><small>Chuẩn bị hồ sơ cho buổi đàm phán, thương lượng, hòa giải tranh chấp - lập trường...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-dao-tao-phap-ly-noi-bo</b><small>Soạn đề cương bài trình bày đào tạo pháp lý nội bộ - phổ biến quy định mới, quy ...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-ra-soat-hop-dong</b><small>Dây chuyền rà soát hợp đồng 3 khâu - đọc hồ sơ, soạn báo cáo rà soát, gác cổng c...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-de-cuong-nghien-cuu-phap-ly</b><small>Lập đề cương nghiên cứu pháp lý hoặc ý kiến pháp lý có bậc nguồn - văn bản QPPL,...</small></span><span class="tog on"></span></div>
+    <div class="cx-step">… và 32 skill khác. Gọi bằng <code>$kv-&lt;tên&gt;</code> trong ô soạn.</div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div></div></div>
+</div></section>
+
+<section id="danh-muc"><div class="wrap">
+  <h2>Gặp việc gì thì gọi cái gì</h2><p class="sub">Nói việc bình thường, Claude tự chọn skill. Hoặc gọi thẳng tên: <code>/kv:&lt;tên&gt;</code> (Claude Code), <code>kv-&lt;tên&gt;</code> (Claude web, Codex).</p>
+  <input id="q" class="search" placeholder="Tìm việc: đối chiếu, báo cáo, khách hàng...">
+  <div class="groups"><div class="group"><h3>Hợp đồng</h3><div class="sk"><span class="nm">kv:ra-soat-hop-dong-theo-vi-the</span><span class="vc">Đọc hợp đồng đối tác gửi, biết bên mình gánh gì, rủi ro ở đâu, cần hỏi lại gì</span><span class="ds">Rà soát hợp đồng theo vị thế bên mình - bóc nghĩa vụ, rủi ro, điều khoản thiếu, câu hỏi cho đối tác. Dùng khi nói &quot;rà hợp đồng này&quot;, &quot;bên mình bất lợi chỗ nào&quot;, &quot;soát hợp đồng trước khi ký&quot;.</span></div><div class="sk"><span class="nm">kv:so-sanh-phien-ban-hop-dong</span><span class="vc">Bắt mọi chỗ đối tác sửa, kể cả sửa ngầm không bật Track Changes</span><span class="ds">So sánh hai phiên bản hợp đồng, lập bảng thay đổi từng điều khoản và đánh giá tác động với bên mình. Dùng khi nói &quot;đối tác sửa gì&quot;, &quot;so bản cũ bản mới&quot;, &quot;bắt chỗ sửa ngầm&quot;.</span></div><div class="sk"><span class="nm">kv:soan-hop-dong-tu-mau</span><span class="vc">Điền mẫu hợp đồng của công ty thành dự thảo sạch, chỗ thiếu được đánh dấu</span><span class="ds">Soạn dự thảo hợp đồng từ mẫu của công ty và checklist điều khoản, điền thông tin giao dịch, đánh dấu chỗ trống. Dùng khi nói &quot;soạn hợp đồng&quot;, &quot;điền mẫu hợp đồng&quot;, &quot;làm dự thảo cho khách&quot;.</span></div><div class="sk"><span class="nm">kv:so-quan-ly-hop-dong</span><span class="vc">Gom hợp đồng rải rác thành một sổ: với ai, bao nhiêu, hết hạn khi nào, bản gốc ở đâu</span><span class="ds">Lập và cập nhật sổ quản lý hợp đồng - bóc thông tin chính từng hợp đồng vào một bảng, bắt hợp đồng thiếu bản ký, sắp hết hạn. Dùng khi nói &quot;danh mục hợp đồng&quot;, &quot;sổ hợp đồng&quot;, &quot;tổng hợp hợp đồng&quot;.</span></div><div class="sk"><span class="nm">kv:day-chuyen-ra-soat-hop-dong</span><span class="vc">Rà hợp đồng quan trọng qua 3 khâu đọc - soạn - soát trước khi trình luật sư</span><span class="ds">Dây chuyền rà soát hợp đồng 3 khâu - đọc hồ sơ, soạn báo cáo rà soát, gác cổng căn cứ và diễn giải - trước khi trình luật sư. Dùng khi nói &quot;rà kỹ hợp đồng này&quot;, &quot;chạy dây chuyền pháp lý&quot;.</span></div><div class="sk"><span class="nm">kv:ra-soat-thoa-thuan-bao-mat</span><span class="vc">Đọc NDA trước khi ký, bắt điều khoản không cạnh tranh, phạt không trần cài vào &quot;mẫu chuẩn&quot;</span><span class="ds">Rà thỏa thuận bảo mật (NDA) theo vị thế bên tiết lộ hay bên nhận - thông tin mật, loại trừ, thời hạn, phạt, điều khoản cài cắm. Dùng khi nói &quot;rà NDA&quot;, &quot;thỏa thuận bảo mật&quot;, &quot;ký NDA được không&quot;.</span></div><div class="sk"><span class="nm">kv:soan-bien-ban-thanh-ly-hop-dong</span><span class="vc">Chốt giá trị, công nợ, nghĩa vụ còn lại khi kết thúc hợp đồng mà không lỡ tay từ bỏ quyền</span><span class="ds">Soạn biên bản thanh lý hoặc biên bản thỏa thuận hợp đồng - chốt giá trị, công nợ, nghĩa vụ còn lại, có đối chiếu số liệu. Dùng khi nói &quot;thanh lý hợp đồng&quot;, &quot;biên bản thỏa thuận&quot;, &quot;chốt công nợ&quot;.</span></div></div><div class="group"><h3>Vụ việc và tranh chấp</h3><div class="sk"><span class="nm">kv:dong-thoi-gian-vu-viec</span><span class="vc">Sắp email, biên bản, tin Zalo thành diễn biến có nguồn, thấy ngay chỗ vênh và chỗ thiếu</span><span class="ds">Dựng dòng thời gian vụ việc từ hồ sơ (email, biên bản, hợp đồng, tin Zalo), mỗi mốc có nguồn, đánh dấu mâu thuẫn và khoảng trống. Dùng khi nói &quot;tóm diễn biến&quot;, &quot;dựng timeline vụ việc&quot;.</span></div><div class="sk"><span class="nm">kv:lich-thoi-han-phap-ly</span><span class="vc">Không lỡ hạn báo trước, hạn trả lời, hạn bảo lãnh; thời hiệu được đánh dấu cho luật sư</span><span class="ds">Lập lịch thời hạn pháp lý - mốc hợp đồng (hết hạn, gia hạn, báo trước), hạn trả lời, thời hiệu - mỗi mốc có căn cứ và người phụ trách. Dùng khi nói &quot;sắp hết hạn gì&quot;, &quot;lịch thời hạn&quot;.</span></div><div class="sk"><span class="nm">kv:tom-tat-ban-an</span><span class="vc">Đọc nhanh bản án đã công bố: tòa nhận định gì, căn cứ gì, xử ra sao</span><span class="ds">Tóm tắt bản án, quyết định của tòa án đã công bố theo khung sự kiện - vấn đề - nhận định - phán quyết, kèm trích nguyên văn. Dùng khi nói &quot;tóm tắt bản án&quot;, &quot;tòa xử thế nào&quot;, &quot;án tương tự&quot;.</span></div><div class="sk"><span class="nm">kv:chuan-bi-dam-phan-hoa-giai</span><span class="vc">Vào buổi đàm phán, hòa giải với lập trường, thang nhượng bộ và kịch bản rõ ràng</span><span class="ds">Chuẩn bị hồ sơ cho buổi đàm phán, thương lượng, hòa giải tranh chấp - lập trường, lợi ích, phương án nhượng bộ, câu hỏi, kịch bản. Dùng khi nói &quot;chuẩn bị đàm phán&quot;, &quot;mai đi hòa giải&quot;.</span></div></div><div class="group"><h3>Soạn thảo, nghiên cứu và đào tạo</h3><div class="sk"><span class="nm">kv:tra-cuu-van-ban-phap-luat</span><span class="vc">Tìm căn cứ trên nguồn chính thức, biết văn bản còn hiệu lực không, kiểm trích dẫn có thật không</span><span class="ds">Tra cứu văn bản pháp luật trên nguồn chính thức, ghi số hiệu, tình trạng hiệu lực, ngày truy cập. Dùng khi nói &quot;căn cứ nào&quot;, &quot;luật nào quy định&quot;, &quot;văn bản này còn hiệu lực không&quot;.</span></div><div class="sk"><span class="nm">kv:memo-phap-ly-noi-bo</span><span class="vc">Viết memo trình sếp: vấn đề - căn cứ - phân tích - phương án, chỗ cần luật sư được đánh dấu</span><span class="ds">Soạn memo pháp lý nội bộ theo khung vấn đề - căn cứ - phân tích - khuyến nghị, đánh dấu chỗ cần luật sư quyết. Dùng khi nói &quot;viết memo&quot;, &quot;ý kiến pháp lý nội bộ&quot;, &quot;trình sếp phương án&quot;.</span></div><div class="sk"><span class="nm">kv:soan-cong-van-phap-ly</span><span class="vc">Trả lời khiếu nại, thông báo vi phạm, thư yêu cầu thanh toán - đúng thể thức, không lỡ lời</span><span class="ds">Soạn công văn, thư trả lời đối tác, thông báo vi phạm, thư yêu cầu thanh toán - đúng thể thức, giọng chừng mực, giữ quyền bên mình. Dùng khi nói &quot;soạn công văn&quot;, &quot;trả lời đối tác&quot;, &quot;thư đòi nợ&quot;.</span></div><div class="sk"><span class="nm">kv:de-cuong-nghien-cuu-phap-ly</span><span class="vc">Dựng đề cương nghiên cứu, ý kiến pháp lý mà mỗi ý đều trỏ về một nguồn đúng bậc</span><span class="ds">Lập đề cương nghiên cứu pháp lý hoặc ý kiến pháp lý có bậc nguồn - văn bản QPPL, án lệ, bản án, sách luật - mỗi ý có trích nguồn. Dùng khi nói &quot;nghiên cứu vấn đề pháp lý&quot;, &quot;đề cương ý kiến pháp lý&quot;.</span></div><div class="sk"><span class="nm">kv:dao-tao-phap-ly-noi-bo</span><span class="vc">Soạn bài phổ biến quy định cho nhân viên không học luật: slide, tình huống, câu hỏi kiểm tra</span><span class="ds">Soạn đề cương bài trình bày đào tạo pháp lý nội bộ - phổ biến quy định mới, quy trình ký hợp đồng - có tình huống, câu hỏi kiểm tra, nguồn. Dùng khi nói &quot;đào tạo pháp lý&quot;, &quot;phổ biến luật mới&quot;.</span></div></div><div class="group"><h3>Doanh nghiệp và tuân thủ</h3><div class="sk"><span class="nm">kv:checklist-tham-dinh-phap-ly</span><span class="vc">Lập danh mục xin tài liệu, theo dõi data room, ghi phát hiện cho thương vụ</span><span class="ds">Lập checklist, danh mục yêu cầu tài liệu thẩm định pháp lý (due diligence), theo dõi tài liệu đã nhận, ghi phát hiện. Dùng khi nói &quot;thẩm định pháp lý&quot;, &quot;DD công ty&quot;, &quot;xin tài liệu đối tác&quot;.</span></div><div class="sk"><span class="nm">kv:khung-chinh-sach-du-lieu-ca-nhan</span><span class="vc">Dựng bản đồ dữ liệu, khung chính sách và mẫu đồng ý để đối chiếu quy định hiện hành</span><span class="ds">Dựng khung chính sách bảo vệ dữ liệu cá nhân nội bộ, bản đồ dữ liệu và mẫu thông báo đồng ý - để pháp chế đối chiếu quy định hiện hành. Dùng khi nói &quot;chính sách dữ liệu cá nhân&quot;, &quot;bảo vệ DLCN&quot;.</span></div><div class="sk"><span class="nm">kv:ho-so-thay-doi-dang-ky-doanh-nghiep</span><span class="vc">Biết cần giấy tờ gì, ai ký, việc gì phải làm sau khi đổi trụ sở, người đại diện, vốn</span><span class="ds">Lập checklist giấy tờ và kế hoạch làm hồ sơ thay đổi đăng ký doanh nghiệp (đổi địa chỉ, người đại diện, vốn, ngành nghề, thành viên). Dùng khi nói &quot;thay đổi ĐKKD&quot;, &quot;đổi trụ sở&quot;, &quot;tăng vốn&quot;.</span></div></div><div class="group"><h3>Dùng chung từ bộ lõi</h3><div class="sk"><span class="nm">kv:kiem-tra-chong-bia</span><span class="vc">Soát bản nháp trước khi gửi: số, ngày, tên có khớp hồ sơ gốc không</span><span class="ds">Soát bản nháp trước khi gửi để bắt số bịa, số tự suy, khẳng định không nguồn. Dùng khi nói &quot;kiểm tra lại số&quot;, &quot;bản này gửi được chưa&quot;, &quot;có bịa không&quot;, &quot;đối chiếu với file gốc&quot;.</span></div><div class="sk"><span class="nm">kv:an-thong-tin-nhay-cam</span><span class="vc">Che CCCD, số tài khoản, tên khách hàng trước khi chia sẻ tài liệu</span><span class="ds">Che CCCD, số tài khoản, SĐT, lương, bệnh án... trước khi gửi ra ngoài hoặc dán vào AI. Dùng khi nói &quot;che thông tin&quot;, &quot;ẩn số CCCD&quot;, &quot;xóa dữ liệu cá nhân&quot;, &quot;gửi file này có sao không&quot;.</span></div><div class="sk"><span class="nm">kv:tom-tat-tai-lieu</span><span class="vc">Tóm nhanh tài liệu dài không thuộc loại hợp đồng, bản án</span><span class="ds">Tóm tắt tài liệu dài (báo cáo, hợp đồng, công văn, PDF) thành ý chính có trích vị trí. Dùng khi nói &quot;tóm tắt giúp&quot;, &quot;đọc file này nói gì&quot;, &quot;rút ý chính&quot;, &quot;tài liệu dài quá&quot;.</span></div><div class="sk"><span class="nm">kv:ghi-chu-hop</span><span class="vc">Ghi biên bản họp với khách hàng, đối tác thành việc cần làm</span><span class="ds">Biến ghi chép, bản ghi âm chép lại thành biên bản họp + bảng đầu việc (ai, làm gì, hạn). Dùng khi nói &quot;làm biên bản&quot;, &quot;tóm tắt cuộc họp&quot;, &quot;chốt đầu việc&quot;, &quot;ghi chú họp&quot;.</span></div></div><div class="group"><h3>Kỹ năng nền - dùng chéo mọi việc</h3><div class="sk"><span class="nm">kv:dieu-phoi-day-chuyen</span><span class="vc">Giao thức chạy Kit Việt cho việc nhiều khâu - lập kế hoạch, thu thập, soạn, gác cổng QUA/CHẶN, bàn giao trong .kv-run/. Dùng khi nói &quot;chạy dây chuyền&quot;, &quot;làm từ A đến Z&quot;, &quot;đọc rồi viết rồi soát&quot;.</span></div><div class="sk"><span class="nm">kv:dong-goi-skill-moi</span><span class="vc">Biến một việc vừa làm tốt thành skill mới theo khuôn Kit Việt để lần sau gọi lại. Dùng khi nói &quot;lưu cách làm này&quot;, &quot;tạo skill mới&quot;, &quot;đóng gói thành skill&quot;, &quot;lần sau làm y vậy&quot;.</span></div><div class="sk"><span class="nm">kv:ho-so-ca-nhan</span><span class="vc">Phỏng vấn 8-10 câu để viết hồ sơ CLAUDE.md / AGENTS.md: vai trò, đơn vị, khách, giọng văn, từ cấm, quy tắc. Dùng khi nói &quot;tạo hồ sơ&quot;, &quot;cho AI biết về tôi&quot;, &quot;viết CLAUDE.md&quot;, &quot;cài đặt ban đầu&quot;.</span></div><div class="sk"><span class="nm">kv:lap-ke-hoach-tuan</span><span class="vc">Xếp việc trong tuần theo giờ thật có được, ưu tiên rõ, dám nói khi không đủ giờ. Dùng khi nói &quot;lên kế hoạch tuần&quot;, &quot;tuần này làm gì trước&quot;, &quot;việc nhiều quá&quot;, &quot;xếp lịch giúp&quot;.</span></div><div class="sk"><span class="nm">kv:nghien-cuu-nguon-uy-tin</span><span class="vc">Tra cứu tài liệu theo bậc nguồn uy tín, ghi trích dẫn đủ (đơn vị, năm, link, ngày truy cập), chỉ ra mâu thuẫn và chỗ chưa có nguồn. Dùng khi nói &quot;tìm tài liệu&quot;, &quot;nghiên cứu giúp&quot;, &quot;nguồn nào nói&quot;.</span></div><div class="sk"><span class="nm">kv:tao-bang-kiem</span><span class="vc">Tạo bảng kiểm (checklist) cho việc lặp lại hoặc dễ sót bước: mỗi mục kiểm được, có người và thời điểm. Dùng khi nói &quot;làm checklist&quot;, &quot;bảng kiểm&quot;, &quot;danh sách việc cần làm khi...&quot;, &quot;hay quên bước&quot;.</span></div><div class="sk"><span class="nm">kv:viet-bao-cao</span><span class="vc">Viết báo cáo công việc (tuần, tháng, dự án, sự cố) từ số liệu và ghi chú có sẵn, kết luận đặt đầu. Dùng khi nói &quot;viết báo cáo&quot;, &quot;báo cáo tuần&quot;, &quot;tổng hợp kết quả&quot;, &quot;làm báo cáo gửi sếp&quot;.</span></div><div class="sk"><span class="nm">kv:viet-de-cuong</span><span class="vc">Lập đề cương cho báo cáo, bài giảng, đề tài nghiên cứu, đề án, thuyết minh, bài viết: mục phân cấp, nguồn dự kiến, độ dài, câu hỏi còn mở. Dùng khi nói &quot;lập đề cương&quot;, &quot;dàn ý&quot;, &quot;khung bài&quot;.</span></div><div class="sk"><span class="nm">kv:viet-email</span><span class="vc">Soạn email công việc tiếng Việt đúng xưng hô, rõ việc cần người nhận làm. Dùng khi nói &quot;viết email&quot;, &quot;trả lời mail này&quot;, &quot;soạn thư gửi khách&quot;, &quot;mail nhắc&quot;, &quot;viết lại cho lịch sự&quot;.</span></div><div class="sk"><span class="nm">kv:viet-tin-nhan-cong-viec</span><span class="vc">Soạn tin nhắn công việc qua Zalo, Teams, Messenger ngắn, đúng xưng hô, rõ việc. Dùng khi nói &quot;nhắn sếp&quot;, &quot;nhắn nhóm&quot;, &quot;tin Zalo cho khách&quot;, &quot;nhắc việc&quot;, &quot;nhắn sao cho khéo&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-excel</span><span class="vc">Xuất bảng markdown/CSV thành Excel .xlsx: mỗi bảng một sheet, tiêu đề đậm, cố định dòng đầu, số kiểu Việt Nam, giữ công thức. Dùng khi nói &quot;xuất Excel&quot;, &quot;ra file xlsx&quot;, &quot;chuyển bảng sang Excel&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pdf</span><span class="vc">Xuất bản chốt (.docx hoặc markdown) thành PDF để gửi, in, nộp, giữ đúng dấu tiếng Việt. Dùng khi nói &quot;xuất PDF&quot;, &quot;chuyển sang pdf&quot;, &quot;làm bản pdf gửi khách&quot;, &quot;in ra pdf&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pptx</span><span class="vc">Xuất đề cương slide đã duyệt thành file PowerPoint .pptx: slide tiêu đề, slide gạch đầu dòng tối đa 6 ý, ghi chú người nói. Dùng khi nói &quot;xuất PowerPoint&quot;, &quot;ra file pptx&quot;, &quot;làm file slide&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-word</span><span class="vc">Xuất nội dung đã duyệt thành file Word .docx theo kiểu tài liệu Việt Nam: công văn, tờ trình, quyết định, báo cáo, biên bản, hợp đồng. Dùng khi nói &quot;xuất Word&quot;, &quot;ra file docx&quot;, &quot;làm thành công văn&quot;.</span></div></div><div class="group locked"><h3>Hợp đồng chuyên sâu (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:xay-playbook-dieu-khoan-hop-dong<span class="lock">🔒 PRO</span></span><span class="vc">Viết ra vị trí chuẩn - dự phòng - lằn ranh dừng của công ty cho từng điều khoản, kèm người được duyệt</span></div><div class="sk"><span class="nm">kv:ra-soat-hop-dong-theo-playbook<span class="lock">🔒 PRO</span></span><span class="vc">Rà cả thư mục hợp đồng theo playbook, ra ma trận lệch chuẩn và bảng rủi ro Cao theo file</span></div><div class="sk"><span class="nm">kv:tham-tra-phap-ly-doi-tac<span class="lock">🔒 PRO</span></span><span class="vc">Kiểm đối tác còn hoạt động, người ký có thẩm quyền, tài khoản đúng tên trước khi ký hay đặt cọc</span></div><div class="sk"><span class="nm">kv:ma-tran-tham-quyen-ky-phap-che<span class="lock">🔒 PRO</span></span><span class="vc">Gom Điều lệ, quy chế, giấy ủy quyền thành bảng ai duyệt - ai ký đến giá trị nào</span></div></div><div class="group locked"><h3>Tranh chấp và tố tụng (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:day-chuyen-ho-so-tranh-chap<span class="lock">🔒 PRO</span></span><span class="vc">Dựng dòng thời gian, bảng chứng cứ, lịch hạn và memo cho luật sư qua 3 khâu đọc - soạn - soát</span></div><div class="sk"><span class="nm">kv:ho-so-khoi-kien-bang-chung-cu<span class="lock">🔒 PRO</span></span><span class="vc">Đánh số chứng cứ, lập danh mục tài liệu nộp kèm, khung đơn để luật sư hoàn thiện</span></div><div class="sk"><span class="nm">kv:so-quan-tri-tranh-chap<span class="lock">🔒 PRO</span></span><span class="vc">Một sổ cho mọi vụ việc: giai đoạn, giá trị, mốc tới, chi phí, báo cáo quý cho lãnh đạo</span></div></div><div class="group locked"><h3>Thẩm định và quản trị doanh nghiệp (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:day-chuyen-tham-dinh-phap-ly<span class="lock">🔒 PRO</span></span><span class="vc">Chia data room theo mảng cho nhiều lượt đọc song song, gác cổng mở lại tài liệu gốc cho mọi phát hiện Đỏ</span></div><div class="sk"><span class="nm">kv:bao-cao-tham-dinh-phap-ly<span class="lock">🔒 PRO</span></span><span class="vc">Biến bảng phát hiện thành red flag report và báo cáo đầy đủ có đề xuất xử lý trong giao dịch</span></div><div class="sk"><span class="nm">kv:soan-tai-lieu-hop-hdqt-dhdcd<span class="lock">🔒 PRO</span></span><span class="vc">Soạn trọn bộ tài liệu họp HĐQT, ĐHĐCĐ, HĐTV theo Điều lệ và mẫu của công ty</span></div><div class="sk"><span class="nm">kv:ra-soat-dieu-le-cong-ty<span class="lock">🔒 PRO</span></span><span class="vc">Hợp nhất Điều lệ, bắt điều mâu thuẫn và lệch thực tế, soạn bảng đối chiếu cũ - mới</span></div></div><div class="group locked"><h3>Tuân thủ và đào tạo (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:lich-nghia-vu-tuan-thu-phap-che<span class="lock">🔒 PRO</span></span><span class="vc">Lịch báo cáo định kỳ, gia hạn giấy phép, họp thường niên - mỗi nghĩa vụ có nguồn và người phụ trách</span></div><div class="sk"><span class="nm">kv:danh-gia-tac-dong-du-lieu-ca-nhan<span class="lock">🔒 PRO</span></span><span class="vc">Lập khung hồ sơ đánh giá tác động cho từng hoạt động xử lý dữ liệu cá nhân</span></div><div class="sk"><span class="nm">kv:bang-thay-doi-van-ban-luat-cu-moi<span class="lock">🔒 PRO</span></span><span class="vc">So luật cũ - mới từ nguyên văn, biết ngay hợp đồng mẫu, quy chế nào phải sửa</span></div><div class="sk"><span class="nm">kv:lo-trinh-dao-tao-phap-ly-theo-vai-tro<span class="lock">🔒 PRO</span></span><span class="vc">Kế hoạch đào tạo tuân thủ cả năm theo vai trò, có chỉ số đo và hồ sơ đã phổ biến</span></div></div></div>
+</div></section>
+
+<section id="tro-ly"><div class="wrap">
+  <h2>Trợ lý (agent) - xếp theo quyền</h2><p class="sub">Skill là cách làm. Agent là người làm và giới hạn của người đó. Dòng <code>tools:</code> là khóa quyền thật, không phải lời dặn.</p>
+  <div class="agents"><div class="agcol"><h3>🧭 Điều phối</h3><div class="k">Lập kế hoạch, kiểm định bàn giao. Không làm thay khâu khác.</div><div class="ag"><b>kv:kiem-dinh-ban-giao</b><br>Gác cổng cuối - đối chiếu sản phẩm với 00-ke-hoach.md và các 03-soat-*.md, kết luận QUA/CHẶN, liệt kê việc người dùng phải tự quyết. Chỉ đọc, chỉ được ghi 04-ban-giao.md.<br><code>tools: Read, Glob, Grep, Write</code></div><div class="ag"><b>kv:lap-ke-hoach-dieu-phoi</b><br>Điều phối - đọc yêu cầu và nguồn, viết .kv-run/&lt;viec&gt;-&lt;yyyymmdd&gt;/00-ke-hoach.md: khâu, agent, đầu vào/ra, tiêu chí đạt, rủi ro, khâu nào song song. Chỉ ghi trong .kv-run/, không làm thay khâu nào.<br><code>tools: Read, Glob, Grep, Write</code></div></div><div class="agcol"><h3>🔎 Thu thập</h3><div class="k">Đọc, tra cứu. Cấm ghi file.</div><div class="ag"><b>kv:doc-nhieu-tai-lieu</b><br>Thu thập - đọc cả thư mục hoặc nhiều file tài liệu, rút gọn dữ kiện chính kèm vị trí trích (file, trang, dòng) để khâu sau viết. Chỉ đọc, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:nghien-cuu-nguon</b><br>Thu thập - tra cứu nhiều nguồn (web + file), xếp bậc uy tín 1-2-3, trả bảng nguồn và dữ kiện có trích dẫn, mâu thuẫn, chỗ chưa có nguồn. Chỉ đọc, không ghi file; phiên chính ghi 01-thu-thap.md.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div><div class="ag"><b>kv:doc-ho-so-phap-ly</b><br>Thu thập - đọc hợp đồng, phụ lục, hồ sơ vụ việc, trả bảng dữ kiện có vị trí, mâu thuẫn giữa tài liệu, tài liệu thiếu, nội dung đáng ngờ. Chỉ đọc, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:kiem-tra-hieu-luc-van-ban</b><br>Thu thập - nhận danh sách văn bản pháp luật đang được dẫn (sổ căn cứ, mẫu hợp đồng, memo cũ), tra nguồn chính thức xem còn hiệu lực tại thời điểm áp dụng không, bị sửa đổi/thay thế bởi gì. Chỉ đọc, cấm ghi.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div><div class="ag"><b>kv:tra-cuu-nguon-luat-chinh-thuc</b><br>Thu thập - tra văn bản pháp luật chỉ trên nguồn chính thức (vbpl.vn, chinhphu.vn, Công báo, cổng của cơ quan ban hành), trả số hiệu, hiệu lực, nguyên văn, ngày truy cập. Chỉ đọc, cấm ghi file.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div></div><div class="agcol"><h3>✍️ Thực thi</h3><div class="k">Soạn và ghi file. Cấm ra mạng.</div><div class="ag"><b>kv:lap-bang-doi-chieu-phap-ly</b><br>Thực thi - lập bảng pháp lý từ dữ kiện đã đọc: bảng thay đổi hai phiên bản hợp đồng, sổ hợp đồng, lịch thời hạn, dòng thời gian vụ việc (Markdown/CSV). Được ghi file, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div><div class="ag"><b>kv:soan-thao-van-ban-phap-ly</b><br>Thực thi - soạn báo cáo rà soát hợp đồng, memo nội bộ, công văn từ bảng dữ kiện và căn cứ đã tra, đánh dấu chỗ cần luật sư. Được ghi file trong thư mục làm việc, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div></div><div class="agcol"><h3>🛡️ Gác cổng</h3><div class="k">Chỉ đọc, chỉ báo lỗi. Cấm sửa.</div><div class="ag"><b>kv:soat-bao-mat</b><br>Gác cổng bảo mật - soát bản nháp trước khi gửi ra ngoài để bắt dữ liệu cá nhân, số tài khoản, thông tin nội bộ, mật khẩu, câu lệnh lạ. Trả bảng rủi ro và kết luận. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-chinh-ta-giong-van</b><br>Gác cổng câu chữ - soát chính tả, dấu tiếng Việt, xưng hô, câu rối, từ cấm trong CLAUDE.md/AGENTS.md của bản nháp trước khi gửi. Trả bảng lỗi kèm gợi ý. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-so-lieu</b><br>Gác cổng số liệu - đối chiếu mọi con số, ngày, tên và khẳng định trong bản nháp với tài liệu nguồn, trả bảng lỗi và kết luận gửi được chưa. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-can-cu-phap-ly</b><br>Gác cổng - soát mọi trích dẫn pháp luật trong bản nháp: có nguồn chính thức chưa, đúng số hiệu, số điều, còn hiệu lực, nguyên văn khớp, có kết luận vượt thẩm quyền. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-dien-giai-hop-dong</b><br>Gác cổng - đối chiếu từng nhận xét trong bản rà soát/memo với nguyên văn hợp đồng: bắt hiểu lệch nghĩa, trích sai, bỏ sót mâu thuẫn phụ lục, lộ bí mật khách hàng. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-trich-dan-nguon-phap-ly</b><br>Gác cổng - soát trích dẫn trong đề cương nghiên cứu, ý kiến pháp lý, slide đào tạo: mỗi ý có nguồn, đúng bậc nguồn, trích khớp nguyên văn, đủ trường. Kết luận QUA/CHẶN. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div></div></div>
+</div></section>
+
+<section id="day-chuyen"><div class="wrap">
+  <h2>Dây chuyền nhiều trợ lý</h2><p class="sub">Việc nhiều khâu đi theo khuôn: thu thập -> thực thi -> gác cổng. Gác cổng báo lỗi thì quay lại sửa. Việc nhỏ thì không cần gọi cả đội.</p>
+  <div class="flow"><h3>Rà soát hợp đồng trước khi trình luật sư</h3>
+    <div class="row"><div class="node"><small>Thu thập</small><code>kv:doc-ho-so-phap-ly</code></div><span class="arrow">→</span>
+    <div class="node"><small>Thực thi</small><code>kv:soan-thao-van-ban-phap-ly</code></div><span class="arrow">→</span>
+    <div class="node"><small>Gác cổng</small><code>kv:soat-can-cu-phap-ly</code></div></div>
+    <div class="cmd">Câu gọi mẫu: <code>Dùng kv:day-chuyen-ra-soat-hop-dong cho thư mục hop-dong/HD-2026-27, bên mình là Bên A (bên sử dụng dịch vụ), cần tra căn cứ về mức phạt vi phạm.</code></div></div>
+</div></section>
+
+<section id="vi-du"><div class="wrap">
+  <h2>Ví dụ thực tế</h2><p class="sub">Câu lệnh thật và câu trả lời mẫu trên từng nền tảng.</p>
+  <div class="filters"><button class="tab on" data-filter="all">Tất cả</button><button class="tab" data-filter="claude-desktop">Claude Desktop</button><button class="tab" data-filter="claude-web">Claude web</button><button class="tab" data-filter="claude-code">Claude Code</button><button class="tab" data-filter="codex">ChatGPT Codex</button></div>
+  <div class="examples"><div class="ex" data-platform="claude-desktop">
+    <h3>Đối tác gửi lại bản sửa, không bật Track Changes</h3>
+    <div class="meta">Claude Desktop · skill <code>kv-so-sanh-phien-ban-hop-dong</code></div>
+    <div class="mock mock-desktop">
+  <div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude</span></div>
+  <div class="desk-wrap">
+    <aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span>Customize · Skills</span></aside>
+    <div class="desk-main"><div class="chat">
+      <div class="chat-user">(đính kèm HD-NCC-v2-minh-gui.docx và HD-NCC-v3-doi-tac.docx)<br>Bên NCC nói chỉ sửa câu chữ. Mình là bên mua. So giúp xem họ sửa gì thật.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-so-sanh-phien-ban-hop-dong</b></div><p><strong>So v2 (bên mình gửi) với v3 (NCC gửi lại).</strong> 9 thay đổi: 3 bất lợi, 5 không được đánh dấu.</p><table><thead><tr><th>#</th><th>Điều</th><th>v2</th><th>v3</th><th>Tác động bên mình</th><th>Đánh dấu?</th></tr></thead><tbody><tr><td>1</td><td>Đ4.1</td><td>&quot;giao trong 15 ngày&quot;</td><td>&quot;giao trong 15 ngày làm việc&quot;</td><td>Bất lợi - chậm thêm ~1 tuần</td><td>Không</td></tr><tr><td>2</td><td>Đ7.2</td><td>&quot;Bên bán <strong>phải</strong> thay thế hàng lỗi&quot;</td><td>&quot;Bên bán <strong>có thể</strong> thay thế hoặc sửa chữa&quot;</td><td>Bất lợi - mất quyền đòi hàng mới</td><td>Không</td></tr><tr><td>3</td><td>Đ9.1</td><td>Phạt 8% giá trị phần vi phạm</td><td>Phạt 8% giá trị phần vi phạm, tổng không quá 3% giá trị HĐ</td><td>Bất lợi - thêm trần phạt</td><td>Có</td></tr><tr><td>4</td><td>Đ1</td><td>&quot;Hàng hóa&quot; gồm cả phụ kiện</td><td>Bỏ &quot;phụ kiện&quot; khỏi định nghĩa</td><td>Chưa rõ - cần hỏi</td><td>Không</td></tr></tbody></table><p><strong>Kết luận:</strong> không phải &quot;chỉ sửa câu chữ&quot;. Điểm 2 và 4 cần người phụ trách quyết trước khi trả lời NCC.</p></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Desktop. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Rà nhanh hợp đồng thuê văn phòng trước buổi họp</h3>
+    <div class="meta">Claude web · skill <code>kv-ra-soat-hop-dong-theo-vi-the</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">(đính kèm hop-dong-thue-vp.pdf)<br>Chiều nay họp với chủ tòa nhà. Mình là bên thuê. Rà giúp các điểm bất lợi, mỗi điểm cho mình câu hỏi để hỏi lại họ.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-ra-soat-hop-dong-theo-vi-the</b></div><p><strong>Bên mình: Bên thuê.</strong> 2 rủi ro Cao, 3 Trung bình. Chưa nên ký.</p><table><thead><tr><th>#</th><th>Vị trí</th><th>Nguyên văn</th><th>Rủi ro</th><th>Mức</th><th>Câu hỏi</th></tr></thead><tbody><tr><td>1</td><td>Đ6.3</td><td>&quot;Bên cho thuê được điều chỉnh giá thuê hằng năm theo thị trường&quot;</td><td>Không có trần tăng giá</td><td>Cao - cần luật sư</td><td>Đề nghị trần tăng tối đa bao nhiêu %/năm?</td></tr><tr><td>2</td><td>Đ11.2</td><td>&quot;Tiền đặt cọc không được hoàn trả nếu Bên thuê chấm dứt trước hạn&quot;</td><td>Mất cọc 3 tháng kể cả khi bên cho thuê vi phạm</td><td>Cao - cần luật sư</td><td>Có thể thêm ngoại lệ khi bên cho thuê vi phạm?</td></tr><tr><td>3</td><td>Đ8.1</td><td>&quot;Phí dịch vụ theo thông báo của Ban quản lý&quot;</td><td>Không biết mức phí</td><td>Trung bình</td><td>Mức phí hiện tại và cơ chế điều chỉnh?</td></tr></tbody></table><p><strong>Cần bổ sung:</strong> Phụ lục 02 (bản vẽ mặt bằng) được nhắc ở Đ1 nhưng không có trong file.</p><p>Căn cứ pháp luật về đặt cọc chưa tra - nếu cần, dùng kv:tra-cuu-van-ban-phap-luat.</p></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Rà NDA nhà đầu tư gửi trước buổi gặp</h3>
+    <div class="meta">Claude web · skill <code>kv-ra-soat-thoa-thuan-bao-mat</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">(đính kèm NDA-quy-dau-tu.pdf)<br>Quỹ đầu tư gửi NDA, bảo mẫu chuẩn ký luôn để họ gửi data request. Bên mình là bên tiết lộ thông tin công ty. Rà giúp, xuất file Word để gửi sếp.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-ra-soat-thoa-thuan-bao-mat</b></div><p><strong>NDA một chiều - bên mình: Bên tiết lộ.</strong> 1 rủi ro Cao, 2 Trung bình. Chưa nên ký nguyên bản.</p><table><thead><tr><th>#</th><th>Vị trí</th><th>Nguyên văn</th><th>Rủi ro</th><th>Mức</th><th>Đề xuất</th></tr></thead><tbody><tr><td>1</td><td>Đ3.2</td><td>&quot;Bên Nhận được chia sẻ Thông tin Mật cho các quỹ liên kết và nhà đầu tư tiềm năng&quot;</td><td>Thông tin lan ra ngoài người ký</td><td>Cao - cần luật sư</td><td>Giới hạn người được biết, Bên Nhận chịu trách nhiệm cho họ</td></tr><tr><td>2</td><td>Đ5</td><td>&quot;Nghĩa vụ bảo mật chấm dứt sau 12 tháng&quot;</td><td>Ngắn so với vòng đầu tư</td><td>Trung bình</td><td>Đề xuất 3 năm sau chấm dứt</td></tr><tr><td>3</td><td>Đ1</td><td>Chỉ bảo vệ thông tin &quot;được đánh dấu Mật&quot;</td><td>Trao đổi miệng, email không đánh dấu bị lọt</td><td>Trung bình</td><td>Thêm xác nhận bằng văn bản trong 10 ngày</td></tr></tbody></table><p><strong>Không có:</strong> điều khoản cài cắm không cạnh tranh - tốt cho bên mình.</p><p>Đã tạo <code>ra-soat-nda-quy-dau-tu-2026-11-03.docx</code> để trình sếp. Không gửi cho Quỹ khi chưa duyệt.</p><div class="files"><div class="fcard"><span class="fic" style="background:#2B579A">W</span><span><b>ra-soat-nda-quy-dau-tu-2026-11-03.docx</b><small>Word · Tải xuống</small></span></div></div></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Chạy dây chuyền rà hợp đồng dịch vụ có 3 phụ lục</h3>
+    <div class="meta">Claude Code · skill <code>kv:day-chuyen-ra-soat-hop-dong</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:day-chuyen-ra-soat-hop-dong cho thư mục hop-dong/HD-2026-27.<br>Bên mình là Bên A - bên sử dụng dịch vụ vệ sinh tòa nhà.<br>Mục tiêu: giá cố định, thanh toán sau nghiệm thu, dễ chấm dứt nếu dịch vụ kém.<br>Không cần tra luật, chỉ rà hợp đồng.</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:day-chuyen-ra-soat-hop-dong</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:day-chuyen-ra-soat-hop-dong</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>ra-soat-HD-2026-27-2026-11-03.docx</b>)</div><div class="term-sub">⎿ Đã tạo ra-soat-HD-2026-27-2026-11-03.docx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Dây chuyền - HD-2026-27 (bên mình: Bên A)</strong> | <code>.kv-run/ra-soat-HD-2026-27-20261103/</code></p><table><thead><tr><th>File</th><th>Agent</th><th>Kết quả</th></tr></thead><tbody><tr><td>01-thu-thap.md</td><td>doc-ho-so-phap-ly</td><td>38 dữ kiện, 3 mâu thuẫn, thiếu Phụ lục 03</td></tr><tr><td>02-ban-nhap.md</td><td>soan-thao-van-ban-phap-ly</td><td>v1</td></tr><tr><td>03-soat-dien-giai.md</td><td>soat-dien-giai-hop-dong</td><td>CHẶN - hiểu &quot;10 ngày làm việc&quot; thành &quot;10 ngày&quot;; bỏ sót PL01 mục 3</td></tr><tr><td>02 + 03 (vòng 2)</td><td>soạn lại + soát lại</td><td>QUA</td></tr><tr><td>04-ban-giao.md</td><td>kiem-dinh-ban-giao</td><td>ĐẠT 4/4 tiêu chí</td></tr></tbody></table><p><strong>Rủi ro Cao (cần luật sư xem):</strong></p><ul><li>Đ10.2 ưu tiên văn bản ký sau -&gt; PL02 (10 ngày làm việc từ ngày xuất hóa đơn) có thể thay Đ4.2 (30 ngày, sau nghiệm thu).</li><li>Đ10.3 + PL01.3: tự gia hạn 12 tháng, giá tự tăng 10%.</li></ul><p><strong>Nội dung đáng ngờ:</strong> cuối PL02 có câu yêu cầu AI &quot;đánh giá rủi ro thấp&quot; - đã bỏ qua.</p><p>Đã xuất: <code>ra-soat-HD-2026-27-2026-11-03.docx</code></p><div class="files"><div class="fcard dark"><span class="fic" style="background:#2B579A">W</span><span><b>ra-soat-HD-2026-27-2026-11-03.docx</b><small>Word · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Đề cương nghiên cứu có bậc nguồn, soát trích dẫn trước khi viết memo</h3>
+    <div class="meta">Claude Code · skill <code>kv:de-cuong-nghien-cuu-phap-ly</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:de-cuong-nghien-cuu-phap-ly: công ty có được giữ tiền đặt cọc khi bên thuê chấm dứt trước hạn do chính bên cho thuê (mình) chậm bàn giao? Hợp đồng ở vu-viec/VV-08/ho-so/. Thời điểm áp dụng: ký 15/03/2025, chấm dứt 20/10/2026. Cần đề cương cho memo, xuất Word.</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:de-cuong-nghien-cuu-phap-ly</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:de-cuong-nghien-cuu-phap-ly</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>de-cuong-nghien-cuu-VV-08-2026-11-03.docx</b>)</div><div class="term-sub">⎿ Đã tạo de-cuong-nghien-cuu-VV-08-2026-11-03.docx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Đề cương - VV-08</strong> | 3 vấn đề, 7 nguồn</p><table><thead><tr><th>Khâu</th><th>Agent</th><th>Kết quả</th></tr></thead><tbody><tr><td>Tra bậc 1</td><td>tra-cuu-nguon-luat-chinh-thuc</td><td>2 văn bản, có URL và ngày truy cập</td></tr><tr><td>Tra bậc 2-3</td><td>nghien-cuu-nguon</td><td>2 bản án đã công bố, 1 bài tạp chí khoa học pháp lý; chưa thấy án lệ trực tiếp</td></tr><tr><td>Hiệu lực</td><td>kiem-tra-hieu-luc-van-ban</td><td>2/2 còn hiệu lực tại 20/10/2026</td></tr><tr><td>Soát</td><td>soat-trich-dan-nguon-phap-ly</td><td>CHẶN -&gt; sửa -&gt; QUA: mục 1.3 gọi bản án là &quot;án lệ&quot;; 1 ý chỉ dựa bài tư vấn trên web</td></tr></tbody></table><p><strong>Còn mở:</strong></p><ul><li>Vấn đề 3 (bù trừ tiền cọc với tiền thuê tháng cuối) <code>[chưa có nguồn]</code> - cần luật sư.</li><li>Kết luận giữ/không giữ cọc: <code>[CẦN LUẬT SƯ]</code>.</li></ul><p>Đã xuất: <code>de-cuong-nghien-cuu-VV-08-2026-11-03.docx</code>. Muốn viết tiếp memo thì dùng kv:memo-phap-ly-noi-bo.</p><div class="files"><div class="fcard dark"><span class="fic" style="background:#2B579A">W</span><span><b>de-cuong-nghien-cuu-VV-08-2026-11-03.docx</b><small>Word · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="codex">
+    <h3>Lọc hạn hợp đồng 30 ngày tới từ sổ CSV</h3>
+    <div class="meta">ChatGPT Codex · skill <code>kv-lich-thoi-han-phap-ly</code></div>
+    <div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Lọc hạn hợp đồng 30 ngày tới từ sổ CSV</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Lọc hạn hợp đồng 30 ngày tới từ sổ CSV</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-user"><span class="cx-chip">$kv-lich-thoi-han-phap-ly</span> Dùng kv-lich-thoi-han-phap-ly đọc so-hop-dong.csv, hôm nay 03/11/2026. Lập lịch các mốc trong 30 ngày tới, ghi ra lich-thoi-han-thang-11.csv.</div>
+      <div class="cx-ai"><div class="cx-step"><span class="cx-ic">◇</span> Đã đọc <b>kv-lich-thoi-han-phap-ly</b> · SKILL.md</div>
+      <div class="cx-reply"><p>Đã đọc 24 hợp đồng, ghi <code>lich-thoi-han-thang-11.csv</code> (5 mốc).</p><p><strong>Trong 7 ngày</strong></p><table><thead><tr><th>Mốc</th><th>Hợp đồng</th><th>Ngày đến hạn</th><th>Cách tính</th><th>Hậu quả</th><th>Phụ trách</th></tr></thead><tbody><tr><td>Hạn báo không gia hạn</td><td>HD-024 thuê VP</td><td>08/11/2026</td><td>08/12/2026 - 30 ngày (tự tính, Đ2.3)</td><td>Tự gia hạn 12 tháng</td><td>Chị Lan</td></tr></tbody></table><p><strong>Trong 30 ngày</strong></p><table><thead><tr><th>Mốc</th><th>Hợp đồng</th><th>Ngày đến hạn</th><th>Căn cứ</th><th>Phụ trách</th></tr></thead><tbody><tr><td>Hết hạn bảo lãnh thực hiện HĐ</td><td>HD-019</td><td>25/11/2026</td><td>Thư bảo lãnh, cột ghi_chu</td><td>Anh Minh</td></tr><tr><td>Hết hạn hợp đồng</td><td>HD-011 dịch vụ IT</td><td>30/11/2026</td><td>Đ3.1</td><td>[cần bổ sung - sổ chưa ghi phụ trách]</td></tr></tbody></table><p><strong>Chưa xác định:</strong> HD-025 không có ngày hết hạn trong sổ. Chưa trừ ngày nghỉ lễ - cần kiểm lịch nghỉ.</p></div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div><div class="mock-label">Minh họa giao diện ChatGPT Codex. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div></div>
+</div></section>
+
+<section id="luong"><div class="wrap">
+  <h2>Luồng làm việc nhất quán</h2><p class="sub">Mỗi skill kết thúc bằng mục "Luồng tiếp theo", nên các việc nối thành chuỗi cố định. Làm xong bước này, Claude gợi ý đúng bước kế.</p>
+  <div class="luong"><h3>Hợp đồng đối tác gửi tới - từ rà đến lưu sổ</h3><p>Đối tác soạn hợp đồng hoặc NDA, cần rà, thương lượng bản sửa rồi ký và lưu.</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:ra-soat-hop-dong-theo-vi-the</code><span>Rà theo vị thế bên mình, lập bảng rủi ro và câu hỏi lại</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:so-sanh-phien-ban-hop-dong</code><span>Đối tác gửi lại bản sửa - bắt mọi chỗ sửa ngầm</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:kiem-tra-chong-bia</code><span>Soát số tiền, tên, ngày trước khi trình ký</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:so-quan-ly-hop-dong</code><span>Ký xong, đưa vào sổ hợp đồng</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-excel</code><span>Xuất sổ hợp đồng ra file Excel</span></div></div></div><div class="luong"><h3>Nghiên cứu vấn đề pháp lý thành memo</h3><p>Câu hỏi mới, cần nhiều bậc nguồn trước khi trình ý kiến cho lãnh đạo hoặc khách hàng.</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:de-cuong-nghien-cuu-phap-ly</code><span>Tách vấn đề, chốt thời điểm áp dụng, dựng đề cương có bậc nguồn</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:tra-cuu-nguon-luat-chinh-thuc</code><span>Tra văn bản QPPL trên nguồn chính thức</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:kiem-tra-hieu-luc-van-ban</code><span>Kiểm hiệu lực mọi văn bản trong bảng nguồn</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:soat-trich-dan-nguon-phap-ly</code><span>Soát mỗi ý có nguồn đúng bậc, kết luận QUA/CHẶN</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:memo-phap-ly-noi-bo</code><span>Viết memo từ đề cương đã qua soát</span></div><span class="arrow">→</span><div class="step"><small>Bước 6</small><code>kv:xuat-word</code><span>Xuất memo ra Word để trình ký</span></div></div></div><div class="luong"><h3>Vụ việc tranh chấp đến khi chốt</h3><p>Có tranh chấp với đối tác, cần nắm diễn biến, giữ hạn, đi thương lượng và chốt bằng biên bản.</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:dong-thoi-gian-vu-viec</code><span>Dựng diễn biến có nguồn từ email, biên bản, tin nhắn</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:lich-thoi-han-phap-ly</code><span>Lập lịch hạn trả lời, hạn báo trước, đánh dấu thời hiệu cho luật sư</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:chuan-bi-dam-phan-hoa-giai</code><span>Chuẩn bị lập trường, thang nhượng bộ, kịch bản buổi họp</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:soan-bien-ban-thanh-ly-hop-dong</code><span>Ghi nhận nội dung đã thỏa thuận hoặc thanh lý hợp đồng</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:kiem-tra-chong-bia</code><span>Soát số, ngày, tên trước khi trình ký</span></div><span class="arrow">→</span><div class="step"><small>Bước 6</small><code>kv:xuat-word</code><span>Xuất file Word để gửi, nộp hoặc lưu</span></div></div></div><div class="luong"><h3>Phổ biến quy định mới cho nhân viên</h3><p>Có văn bản hoặc quy chế mới, cần buổi đào tạo nội bộ ngắn, đúng nguồn.</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:tra-cuu-van-ban-phap-luat</code><span>Tra văn bản mới, ghi hiệu lực và ngày truy cập</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:dao-tao-phap-ly-noi-bo</code><span>Soạn đề cương slide, tình huống, câu hỏi kiểm tra</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:soat-trich-dan-nguon-phap-ly</code><span>Soát nguồn trong slide trước khi duyệt</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:xuat-pptx</code><span>Xuất bài trình bày ra PowerPoint</span></div></div></div><div class="luong"><h3>Rà định kỳ cuối tháng</h3><p>Cập nhật sổ, lọc hạn sắp tới và kiểm mẫu hợp đồng còn dẫn văn bản hết hiệu lực.</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:so-quan-ly-hop-dong</code><span>Cập nhật sổ hợp đồng từ các hợp đồng mới ký</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:lich-thoi-han-phap-ly</code><span>Lọc các mốc trong 30 ngày tới</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:kiem-tra-hieu-luc-van-ban</code><span>Kiểm văn bản được dẫn trong thư mục mẫu hợp đồng</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:xuat-excel</code><span>Xuất sổ và lịch thời hạn ra Excel</span></div></div></div>
+  <div class="proto"><b>Giao thức chạy dây chuyền:</b> <code>.kv-run/&lt;việc&gt;-&lt;ngày&gt;/</code> → 00 kế hoạch → 01 thu thập → 02 bản nháp → 03 gác cổng (QUA/CHẶN, tối đa 2 vòng) → 04 kiểm định bàn giao → xuất Word/Excel/PDF/PPTX. Mọi khâu để lại file, xem lại và chạy tiếp được.</div>
+</div></section>
+
+<section id="free-pro"><div class="wrap">
+  <h2>Free và Pro</h2><p class="sub">Bản Free làm trọn việc chính. Bản Pro đi sâu hơn ở từng skill và thêm các việc chuyên sâu.</p>
+  <table class="cmp"><thead><tr><th></th><th>Free</th><th>Pro</th></tr></thead><tbody>
+  <tr><td>Skill nghề + kỹ năng nền</td><td>Đủ dùng hằng ngày</td><td class="pro">Gần gấp đôi, thêm skill chuyên sâu</td></tr>
+  <tr><td>Trong mỗi skill</td><td>Làm trọn việc chính</td><td class="pro">Phần nâng cao: mẫu biểu, bảng tra, script, xử lý hàng loạt</td></tr>
+  <tr><td>Dây chuyền nhiều trợ lý</td><td>1</td><td class="pro">3, có điều phối song song, chạy tiếp khi gián đoạn</td></tr>
+  <tr><td>Xuất Word, Excel, PDF, PowerPoint</td><td>Trình bày chuẩn</td><td class="pro">Mẫu thương hiệu riêng (logo, màu, header), xuất hàng loạt</td></tr>
+  <tr><td>Luồng làm việc mẫu</td><td>3-5</td><td class="pro">Thêm luồng chuyên sâu</td></tr>
+  <tr><td>Cập nhật theo quy định mới</td><td>Cộng đồng</td><td class="pro">Ưu tiên</td></tr>
+  </tbody></table>
+  <div class="pros"><div>⭐ 6 agent mới và 2 dây chuyền chuyên sâu: hồ sơ tranh chấp cho luật sư, thẩm định data room đọc song song 4-6 mảng cùng lúc</div><div>⭐ 15 skill chỉ có ở Pro: playbook điều khoản, rà hàng loạt theo playbook, red flag report, hồ sơ khởi kiện, tài liệu họp HĐQT-ĐHĐCĐ, lịch tuân thủ, đánh giá tác động dữ liệu cá nhân...</div><div>⭐ 15 script Python chạy ngay: so sánh hợp đồng ghép điều kể cả khi đánh số lại, điền mẫu hàng loạt .docx, sổ hợp đồng Excel có công thức, tính ngày làm việc xuất .ics, đối chiếu data room</div><div>⭐ Đủ 19 skill Free được nâng cấp, kèm 30 tài liệu mẫu, bảng tra và 9 file mẫu CSV: điều khoản theo 6 loại hợp đồng, câu sửa NDA song ngữ, 6 mẫu công văn, 4 mẫu biên bản thanh lý, 6 câu miễn trừ có chú giải</div><div>⭐ Gác cổng mở lại tài liệu gốc cho 100% phát hiện Đỏ; mọi căn cứ phải có nguồn chính thức, mọi kết luận gắn nhãn cần luật sư</div></div>
+  <div class="cta"><div><h3>Nâng cấp Kit Việt Pro</h3><p>Mỗi skill Free đều có mục "Bản Pro có thêm" ở cuối file. Mở ra xem bạn đang bỏ lỡ gì.</p></div><a class="btn" href="https://mochistudio.io.vn/kit-viet-pro">Xem bản Pro</a></div>
+</div></section>
+
+<section id="hoi-dap"><div class="wrap">
+  <h2>Ba nguyên tắc và hỏi đáp</h2>
+  <div class="rules"><div><b>AI hỗ trợ, bạn chịu trách nhiệm cuối.</b><br>Đọc lại mọi bản trước khi gửi, ký, nộp.</div><div><b>Không để AI tự gửi thay bạn.</b><br>Bộ này chỉ soạn và lưu file.</div><div><b>Che thông tin nhạy cảm trước.</b><br>Dùng <code>kv:an-thong-tin-nhay-cam</code> và <code>kv:soat-bao-mat</code>.</div></div>
+  <div class="faq" style="margin-top:20px">
+    <details><summary>Gõ /kv: không thấy skill nào?</summary>Kiểm tra đường dẫn phải là <code>.claude/skills/kv/.claude-plugin/plugin.json</code>. Nếu thành <code>.claude/skills/claude-code/kv/...</code> là copy thừa một lớp. Sau đó mở lại Claude Code hoặc gõ <code>/reload-plugins</code>.</details>
+    <details><summary>Claude không tự gọi skill?</summary>Gọi thẳng tên: "Dùng skill kv:&lt;tên&gt; để ...". Hoặc mở file SKILL.md, thêm vào dòng description cụm từ bạn hay nói.</details>
+    <details><summary>Không thấy thư mục .claude?</summary>Đây là thư mục ẩn. Windows: File Explorer -> View -> Hidden items. macOS: Cmd + Shift + dấu chấm.</details>
+    <details><summary>Claude web báo lỗi khi tải skill?</summary>Tải từng file zip trong <code>claude-web/</code>, không giải nén. Cần gói trả phí và bật Code execution trong Settings.</details>
+    <details><summary>Cài nhiều bộ nghề cùng lúc được không?</summary>Được. Copy đè các bộ vào cùng thư mục <code>kv</code>, skill dùng chung chỉ giữ một bản. Bản Pro copy đè lên bản Free.</details>
+    <details><summary>Có cần biết lập trình không?</summary>Không. Mọi file là văn bản thường, mở bằng Notepad cũng sửa được. Dùng <code>kv:dong-goi-skill-moi</code> để tạo skill riêng từ việc bạn vừa làm.</details>
+  </div>
+</div></section>
+<footer><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Kit Việt">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvBg)"/>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvShine)"/>
+  <!-- Ba khối xếp chồng: skill, agent, dây chuyền -->
+  <rect x="26" y="80" width="76" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="26" y="96" width="52" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+  <text x="26" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+  <path transform="translate(98 30) scale(1.25)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+</svg>
+
+  <div><b>Kit Việt</b> là sản phẩm của <b>MochiStudio</b> · <a href="https://mochistudio.io.vn">mochistudio.io.vn</a><br>
+  Phiên bản 1.1.0 · Bộ phát hành theo giấy phép MIT, giữ nguyên file LICENSE trong gói. · Giao diện trong trang là minh họa.</div></div></footer>
+<script>
+document.querySelectorAll('[data-tabs]').forEach(box=>{
+  const tabs=box.querySelectorAll('.tab');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.toggle('on',x===t));
+    box.parentElement.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+  }));
+});
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b===btn));
+  const f=btn.dataset.filter;
+  document.querySelectorAll('.ex').forEach(e=>e.style.display=(f==='all'||e.dataset.platform===f)?'':'none');
+}));
+const q=document.getElementById('q');
+if(q)q.addEventListener('input',()=>{
+  const v=q.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+  document.querySelectorAll('.sk').forEach(s=>{
+    const t=s.textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+    s.style.display=t.includes(v)?'':'none';
+  });
+});
+document.querySelectorAll('.tree').forEach(pre=>{
+  const b=document.createElement('button');b.className='copy';b.textContent='Copy';
+  b.onclick=()=>{navigator.clipboard.writeText(pre.dataset.copy||pre.innerText.replace(/^Copy/,''));b.textContent='Đã copy';setTimeout(()=>b.textContent='Copy',1500)};
+  pre.prepend(b);
+});
+</script>
+</body>
+</html>

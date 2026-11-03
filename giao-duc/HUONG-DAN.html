@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Việt · Giáo viên - Đào tạo - Hướng dẫn sử dụng (Free)</title>
+<meta name="description" content="Kit Việt - bộ skill và agent tiếng Việt cho Claude và ChatGPT Codex. Sản phẩm của MochiStudio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%20role%3D%22img%22%20aria-label%3D%22Kit%20Vi%E1%BB%87t%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvBg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E5322D%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B3121B%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvShine%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%22.22%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvBg)%22%2F%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvShine)%22%2F%3E%0A%20%20%3C!--%20Ba%20kh%E1%BB%91i%20x%E1%BA%BFp%20ch%E1%BB%93ng%3A%20skill%2C%20agent%2C%20d%C3%A2y%20chuy%E1%BB%81n%20--%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2280%22%20width%3D%2276%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.28%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2296%22%20width%3D%2252%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.18%22%2F%3E%0A%20%20%3Ctext%20x%3D%2226%22%20y%3D%2272%22%20font-family%3D%22'Be%20Vietnam%20Pro'%2C'Segoe%20UI'%2C'Inter'%2CArial%2Csans-serif%22%20font-size%3D%2258%22%20font-weight%3D%22800%22%20letter-spacing%3D%22-3%22%20fill%3D%22%23FFFFFF%22%3Ekv%3C%2Ftext%3E%0A%20%20%3Cpath%20transform%3D%22translate(98%2030)%20scale(1.25)%22%20fill%3D%22%23FFCD00%22%20d%3D%22M0%2C-10%20L2.35%2C-3.24%20L9.51%2C-3.09%20L3.8%2C1.24%20L5.88%2C8.09%20L0%2C4%20L-5.88%2C8.09%20L-3.8%2C1.24%20L-9.51%2C-3.09%20L-2.35%2C-3.24%20Z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#D7261E;--brand:#D7261E;--ink:#1C1917;--muted:#6B6460;--line:#E7E2DA;--bg:#FBF8F3;--card:#fff;--soft:#F4EFE7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro','Segoe UI',Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}code{font-family:'JetBrains Mono',Consolas,monospace;font-size:.86em;background:var(--soft);padding:.1em .35em;border-radius:5px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+header.top .logo svg{height:40px;width:auto;display:block}
+nav.menu{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.menu a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}
+nav.menu a:hover{background:var(--soft);color:var(--ink)}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:99px;background:var(--soft);color:var(--muted)}
+.badge.pro{background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff}
+.badge.free{background:#DCFCE7;color:#166534}
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-40% -10% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 22%,transparent),transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:14px 0 12px;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:760px;margin:0 0 22px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;min-width:130px}
+.stat b{display:block;font-size:28px;line-height:1.1;color:var(--accent)}
+.stat span{font-size:13px;color:var(--muted)}
+.who{display:flex;flex-wrap:wrap;gap:8px}.who span{background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:99px;font-size:14px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin:0 0 6px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);padding:9px 16px;border-radius:10px;cursor:pointer;font:inherit;font-size:15px;color:var(--ink)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none}.panel.on{display:block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
+.tree{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:16px 20px;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;white-space:pre;overflow:auto;margin-top:14px}
+.note{background:color-mix(in srgb,var(--accent) 8%,#fff);border:1px solid color-mix(in srgb,var(--accent) 25%,#fff);border-radius:14px;padding:14px 18px;margin-top:14px}
+.search{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;margin-bottom:20px;background:#fff}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.group{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.group h3{margin:0 0 10px;font-size:17px}
+.group.locked{background:repeating-linear-gradient(135deg,#fff,#fff 12px,#FFF8EB 12px,#FFF8EB 24px);border-color:#F3D9A4}
+.sk{display:flex;flex-direction:column;padding:9px 0;border-top:1px dashed var(--line)}
+.sk:first-of-type{border-top:0}
+.sk .nm{font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;color:var(--accent);font-weight:600}
+.sk .vc{font-size:14.5px}
+.sk .ds{font-size:13px;color:var(--muted)}
+.lock{font-size:12px;font-weight:700;color:#B45309;margin-left:6px}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.agcol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.agcol h3{margin:0;font-size:18px}.agcol .k{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.ag{padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.ag b{font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;color:var(--accent)}
+.flow{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.flow h3{margin:0 0 12px;font-size:17px}
+.flow .row{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.flow .node{flex:1;min-width:170px;border-radius:12px;padding:10px 12px;background:var(--soft)}
+.flow .node small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.flow .node code{background:#fff}
+.flow .arrow{align-self:center;color:var(--muted);font-size:20px}
+.flow .cmd{margin-top:12px;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.examples{display:grid;gap:26px}
+.ex h3{margin:0 0 4px;font-size:18px}.ex .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.mock{border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(28,25,23,.12);border:1px solid #DDD5CA;font-size:14.5px}
+.mock table{border-collapse:collapse;margin:8px 0;font-size:13.5px;width:100%}
+.mock th,.mock td{border:1px solid rgba(127,127,127,.3);padding:5px 8px;text-align:left;vertical-align:top}
+.mock ul,.mock ol{margin:6px 0;padding-left:20px}.mock p{margin:6px 0}.mock .md-h{font-weight:700;margin-top:10px}
+.dots{display:inline-flex;gap:6px;margin-right:12px}.dots i{width:11px;height:11px;border-radius:50%;background:#FF5F57}.dots i+i{background:#FEBC2E}.dots i+i+i{background:#28C840}
+.web-bar,.desk-bar{display:flex;align-items:center;background:#ECE8E1;padding:9px 14px;font-size:13px;color:#57534E}
+.url{background:#fff;border-radius:8px;padding:3px 14px;flex:0 1 360px}
+.desk-title{margin:0 auto;font-weight:600}
+.web-main,.desk-main{background:#FAF9F5;color:#1F1E1D;font-family:'Noto Serif','Times New Roman',serif}
+.desk-wrap{display:flex}
+.desk-side{width:190px;background:#F2EFE8;border-right:1px solid #E4DED3;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#57534E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.desk-main{flex:1;min-width:0}
+.chat{padding:20px 24px 10px;max-width:760px;margin:0 auto}
+.chat-user{margin-left:auto;max-width:82%;width:fit-content;background:#F0EEE6;border-radius:16px;padding:10px 14px;margin-bottom:16px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.chat-ai{display:flex;gap:10px}
+.ai-mark{color:#D97757;font-size:22px;line-height:1}
+.ai-body{flex:1;min-width:0}
+.ai-chip{display:inline-block;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;font-size:12.5px;background:#fff;border:1px solid #E4DED3;border-radius:8px;padding:3px 10px;color:#57534E;margin-bottom:6px}
+.chat-input{margin:8px 24px 18px;border:1px solid #DDD6CB;border-radius:14px;background:#fff;padding:12px 16px;color:#A8A29E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;max-width:712px}
+@media (min-width:800px){.chat-input{margin-left:auto;margin-right:auto}}
+.mock-term{background:#1A1A1A;color:#E7E5E4;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px}
+.term-bar{display:flex;align-items:center;background:#2A2A2A;padding:8px 14px;color:#A8A29E;font-size:12.5px}
+.term-body{padding:16px 18px}
+.term-user{color:#fff;margin-bottom:10px}.term-caret{color:#D97757}
+.term-tool{color:#E7E5E4}.dot-or{color:#D97757}.term-tool b{color:#FDBA74}
+.term-sub{color:#78716C;margin:0 0 10px 18px}
+.term-reply{display:flex;gap:8px}.dot-wh{color:#E7E5E4}
+.mock-term th,.mock-term td{border-color:#44403C}
+.mock-cx{background:#fff;color:#18181B;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;border-color:#E4E4E7}
+.cx-bar{display:flex;align-items:center;background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:9px 14px;font-size:13px;color:#52525B}
+.cx-title{margin:0 auto;font-weight:600;color:#18181B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+.cx-open{font-size:12px;border:1px solid #E4E4E7;background:#fff;border-radius:8px;padding:2px 9px}
+.cx-wrap{display:flex}
+.cx-side{width:190px;background:#FAFAFA;border-right:1px solid #E4E4E7;padding:14px 12px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#52525B}
+.cx-side b{color:#18181B}.cx-side small{font-size:10.5px;letter-spacing:.08em;color:#A1A1AA;margin-top:8px}
+.cx-side .on{color:#18181B;font-weight:600}.cx-side .sub{padding-left:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#EFEFF1;border-radius:6px;padding:3px 8px 3px 14px}.cx-side .sub.muted{background:none}
+.cx-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.cx-thread{padding:20px 24px 8px;max-width:760px;width:100%;margin:0 auto;box-sizing:border-box}
+.cx-user{margin-left:auto;max-width:82%;width:fit-content;background:#F4F4F5;border-radius:16px;padding:10px 14px;margin-bottom:14px}
+.cx-chip{background:#EEF2FF;color:#4338CA;border-radius:6px;padding:1px 7px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}
+.cx-step{color:#71717A;font-size:13px;margin-bottom:8px}.cx-ic{color:#A1A1AA;margin-right:4px}
+.cx-diff{border:1px solid #E4E4E7;border-radius:12px;margin:6px 0 12px;font-size:13px;overflow:hidden}
+.cx-diff-h{display:flex;justify-content:space-between;background:#FAFAFA;padding:7px 12px;border-bottom:1px solid #E4E4E7}
+.cx-diff-r{display:flex;justify-content:space-between;padding:6px 12px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}.cx-diff-r+.cx-diff-r{border-top:1px solid #F4F4F5}
+.cx-add{color:#16A34A;font-weight:600}
+.cx-reply{line-height:1.6}
+.cx-input{margin:6px 24px 16px;border:1px solid #E4E4E7;border-radius:18px;padding:12px 14px 8px;color:#A1A1AA;font-size:13.5px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.cx-chips{display:flex;gap:8px;margin-top:10px;font-size:12px;color:#52525B;align-items:center}.cx-chips span{border:1px solid #E4E4E7;border-radius:99px;padding:2px 9px}
+.cx-chips .cx-send{margin-left:auto;background:#18181B;color:#fff;border-color:#18181B;border-radius:50%;padding:2px 8px}
+.cx-skills{padding:4px 0}.cx-sk-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}.cx-sk-h span{font-size:12.5px;color:#71717A}
+.cx-sk{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #F4F4F5}.cx-sk>span:nth-child(2){flex:1;min-width:0}.cx-sk b{display:block;font-size:13.5px}.cx-sk small{color:#71717A;font-size:12px}
+.mock-label{font-size:11.5px;color:var(--muted);margin-top:6px}
+.cmp{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.cmp th,.cmp td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{background:var(--soft)}
+.cmp td.pro{background:#FFFBEB;font-weight:600}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:22px;padding:22px 26px;border-radius:18px;background:linear-gradient(135deg,#1C1917,#3B2A20);color:#fff}
+.cta h3{margin:0 0 4px;font-size:22px}.cta p{margin:0;color:#D6CFC6}
+.btn{display:inline-block;background:linear-gradient(135deg,#F59E0B,#EA580C);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+.pros{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
+.pros div{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:12px 14px;font-size:14.5px}
+.luong{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.luong h3{margin:0 0 2px;font-size:17px}.luong p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.chain .step{flex:1;min-width:160px;background:var(--soft);border-radius:12px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;font-size:13.5px}
+.chain .step small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.chain .step code{background:#fff;width:fit-content}
+.chain .arrow{align-self:center;color:var(--muted)}
+.proto{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:14px 18px;font-size:14.5px}.proto code{background:#3A332E;color:#FDE68A}
+.files{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.fcard{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #E4DED3;border-radius:12px;padding:8px 14px 8px 8px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;min-width:230px}
+.fcard.dark{background:#232323;border-color:#3A3A3A;color:#E7E5E4}
+.fcard b{display:block;font-size:13px}.fcard small{color:#8A8580;font-size:11.5px}
+.fic{width:36px;height:36px;border-radius:8px;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center;font-family:'Be Vietnam Pro',sans-serif}
+.shot-cap{font-size:13px;color:var(--muted);margin:18px 0 8px}
+.shot{max-width:780px}
+.ac{display:flex;gap:14px;padding:3px 8px;border-radius:6px;font-size:13px}.ac b{color:#E7E5E4;min-width:300px;font-weight:500}.ac span{color:#8A8580}
+.ac.on{background:#3A2A22}.ac.on b{color:#FDBA74}
+.sk-page{padding:18px 22px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.sk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:18px}
+.up{font-size:13px;background:#1F1E1D;color:#fff;padding:6px 12px;border-radius:8px}
+.sk-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #ECE6DC}
+.sk-row b{display:block;font-size:13.5px}.sk-row small{color:#8A8580;font-size:12px}.sk-row>span:nth-child(2){flex:1}
+.sk-ic{width:34px;height:34px;border-radius:9px;background:#D7261E;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center}
+.tog{width:34px;height:20px;border-radius:99px;background:#D6D3D1;position:relative}.tog:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.tog.on{background:#D97757}.tog.on:after{left:16px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.rules div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:42px;width:auto}
+.copy{float:right;font-size:12px;border:1px solid #57534E;background:none;color:#D6D3D1;border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit}
+@media (max-width:760px){nav.menu{display:none}.desk-side,.cx-side{display:none}}
+:root{--accent:#B45309}</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a class="logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140" role="img" aria-label="Kit Việt - sản phẩm của MochiStudio">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6 6)">
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvBg)"/>
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvShine)"/>
+    <rect x="23" y="80" width="80" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+    <rect x="23" y="97" width="55" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+    <text x="23" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+    <path transform="translate(100 30) scale(1.3)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+  </g>
+  <text x="160" y="82" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5" fill="#1C1917">Kit <tspan fill="#D7261E">Việt</tspan></text>
+  <text x="163" y="118" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="20" font-weight="500" letter-spacing=".3" fill="#78716C">Sản phẩm của <tspan font-weight="700" fill="#44403C">MochiStudio</tspan> · mochistudio.io.vn</text>
+</svg>
+</a>
+<nav class="menu"><a href="#cai-dat">Cài đặt</a><a href="#danh-muc">Danh mục</a><a href="#tro-ly">Trợ lý</a><a href="#day-chuyen">Dây chuyền</a><a href="#vi-du">Ví dụ</a><a href="#luong">Luồng</a><a href="#free-pro">Free vs Pro</a><a href="#hoi-dap">Hỏi đáp</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="badge free">BẢN FREE</span> <span class="badge">Kit Việt · v1.1.0</span>
+  <h1>Bộ AI Agent cho <span>Giáo viên - Đào tạo</span></h1>
+  <p class="lead">Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ. Bộ skill cho giáo viên phổ thông và giảng viên: soạn kế hoạch bài dạy theo GDPT 2018, tìm tư liệu có nguồn, dựng slide lên lớp, ra đề có ma trận - đặc tả - đáp án đã soát độc lập, viết nhận xét học bạ, nhắn phụ huynh, lo hồ sơ chủ nhiệm và tổ chuyên môn. Mọi skill nhắc che tên học sinh trước khi dán AI, không bịa số liệu sáng kiến, và luôn dặn đối chiếu văn bản hướng dẫn hiện hành của Bộ, Sở, Phòng.</p>
+  <div class="stats">
+    <div class="stat"><b>38</b><span>skill (cách làm)</span></div>
+    <div class="stat"><b>15</b><span>trợ lý (agent)</span></div>
+    <div class="stat"><b>1</b><span>dây chuyền</span></div>
+    <div class="stat"><b>4</b><span>luồng làm việc</span></div>
+    <div class="stat"><b>4</b><span>định dạng xuất file</span></div>
+    <div class="stat"><b>3</b><span>nền tảng</span></div>
+  </div>
+  <div class="who"><span>Giáo viên tiểu học, THCS, THPT</span><span>Giáo viên chủ nhiệm</span><span>Tổ trưởng, tổ phó chuyên môn</span><span>Giảng viên, trainer trung tâm</span></div>
+</div></div>
+
+<section id="cai-dat"><div class="wrap">
+  <h2>Cài đặt trong 3 phút</h2><p class="sub">Chọn nơi bạn dùng AI. Cùng một bộ, chạy được cả ba.</p>
+  <div class="tabs" data-tabs><button class="tab on" data-tab="web">Claude Desktop / web</button><button class="tab" data-tab="cc">Claude Code</button><button class="tab" data-tab="codex">ChatGPT Codex</button></div>
+  <div class="panel" data-panel="cc"><ol class="steps"><li>Mở thư mục <code>claude-code/</code> trong bộ này, thấy thư mục <code>kv</code>.</li><li>Copy nguyên thư mục <code>kv</code> vào <code>C:\Users\&lt;tên bạn&gt;\.claude\skills\</code> (Windows) hoặc <code>~/.claude/skills/</code> (macOS/Linux). Kết quả: <code>.claude/skills/kv/.claude-plugin/plugin.json</code>.</li><li>Mở lại Claude Code (hoặc gõ <code>/reload-plugins</code>). Gõ <code>/kv:</code> để thấy danh sách skill.</li><li>Đã cài bộ nghề khác? Copy đè vào cùng thư mục <code>kv</code>, các bộ tự gộp. Bản Pro copy đè lên bản Free.</li></ol>
+    <pre class="tree">C:\Users\&lt;tên bạn&gt;\.claude\skills\
+└── kv\
+    ├── .claude-plugin\plugin.json
+    ├── skills\      38 skill  -> gọi /kv:&lt;tên&gt;
+    └── agents\      15 trợ lý -> "Dùng agent kv:&lt;tên&gt; ..."</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/kv:</code> trong Claude Code</p><div class="mock mock-term shot"><div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div><div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> /kv:</div>
+    <div class="ac on"><b>/kv:bai-trinh-chieu-tu-giao-an</b><span>Dựng bài trình chiếu lên lớp từ kế hoạch bài dạy đã soạn: mỗi hoạt độn...</span></div><div class="ac"><b>/kv:bao-cao-to-chuyen-mon</b><span>Viết kế hoạch, báo cáo sơ kết/tổng kết, biên bản sinh hoạt tổ chuyên m...</span></div><div class="ac"><b>/kv:day-chuyen-de-kiem-tra-dinh-ky</b><span>Dây chuyền ra đề kiểm tra định kỳ: thu thập yêu cầu cần đạt -&gt; soạn ma...</span></div><div class="ac"><b>/kv:day-hoc-phan-hoa-trinh-do</b><span>Thiết kế bài tập, nhiệm vụ 3 mức cho lớp nhiều trình độ, kèm kế hoạch ...</span></div><div class="ac"><b>/kv:de-cuong-chuyen-de-bai-giang</b><span>Lập đề cương chuyên đề sinh hoạt chuyên môn, bài giảng tập huấn, học p...</span></div><div class="ac"><b>/kv:de-cuong-nckh-su-pham-ung-dung</b><span>Lập đề cương nghiên cứu khoa học sư phạm ứng dụng, sáng kiến có thực n...</span></div>
+    <div class="term-sub">↑↓ chọn · Enter chạy · 38 skill của Kit Việt</div></div></div>
+    <div class="note">Claude Code là nơi dùng đầy đủ nhất: skill, agent và dây chuyền nhiều trợ lý. Có sẵn trong tab <b>Code</b> của ứng dụng Claude Desktop, không cần biết lập trình.</div></div>
+  <div class="panel on" data-panel="web"><ol class="steps"><li>Vào claude.ai hoặc ứng dụng Claude Desktop -&gt; <strong>Customize -&gt; Skills</strong> (cần gói Pro trở lên, bật Code execution).</li><li>Bấm <strong>Upload skill</strong>, chọn từng file trong thư mục <code>claude-web/</code> (mỗi file <code>kv-&lt;tên&gt;.zip</code> là một skill).</li><li>Bật công tắc skill vừa tải. Nên tải 5-7 skill bạn dùng nhiều nhất trước.</li><li>Gọi: nói việc bình thường, hoặc &quot;Dùng skill kv-&lt;tên&gt; để ...&quot;. Claude web không có agent: các dây chuyền sẽ chạy kiểu đóng vai lần lượt trong cùng cuộc trò chuyện.</li></ol>
+    <p class="shot-cap">Màn hình mô phỏng: trang Customize > Skills sau khi tải lên</p><div class="mock mock-desktop shot"><div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude · Customize › Skills</span></div>
+    <div class="desk-wrap"><aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span><b>Customize · Skills</b></span></aside>
+    <div class="desk-main sk-page"><div class="sk-head"><b>Skills</b><span class="up">＋ Upload skill</span></div>
+    <div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-bai-trinh-chieu-tu-giao-an</b><small>Dựng bài trình chiếu lên lớp từ kế hoạch bài dạy đã soạn: mỗi hoạt động thành slide nhiệm ...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-bao-cao-to-chuyen-mon</b><small>Viết kế hoạch, báo cáo sơ kết/tổng kết, biên bản sinh hoạt tổ chuyên môn, nghiên cứu bài h...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-de-kiem-tra-dinh-ky</b><small>Dây chuyền ra đề kiểm tra định kỳ: thu thập yêu cầu cần đạt -&gt; soạn ma trận, đặc tả, đề, đ...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-day-hoc-phan-hoa-trinh-do</b><small>Thiết kế bài tập, nhiệm vụ 3 mức cho lớp nhiều trình độ, kèm kế hoạch phụ đạo học sinh yếu...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-de-cuong-chuyen-de-bai-giang</b><small>Lập đề cương chuyên đề sinh hoạt chuyên môn, bài giảng tập huấn, học phần ngắn: mục tiêu, ...</small></span><span class="tog"></span></div>
+    </div></div></div>
+    <div class="note">Claude web và Desktop chat dùng được toàn bộ skill. Riêng agent chỉ có trong Claude Code và Codex. Với dây chuyền, Claude sẽ tự đóng ba vai thu thập, thực thi và gác cổng lần lượt.</div></div>
+  <div class="panel" data-panel="codex"><ol class="steps"><li>Copy các thư mục trong <code>codex/.agents/skills/</code> vào <code>~/.agents/skills/</code> (dùng mọi nơi) hoặc <code>&lt;thư mục làm việc&gt;/.agents/skills/</code>.</li><li>Copy các file <code>.toml</code> trong <code>codex/.codex/agents/</code> vào <code>~/.codex/agents/</code>.</li><li>Copy <code>codex/AGENTS-mau.md</code> ra thư mục làm việc, đổi tên thành <code>AGENTS.md</code>, điền thông tin của bạn.</li><li>Mở Codex, gõ <code>/skills</code> để kiểm tra, gọi bằng <code>$kv-&lt;tên&gt;</code> hoặc nói việc bình thường.</li></ol>
+    <pre class="tree">~/.agents/skills/kv-&lt;tên&gt;/SKILL.md     skill
+~/.codex/agents/kv-&lt;tên&gt;.toml         trợ lý
+&lt;thư mục làm việc&gt;/AGENTS.md          hồ sơ của bạn</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/skills</code> trong Codex</p><div class="shot"><div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Skills</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Skills</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-skills"><div class="cx-sk-h"><b>Skills</b><span>38 skill · ~/.agents/skills</span></div>
+    <div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-bai-trinh-chieu-tu-giao-an</b><small>Dựng bài trình chiếu lên lớp từ kế hoạch bài dạy đã soạn: mỗi hoạt động thành sl...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-bao-cao-to-chuyen-mon</b><small>Viết kế hoạch, báo cáo sơ kết/tổng kết, biên bản sinh hoạt tổ chuyên môn, nghiên...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-de-kiem-tra-dinh-ky</b><small>Dây chuyền ra đề kiểm tra định kỳ: thu thập yêu cầu cần đạt -&gt; soạn ma trận, đặc...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-day-hoc-phan-hoa-trinh-do</b><small>Thiết kế bài tập, nhiệm vụ 3 mức cho lớp nhiều trình độ, kèm kế hoạch phụ đạo họ...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-de-cuong-chuyen-de-bai-giang</b><small>Lập đề cương chuyên đề sinh hoạt chuyên môn, bài giảng tập huấn, học phần ngắn: ...</small></span><span class="tog on"></span></div>
+    <div class="cx-step">… và 33 skill khác. Gọi bằng <code>$kv-&lt;tên&gt;</code> trong ô soạn.</div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div></div></div>
+</div></section>
+
+<section id="danh-muc"><div class="wrap">
+  <h2>Gặp việc gì thì gọi cái gì</h2><p class="sub">Nói việc bình thường, Claude tự chọn skill. Hoặc gọi thẳng tên: <code>/kv:&lt;tên&gt;</code> (Claude Code), <code>kv-&lt;tên&gt;</code> (Claude web, Codex).</p>
+  <input id="q" class="search" placeholder="Tìm việc: đối chiếu, báo cáo, khách hàng...">
+  <div class="groups"><div class="group"><h3>Soạn bài và lên lớp</h3><div class="sk"><span class="nm">kv:ke-hoach-bai-day-gdpt</span><span class="vc">Soạn giáo án theo GDPT 2018, đủ mục tiêu, 4 hoạt động, sản phẩm học sinh</span><span class="ds">Soạn kế hoạch bài dạy (giáo án) theo chương trình GDPT 2018, đủ mục tiêu, thiết bị, tiến trình hoạt động. Dùng khi nói &quot;soạn giáo án&quot;, &quot;KHBD theo 5512&quot;, &quot;giáo án tiết...&quot;, &quot;soạn bài mới&quot;.</span></div><div class="sk"><span class="nm">kv:phieu-hoc-tap-nhom</span><span class="vc">Làm phiếu học tập, phiếu thảo luận nhóm in được ngay, kèm đáp án cho giáo viên</span><span class="ds">Soạn phiếu học tập cá nhân/nhóm có nhiệm vụ rõ, phân vai, thời gian, đáp án gợi ý cho giáo viên. Dùng khi nói &quot;làm phiếu học tập&quot;, &quot;phiếu thảo luận nhóm&quot;, &quot;hoạt động nhóm cho tiết...&quot;.</span></div><div class="sk"><span class="nm">kv:day-hoc-phan-hoa-trinh-do</span><span class="vc">Ra nhiệm vụ 3 mức cho lớp không đều, lập kế hoạch phụ đạo - bồi dưỡng</span><span class="ds">Thiết kế bài tập, nhiệm vụ 3 mức cho lớp nhiều trình độ, kèm kế hoạch phụ đạo học sinh yếu, bồi dưỡng học sinh khá giỏi. Dùng khi nói &quot;phân hóa&quot;, &quot;lớp không đều&quot;, &quot;phụ đạo HS yếu&quot;.</span></div><div class="sk"><span class="nm">kv:tro-choi-khoi-dong-on-tap</span><span class="vc">Nghĩ trò chơi khởi động, ôn tập gắn đúng nội dung bài, chơi vừa số phút</span><span class="ds">Thiết kế trò chơi khởi động, củng cố, ôn tập gắn nội dung bài: luật chơi, câu hỏi, đáp án, thời gian. Dùng khi nói &quot;trò chơi khởi động&quot;, &quot;game ôn tập&quot;, &quot;Ai là triệu phú&quot;, &quot;Rung chuông vàng&quot;.</span></div><div class="sk"><span class="nm">kv:bai-trinh-chieu-tu-giao-an</span><span class="vc">Biến giáo án đã duyệt thành dàn slide lên lớp, xuất PowerPoint có ghi chú người dạy</span><span class="ds">Dựng bài trình chiếu lên lớp từ kế hoạch bài dạy đã soạn: mỗi hoạt động thành slide nhiệm vụ, câu hỏi, đáp án, rồi xuất PowerPoint. Dùng khi nói &quot;làm slide bài giảng&quot;, &quot;soạn powerpoint từ giáo án&quot;.</span></div></div><div class="group"><h3>Kiểm tra, đánh giá</h3><div class="sk"><span class="nm">kv:ma-tran-dac-ta-de-kiem-tra</span><span class="vc">Làm ma trận, bản đặc tả, đề và hướng dẫn chấm khớp nhau từng câu</span><span class="ds">Lập ma trận, bản đặc tả và đề kiểm tra giữa kỳ/cuối kỳ kèm đáp án, hướng dẫn chấm. Dùng khi nói &quot;ra đề kiểm tra&quot;, &quot;làm ma trận đề&quot;, &quot;bản đặc tả&quot;, &quot;đề cuối kỳ 1&quot;.</span></div><div class="sk"><span class="nm">kv:ngan-hang-cau-hoi-trac-nghiem</span><span class="vc">Soạn kho câu trắc nghiệm theo mức Biết - Hiểu - Vận dụng, có lời giải và lý do nhiễu</span><span class="ds">Soạn ngân hàng câu hỏi trắc nghiệm theo mức Biết - Hiểu - Vận dụng, có đáp án, lời giải, lý do phương án nhiễu. Dùng khi nói &quot;soạn câu trắc nghiệm&quot;, &quot;ngân hàng đề&quot;, &quot;câu hỏi ôn tập&quot;.</span></div><div class="sk"><span class="nm">kv:rubric-cham-bai-hoc-sinh</span><span class="vc">Làm rubric chấm bài viết, dự án, thuyết trình để chấm công bằng và nhanh</span><span class="ds">Xây rubric (bảng tiêu chí) chấm bài, sản phẩm dự án, thuyết trình, có mô tả từng mức và điểm. Dùng khi nói &quot;làm rubric&quot;, &quot;tiêu chí chấm&quot;, &quot;thang đánh giá sản phẩm nhóm&quot;.</span></div><div class="sk"><span class="nm">kv:phan-hoi-bai-viet-hoc-sinh</span><span class="vc">Góp ý bài văn theo rubric, chỉ lỗi cụ thể, báo đoạn nghi chép mạng mà không kết tội</span><span class="ds">Nhận xét, góp ý bài viết (bài văn, đoạn văn, bài luận) của học sinh theo rubric, chỉ lỗi cụ thể, gợi ý sửa, cảnh báo đoạn nghi chép mạng. Dùng khi nói &quot;chấm bài văn&quot;, &quot;nhận xét bài viết&quot;.</span></div><div class="sk"><span class="nm">kv:day-chuyen-de-kiem-tra-dinh-ky</span><span class="vc">Ra đề cuối kỳ từ A đến Z: thu thập yêu cầu cần đạt -&gt; soạn -&gt; soát đáp án độc lập</span><span class="ds">Dây chuyền ra đề kiểm tra định kỳ: thu thập yêu cầu cần đạt -&gt; soạn ma trận, đặc tả, đề, đáp án -&gt; soát đáp án và an toàn. Dùng khi nói &quot;ra đề trọn bộ&quot;, &quot;làm đề cuối kỳ từ A đến Z&quot;.</span></div><div class="sk"><span class="nm">kv:ke-hoach-on-tap-cuoi-ky</span><span class="vc">Chia buổi ôn theo số tiết còn lại, ưu tiên phần lớp yếu, kèm đề cương ôn tập phát học sinh</span><span class="ds">Lập kế hoạch ôn tập cuối kỳ theo buổi và đề cương ôn tập cho học sinh, bám phạm vi kiểm tra và chỗ lớp còn yếu. Dùng khi nói &quot;kế hoạch ôn tập&quot;, &quot;đề cương ôn thi học kỳ&quot;, &quot;ôn cuối kỳ&quot;.</span></div></div><div class="group"><h3>Chủ nhiệm và phụ huynh</h3><div class="sk"><span class="nm">kv:nhan-xet-hoc-ba</span><span class="vc">Viết nhận xét học bạ cả lớp: cụ thể từng em, giọng tích cực, đúng giới hạn ký tự</span><span class="ds">Viết nhận xét học sinh cho học bạ, sổ theo dõi, phiếu liên lạc: giọng tích cực, cụ thể, không trùng lặp. Dùng khi nói &quot;viết nhận xét học bạ&quot;, &quot;nhận xét cuối kỳ&quot;, &quot;nhận xét môn&quot;, &quot;lời phê&quot;.</span></div><div class="sk"><span class="nm">kv:tin-nhan-phu-huynh-zalo</span><span class="vc">Soạn tin nhóm Zalo lớp và tin nhắn riêng cho chuyện nhạy cảm</span><span class="ds">Soạn tin nhắn, thông báo gửi phụ huynh qua Zalo nhóm lớp hoặc nhắn riêng, cả chuyện nhạy cảm (vi phạm, học sa sút, mâu thuẫn). Dùng khi nói &quot;nhắn phụ huynh&quot;, &quot;thông báo nhóm lớp&quot;, &quot;báo phụ huynh&quot;.</span></div><div class="sk"><span class="nm">kv:ke-hoach-chu-nhiem-lop</span><span class="vc">Lập kế hoạch chủ nhiệm năm, tháng, soạn tiết sinh hoạt lớp</span><span class="ds">Lập kế hoạch chủ nhiệm năm học/học kỳ/tháng: đặc điểm lớp, mục tiêu, việc theo tháng, sinh hoạt lớp theo chủ đề. Dùng khi nói &quot;kế hoạch chủ nhiệm&quot;, &quot;kế hoạch GVCN&quot;, &quot;tiết sinh hoạt lớp&quot;.</span></div><div class="sk"><span class="nm">kv:hop-phu-huynh-lop</span><span class="vc">Chuẩn bị họp phụ huynh: chương trình, bài nói, câu hỏi khó, biên bản</span><span class="ds">Chuẩn bị họp phụ huynh: chương trình, bài nói của GVCN, số liệu lớp, câu hỏi khó, biên bản họp. Dùng khi nói &quot;chuẩn bị họp phụ huynh&quot;, &quot;nội dung họp PHHS&quot;, &quot;biên bản họp phụ huynh&quot;.</span></div></div><div class="group"><h3>Tổ chuyên môn và phát triển nghề</h3><div class="sk"><span class="nm">kv:bao-cao-to-chuyen-mon</span><span class="vc">Viết kế hoạch, biên bản sinh hoạt, báo cáo sơ kết - tổng kết của tổ</span><span class="ds">Viết kế hoạch, báo cáo sơ kết/tổng kết, biên bản sinh hoạt tổ chuyên môn, nghiên cứu bài học. Dùng khi nói &quot;báo cáo tổ&quot;, &quot;biên bản sinh hoạt tổ&quot;, &quot;kế hoạch tổ chuyên môn&quot;, &quot;sơ kết học kỳ&quot;.</span></div><div class="sk"><span class="nm">kv:sang-kien-kinh-nghiem</span><span class="vc">Dựng khung và viết sáng kiến từ việc đã làm thật, không bịa số thực nghiệm</span><span class="ds">Dựng khung và viết sáng kiến kinh nghiệm/biện pháp giáo dục từ việc giáo viên đã làm thật, chống đạo văn, không bịa số thực nghiệm. Dùng khi nói &quot;viết sáng kiến&quot;, &quot;SKKN&quot;, &quot;biện pháp...&quot;.</span></div></div><div class="group"><h3>Tư liệu, chuyên đề và nghiên cứu</h3><div class="sk"><span class="nm">kv:nghien-cuu-tu-lieu-bai-giang</span><span class="vc">Tìm kiến thức, số liệu, ví dụ cho bài từ SGK, Bộ GD&amp;ĐT, NXB giáo dục, tạp chí - ý nào cũng có nguồn</span><span class="ds">Tìm tư liệu bài giảng từ nguồn uy tín (chương trình, SGK, NXB giáo dục, tạp chí giáo dục), mỗi ý có trích nguồn. Dùng khi nói &quot;tìm tư liệu bài&quot;, &quot;số liệu cho bài giảng&quot;, &quot;ví dụ thực tế có nguồn&quot;.</span></div><div class="sk"><span class="nm">kv:de-cuong-chuyen-de-bai-giang</span><span class="vc">Lập đề cương chuyên đề sinh hoạt chuyên môn, bồi dưỡng, bài giảng tập huấn khớp mục tiêu - thời lượng</span><span class="ds">Lập đề cương chuyên đề sinh hoạt chuyên môn, bài giảng tập huấn, học phần ngắn: mục tiêu, nội dung, thời lượng, hoạt động, đánh giá, tài liệu. Dùng khi nói &quot;đề cương chuyên đề&quot;, &quot;đề cương bài giảng&quot;.</span></div><div class="sk"><span class="nm">kv:de-cuong-nckh-su-pham-ung-dung</span><span class="vc">Đề cương NCKHSPƯD: vấn đề, giả thuyết, thiết kế đo trước - sau, công cụ đo - không bịa kết quả</span><span class="ds">Lập đề cương nghiên cứu khoa học sư phạm ứng dụng, sáng kiến có thực nghiệm: vấn đề, giả thuyết, thiết kế đo trước - sau, công cụ đo. Dùng khi nói &quot;đề cương NCKHSPƯD&quot;, &quot;đề cương nghiên cứu&quot;.</span></div></div><div class="group"><h3>Đi kèm từ bộ chung (core)</h3><div class="sk"><span class="nm">kv:an-thong-tin-nhay-cam</span><span class="vc">Che tên, ngày sinh, SĐT học sinh và phụ huynh trước khi dán vào AI</span><span class="ds">Che CCCD, số tài khoản, SĐT, lương, bệnh án... trước khi gửi ra ngoài hoặc dán vào AI. Dùng khi nói &quot;che thông tin&quot;, &quot;ẩn số CCCD&quot;, &quot;xóa dữ liệu cá nhân&quot;, &quot;gửi file này có sao không&quot;.</span></div><div class="sk"><span class="nm">kv:kiem-tra-chong-bia</span><span class="vc">Soát báo cáo, sáng kiến xem có số nào không khớp số liệu gốc</span><span class="ds">Soát bản nháp trước khi gửi để bắt số bịa, số tự suy, khẳng định không nguồn. Dùng khi nói &quot;kiểm tra lại số&quot;, &quot;bản này gửi được chưa&quot;, &quot;có bịa không&quot;, &quot;đối chiếu với file gốc&quot;.</span></div><div class="sk"><span class="nm">kv:ghi-chu-hop</span><span class="vc">Biến ghi chép họp tổ, họp phụ huynh thành biên bản gọn</span><span class="ds">Biến ghi chép, bản ghi âm chép lại thành biên bản họp + bảng đầu việc (ai, làm gì, hạn). Dùng khi nói &quot;làm biên bản&quot;, &quot;tóm tắt cuộc họp&quot;, &quot;chốt đầu việc&quot;, &quot;ghi chú họp&quot;.</span></div><div class="sk"><span class="nm">kv:dieu-phoi-day-chuyen</span><span class="vc">Ghép các agent của nghề thành dây chuyền theo việc riêng của bạn</span><span class="ds">Giao thức chạy Kit Việt cho việc nhiều khâu - lập kế hoạch, thu thập, soạn, gác cổng QUA/CHẶN, bàn giao trong .kv-run/. Dùng khi nói &quot;chạy dây chuyền&quot;, &quot;làm từ A đến Z&quot;, &quot;đọc rồi viết rồi soát&quot;.</span></div></div><div class="group"><h3>Kỹ năng nền - dùng chéo mọi việc</h3><div class="sk"><span class="nm">kv:dong-goi-skill-moi</span><span class="vc">Biến một việc vừa làm tốt thành skill mới theo khuôn Kit Việt để lần sau gọi lại. Dùng khi nói &quot;lưu cách làm này&quot;, &quot;tạo skill mới&quot;, &quot;đóng gói thành skill&quot;, &quot;lần sau làm y vậy&quot;.</span></div><div class="sk"><span class="nm">kv:ho-so-ca-nhan</span><span class="vc">Phỏng vấn 8-10 câu để viết hồ sơ CLAUDE.md / AGENTS.md: vai trò, đơn vị, khách, giọng văn, từ cấm, quy tắc. Dùng khi nói &quot;tạo hồ sơ&quot;, &quot;cho AI biết về tôi&quot;, &quot;viết CLAUDE.md&quot;, &quot;cài đặt ban đầu&quot;.</span></div><div class="sk"><span class="nm">kv:lap-ke-hoach-tuan</span><span class="vc">Xếp việc trong tuần theo giờ thật có được, ưu tiên rõ, dám nói khi không đủ giờ. Dùng khi nói &quot;lên kế hoạch tuần&quot;, &quot;tuần này làm gì trước&quot;, &quot;việc nhiều quá&quot;, &quot;xếp lịch giúp&quot;.</span></div><div class="sk"><span class="nm">kv:nghien-cuu-nguon-uy-tin</span><span class="vc">Tra cứu tài liệu theo bậc nguồn uy tín, ghi trích dẫn đủ (đơn vị, năm, link, ngày truy cập), chỉ ra mâu thuẫn và chỗ chưa có nguồn. Dùng khi nói &quot;tìm tài liệu&quot;, &quot;nghiên cứu giúp&quot;, &quot;nguồn nào nói&quot;.</span></div><div class="sk"><span class="nm">kv:tao-bang-kiem</span><span class="vc">Tạo bảng kiểm (checklist) cho việc lặp lại hoặc dễ sót bước: mỗi mục kiểm được, có người và thời điểm. Dùng khi nói &quot;làm checklist&quot;, &quot;bảng kiểm&quot;, &quot;danh sách việc cần làm khi...&quot;, &quot;hay quên bước&quot;.</span></div><div class="sk"><span class="nm">kv:tom-tat-tai-lieu</span><span class="vc">Tóm tắt tài liệu dài (báo cáo, hợp đồng, công văn, PDF) thành ý chính có trích vị trí. Dùng khi nói &quot;tóm tắt giúp&quot;, &quot;đọc file này nói gì&quot;, &quot;rút ý chính&quot;, &quot;tài liệu dài quá&quot;.</span></div><div class="sk"><span class="nm">kv:viet-bao-cao</span><span class="vc">Viết báo cáo công việc (tuần, tháng, dự án, sự cố) từ số liệu và ghi chú có sẵn, kết luận đặt đầu. Dùng khi nói &quot;viết báo cáo&quot;, &quot;báo cáo tuần&quot;, &quot;tổng hợp kết quả&quot;, &quot;làm báo cáo gửi sếp&quot;.</span></div><div class="sk"><span class="nm">kv:viet-de-cuong</span><span class="vc">Lập đề cương cho báo cáo, bài giảng, đề tài nghiên cứu, đề án, thuyết minh, bài viết: mục phân cấp, nguồn dự kiến, độ dài, câu hỏi còn mở. Dùng khi nói &quot;lập đề cương&quot;, &quot;dàn ý&quot;, &quot;khung bài&quot;.</span></div><div class="sk"><span class="nm">kv:viet-email</span><span class="vc">Soạn email công việc tiếng Việt đúng xưng hô, rõ việc cần người nhận làm. Dùng khi nói &quot;viết email&quot;, &quot;trả lời mail này&quot;, &quot;soạn thư gửi khách&quot;, &quot;mail nhắc&quot;, &quot;viết lại cho lịch sự&quot;.</span></div><div class="sk"><span class="nm">kv:viet-tin-nhan-cong-viec</span><span class="vc">Soạn tin nhắn công việc qua Zalo, Teams, Messenger ngắn, đúng xưng hô, rõ việc. Dùng khi nói &quot;nhắn sếp&quot;, &quot;nhắn nhóm&quot;, &quot;tin Zalo cho khách&quot;, &quot;nhắc việc&quot;, &quot;nhắn sao cho khéo&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-excel</span><span class="vc">Xuất bảng markdown/CSV thành Excel .xlsx: mỗi bảng một sheet, tiêu đề đậm, cố định dòng đầu, số kiểu Việt Nam, giữ công thức. Dùng khi nói &quot;xuất Excel&quot;, &quot;ra file xlsx&quot;, &quot;chuyển bảng sang Excel&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pdf</span><span class="vc">Xuất bản chốt (.docx hoặc markdown) thành PDF để gửi, in, nộp, giữ đúng dấu tiếng Việt. Dùng khi nói &quot;xuất PDF&quot;, &quot;chuyển sang pdf&quot;, &quot;làm bản pdf gửi khách&quot;, &quot;in ra pdf&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pptx</span><span class="vc">Xuất đề cương slide đã duyệt thành file PowerPoint .pptx: slide tiêu đề, slide gạch đầu dòng tối đa 6 ý, ghi chú người nói. Dùng khi nói &quot;xuất PowerPoint&quot;, &quot;ra file pptx&quot;, &quot;làm file slide&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-word</span><span class="vc">Xuất nội dung đã duyệt thành file Word .docx theo kiểu tài liệu Việt Nam: công văn, tờ trình, quyết định, báo cáo, biên bản, hợp đồng. Dùng khi nói &quot;xuất Word&quot;, &quot;ra file docx&quot;, &quot;làm thành công văn&quot;.</span></div></div><div class="group locked"><h3>Kế hoạch và thiết kế dạy học (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:ke-hoach-day-hoc-mon-nam-hoc<span class="lock">🔒 PRO</span></span><span class="vc">Phân phối tiết cả năm theo tuần, gắn YCCĐ, thiết bị, kiểm tra định kỳ, khớp tổng tiết chương trình</span></div><div class="sk"><span class="nm">kv:chu-de-stem-du-an-hoc-tap<span class="lock">🔒 PRO</span></span><span class="vc">Thiết kế chủ đề STEM/dự án nhiều tuần: vấn đề thực tiễn, tiêu chí sản phẩm đo được, an toàn, rubric</span></div><div class="sk"><span class="nm">kv:kich-ban-video-bai-giang-elearning<span class="lock">🔒 PRO</span></span><span class="vc">Viết kịch bản video bài giảng: phân cảnh, lời thoại tính thời lượng, tương tác, phụ đề, bản quyền</span></div><div class="sk"><span class="nm">kv:day-chuyen-bai-giang-chu-de<span class="lock">🔒 PRO</span></span><span class="vc">Soạn trọn chủ đề nhiều tiết: KHBD, phiếu, slide có lời giảng, soát theo tiêu chí dự giờ, xuất PPTX mẫu trường</span></div></div><div class="group locked"><h3>Đánh giá và hỗ trợ học sinh (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:phan-tich-ket-qua-kiem-tra-lop<span class="lock">🔒 PRO</span></span><span class="vc">Từ file điểm ra phổ điểm, câu sai nhiều, YCCĐ yếu, nhóm cần phụ đạo theo mã</span></div><div class="sk"><span class="nm">kv:day-chuyen-phan-tich-diem-phu-dao<span class="lock">🔒 PRO</span></span><span class="vc">Từ điểm đến hành động: phân tích -&gt; kế hoạch phụ đạo, phiếu ôn, tin phụ huynh -&gt; soát số liệu</span></div><div class="sk"><span class="nm">kv:de-on-thi-chuyen-cap-tot-nghiep<span class="lock">🔒 PRO</span></span><span class="vc">Đề ôn thi vào 10, tốt nghiệp THPT đúng cấu trúc giáo viên đưa, có bảng đối chiếu cấu trúc</span></div><div class="sk"><span class="nm">kv:ke-hoach-giao-duc-ca-nhan<span class="lock">🔒 PRO</span></span><span class="vc">KHGDCN cho học sinh khuyết tật, cần hỗ trợ: mục tiêu SMART, biện pháp, theo dõi tháng</span></div><div class="sk"><span class="nm">kv:ke-hoach-boi-duong-hoc-sinh-gioi<span class="lock">🔒 PRO</span></span><span class="vc">Bồi dưỡng đội tuyển: phân tích đề thi, chuyên đề theo tuần, đề luyện, theo dõi tiến bộ</span></div></div><div class="group locked"><h3>Phát triển nghề nghiệp và đào tạo (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:sinh-hoat-chuyen-mon-nghien-cuu-bai-hoc<span class="lock">🔒 PRO</span></span><span class="vc">Chu trình nghiên cứu bài học: vấn đề về học sinh, thiết kế chung, quan sát, suy ngẫm, áp dụng</span></div><div class="sk"><span class="nm">kv:ho-so-thi-giao-vien-day-gioi<span class="lock">🔒 PRO</span></span><span class="vc">Hồ sơ thi GVDG: bài trình bày biện pháp, bài dạy thi, kịch bản lớp lạ, câu hỏi hội đồng</span></div><div class="sk"><span class="nm">kv:danh-gia-chuan-nghe-nghiep-giao-vien<span class="lock">🔒 PRO</span></span><span class="vc">Tự đánh giá chuẩn nghề nghiệp: ghép minh chứng từng tiêu chí, đề xuất mức, kế hoạch bồi dưỡng</span></div><div class="sk"><span class="nm">kv:khoa-dao-tao-doanh-nghiep-kirkpatrick<span class="lock">🔒 PRO</span></span><span class="vc">Thiết kế khóa đào tạo doanh nghiệp và kế hoạch đánh giá 4 cấp Kirkpatrick</span></div></div></div>
+</div></section>
+
+<section id="tro-ly"><div class="wrap">
+  <h2>Trợ lý (agent) - xếp theo quyền</h2><p class="sub">Skill là cách làm. Agent là người làm và giới hạn của người đó. Dòng <code>tools:</code> là khóa quyền thật, không phải lời dặn.</p>
+  <div class="agents"><div class="agcol"><h3>🧭 Điều phối</h3><div class="k">Lập kế hoạch, kiểm định bàn giao. Không làm thay khâu khác.</div><div class="ag"><b>kv:kiem-dinh-ban-giao</b><br>Gác cổng cuối - đối chiếu sản phẩm với 00-ke-hoach.md và các 03-soat-*.md, kết luận QUA/CHẶN, liệt kê việc người dùng phải tự quyết. Chỉ đọc, chỉ được ghi 04-ban-giao.md.<br><code>tools: Read, Glob, Grep, Write</code></div><div class="ag"><b>kv:lap-ke-hoach-dieu-phoi</b><br>Điều phối - đọc yêu cầu và nguồn, viết .kv-run/&lt;viec&gt;-&lt;yyyymmdd&gt;/00-ke-hoach.md: khâu, agent, đầu vào/ra, tiêu chí đạt, rủi ro, khâu nào song song. Chỉ ghi trong .kv-run/, không làm thay khâu nào.<br><code>tools: Read, Glob, Grep, Write</code></div></div><div class="agcol"><h3>🔎 Thu thập</h3><div class="k">Đọc, tra cứu. Cấm ghi file.</div><div class="ag"><b>kv:doc-nhieu-tai-lieu</b><br>Thu thập - đọc cả thư mục hoặc nhiều file tài liệu, rút gọn dữ kiện chính kèm vị trí trích (file, trang, dòng) để khâu sau viết. Chỉ đọc, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:nghien-cuu-nguon</b><br>Thu thập - tra cứu nhiều nguồn (web + file), xếp bậc uy tín 1-2-3, trả bảng nguồn và dữ kiện có trích dẫn, mâu thuẫn, chỗ chưa có nguồn. Chỉ đọc, không ghi file; phiên chính ghi 01-thu-thap.md.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div><div class="ag"><b>kv:tim-tu-lieu-bai-giang</b><br>Thu thập tư liệu bài giảng (kiến thức, số liệu, sự kiện, ví dụ thực tế) từ file và web theo bậc nguồn ngành giáo dục, mỗi ý kèm trích nguồn. Chỉ đọc và tra cứu, cấm ghi file.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div><div class="ag"><b>kv:tong-hop-ho-so-lop-hoc</b><br>Thu thập và tổng hợp hồ sơ lớp (bảng điểm, chuyên cần, ghi chú GVCN) thành số liệu và ghi chú theo mã học sinh, báo chỗ có dữ liệu cá nhân cần che. Chỉ đọc file, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:tra-yeu-cau-can-dat</b><br>Thu thập yêu cầu cần đạt, nội dung bài, phạm vi kiến thức từ chương trình GDPT 2018, SGK, đề cương tổ (file và nguồn chính thống) để làm đề, giáo án. Chỉ đọc và tra cứu, cấm ghi file.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div></div><div class="agcol"><h3>✍️ Thực thi</h3><div class="k">Soạn và ghi file. Cấm ra mạng.</div><div class="ag"><b>kv:soan-de-va-dap-an</b><br>Thực thi soạn ma trận, bản đặc tả, đề kiểm tra, đáp án và hướng dẫn chấm thành file theo thông số và yêu cầu cần đạt được giao; sửa đúng các dòng lỗi gác cổng báo. Được ghi file, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div><div class="ag"><b>kv:soan-van-ban-chu-nhiem</b><br>Thực thi soạn văn bản công tác chủ nhiệm từ bản tổng hợp theo mã học sinh - nhận xét học bạ, tin nhắn phụ huynh, phiếu thông tin riêng, báo cáo lớp - ghi thành file. Được ghi file, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div></div><div class="agcol"><h3>🛡️ Gác cổng</h3><div class="k">Chỉ đọc, chỉ báo lỗi. Cấm sửa.</div><div class="ag"><b>kv:soat-bao-mat</b><br>Gác cổng bảo mật - soát bản nháp trước khi gửi ra ngoài để bắt dữ liệu cá nhân, số tài khoản, thông tin nội bộ, mật khẩu, câu lệnh lạ. Trả bảng rủi ro và kết luận. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-chinh-ta-giong-van</b><br>Gác cổng câu chữ - soát chính tả, dấu tiếng Việt, xưng hô, câu rối, từ cấm trong CLAUDE.md/AGENTS.md của bản nháp trước khi gửi. Trả bảng lỗi kèm gợi ý. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-so-lieu</b><br>Gác cổng số liệu - đối chiếu mọi con số, ngày, tên và khẳng định trong bản nháp với tài liệu nguồn, trả bảng lỗi và kết luận gửi được chưa. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-an-toan-hoc-sinh</b><br>Gác cổng văn bản trường học trước khi gửi/in: dữ liệu cá nhân học sinh, chuyện riêng lên nhóm chung, nội dung không hợp lứa tuổi, giọng tiêu cực, dán nhãn. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-dap-an-de-thi</b><br>Gác cổng đề kiểm tra - giải lại từng câu độc lập, bắt đáp án sai, câu hai đáp án đúng, câu ngoài phạm vi, ma trận lệch điểm. Trả bảng lỗi và Kết luận Đạt/Chưa đạt. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-nguon-tu-lieu-giang-day</b><br>Gác cổng tư liệu bài giảng, chuyên đề, đề cương, sáng kiến trước khi dùng: ý thiếu nguồn, nguồn bậc thấp làm căn cứ, trích dẫn không khớp, số liệu cũ. Chỉ đọc, chỉ báo lỗi, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div></div></div>
+</div></section>
+
+<section id="day-chuyen"><div class="wrap">
+  <h2>Dây chuyền nhiều trợ lý</h2><p class="sub">Việc nhiều khâu đi theo khuôn: thu thập -> thực thi -> gác cổng. Gác cổng báo lỗi thì quay lại sửa. Việc nhỏ thì không cần gọi cả đội.</p>
+  <div class="flow"><h3>Ra đề kiểm tra định kỳ trọn bộ</h3>
+    <div class="row"><div class="node"><small>Thu thập</small><code>kv:tra-yeu-cau-can-dat</code></div><span class="arrow">→</span>
+    <div class="node"><small>Thực thi</small><code>kv:soan-de-va-dap-an</code></div><span class="arrow">→</span>
+    <div class="node"><small>Gác cổng</small><code>kv:soat-dap-an-de-thi</code></div></div>
+    <div class="cmd">Câu gọi mẫu: <code>Dùng kv:day-chuyen-de-kiem-tra-dinh-ky ra đề kiểm tra cuối học kỳ I môn KHTN 8, 60 phút, 70% trắc nghiệm - 30% tự luận, tỉ lệ Biết 40 - Hiểu 30 - Vận dụng 30, tài liệu trong de-kiem-tra/khtn-8-hk1/nguon/</code></div></div>
+</div></section>
+
+<section id="vi-du"><div class="wrap">
+  <h2>Ví dụ thực tế</h2><p class="sub">Câu lệnh thật và câu trả lời mẫu trên từng nền tảng.</p>
+  <div class="filters"><button class="tab on" data-filter="all">Tất cả</button><button class="tab" data-filter="claude-desktop">Claude Desktop</button><button class="tab" data-filter="claude-web">Claude web</button><button class="tab" data-filter="claude-code">Claude Code</button><button class="tab" data-filter="codex">ChatGPT Codex</button></div>
+  <div class="examples"><div class="ex" data-platform="claude-desktop">
+    <h3>Phụ huynh phàn nàn trên nhóm Zalo lớp</h3>
+    <div class="meta">Claude Desktop · skill <code>kv-tin-nhan-phu-huynh-zalo</code></div>
+    <div class="mock mock-desktop">
+  <div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude</span></div>
+  <div class="desk-wrap">
+    <aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span>Customize · Skills</span></aside>
+    <div class="desk-main"><div class="chat">
+      <div class="chat-user">Phụ huynh em Bin (lớp 6C mình chủ nhiệm) vừa viết lên nhóm Zalo lớp: &quot;Cô cho con tôi ngồi bàn cuối cả tháng nay, con về nhà kêu không nhìn thấy bảng, cô có công bằng không?&quot;. Thực ra mình đổi chỗ theo tổ mỗi 2 tuần, tuần sau Bin lên bàn 2. Soạn giúp mình trả lời.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-tin-nhan-phu-huynh-zalo</b></div><p>Nên trả lời <strong>ngắn trên nhóm</strong> và <strong>chi tiết ở tin riêng</strong>, không tranh luận công khai.</p><p><strong>Tin trên nhóm:</strong><br>&gt; Dạ cô cảm ơn chị đã phản ánh. Cô xin phép nhắn riêng chị để trao đổi kỹ hơn ạ.</p><p><strong>Tin nhắn riêng:</strong><br>&gt; Chào chị, em là cô Lan, GVCN 6C. Lớp mình đổi chỗ theo tổ 2 tuần một lần để các con đều được ngồi bàn đầu; tuần sau tổ của Bin lên bàn 2 ạ.<br>&gt; Bạn Bin nói không nhìn rõ bảng thì em rất muốn biết thêm: chị đã cho con đi khám mắt chưa ạ? Nếu con cần ngồi gần bảng vì lý do sức khỏe, em sẽ xếp cố định cho con ở bàn đầu.<br>&gt; Chị tiện thì mình gọi điện 10 phút tối nay nhé ạ.</p><ul><li>Không nêu chuyện mắt của Bin trên nhóm chung.</li><li>Cô tự đọc lại và gửi.</li></ul></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Desktop. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Nhận xét cuối kỳ cho cả lớp 4</h3>
+    <div class="meta">Claude web · skill <code>kv-nhan-xet-hoc-ba</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">Viết nhận xét môn Tiếng Việt cuối HK I cho lớp 4A, mỗi em tối đa 150 ký tự, xưng &quot;Em&quot;. Mình đã che tên:<br>HS01 - Hoàn thành tốt - đọc diễn cảm, bài viết có ý riêng, chữ hoa chưa đúng mẫu<br>HS02 - Hoàn thành - đọc hiểu tiến bộ, hay sai chính tả l/n<br>HS03 - Chưa hoàn thành - mạnh dạn phát biểu khi được gợi ý, đọc còn ngắc ngứ<br>HS04 - Hoàn thành - (chưa ghi chú)</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-nhan-xet-hoc-ba</b></div><table><thead><tr><th>Mã</th><th>Mức</th><th>Nhận xét</th><th>Ký tự</th></tr></thead><tbody><tr><td>HS01</td><td>Hoàn thành tốt</td><td>Em đọc diễn cảm, bài viết có ý riêng rất đáng khen. Em cần luyện viết chữ hoa đúng mẫu hơn nhé.</td><td>95</td></tr><tr><td>HS02</td><td>Hoàn thành</td><td>Em tiến bộ rõ ở phần đọc hiểu. Em cần đọc lại bài viết để sửa lỗi chính tả l/n trước khi nộp.</td><td>93</td></tr><tr><td>HS03</td><td>Chưa hoàn thành</td><td>Em mạnh dạn phát biểu khi được gợi ý. Em cần luyện đọc to 10 phút mỗi tối để đọc trôi chảy hơn.</td><td>96</td></tr><tr><td>HS04</td><td>Hoàn thành</td><td>[cần GV bổ sung quan sát]</td><td>-</td></tr></tbody></table><p><strong>Cô cần xem lại:</strong> HS04 chưa có ghi chú nên mình không tự viết ưu điểm. Mức đánh giá giữ đúng như cô đưa.</p></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Slide lên lớp từ giáo án Ngữ văn 6</h3>
+    <div class="meta">Claude web · skill <code>kv-bai-trinh-chieu-tu-giao-an</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">(Tải lên khbd-van-6-bai-7.docx)<br>Làm giúp cô bộ slide 45 phút từ giáo án này, lớp 6 chiếu tivi, chữ to. Có ghi chú lời dẫn ngắn cho cô, xuất PowerPoint.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-bai-trinh-chieu-tu-giao-an</b></div><p><strong>Dàn slide: Bài 7 - Ngữ văn 6 (14 slide, 45 phút)</strong></p><table><thead><tr><th>#</th><th>Hoạt động</th><th>Slide</th><th>Ghi chú cô</th></tr></thead><tbody><tr><td>2</td><td>Mở đầu</td><td>Em đoán xem: [hình gợi ý]</td><td>3 phút, gọi 2 em</td></tr><tr><td>4</td><td>Hình thành KT</td><td>Nhiệm vụ 1 - Nhóm 4 - 7 phút - Phiếu 1</td><td>Phát phiếu trước</td></tr><tr><td>5</td><td>Hình thành KT</td><td>Kết luận 1</td><td>Chốt sau khi nhóm báo cáo</td></tr><tr><td>12</td><td>Luyện tập</td><td>3 câu hỏi -&gt; đáp án ở slide 13</td><td>-</td></tr></tbody></table><ul><li>Mỗi slide tối đa 6 dòng, cỡ chữ 28 trở lên.</li><li>Giáo án chưa có đáp án câu 3 phần Luyện tập -&gt; cô bổ sung giúp.</li><li>Hình chỉ ghi gợi ý, cô chèn hình có quyền dùng.</li><li>Đã tạo <code>slide-van-6-bai-7-2026-11-03.pptx</code>.</li></ul><div class="files"><div class="fcard"><span class="fic" style="background:#C43E1C">P</span><span><b>slide-van-6-bai-7-2026-11-03.pptx</b><small>PowerPoint · Tải xuống</small></span></div></div></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Ra đề cuối kỳ có soát đáp án độc lập</h3>
+    <div class="meta">Claude Code · skill <code>kv:day-chuyen-de-kiem-tra-dinh-ky</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:day-chuyen-de-kiem-tra-dinh-ky ra đề kiểm tra cuối HK I Toán 7, 90 phút.<br>Phạm vi: chương I Số hữu tỉ, chương II Số thực, chương III Góc và đường thẳng song song.<br>Trắc nghiệm 3 điểm (12 câu), tự luận 7 điểm. Tỉ lệ Biết 40 - Hiểu 30 - Vận dụng 30.<br>Tài liệu: de-kiem-tra/toan-7-hk1/nguon/ (đề cương tổ + chương trình môn).</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:day-chuyen-de-kiem-tra-dinh-ky</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:day-chuyen-de-kiem-tra-dinh-ky</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>de-toan-7-hk1-2026-12-15.docx</b>)</div><div class="term-sub">⎿ Đã tạo de-toan-7-hk1-2026-12-15.docx</div><div class="term-tool"><span class="dot-or">●</span> Write(<b>ma-tran-toan-7-hk1-2026-12-15.xlsx</b>)</div><div class="term-sub">⎿ Đã tạo ma-tran-toan-7-hk1-2026-12-15.xlsx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Bộ đề Toán 7 - cuối HK I - Kết luận: QUA (sau 2 vòng)</strong></p><table><thead><tr><th>Khâu</th><th>Kết quả</th></tr></thead><tbody><tr><td>Thu thập (<code>kv:tra-yeu-cau-can-dat</code>)</td><td>11 YCCĐ, 11/11 có nguồn (de-cuong-to-toan.docx mục 1-3)</td></tr><tr><td>Thực thi (<code>kv:soan-de-va-dap-an</code>)</td><td>12 câu TN + 5 câu TL, tổng 10 điểm</td></tr><tr><td>Gác cổng (<code>kv:soat-dap-an-de-thi</code>)</td><td>Vòng 1: câu 5 hai đáp án đúng, câu 9 đáp án ghi C nhưng giải ra B, bài 4b thiếu điểm thành phần -&gt; CHẶN, đã sửa. Vòng 2: QUA</td></tr><tr><td>Bàn giao (<code>kv:kiem-dinh-ban-giao</code>)</td><td>Đủ 4/4 tiêu chí trong 00-ke-hoach.md</td></tr></tbody></table><ul><li>Thư mục chạy: <code>.kv-run/de-toan-7-hk1-20261215/</code> (00-04)</li><li>Phân bố đáp án TN: A3 - B3 - C3 - D3</li><li><strong>Cô cần quyết:</strong> bài 5 có chấp nhận cách giải dùng tính chất góc so le trong thay cho đồng vị không?</li><li>Nhắc: tổ trưởng duyệt đề trước khi in; giữ bảo mật đề.</li></ul><div class="files"><div class="fcard dark"><span class="fic" style="background:#2B579A">W</span><span><b>de-toan-7-hk1-2026-12-15.docx</b><small>Word · Tải xuống</small></span></div><div class="fcard dark"><span class="fic" style="background:#217346">X</span><span><b>ma-tran-toan-7-hk1-2026-12-15.xlsx</b><small>Excel · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Tư liệu có nguồn cho bài Địa lí 9</h3>
+    <div class="meta">Claude Code · skill <code>kv:nghien-cuu-tu-lieu-bai-giang</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:nghien-cuu-tu-lieu-bai-giang tìm tư liệu cho bài Dân số và gia tăng dân số, Địa lí 9 (Kết nối tri thức).<br>Cần: 1 số liệu dân số mới nhất có công bố chính thức, 1 biểu đồ gợi ý, 2 ví dụ thực tế ở địa phương cho phần vận dụng.<br>SGK có trong nguon/sgk-dia-9-bai-1.md.</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:nghien-cuu-tu-lieu-bai-giang</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:nghien-cuu-tu-lieu-bai-giang</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>tu-lieu-dia-9-bai-1-2026-11-03.docx</b>)</div><div class="term-sub">⎿ Đã tạo tu-lieu-dia-9-bai-1-2026-11-03.docx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Tư liệu bài Dân số - Địa lí 9 - Kết luận: Thiếu nguồn cho 1 ý</strong></p><table><thead><tr><th>#</th><th>Ý</th><th>Nguồn</th><th>Bậc</th></tr></thead><tbody><tr><td>1</td><td>Dân số và tỉ lệ gia tăng theo năm công bố gần nhất</td><td>Cơ quan thống kê nhà nước, thông cáo dân số, link + truy cập 03/11/2026</td><td>2</td></tr><tr><td>2</td><td>Gợi ý biểu đồ cột - đường dân số qua các năm</td><td>SGK Địa lí 9 (nguon/sgk-dia-9-bai-1.md mục 2)</td><td>1</td></tr><tr><td>3</td><td>Ví dụ địa phương</td><td>[chưa có nguồn] - chỉ thấy trên blog, chưa xác minh</td><td>4</td></tr></tbody></table><ul><li>Đã cho <code>kv:soat-nguon-tu-lieu-giang-day</code> soát: QUA, nhắc ý 3 không dùng làm căn cứ.</li><li><strong>Thầy cần quyết:</strong> lấy ví dụ địa phương từ niên giám thống kê tỉnh (thầy có bản in không?).</li><li>Đã xuất <code>tu-lieu-dia-9-bai-1-2026-11-03.docx</code>.</li></ul><div class="files"><div class="fcard dark"><span class="fic" style="background:#2B579A">W</span><span><b>tu-lieu-dia-9-bai-1-2026-11-03.docx</b><small>Word · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="codex">
+    <h3>Ngân hàng câu trắc nghiệm Sinh học 10</h3>
+    <div class="meta">ChatGPT Codex · skill <code>kv-ngan-hang-cau-hoi-trac-nghiem</code></div>
+    <div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Ngân hàng câu trắc nghiệm Sinh học 10</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Ngân hàng câu trắc nghiệm Sinh học 10</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-user"><span class="cx-chip">$kv-ngan-hang-cau-hoi-trac-nghiem</span> Dùng kv:ngan-hang-cau-hoi-trac-nghiem soạn 20 câu trắc nghiệm Sinh học 10 bài Cấu trúc tế bào nhân thực, 8 Biết - 8 Hiểu - 4 Vận dụng, bám file nguon/sgk-sinh-10-bai-8.md. Ghi ra ngan-hang/sinh-10-bai-8.md, có mã câu, lời giải, lý do phương án nhiễu.</div>
+      <div class="cx-ai"><div class="cx-step"><span class="cx-ic">◇</span> Đã đọc <b>kv-ngan-hang-cau-hoi-trac-nghiem</b> · SKILL.md</div>
+      <div class="cx-reply"><p>Đã ghi <code>ngan-hang/sinh-10-bai-8.md</code> - 20 câu, Biết 8 - Hiểu 8 - Vận dụng 4.</p><p>```<br>[S10-B8-B01] (Biết)<br>Câu 1. Bào quan nào sau đây là nơi tổng hợp protein?<br>A. Lysosome  B. Ribosome  C. Bộ máy Golgi  D. Không bào<br>Đáp án: B<br>Nhiễu: A - nhầm chức năng phân giải; C - nhầm khâu đóng gói, vận chuyển; D - nhầm nơi dự trữ<br>```</p><table><thead><tr><th>Thống kê</th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody><tr><td>Số câu</td><td>5</td><td>5</td><td>5</td><td>5</td></tr></tbody></table><p><strong>Câu cần thầy kiểm:</strong> S10-B8-V03 (số liệu kích thước tế bào trong tình huống là giả định, cần đối chiếu SGK).<br>Nên cho <code>kv:soat-dap-an-de-thi</code> soát trước khi dùng để kiểm tra lấy điểm.</p></div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div><div class="mock-label">Minh họa giao diện ChatGPT Codex. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div></div>
+</div></section>
+
+<section id="luong"><div class="wrap">
+  <h2>Luồng làm việc nhất quán</h2><p class="sub">Mỗi skill kết thúc bằng mục "Luồng tiếp theo", nên các việc nối thành chuỗi cố định. Làm xong bước này, Claude gợi ý đúng bước kế.</p>
+  <div class="luong"><h3>Soạn bài mới trọn gói</h3><p>Chuẩn bị một bài dạy từ tư liệu đến slide lên lớp</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:nghien-cuu-tu-lieu-bai-giang</code><span>Gom ví dụ, số liệu có nguồn cho bài</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:ke-hoach-bai-day-gdpt</code><span>Soạn KHBD 4 hoạt động bám YCCĐ</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:phieu-hoc-tap-nhom</code><span>Làm phiếu học tập kèm đáp án</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:bai-trinh-chieu-tu-giao-an</code><span>Dựng dàn slide từ giáo án đã duyệt</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-pptx</code><span>Xuất file trình chiếu có ghi chú người dạy</span></div></div></div><div class="luong"><h3>Ôn tập và ra đề cuối kỳ</h3><p>Còn vài tuần trước kiểm tra cuối kỳ</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:ke-hoach-on-tap-cuoi-ky</code><span>Chia buổi ôn, làm đề cương ôn tập</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:ngan-hang-cau-hoi-trac-nghiem</code><span>Soạn câu luyện theo mức</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:day-chuyen-de-kiem-tra-dinh-ky</code><span>Ra đề có ma trận, soát đáp án độc lập</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:xuat-word</code><span>Xuất đề và hướng dẫn chấm nộp tổ</span></div></div></div><div class="luong"><h3>Nhận xét cuối kỳ cả lớp</h3><p>Cuối học kỳ, cần nhận xét để nhập phần mềm</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:tong-hop-ho-so-lop-hoc</code><span>Gom điểm, ghi chú theo mã học sinh</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:nhan-xet-hoc-ba</code><span>Viết nhận xét đúng giới hạn ký tự</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:soat-an-toan-hoc-sinh</code><span>Soát dữ liệu, giọng văn, dán nhãn</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:xuat-excel</code><span>Xuất bảng có cột đếm ký tự để dán vào phần mềm</span></div></div></div><div class="luong"><h3>Chuyên đề, nghiên cứu sư phạm</h3><p>Đăng ký chuyên đề tổ, NCKHSPƯD hoặc sáng kiến có thực nghiệm</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:tim-tu-lieu-bai-giang</code><span>Thu thập cơ sở lý luận có nguồn</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:de-cuong-nckh-su-pham-ung-dung</code><span>Lập đề cương: giả thuyết, thiết kế, công cụ đo</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:soat-nguon-tu-lieu-giang-day</code><span>Soát trích nguồn, chặn kết quả không có số gốc</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:xuat-word</code><span>Xuất đề cương nộp hội đồng</span></div></div></div>
+  <div class="proto"><b>Giao thức chạy dây chuyền:</b> <code>.kv-run/&lt;việc&gt;-&lt;ngày&gt;/</code> → 00 kế hoạch → 01 thu thập → 02 bản nháp → 03 gác cổng (QUA/CHẶN, tối đa 2 vòng) → 04 kiểm định bàn giao → xuất Word/Excel/PDF/PPTX. Mọi khâu để lại file, xem lại và chạy tiếp được.</div>
+</div></section>
+
+<section id="free-pro"><div class="wrap">
+  <h2>Free và Pro</h2><p class="sub">Bản Free làm trọn việc chính. Bản Pro đi sâu hơn ở từng skill và thêm các việc chuyên sâu.</p>
+  <table class="cmp"><thead><tr><th></th><th>Free</th><th>Pro</th></tr></thead><tbody>
+  <tr><td>Skill nghề + kỹ năng nền</td><td>Đủ dùng hằng ngày</td><td class="pro">Gần gấp đôi, thêm skill chuyên sâu</td></tr>
+  <tr><td>Trong mỗi skill</td><td>Làm trọn việc chính</td><td class="pro">Phần nâng cao: mẫu biểu, bảng tra, script, xử lý hàng loạt</td></tr>
+  <tr><td>Dây chuyền nhiều trợ lý</td><td>1</td><td class="pro">3, có điều phối song song, chạy tiếp khi gián đoạn</td></tr>
+  <tr><td>Xuất Word, Excel, PDF, PowerPoint</td><td>Trình bày chuẩn</td><td class="pro">Mẫu thương hiệu riêng (logo, màu, header), xuất hàng loạt</td></tr>
+  <tr><td>Luồng làm việc mẫu</td><td>3-5</td><td class="pro">Thêm luồng chuyên sâu</td></tr>
+  <tr><td>Cập nhật theo quy định mới</td><td>Cộng đồng</td><td class="pro">Ưu tiên</td></tr>
+  </tbody></table>
+  <div class="pros"><div>⭐ 13 skill Pro mới: phân tích kết quả kiểm tra từ file điểm, kế hoạch dạy học cả năm, STEM - dự án, KHGDCN, kịch bản video E-learning, đề ôn thi theo cấu trúc, hồ sơ thi GVDG, nghiên cứu bài học, đánh giá Kirkpatrick...</div><div>⭐ 2 dây chuyền mới với 7 agent Pro: phân tích điểm -&gt; phụ đạo có khâu tự tính lại số liệu, và bộ bài giảng chủ đề soát theo 12 tiêu chí dự giờ</div><div>⭐ Nhật ký dây chuyền nhiều vòng: so phiên bản bản nháp, thống kê lỗi theo loại qua từng vòng, tự chỉ khâu chạy tiếp khi bị gián đoạn</div><div>⭐ KHBD thành bộ slide có lời giảng 5 dòng cho mọi slide, tương tác dựng sẵn (ô chữ, lật mảnh ghép, đếm ngược) và xuất PPTX theo mẫu trường</div><div>⭐ 25+ script chạy trên máy: trộn 4-24 mã đề, phân tích độ khó - độ phân biệt câu hỏi, t-test và SMD cho NCKHSPƯD, xuất Azota - Kahoot - Quizizz, đổi mã - tên học sinh an toàn</div><div>⭐ Thư viện dựng sẵn: 30 trò chơi, 21 rubric, 40 tình huống nhắn phụ huynh, 35 tiết sinh hoạt lớp, hơn 150 cụm từ nhận xét học bạ</div></div>
+  <div class="cta"><div><h3>Nâng cấp Kit Việt Pro</h3><p>Mỗi skill Free đều có mục "Bản Pro có thêm" ở cuối file. Mở ra xem bạn đang bỏ lỡ gì.</p></div><a class="btn" href="https://mochistudio.io.vn/kit-viet-pro">Xem bản Pro</a></div>
+</div></section>
+
+<section id="hoi-dap"><div class="wrap">
+  <h2>Ba nguyên tắc và hỏi đáp</h2>
+  <div class="rules"><div><b>AI hỗ trợ, bạn chịu trách nhiệm cuối.</b><br>Đọc lại mọi bản trước khi gửi, ký, nộp.</div><div><b>Không để AI tự gửi thay bạn.</b><br>Bộ này chỉ soạn và lưu file.</div><div><b>Che thông tin nhạy cảm trước.</b><br>Dùng <code>kv:an-thong-tin-nhay-cam</code> và <code>kv:soat-bao-mat</code>.</div></div>
+  <div class="faq" style="margin-top:20px">
+    <details><summary>Gõ /kv: không thấy skill nào?</summary>Kiểm tra đường dẫn phải là <code>.claude/skills/kv/.claude-plugin/plugin.json</code>. Nếu thành <code>.claude/skills/claude-code/kv/...</code> là copy thừa một lớp. Sau đó mở lại Claude Code hoặc gõ <code>/reload-plugins</code>.</details>
+    <details><summary>Claude không tự gọi skill?</summary>Gọi thẳng tên: "Dùng skill kv:&lt;tên&gt; để ...". Hoặc mở file SKILL.md, thêm vào dòng description cụm từ bạn hay nói.</details>
+    <details><summary>Không thấy thư mục .claude?</summary>Đây là thư mục ẩn. Windows: File Explorer -> View -> Hidden items. macOS: Cmd + Shift + dấu chấm.</details>
+    <details><summary>Claude web báo lỗi khi tải skill?</summary>Tải từng file zip trong <code>claude-web/</code>, không giải nén. Cần gói trả phí và bật Code execution trong Settings.</details>
+    <details><summary>Cài nhiều bộ nghề cùng lúc được không?</summary>Được. Copy đè các bộ vào cùng thư mục <code>kv</code>, skill dùng chung chỉ giữ một bản. Bản Pro copy đè lên bản Free.</details>
+    <details><summary>Có cần biết lập trình không?</summary>Không. Mọi file là văn bản thường, mở bằng Notepad cũng sửa được. Dùng <code>kv:dong-goi-skill-moi</code> để tạo skill riêng từ việc bạn vừa làm.</details>
+  </div>
+</div></section>
+<footer><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Kit Việt">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvBg)"/>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvShine)"/>
+  <!-- Ba khối xếp chồng: skill, agent, dây chuyền -->
+  <rect x="26" y="80" width="76" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="26" y="96" width="52" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+  <text x="26" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+  <path transform="translate(98 30) scale(1.25)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+</svg>
+
+  <div><b>Kit Việt</b> là sản phẩm của <b>MochiStudio</b> · <a href="https://mochistudio.io.vn">mochistudio.io.vn</a><br>
+  Phiên bản 1.1.0 · Bộ phát hành theo giấy phép MIT, giữ nguyên file LICENSE trong gói. · Giao diện trong trang là minh họa.</div></div></footer>
+<script>
+document.querySelectorAll('[data-tabs]').forEach(box=>{
+  const tabs=box.querySelectorAll('.tab');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.toggle('on',x===t));
+    box.parentElement.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+  }));
+});
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b===btn));
+  const f=btn.dataset.filter;
+  document.querySelectorAll('.ex').forEach(e=>e.style.display=(f==='all'||e.dataset.platform===f)?'':'none');
+}));
+const q=document.getElementById('q');
+if(q)q.addEventListener('input',()=>{
+  const v=q.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+  document.querySelectorAll('.sk').forEach(s=>{
+    const t=s.textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+    s.style.display=t.includes(v)?'':'none';
+  });
+});
+document.querySelectorAll('.tree').forEach(pre=>{
+  const b=document.createElement('button');b.className='copy';b.textContent='Copy';
+  b.onclick=()=>{navigator.clipboard.writeText(pre.dataset.copy||pre.innerText.replace(/^Copy/,''));b.textContent='Đã copy';setTimeout(()=>b.textContent='Copy',1500)};
+  pre.prepend(b);
+});
+</script>
+</body>
+</html>

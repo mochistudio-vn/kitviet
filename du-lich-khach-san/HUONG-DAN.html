@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Việt · Du lịch - Khách sạn - Hướng dẫn sử dụng (Free)</title>
+<meta name="description" content="Kit Việt - bộ skill và agent tiếng Việt cho Claude và ChatGPT Codex. Sản phẩm của MochiStudio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%20role%3D%22img%22%20aria-label%3D%22Kit%20Vi%E1%BB%87t%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvBg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E5322D%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B3121B%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvShine%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%22.22%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvBg)%22%2F%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvShine)%22%2F%3E%0A%20%20%3C!--%20Ba%20kh%E1%BB%91i%20x%E1%BA%BFp%20ch%E1%BB%93ng%3A%20skill%2C%20agent%2C%20d%C3%A2y%20chuy%E1%BB%81n%20--%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2280%22%20width%3D%2276%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.28%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2296%22%20width%3D%2252%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.18%22%2F%3E%0A%20%20%3Ctext%20x%3D%2226%22%20y%3D%2272%22%20font-family%3D%22'Be%20Vietnam%20Pro'%2C'Segoe%20UI'%2C'Inter'%2CArial%2Csans-serif%22%20font-size%3D%2258%22%20font-weight%3D%22800%22%20letter-spacing%3D%22-3%22%20fill%3D%22%23FFFFFF%22%3Ekv%3C%2Ftext%3E%0A%20%20%3Cpath%20transform%3D%22translate(98%2030)%20scale(1.25)%22%20fill%3D%22%23FFCD00%22%20d%3D%22M0%2C-10%20L2.35%2C-3.24%20L9.51%2C-3.09%20L3.8%2C1.24%20L5.88%2C8.09%20L0%2C4%20L-5.88%2C8.09%20L-3.8%2C1.24%20L-9.51%2C-3.09%20L-2.35%2C-3.24%20Z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#D7261E;--brand:#D7261E;--ink:#1C1917;--muted:#6B6460;--line:#E7E2DA;--bg:#FBF8F3;--card:#fff;--soft:#F4EFE7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro','Segoe UI',Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}code{font-family:'JetBrains Mono',Consolas,monospace;font-size:.86em;background:var(--soft);padding:.1em .35em;border-radius:5px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+header.top .logo svg{height:40px;width:auto;display:block}
+nav.menu{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.menu a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}
+nav.menu a:hover{background:var(--soft);color:var(--ink)}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:99px;background:var(--soft);color:var(--muted)}
+.badge.pro{background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff}
+.badge.free{background:#DCFCE7;color:#166534}
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-40% -10% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 22%,transparent),transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:14px 0 12px;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:760px;margin:0 0 22px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;min-width:130px}
+.stat b{display:block;font-size:28px;line-height:1.1;color:var(--accent)}
+.stat span{font-size:13px;color:var(--muted)}
+.who{display:flex;flex-wrap:wrap;gap:8px}.who span{background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:99px;font-size:14px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin:0 0 6px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);padding:9px 16px;border-radius:10px;cursor:pointer;font:inherit;font-size:15px;color:var(--ink)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none}.panel.on{display:block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
+.tree{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:16px 20px;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;white-space:pre;overflow:auto;margin-top:14px}
+.note{background:color-mix(in srgb,var(--accent) 8%,#fff);border:1px solid color-mix(in srgb,var(--accent) 25%,#fff);border-radius:14px;padding:14px 18px;margin-top:14px}
+.search{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;margin-bottom:20px;background:#fff}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.group{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.group h3{margin:0 0 10px;font-size:17px}
+.group.locked{background:repeating-linear-gradient(135deg,#fff,#fff 12px,#FFF8EB 12px,#FFF8EB 24px);border-color:#F3D9A4}
+.sk{display:flex;flex-direction:column;padding:9px 0;border-top:1px dashed var(--line)}
+.sk:first-of-type{border-top:0}
+.sk .nm{font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;color:var(--accent);font-weight:600}
+.sk .vc{font-size:14.5px}
+.sk .ds{font-size:13px;color:var(--muted)}
+.lock{font-size:12px;font-weight:700;color:#B45309;margin-left:6px}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.agcol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.agcol h3{margin:0;font-size:18px}.agcol .k{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.ag{padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.ag b{font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;color:var(--accent)}
+.flow{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.flow h3{margin:0 0 12px;font-size:17px}
+.flow .row{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.flow .node{flex:1;min-width:170px;border-radius:12px;padding:10px 12px;background:var(--soft)}
+.flow .node small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.flow .node code{background:#fff}
+.flow .arrow{align-self:center;color:var(--muted);font-size:20px}
+.flow .cmd{margin-top:12px;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.examples{display:grid;gap:26px}
+.ex h3{margin:0 0 4px;font-size:18px}.ex .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.mock{border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(28,25,23,.12);border:1px solid #DDD5CA;font-size:14.5px}
+.mock table{border-collapse:collapse;margin:8px 0;font-size:13.5px;width:100%}
+.mock th,.mock td{border:1px solid rgba(127,127,127,.3);padding:5px 8px;text-align:left;vertical-align:top}
+.mock ul,.mock ol{margin:6px 0;padding-left:20px}.mock p{margin:6px 0}.mock .md-h{font-weight:700;margin-top:10px}
+.dots{display:inline-flex;gap:6px;margin-right:12px}.dots i{width:11px;height:11px;border-radius:50%;background:#FF5F57}.dots i+i{background:#FEBC2E}.dots i+i+i{background:#28C840}
+.web-bar,.desk-bar{display:flex;align-items:center;background:#ECE8E1;padding:9px 14px;font-size:13px;color:#57534E}
+.url{background:#fff;border-radius:8px;padding:3px 14px;flex:0 1 360px}
+.desk-title{margin:0 auto;font-weight:600}
+.web-main,.desk-main{background:#FAF9F5;color:#1F1E1D;font-family:'Noto Serif','Times New Roman',serif}
+.desk-wrap{display:flex}
+.desk-side{width:190px;background:#F2EFE8;border-right:1px solid #E4DED3;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#57534E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.desk-main{flex:1;min-width:0}
+.chat{padding:20px 24px 10px;max-width:760px;margin:0 auto}
+.chat-user{margin-left:auto;max-width:82%;width:fit-content;background:#F0EEE6;border-radius:16px;padding:10px 14px;margin-bottom:16px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.chat-ai{display:flex;gap:10px}
+.ai-mark{color:#D97757;font-size:22px;line-height:1}
+.ai-body{flex:1;min-width:0}
+.ai-chip{display:inline-block;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;font-size:12.5px;background:#fff;border:1px solid #E4DED3;border-radius:8px;padding:3px 10px;color:#57534E;margin-bottom:6px}
+.chat-input{margin:8px 24px 18px;border:1px solid #DDD6CB;border-radius:14px;background:#fff;padding:12px 16px;color:#A8A29E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;max-width:712px}
+@media (min-width:800px){.chat-input{margin-left:auto;margin-right:auto}}
+.mock-term{background:#1A1A1A;color:#E7E5E4;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px}
+.term-bar{display:flex;align-items:center;background:#2A2A2A;padding:8px 14px;color:#A8A29E;font-size:12.5px}
+.term-body{padding:16px 18px}
+.term-user{color:#fff;margin-bottom:10px}.term-caret{color:#D97757}
+.term-tool{color:#E7E5E4}.dot-or{color:#D97757}.term-tool b{color:#FDBA74}
+.term-sub{color:#78716C;margin:0 0 10px 18px}
+.term-reply{display:flex;gap:8px}.dot-wh{color:#E7E5E4}
+.mock-term th,.mock-term td{border-color:#44403C}
+.mock-cx{background:#fff;color:#18181B;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;border-color:#E4E4E7}
+.cx-bar{display:flex;align-items:center;background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:9px 14px;font-size:13px;color:#52525B}
+.cx-title{margin:0 auto;font-weight:600;color:#18181B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+.cx-open{font-size:12px;border:1px solid #E4E4E7;background:#fff;border-radius:8px;padding:2px 9px}
+.cx-wrap{display:flex}
+.cx-side{width:190px;background:#FAFAFA;border-right:1px solid #E4E4E7;padding:14px 12px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#52525B}
+.cx-side b{color:#18181B}.cx-side small{font-size:10.5px;letter-spacing:.08em;color:#A1A1AA;margin-top:8px}
+.cx-side .on{color:#18181B;font-weight:600}.cx-side .sub{padding-left:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#EFEFF1;border-radius:6px;padding:3px 8px 3px 14px}.cx-side .sub.muted{background:none}
+.cx-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.cx-thread{padding:20px 24px 8px;max-width:760px;width:100%;margin:0 auto;box-sizing:border-box}
+.cx-user{margin-left:auto;max-width:82%;width:fit-content;background:#F4F4F5;border-radius:16px;padding:10px 14px;margin-bottom:14px}
+.cx-chip{background:#EEF2FF;color:#4338CA;border-radius:6px;padding:1px 7px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}
+.cx-step{color:#71717A;font-size:13px;margin-bottom:8px}.cx-ic{color:#A1A1AA;margin-right:4px}
+.cx-diff{border:1px solid #E4E4E7;border-radius:12px;margin:6px 0 12px;font-size:13px;overflow:hidden}
+.cx-diff-h{display:flex;justify-content:space-between;background:#FAFAFA;padding:7px 12px;border-bottom:1px solid #E4E4E7}
+.cx-diff-r{display:flex;justify-content:space-between;padding:6px 12px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}.cx-diff-r+.cx-diff-r{border-top:1px solid #F4F4F5}
+.cx-add{color:#16A34A;font-weight:600}
+.cx-reply{line-height:1.6}
+.cx-input{margin:6px 24px 16px;border:1px solid #E4E4E7;border-radius:18px;padding:12px 14px 8px;color:#A1A1AA;font-size:13.5px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.cx-chips{display:flex;gap:8px;margin-top:10px;font-size:12px;color:#52525B;align-items:center}.cx-chips span{border:1px solid #E4E4E7;border-radius:99px;padding:2px 9px}
+.cx-chips .cx-send{margin-left:auto;background:#18181B;color:#fff;border-color:#18181B;border-radius:50%;padding:2px 8px}
+.cx-skills{padding:4px 0}.cx-sk-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}.cx-sk-h span{font-size:12.5px;color:#71717A}
+.cx-sk{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #F4F4F5}.cx-sk>span:nth-child(2){flex:1;min-width:0}.cx-sk b{display:block;font-size:13.5px}.cx-sk small{color:#71717A;font-size:12px}
+.mock-label{font-size:11.5px;color:var(--muted);margin-top:6px}
+.cmp{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.cmp th,.cmp td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{background:var(--soft)}
+.cmp td.pro{background:#FFFBEB;font-weight:600}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:22px;padding:22px 26px;border-radius:18px;background:linear-gradient(135deg,#1C1917,#3B2A20);color:#fff}
+.cta h3{margin:0 0 4px;font-size:22px}.cta p{margin:0;color:#D6CFC6}
+.btn{display:inline-block;background:linear-gradient(135deg,#F59E0B,#EA580C);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+.pros{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
+.pros div{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:12px 14px;font-size:14.5px}
+.luong{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.luong h3{margin:0 0 2px;font-size:17px}.luong p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.chain .step{flex:1;min-width:160px;background:var(--soft);border-radius:12px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;font-size:13.5px}
+.chain .step small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.chain .step code{background:#fff;width:fit-content}
+.chain .arrow{align-self:center;color:var(--muted)}
+.proto{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:14px 18px;font-size:14.5px}.proto code{background:#3A332E;color:#FDE68A}
+.files{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.fcard{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #E4DED3;border-radius:12px;padding:8px 14px 8px 8px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;min-width:230px}
+.fcard.dark{background:#232323;border-color:#3A3A3A;color:#E7E5E4}
+.fcard b{display:block;font-size:13px}.fcard small{color:#8A8580;font-size:11.5px}
+.fic{width:36px;height:36px;border-radius:8px;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center;font-family:'Be Vietnam Pro',sans-serif}
+.shot-cap{font-size:13px;color:var(--muted);margin:18px 0 8px}
+.shot{max-width:780px}
+.ac{display:flex;gap:14px;padding:3px 8px;border-radius:6px;font-size:13px}.ac b{color:#E7E5E4;min-width:300px;font-weight:500}.ac span{color:#8A8580}
+.ac.on{background:#3A2A22}.ac.on b{color:#FDBA74}
+.sk-page{padding:18px 22px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.sk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:18px}
+.up{font-size:13px;background:#1F1E1D;color:#fff;padding:6px 12px;border-radius:8px}
+.sk-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #ECE6DC}
+.sk-row b{display:block;font-size:13.5px}.sk-row small{color:#8A8580;font-size:12px}.sk-row>span:nth-child(2){flex:1}
+.sk-ic{width:34px;height:34px;border-radius:9px;background:#D7261E;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center}
+.tog{width:34px;height:20px;border-radius:99px;background:#D6D3D1;position:relative}.tog:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.tog.on{background:#D97757}.tog.on:after{left:16px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.rules div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:42px;width:auto}
+.copy{float:right;font-size:12px;border:1px solid #57534E;background:none;color:#D6D3D1;border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit}
+@media (max-width:760px){nav.menu{display:none}.desk-side,.cx-side{display:none}}
+:root{--accent:#0369A1}</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a class="logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140" role="img" aria-label="Kit Việt - sản phẩm của MochiStudio">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6 6)">
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvBg)"/>
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvShine)"/>
+    <rect x="23" y="80" width="80" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+    <rect x="23" y="97" width="55" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+    <text x="23" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+    <path transform="translate(100 30) scale(1.3)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+  </g>
+  <text x="160" y="82" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5" fill="#1C1917">Kit <tspan fill="#D7261E">Việt</tspan></text>
+  <text x="163" y="118" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="20" font-weight="500" letter-spacing=".3" fill="#78716C">Sản phẩm của <tspan font-weight="700" fill="#44403C">MochiStudio</tspan> · mochistudio.io.vn</text>
+</svg>
+</a>
+<nav class="menu"><a href="#cai-dat">Cài đặt</a><a href="#danh-muc">Danh mục</a><a href="#tro-ly">Trợ lý</a><a href="#day-chuyen">Dây chuyền</a><a href="#vi-du">Ví dụ</a><a href="#luong">Luồng</a><a href="#free-pro">Free vs Pro</a><a href="#hoi-dap">Hỏi đáp</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="badge free">BẢN FREE</span> <span class="badge">Kit Việt · v1.1.0</span>
+  <h1>Bộ AI Agent cho <span>Du lịch - Khách sạn</span></h1>
+  <p class="lead">Lịch trình chạy được, báo giá cộng đúng, trả lời khách đúng mực - giá vé và giờ mở cửa luôn được xác nhận trước khi gửi. Bộ skill và agent tiếng Việt cho điều hành tour, sales du lịch, hướng dẫn viên, lễ tân, quản lý khách sạn và chủ homestay: lịch trình theo ngày, báo giá có cấu thành chi phí, nghiên cứu điểm đến có nguồn, thuyết minh, trả lời review OTA, email xác nhận song ngữ, xử lý overbooking, SOP buồng phòng, giá phòng theo mùa, công suất phòng, đề xuất MICE. AI chỉ chuẩn bị bản nháp; người có thẩm quyền duyệt giá, cam kết và gửi khách.</p>
+  <div class="stats">
+    <div class="stat"><b>33</b><span>skill (cách làm)</span></div>
+    <div class="stat"><b>13</b><span>trợ lý (agent)</span></div>
+    <div class="stat"><b>1</b><span>dây chuyền</span></div>
+    <div class="stat"><b>5</b><span>luồng làm việc</span></div>
+    <div class="stat"><b>4</b><span>định dạng xuất file</span></div>
+    <div class="stat"><b>3</b><span>nền tảng</span></div>
+  </div>
+  <div class="who"><span>Điều hành tour và sales du lịch</span><span>Hướng dẫn viên du lịch</span><span>Lễ tân, quản lý khách sạn, resort</span><span>Chủ homestay, căn hộ dịch vụ</span></div>
+</div></div>
+
+<section id="cai-dat"><div class="wrap">
+  <h2>Cài đặt trong 3 phút</h2><p class="sub">Chọn nơi bạn dùng AI. Cùng một bộ, chạy được cả ba.</p>
+  <div class="tabs" data-tabs><button class="tab on" data-tab="web">Claude Desktop / web</button><button class="tab" data-tab="cc">Claude Code</button><button class="tab" data-tab="codex">ChatGPT Codex</button></div>
+  <div class="panel" data-panel="cc"><ol class="steps"><li>Mở thư mục <code>claude-code/</code> trong bộ này, thấy thư mục <code>kv</code>.</li><li>Copy nguyên thư mục <code>kv</code> vào <code>C:\Users\&lt;tên bạn&gt;\.claude\skills\</code> (Windows) hoặc <code>~/.claude/skills/</code> (macOS/Linux). Kết quả: <code>.claude/skills/kv/.claude-plugin/plugin.json</code>.</li><li>Mở lại Claude Code (hoặc gõ <code>/reload-plugins</code>). Gõ <code>/kv:</code> để thấy danh sách skill.</li><li>Đã cài bộ nghề khác? Copy đè vào cùng thư mục <code>kv</code>, các bộ tự gộp. Bản Pro copy đè lên bản Free.</li></ol>
+    <pre class="tree">C:\Users\&lt;tên bạn&gt;\.claude\skills\
+└── kv\
+    ├── .claude-plugin\plugin.json
+    ├── skills\      33 skill  -> gọi /kv:&lt;tên&gt;
+    └── agents\      13 trợ lý -> "Dùng agent kv:&lt;tên&gt; ..."</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/kv:</code> trong Claude Code</p><div class="mock mock-term shot"><div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div><div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> /kv:</div>
+    <div class="ac on"><b>/kv:bao-cao-cong-suat-phong</b><span>Lập báo cáo công suất phòng từ dữ liệu đặt phòng: tỷ lệ lấp đầy, ADR, ...</span></div><div class="ac"><b>/kv:bao-gia-tour-chi-phi</b><span>Lập báo giá tour có cấu thành chi phí: xe, phòng, ăn, vé, HDV, bảo hiể...</span></div><div class="ac"><b>/kv:checklist-an-toan-tour</b><span>Lập bảng kiểm an toàn cho tour: trước khởi hành, xe, hoạt động nước - ...</span></div><div class="ac"><b>/kv:day-chuyen-ho-so-tour-doan</b><span>Dây chuyền hồ sơ tour đoàn: gom yêu cầu, đơn giá -&gt; soạn lịch trình + ...</span></div><div class="ac"><b>/kv:de-xuat-tour-mice-doan-cong-ty</b><span>Soạn đề xuất tour đoàn công ty (MICE): mục tiêu chuyến đi, 2-3 phương ...</span></div><div class="ac"><b>/kv:email-xac-nhan-dat-phong</b><span>Soạn email xác nhận đặt phòng song ngữ Việt - Anh: mã đặt, ngày ở, loạ...</span></div>
+    <div class="term-sub">↑↓ chọn · Enter chạy · 33 skill của Kit Việt</div></div></div>
+    <div class="note">Claude Code là nơi dùng đầy đủ nhất: skill, agent và dây chuyền nhiều trợ lý. Có sẵn trong tab <b>Code</b> của ứng dụng Claude Desktop, không cần biết lập trình.</div></div>
+  <div class="panel on" data-panel="web"><ol class="steps"><li>Vào claude.ai hoặc ứng dụng Claude Desktop -&gt; <strong>Customize -&gt; Skills</strong> (cần gói Pro trở lên, bật Code execution).</li><li>Bấm <strong>Upload skill</strong>, chọn từng file trong thư mục <code>claude-web/</code> (mỗi file <code>kv-&lt;tên&gt;.zip</code> là một skill).</li><li>Bật công tắc skill vừa tải. Nên tải 5-7 skill bạn dùng nhiều nhất trước.</li><li>Gọi: nói việc bình thường, hoặc &quot;Dùng skill kv-&lt;tên&gt; để ...&quot;. Claude web không có agent: các dây chuyền sẽ chạy kiểu đóng vai lần lượt trong cùng cuộc trò chuyện.</li></ol>
+    <p class="shot-cap">Màn hình mô phỏng: trang Customize > Skills sau khi tải lên</p><div class="mock mock-desktop shot"><div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude · Customize › Skills</span></div>
+    <div class="desk-wrap"><aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span><b>Customize · Skills</b></span></aside>
+    <div class="desk-main sk-page"><div class="sk-head"><b>Skills</b><span class="up">＋ Upload skill</span></div>
+    <div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-bao-cao-cong-suat-phong</b><small>Lập báo cáo công suất phòng từ dữ liệu đặt phòng: tỷ lệ lấp đầy, ADR, RevPAR, cơ cấu kênh,...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-bao-gia-tour-chi-phi</b><small>Lập báo giá tour có cấu thành chi phí: xe, phòng, ăn, vé, HDV, bảo hiểm, chi phí chung, lợ...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-checklist-an-toan-tour</b><small>Lập bảng kiểm an toàn cho tour: trước khởi hành, xe, hoạt động nước - núi, sức khỏe khách,...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-ho-so-tour-doan</b><small>Dây chuyền hồ sơ tour đoàn: gom yêu cầu, đơn giá -&gt; soạn lịch trình + báo giá -&gt; gác cổng ...</small></span><span class="tog on"></span></div><div class="sk-row"><span class="sk-ic">kv</span><span><b>kv-de-xuat-tour-mice-doan-cong-ty</b><small>Soạn đề xuất tour đoàn công ty (MICE): mục tiêu chuyến đi, 2-3 phương án, lịch trình khung...</small></span><span class="tog"></span></div>
+    </div></div></div>
+    <div class="note">Claude web và Desktop chat dùng được toàn bộ skill. Riêng agent chỉ có trong Claude Code và Codex. Với dây chuyền, Claude sẽ tự đóng ba vai thu thập, thực thi và gác cổng lần lượt.</div></div>
+  <div class="panel" data-panel="codex"><ol class="steps"><li>Copy các thư mục trong <code>codex/.agents/skills/</code> vào <code>~/.agents/skills/</code> (dùng mọi nơi) hoặc <code>&lt;thư mục làm việc&gt;/.agents/skills/</code>.</li><li>Copy các file <code>.toml</code> trong <code>codex/.codex/agents/</code> vào <code>~/.codex/agents/</code>.</li><li>Copy <code>codex/AGENTS-mau.md</code> ra thư mục làm việc, đổi tên thành <code>AGENTS.md</code>, điền thông tin của bạn.</li><li>Mở Codex, gõ <code>/skills</code> để kiểm tra, gọi bằng <code>$kv-&lt;tên&gt;</code> hoặc nói việc bình thường.</li></ol>
+    <pre class="tree">~/.agents/skills/kv-&lt;tên&gt;/SKILL.md     skill
+~/.codex/agents/kv-&lt;tên&gt;.toml         trợ lý
+&lt;thư mục làm việc&gt;/AGENTS.md          hồ sơ của bạn</pre>
+    <p class="shot-cap">Màn hình mô phỏng: gõ <code>/skills</code> trong Codex</p><div class="shot"><div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Skills</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Skills</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-skills"><div class="cx-sk-h"><b>Skills</b><span>33 skill · ~/.agents/skills</span></div>
+    <div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-bao-cao-cong-suat-phong</b><small>Lập báo cáo công suất phòng từ dữ liệu đặt phòng: tỷ lệ lấp đầy, ADR, RevPAR, cơ...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-bao-gia-tour-chi-phi</b><small>Lập báo giá tour có cấu thành chi phí: xe, phòng, ăn, vé, HDV, bảo hiểm, chi phí...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-checklist-an-toan-tour</b><small>Lập bảng kiểm an toàn cho tour: trước khởi hành, xe, hoạt động nước - núi, sức k...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-day-chuyen-ho-so-tour-doan</b><small>Dây chuyền hồ sơ tour đoàn: gom yêu cầu, đơn giá -&gt; soạn lịch trình + báo giá -&gt;...</small></span><span class="tog on"></span></div><div class="cx-sk"><span class="sk-ic">kv</span><span><b>kv-de-xuat-tour-mice-doan-cong-ty</b><small>Soạn đề xuất tour đoàn công ty (MICE): mục tiêu chuyến đi, 2-3 phương án, lịch t...</small></span><span class="tog on"></span></div>
+    <div class="cx-step">… và 28 skill khác. Gọi bằng <code>$kv-&lt;tên&gt;</code> trong ô soạn.</div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div></div></div>
+</div></section>
+
+<section id="danh-muc"><div class="wrap">
+  <h2>Gặp việc gì thì gọi cái gì</h2><p class="sub">Nói việc bình thường, Claude tự chọn skill. Hoặc gọi thẳng tên: <code>/kv:&lt;tên&gt;</code> (Claude Code), <code>kv-&lt;tên&gt;</code> (Claude web, Codex).</p>
+  <input id="q" class="search" placeholder="Tìm việc: đối chiếu, báo cáo, khách hàng...">
+  <div class="groups"><div class="group"><h3>Sản phẩm tour</h3><div class="sk"><span class="nm">kv:thiet-ke-lich-trinh-tour</span><span class="vc">Lịch trình theo ngày có giờ giấc, quãng đường, bữa ăn, thời gian đệm và phương án mưa bão</span><span class="ds">Thiết kế lịch trình tour theo từng ngày: giờ giấc, quãng đường, ăn nghỉ, điểm tham quan, thời gian đệm. Dùng khi nói &quot;lên lịch trình&quot;, &quot;tour 3N2Đ&quot;, &quot;chương trình tour&quot;, &quot;itinerary&quot;.</span></div><div class="sk"><span class="nm">kv:bao-gia-tour-chi-phi</span><span class="vc">Báo giá tour tách chi phí cố định - biến đổi, giá theo mốc số khách, FOC, trẻ em</span><span class="ds">Lập báo giá tour có cấu thành chi phí: xe, phòng, ăn, vé, HDV, bảo hiểm, chi phí chung, lợi nhuận, giá/khách theo số khách. Dùng khi nói &quot;báo giá tour&quot;, &quot;tính giá tour&quot;, &quot;giá trọn gói&quot;.</span></div><div class="sk"><span class="nm">kv:nghien-cuu-diem-den-du-lich</span><span class="vc">Hồ sơ điểm đến từ nguồn chính thống, mỗi ý có nguồn, giờ mở cửa và giá vé luôn cần xác nhận</span><span class="ds">Nghiên cứu điểm đến từ nguồn uy tín theo bậc (cơ quan du lịch, cổng địa phương, UNESCO &gt; sách hướng dẫn &gt; review), có trích nguồn. Dùng khi nói &quot;tìm hiểu điểm đến&quot;, &quot;nghiên cứu tuyến mới&quot;.</span></div><div class="sk"><span class="nm">kv:de-xuat-tour-mice-doan-cong-ty</span><span class="vc">Đề xuất tour đoàn công ty 2-3 phương án, gala, team building, ngân sách, ra slide</span><span class="ds">Soạn đề xuất tour đoàn công ty (MICE): mục tiêu chuyến đi, 2-3 phương án, lịch trình khung, gala, team building, ngân sách. Dùng khi nói &quot;tour công ty&quot;, &quot;MICE&quot;, &quot;du lịch kết hợp hội nghị&quot;.</span></div></div><div class="group"><h3>Dẫn đoàn và an toàn</h3><div class="sk"><span class="nm">kv:thuyet-minh-diem-tham-quan</span><span class="vc">Bài thuyết minh theo đối tượng và thời lượng, tách sử liệu với truyền thuyết</span><span class="ds">Soạn bài thuyết minh cho hướng dẫn viên tại điểm tham quan: mở đầu, ý chính có nguồn, câu chuyện, lưu ý đoàn, theo thời lượng. Dùng khi nói &quot;bài thuyết minh&quot;, &quot;nói gì ở điểm này&quot;.</span></div><div class="sk"><span class="nm">kv:checklist-an-toan-tour</span><span class="vc">Bảng kiểm an toàn theo từng hoạt động: xe, biển, núi, sức khỏe, thời tiết, số khẩn cấp</span><span class="ds">Lập bảng kiểm an toàn cho tour: trước khởi hành, xe, hoạt động nước - núi, sức khỏe khách, thời tiết, liên lạc khẩn cấp. Dùng khi nói &quot;checklist an toàn tour&quot;, &quot;rủi ro tour&quot;, &quot;an toàn đoàn&quot;.</span></div></div><div class="group"><h3>Khách sạn - lưu trú</h3><div class="sk"><span class="nm">kv:tra-loi-review-khach-san</span><span class="vc">Trả lời review Booking, Agoda, TripAdvisor, Google đúng mực, không lộ thông tin khách</span><span class="ds">Trả lời review của khách trên Booking, Agoda, TripAdvisor, Google Maps: cảm ơn, nhận lỗi đúng mức, không lộ thông tin, đúng ngôn ngữ. Dùng khi nói &quot;trả lời review&quot;, &quot;khách chê&quot;, &quot;đánh giá 1 sao&quot;.</span></div><div class="sk"><span class="nm">kv:email-xac-nhan-dat-phong</span><span class="vc">Email xác nhận đặt phòng song ngữ Việt - Anh, kiểm số đêm, tổng tiền, mốc hủy</span><span class="ds">Soạn email xác nhận đặt phòng song ngữ Việt - Anh: mã đặt, ngày ở, loại phòng, giá, cọc, chính sách hủy, giờ nhận trả phòng. Dùng khi nói &quot;email xác nhận booking&quot;, &quot;confirmation&quot;.</span></div><div class="sk"><span class="nm">kv:xu-ly-overbooking-khieu-nai</span><span class="vc">Phương án overbooking, kịch bản xin lỗi, mức hỗ trợ theo thẩm quyền, biên bản sự việc</span><span class="ds">Xử lý overbooking và khiếu nại khách tại khách sạn, tour: phương án, lời nói, mức hỗ trợ cần duyệt, ghi nhận sự việc. Dùng khi nói &quot;hết phòng&quot;, &quot;overbooking&quot;, &quot;khách khiếu nại&quot;, &quot;khách đòi đền&quot;.</span></div><div class="sk"><span class="nm">kv:kich-ban-le-tan-check-in-out</span><span class="vc">Kịch bản lễ tân nhận phòng, trả phòng song ngữ và các tình huống thường gặp</span><span class="ds">Soạn kịch bản lễ tân nhận phòng, trả phòng song ngữ: chào đón, giấy tờ, cọc, giới thiệu tiện ích, thanh toán, xử lý tình huống. Dùng khi nói &quot;kịch bản lễ tân&quot;, &quot;check-in&quot;, &quot;check-out&quot;.</span></div><div class="sk"><span class="nm">kv:sop-buong-phong-khach-san</span><span class="vc">SOP dọn phòng, kiểm phòng, đồ thất lạc, an toàn hóa chất có tiêu chuẩn đạt</span><span class="ds">Soạn SOP buồng phòng: dọn phòng khách đi, phòng có khách, kiểm phòng, đồ thất lạc, an toàn hóa chất, định mức thời gian. Dùng khi nói &quot;SOP buồng phòng&quot;, &quot;quy trình dọn phòng&quot;, &quot;housekeeping&quot;.</span></div><div class="sk"><span class="nm">kv:mo-ta-phong-listing-ota</span><span class="vc">Mô tả phòng và listing OTA song ngữ, đúng sự thật, có mục lưu ý trước khi đặt</span><span class="ds">Viết mô tả phòng và listing trên Booking, Agoda, Airbnb, Traveloka song ngữ: tiêu đề, điểm nổi bật, tiện nghi, nội quy, đúng sự thật. Dùng khi nói &quot;mô tả phòng&quot;, &quot;viết listing&quot;, &quot;đăng Airbnb&quot;.</span></div></div><div class="group"><h3>Giá và hiệu quả kinh doanh phòng</h3><div class="sk"><span class="nm">kv:gia-phong-theo-mua</span><span class="vc">Bảng giá phòng theo mùa, lễ Tết, cuối tuần, giá ròng theo kênh, kiểm nhất quán</span><span class="ds">Lập bảng giá phòng theo mùa và ngày: thấp điểm, cao điểm, lễ Tết, cuối tuần, phụ thu, giá kênh OTA - trực tiếp. Dùng khi nói &quot;bảng giá phòng&quot;, &quot;giá mùa cao điểm&quot;, &quot;giá Tết&quot;, &quot;rate plan&quot;.</span></div><div class="sk"><span class="nm">kv:bao-cao-cong-suat-phong</span><span class="vc">Báo cáo công suất, ADR, RevPAR, cơ cấu kênh, tỷ lệ hủy từ file đặt phòng</span><span class="ds">Lập báo cáo công suất phòng từ dữ liệu đặt phòng: tỷ lệ lấp đầy, ADR, RevPAR, cơ cấu kênh, so cùng kỳ. Dùng khi nói &quot;báo cáo công suất&quot;, &quot;occupancy&quot;, &quot;doanh thu phòng tháng&quot;, &quot;RevPAR&quot;.</span></div></div><div class="group"><h3>Dây chuyền</h3><div class="sk"><span class="nm">kv:day-chuyen-ho-so-tour-doan</span><span class="vc">Hồ sơ tour đoàn: gom yêu cầu -&gt; lịch trình + báo giá -&gt; gác cổng -&gt; bàn giao</span><span class="ds">Dây chuyền hồ sơ tour đoàn: gom yêu cầu, đơn giá -&gt; soạn lịch trình + báo giá -&gt; gác cổng soát khả thi, số, cam kết -&gt; bàn giao. Dùng khi nói &quot;làm hồ sơ tour đoàn&quot;, &quot;chạy dây chuyền tour&quot;.</span></div></div><div class="group"><h3>Dùng kèm từ bộ chung</h3><div class="sk"><span class="nm">kv:kiem-tra-chong-bia</span><span class="vc">Soát số tiền, giờ giấc, đơn giá trước khi gửi khách</span><span class="ds">Soát bản nháp trước khi gửi để bắt số bịa, số tự suy, khẳng định không nguồn. Dùng khi nói &quot;kiểm tra lại số&quot;, &quot;bản này gửi được chưa&quot;, &quot;có bịa không&quot;, &quot;đối chiếu với file gốc&quot;.</span></div><div class="sk"><span class="nm">kv:an-thong-tin-nhay-cam</span><span class="vc">Che hộ chiếu, CCCD, số điện thoại khách trước khi đưa dữ liệu vào AI</span><span class="ds">Che CCCD, số tài khoản, SĐT, lương, bệnh án... trước khi gửi ra ngoài hoặc dán vào AI. Dùng khi nói &quot;che thông tin&quot;, &quot;ẩn số CCCD&quot;, &quot;xóa dữ liệu cá nhân&quot;, &quot;gửi file này có sao không&quot;.</span></div><div class="sk"><span class="nm">kv:viet-email</span><span class="vc">Email gửi báo giá, xin lỗi, làm việc với nhà cung cấp</span><span class="ds">Soạn email công việc tiếng Việt đúng xưng hô, rõ việc cần người nhận làm. Dùng khi nói &quot;viết email&quot;, &quot;trả lời mail này&quot;, &quot;soạn thư gửi khách&quot;, &quot;mail nhắc&quot;, &quot;viết lại cho lịch sự&quot;.</span></div><div class="sk"><span class="nm">kv:tao-bang-kiem</span><span class="vc">In bảng kiểm ca trực, kiểm phòng, chuẩn bị đoàn</span><span class="ds">Tạo bảng kiểm (checklist) cho việc lặp lại hoặc dễ sót bước: mỗi mục kiểm được, có người và thời điểm. Dùng khi nói &quot;làm checklist&quot;, &quot;bảng kiểm&quot;, &quot;danh sách việc cần làm khi...&quot;, &quot;hay quên bước&quot;.</span></div><div class="sk"><span class="nm">kv:dieu-phoi-day-chuyen</span><span class="vc">Ghép dây chuyền riêng từ các agent của bộ</span><span class="ds">Giao thức chạy Kit Việt cho việc nhiều khâu - lập kế hoạch, thu thập, soạn, gác cổng QUA/CHẶN, bàn giao trong .kv-run/. Dùng khi nói &quot;chạy dây chuyền&quot;, &quot;làm từ A đến Z&quot;, &quot;đọc rồi viết rồi soát&quot;.</span></div></div><div class="group"><h3>Kỹ năng nền - dùng chéo mọi việc</h3><div class="sk"><span class="nm">kv:dong-goi-skill-moi</span><span class="vc">Biến một việc vừa làm tốt thành skill mới theo khuôn Kit Việt để lần sau gọi lại. Dùng khi nói &quot;lưu cách làm này&quot;, &quot;tạo skill mới&quot;, &quot;đóng gói thành skill&quot;, &quot;lần sau làm y vậy&quot;.</span></div><div class="sk"><span class="nm">kv:ghi-chu-hop</span><span class="vc">Biến ghi chép, bản ghi âm chép lại thành biên bản họp + bảng đầu việc (ai, làm gì, hạn). Dùng khi nói &quot;làm biên bản&quot;, &quot;tóm tắt cuộc họp&quot;, &quot;chốt đầu việc&quot;, &quot;ghi chú họp&quot;.</span></div><div class="sk"><span class="nm">kv:ho-so-ca-nhan</span><span class="vc">Phỏng vấn 8-10 câu để viết hồ sơ CLAUDE.md / AGENTS.md: vai trò, đơn vị, khách, giọng văn, từ cấm, quy tắc. Dùng khi nói &quot;tạo hồ sơ&quot;, &quot;cho AI biết về tôi&quot;, &quot;viết CLAUDE.md&quot;, &quot;cài đặt ban đầu&quot;.</span></div><div class="sk"><span class="nm">kv:lap-ke-hoach-tuan</span><span class="vc">Xếp việc trong tuần theo giờ thật có được, ưu tiên rõ, dám nói khi không đủ giờ. Dùng khi nói &quot;lên kế hoạch tuần&quot;, &quot;tuần này làm gì trước&quot;, &quot;việc nhiều quá&quot;, &quot;xếp lịch giúp&quot;.</span></div><div class="sk"><span class="nm">kv:nghien-cuu-nguon-uy-tin</span><span class="vc">Tra cứu tài liệu theo bậc nguồn uy tín, ghi trích dẫn đủ (đơn vị, năm, link, ngày truy cập), chỉ ra mâu thuẫn và chỗ chưa có nguồn. Dùng khi nói &quot;tìm tài liệu&quot;, &quot;nghiên cứu giúp&quot;, &quot;nguồn nào nói&quot;.</span></div><div class="sk"><span class="nm">kv:tom-tat-tai-lieu</span><span class="vc">Tóm tắt tài liệu dài (báo cáo, hợp đồng, công văn, PDF) thành ý chính có trích vị trí. Dùng khi nói &quot;tóm tắt giúp&quot;, &quot;đọc file này nói gì&quot;, &quot;rút ý chính&quot;, &quot;tài liệu dài quá&quot;.</span></div><div class="sk"><span class="nm">kv:viet-bao-cao</span><span class="vc">Viết báo cáo công việc (tuần, tháng, dự án, sự cố) từ số liệu và ghi chú có sẵn, kết luận đặt đầu. Dùng khi nói &quot;viết báo cáo&quot;, &quot;báo cáo tuần&quot;, &quot;tổng hợp kết quả&quot;, &quot;làm báo cáo gửi sếp&quot;.</span></div><div class="sk"><span class="nm">kv:viet-de-cuong</span><span class="vc">Lập đề cương cho báo cáo, bài giảng, đề tài nghiên cứu, đề án, thuyết minh, bài viết: mục phân cấp, nguồn dự kiến, độ dài, câu hỏi còn mở. Dùng khi nói &quot;lập đề cương&quot;, &quot;dàn ý&quot;, &quot;khung bài&quot;.</span></div><div class="sk"><span class="nm">kv:viet-tin-nhan-cong-viec</span><span class="vc">Soạn tin nhắn công việc qua Zalo, Teams, Messenger ngắn, đúng xưng hô, rõ việc. Dùng khi nói &quot;nhắn sếp&quot;, &quot;nhắn nhóm&quot;, &quot;tin Zalo cho khách&quot;, &quot;nhắc việc&quot;, &quot;nhắn sao cho khéo&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-excel</span><span class="vc">Xuất bảng markdown/CSV thành Excel .xlsx: mỗi bảng một sheet, tiêu đề đậm, cố định dòng đầu, số kiểu Việt Nam, giữ công thức. Dùng khi nói &quot;xuất Excel&quot;, &quot;ra file xlsx&quot;, &quot;chuyển bảng sang Excel&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pdf</span><span class="vc">Xuất bản chốt (.docx hoặc markdown) thành PDF để gửi, in, nộp, giữ đúng dấu tiếng Việt. Dùng khi nói &quot;xuất PDF&quot;, &quot;chuyển sang pdf&quot;, &quot;làm bản pdf gửi khách&quot;, &quot;in ra pdf&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-pptx</span><span class="vc">Xuất đề cương slide đã duyệt thành file PowerPoint .pptx: slide tiêu đề, slide gạch đầu dòng tối đa 6 ý, ghi chú người nói. Dùng khi nói &quot;xuất PowerPoint&quot;, &quot;ra file pptx&quot;, &quot;làm file slide&quot;.</span></div><div class="sk"><span class="nm">kv:xuat-word</span><span class="vc">Xuất nội dung đã duyệt thành file Word .docx theo kiểu tài liệu Việt Nam: công văn, tờ trình, quyết định, báo cáo, biên bản, hợp đồng. Dùng khi nói &quot;xuất Word&quot;, &quot;ra file docx&quot;, &quot;làm thành công văn&quot;.</span></div></div><div class="group locked"><h3>Doanh thu và kinh doanh (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:quan-ly-doanh-thu-khach-san<span class="lock">🔒 PRO</span></span><span class="vc">ADR ròng theo kênh, NetRevPAR, đặt sớm/muộn, đánh đổi khi nhận đoàn từ file đặt phòng</span></div><div class="sk"><span class="nm">kv:ke-hoach-kinh-doanh-mua-cao-diem<span class="lock">🔒 PRO</span></span><span class="vc">Kế hoạch mùa cao điểm: mục tiêu 3 mức, giá, kênh, giữ chỗ nhà cung cấp, lịch việc theo tuần</span></div><div class="sk"><span class="nm">kv:bao-cao-kinh-doanh-thang-chu-dau-tu<span class="lock">🔒 PRO</span></span><span class="vc">Báo cáo tháng cho chủ đầu tư: GOP, RevPAR, GOPPAR so kế hoạch - cùng kỳ, giải trình chênh lệch</span></div><div class="sk"><span class="nm">kv:chuong-trinh-khach-than-thiet-luu-tru<span class="lock">🔒 PRO</span></span><span class="vc">Chương trình thành viên: hạng, quyền lợi có chi phí, phân hạng RFM từ dữ liệu ẩn danh, thể lệ</span></div></div><div class="group locked"><h3>Danh tiếng, đối tác, đào tạo (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:chi-so-danh-tieng-da-kenh<span class="lock">🔒 PRO</span></span><span class="vc">Chỉ số danh tiếng 0-100 gộp nhiều kênh, tỷ lệ và tốc độ phản hồi, xu hướng tháng</span></div><div class="sk"><span class="nm">kv:ra-soat-hop-dong-doi-tac-du-lich<span class="lock">🔒 PRO</span></span><span class="vc">Rà hợp đồng nhà xe, nhà hàng, khách sạn, đơn vị tàu: điều thiếu, bất lợi, lệch báo giá, an toàn</span></div><div class="sk"><span class="nm">kv:lo-trinh-dao-tao-le-tan-buong-phong<span class="lock">🔒 PRO</span></span><span class="vc">Lộ trình đào tạo 30-60-90 ngày có mốc năng lực, cách kiểm, phiếu đánh giá</span></div></div><div class="group locked"><h3>Dẫn đoàn chuyên sâu (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:thuyet-minh-tour-inbound-song-ngu<span class="lock">🔒 PRO</span></span><span class="vc">Bộ bài nói Việt - Anh cho cả tour khách quốc tế: đón, trên xe, tại điểm, phong tục, câu hỏi nhạy cảm</span></div><div class="sk"><span class="nm">kv:ke-hoach-ung-pho-khan-cap-tour<span class="lock">🔒 PRO</span></span><span class="vc">Kế hoạch khẩn cấp cho một tour: rủi ro tuyến, điều kiện DỪNG, phân vai, diễn tập, truyền thông</span></div></div><div class="group locked"><h3>Dây chuyền (Pro) <span class="badge pro">PRO</span></h3><div class="sk"><span class="nm">kv:day-chuyen-quyet-toan-doan-tour<span class="lock">🔒 PRO</span></span><span class="vc">Quyết toán đoàn: gom chứng từ -&gt; đối chiếu dự toán, lãi lỗ -&gt; gác cổng -&gt; bàn giao</span></div><div class="sk"><span class="nm">kv:day-chuyen-mo-tuyen-tour-moi<span class="lock">🔒 PRO</span></span><span class="vc">Mở tuyến mới: nghiên cứu nhiều điểm song song -&gt; lịch trình + giá thành 3 mùa -&gt; gác cổng</span></div></div></div>
+</div></section>
+
+<section id="tro-ly"><div class="wrap">
+  <h2>Trợ lý (agent) - xếp theo quyền</h2><p class="sub">Skill là cách làm. Agent là người làm và giới hạn của người đó. Dòng <code>tools:</code> là khóa quyền thật, không phải lời dặn.</p>
+  <div class="agents"><div class="agcol"><h3>🧭 Điều phối</h3><div class="k">Lập kế hoạch, kiểm định bàn giao. Không làm thay khâu khác.</div><div class="ag"><b>kv:kiem-dinh-ban-giao</b><br>Gác cổng cuối - đối chiếu sản phẩm với 00-ke-hoach.md và các 03-soat-*.md, kết luận QUA/CHẶN, liệt kê việc người dùng phải tự quyết. Chỉ đọc, chỉ được ghi 04-ban-giao.md.<br><code>tools: Read, Glob, Grep, Write</code></div><div class="ag"><b>kv:lap-ke-hoach-dieu-phoi</b><br>Điều phối - đọc yêu cầu và nguồn, viết .kv-run/&lt;viec&gt;-&lt;yyyymmdd&gt;/00-ke-hoach.md: khâu, agent, đầu vào/ra, tiêu chí đạt, rủi ro, khâu nào song song. Chỉ ghi trong .kv-run/, không làm thay khâu nào.<br><code>tools: Read, Glob, Grep, Write</code></div></div><div class="agcol"><h3>🔎 Thu thập</h3><div class="k">Đọc, tra cứu. Cấm ghi file.</div><div class="ag"><b>kv:doc-nhieu-tai-lieu</b><br>Thu thập - đọc cả thư mục hoặc nhiều file tài liệu, rút gọn dữ kiện chính kèm vị trí trích (file, trang, dòng) để khâu sau viết. Chỉ đọc, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:nghien-cuu-nguon</b><br>Thu thập - tra cứu nhiều nguồn (web + file), xếp bậc uy tín 1-2-3, trả bảng nguồn và dữ kiện có trích dẫn, mâu thuẫn, chỗ chưa có nguồn. Chỉ đọc, không ghi file; phiên chính ghi 01-thu-thap.md.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div><div class="ag"><b>kv:gom-yeu-cau-doan-khach</b><br>Thu thập - đọc thư mục đoàn khách (email yêu cầu, biên bản gọi, báo giá nhà cung cấp, chính sách giá), rút yêu cầu và đơn giá kèm vị trí, chỉ ra chỗ thiếu, mâu thuẫn. Chỉ đọc, cấm ghi, cấm ra mạng.<br><code>tools: Read, Grep, Glob</code></div><div class="ag"><b>kv:tra-cuu-diem-den-du-lich</b><br>Thu thập - tra cứu điểm đến trên web theo bậc nguồn du lịch (cơ quan du lịch, cổng địa phương, UNESCO &gt; sách hướng dẫn, báo &gt; review), trả tư liệu có nguồn, ngày truy cập. Được đọc web, cấm ghi file.<br><code>tools: Read, Grep, Glob, WebSearch, WebFetch</code></div></div><div class="agcol"><h3>✍️ Thực thi</h3><div class="k">Soạn và ghi file. Cấm ra mạng.</div><div class="ag"><b>kv:soan-ho-so-tour</b><br>Thực thi - từ kết quả thu thập, soạn nháp lịch trình tour theo ngày, bảng cấu thành chi phí, báo giá gửi khách, bảng kiểm an toàn vào thư mục .kv-run. Được ghi file, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div><div class="ag"><b>kv:soan-noi-dung-khach-san</b><br>Thực thi - soạn hàng loạt nội dung khách sạn vào file: phản hồi review, email xác nhận song ngữ, mô tả phòng OTA, SOP, kịch bản lễ tân, từ dữ liệu người dùng đưa. Được ghi file, cấm ra mạng.<br><code>tools: Read, Write, Edit, Glob, Grep</code></div></div><div class="agcol"><h3>🛡️ Gác cổng</h3><div class="k">Chỉ đọc, chỉ báo lỗi. Cấm sửa.</div><div class="ag"><b>kv:soat-bao-mat</b><br>Gác cổng bảo mật - soát bản nháp trước khi gửi ra ngoài để bắt dữ liệu cá nhân, số tài khoản, thông tin nội bộ, mật khẩu, câu lệnh lạ. Trả bảng rủi ro và kết luận. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-chinh-ta-giong-van</b><br>Gác cổng câu chữ - soát chính tả, dấu tiếng Việt, xưng hô, câu rối, từ cấm trong CLAUDE.md/AGENTS.md của bản nháp trước khi gửi. Trả bảng lỗi kèm gợi ý. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-so-lieu</b><br>Gác cổng số liệu - đối chiếu mọi con số, ngày, tên và khẳng định trong bản nháp với tài liệu nguồn, trả bảng lỗi và kết luận gửi được chưa. Chỉ đọc, cấm sửa, cấm ra mạng.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-cam-ket-dich-vu-luu-tru</b><br>Gác cổng - soát nội dung gửi khách (phản hồi review, email, listing, báo giá, thư xin lỗi): cam kết quá mức, đền bù chưa duyệt, lộ thông tin khách, sai chính sách, giọng không phù hợp. QUA/CHẶN. Chỉ đọc.<br><code>tools: Read, Glob, Grep</code></div><div class="ag"><b>kv:soat-lich-trinh-bao-gia</b><br>Gác cổng - soát độc lập lịch trình và báo giá tour: giờ giấc khả thi, số đêm số bữa khớp, phép tính chi phí, đơn giá có nguồn, lộ giá vốn, thông tin chưa xác nhận. Kết luận QUA/CHẶN. Chỉ đọc, cấm sửa.<br><code>tools: Read, Glob, Grep</code></div></div></div>
+</div></section>
+
+<section id="day-chuyen"><div class="wrap">
+  <h2>Dây chuyền nhiều trợ lý</h2><p class="sub">Việc nhiều khâu đi theo khuôn: thu thập -> thực thi -> gác cổng. Gác cổng báo lỗi thì quay lại sửa. Việc nhỏ thì không cần gọi cả đội.</p>
+  <div class="flow"><h3>Hồ sơ tour đoàn</h3>
+    <div class="row"><div class="node"><small>Thu thập</small><code>kv:gom-yeu-cau-doan-khach</code></div><span class="arrow">→</span>
+    <div class="node"><small>Thực thi</small><code>kv:soan-ho-so-tour</code></div><span class="arrow">→</span>
+    <div class="node"><small>Gác cổng</small><code>kv:soat-lich-trinh-bao-gia</code></div></div>
+    <div class="cmd">Câu gọi mẫu: <code>Chạy kv:day-chuyen-ho-so-tour-doan cho thư mục tour-doan/minh-phat-2027-04: lịch trình Đà Nẵng - Hội An 3N2Đ, báo giá 3 mốc 30-40-50 khách, bảng kiểm an toàn.</code></div></div>
+</div></section>
+
+<section id="vi-du"><div class="wrap">
+  <h2>Ví dụ thực tế</h2><p class="sub">Câu lệnh thật và câu trả lời mẫu trên từng nền tảng.</p>
+  <div class="filters"><button class="tab on" data-filter="all">Tất cả</button><button class="tab" data-filter="claude-desktop">Claude Desktop</button><button class="tab" data-filter="claude-web">Claude web</button><button class="tab" data-filter="claude-code">Claude Code</button><button class="tab" data-filter="codex">ChatGPT Codex</button></div>
+  <div class="examples"><div class="ex" data-platform="claude-desktop">
+    <h3>Báo cáo công suất tháng 10 cho chủ khách sạn 30 phòng</h3>
+    <div class="meta">Claude Desktop · skill <code>kv-bao-cao-cong-suat-phong</code></div>
+    <div class="mock mock-desktop">
+  <div class="desk-bar"><span class="dots"><i></i><i></i><i></i></span><span class="desk-title">Claude</span></div>
+  <div class="desk-wrap">
+    <aside class="desk-side"><b>＋ Cuộc trò chuyện mới</b><span>Dự án</span><span>Cowork</span><span>Customize · Skills</span></aside>
+    <div class="desk-main"><div class="chat">
+      <div class="chat-user">Làm báo cáo công suất tháng 10/2026 từ dat-phong-t10.csv và dat-phong-t09.csv. Khách sạn 30 phòng, tháng 10 không có phòng sửa. Doanh thu trong file chưa gồm thuế phí, chưa trừ hoa hồng. Xuất Excel cho anh chủ.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-bao-cao-cong-suat-phong</b></div><p><strong>Dữ liệu:</strong> 412 dòng, loại 37 hủy, 6 no-show ghi riêng, 2 dòng ngày trả trước ngày nhận - để riêng, chưa tính.</p><table><thead><tr><th>Chỉ số</th><th>T10</th><th>T9</th><th>Thay đổi (theo tính toán)</th></tr></thead><tbody><tr><td>Đêm phòng sẵn sàng bán</td><td>930</td><td>900</td><td></td></tr><tr><td>Đêm phòng đã bán</td><td>614</td><td>540</td><td></td></tr><tr><td>Công suất</td><td>66,0%</td><td>60,0%</td><td>+6,0 điểm %</td></tr><tr><td>ADR</td><td>1.020.000</td><td>980.000</td><td>+4,1%</td></tr><tr><td>RevPAR</td><td>673.000</td><td>588.000</td><td>+14,5%</td></tr></tbody></table><table><thead><tr><th>Kênh</th><th>Đêm phòng</th><th>Tỷ trọng</th></tr></thead><tbody><tr><td>Trực tiếp</td><td>184</td><td>30,0%</td></tr><tr><td>OTA A</td><td>306</td><td>49,8%</td></tr><tr><td>OTA B</td><td>92</td><td>15,0%</td></tr><tr><td>Công ty</td><td>32</td><td>5,2%</td></tr></tbody></table><p><strong>Quan sát:</strong> cuối tuần công suất cao hơn ngày thường. Nguyên nhân tăng so với T9: chưa đủ dữ liệu để kết luận - để ở mục giả thuyết.<br>Đã ghi <code>cong-suat-phong-2026-10-2026-11-03.xlsx</code> (4 sheet, giữ công thức OCC, ADR, RevPAR).</p><div class="files"><div class="fcard"><span class="fic" style="background:#217346">X</span><span><b>cong-suat-phong-2026-10-2026-11-03.xlsx</b><small>Excel · Tải xuống</small></span></div></div></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Desktop. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Trả lời review 5,6 điểm trên Agoda</h3>
+    <div class="meta">Claude web · skill <code>kv-tra-loi-review-khach-san</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">Khách Hàn Quốc viết review tiếng Anh trên Agoda, 5,6 điểm: &quot;Room smelled of smoke, staff changed it but took 1 hour. Breakfast was good.&quot;<br>Ghi nhận nội bộ: phòng 508 khách trước hút thuốc lén, đổi phòng lúc 22h, đã bổ sung máy lọc không khí và kiểm mùi trước khi giao phòng từ 01/11. Viết phản hồi giúp em.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-tra-loi-review-khach-san</b></div><p><strong>Phân loại:</strong> chê có cơ sở (mùi thuốc, chờ đổi phòng lâu) + khen ăn sáng.</p><p><strong>Phản hồi đề xuất (tiếng Anh):</strong><br>Dear Guest,<br>Thank you for your feedback and we are glad you enjoyed our breakfast. We sincerely apologise for the smoke smell in your first room and for the long wait before we could move you. Since then, our housekeeping team checks every room for odours before handover and air purifiers are now available. We hope to welcome you back for a much better stay.<br>Warm regards,<br>&lt;Tên&gt;, Front Office Manager</p><p><strong>Bản dịch để duyệt:</strong> Cảm ơn góp ý... xin lỗi về mùi thuốc và thời gian chờ...</p><ul><li>Không nêu số phòng 508, giờ đổi phòng, chuyện khách trước hút thuốc.</li><li>Chỉ nêu việc khắc phục đã có thật theo ghi nhận của bạn.</li><li>Bạn duyệt rồi tự đăng trên Agoda YCS.</li></ul></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-web">
+    <h3>Nghiên cứu Hội An để mở tour học sinh</h3>
+    <div class="meta">Claude web · skill <code>kv-nghien-cuu-diem-den-du-lich</code></div>
+    <div class="mock mock-web">
+  <div class="web-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">claude.ai/new</span></div>
+  <div class="web-main"><div class="chat">
+      <div class="chat-user">Công ty em định mở tour trải nghiệm Hội An 1 ngày cho học sinh THCS. Tìm giúp em tư liệu có nguồn: di sản, điểm tham quan phù hợp, lưu ý mùa mưa. Dùng nguồn chính thống thôi nhé.</div>
+      <div class="chat-ai"><span class="ai-mark">✳</span><div class="ai-body"><div class="ai-chip">⚙ Đang dùng skill <b>kv-nghien-cuu-diem-den-du-lich</b></div><p><strong>Hồ sơ điểm đến: Hội An - tour học sinh THCS</strong> (ngày tra 03/11/2026)</p><table><thead><tr><th>Ý</th><th>Nguồn (bậc)</th></tr></thead><tbody><tr><td>Đô thị cổ Hội An được UNESCO ghi vào Danh mục Di sản thế giới năm 1999</td><td>whc.unesco.org - Hoi An Ancient Town (bậc 1)</td></tr><tr><td>Danh sách điểm tham quan trong khu phố cổ, quy định vé tham quan</td><td>Cổng thông tin du lịch Hội An / UBND thành phố (bậc 1) - giá vé, giờ mở cửa [cần xác nhận]</td></tr><tr><td>Mùa mưa, nguy cơ ngập phố cổ khoảng tháng 10-11</td><td>Cần nguồn khí tượng chính thức - [chưa có nguồn cụ thể], em nên tra bản tin thời tiết khi lập lịch</td></tr></tbody></table><p><strong>Gợi ý trải nghiệm (bậc 3, chỉ tham khảo):</strong> làng gốm, làng rau, làm đèn lồng được review nhiều - cần gọi cơ sở xác nhận đón đoàn học sinh.</p><p><strong>Cần xác nhận trước khi bán:</strong> giá vé tham quan cho học sinh, bãi đỗ xe 45 chỗ, nhà vệ sinh cho đoàn đông.</p></div></div>
+    </div>
+    <div class="chat-input">Trả lời Claude...</div></div></div><div class="mock-label">Minh họa giao diện Claude web. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Báo giá đoàn 20-30 khách Đà Lạt 3N2Đ</h3>
+    <div class="meta">Claude Code · skill <code>kv:bao-gia-tour-chi-phi</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:bao-gia-tour-chi-phi báo giá tour Đà Lạt 3N2Đ theo lich-trinh-da-lat.md.<br>Đơn giá ở nha-cung-cap/: xe 35 chỗ 13.500.000 trọn tuyến, HDV 900.000/ngày, băng rôn 800.000, phòng 3 sao 650.000/phòng đôi/đêm gồm ăn sáng, suất ăn 150.000, bảo hiểm 20.000/khách, nước 30.000/khách.<br>Lợi 15%, báo chưa VAT, 2 mốc 20 và 30 khách. Xuất Excel.</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:bao-gia-tour-chi-phi</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:bao-gia-tour-chi-phi</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>bao-gia-da-lat-2026-11-03.xlsx</b>)</div><div class="term-sub">⎿ Đã tạo bao-gia-da-lat-2026-11-03.xlsx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Cố định theo đoàn:</strong> xe 13.500.000 + HDV 3 ngày 2.700.000 + băng rôn 800.000 = <strong>17.000.000</strong>.<br><strong>Biến đổi/khách:</strong> phòng 650.000 (2 đêm chia đôi) + 5 bữa chính 750.000 + bảo hiểm 20.000 + nước 30.000 = <strong>1.450.000</strong>.</p><table><thead><tr><th>Số khách</th><th>Cố định/khách</th><th>Chi phí/khách</th><th>Giá bán (+15%, làm tròn lên chục nghìn)</th></tr></thead><tbody><tr><td>20</td><td>850.000</td><td>2.300.000</td><td>2.650.000</td></tr><tr><td>30</td><td>566.667</td><td>2.016.667</td><td>2.320.000</td></tr></tbody></table><ul><li><strong>Vé tham quan, cáp treo:</strong> chưa có trong nha-cung-cap/ -&gt; [cần bổ sung], giá trên CHƯA gồm vé.</li><li>Phụ thu phòng đơn: [cần bổ sung] giá phòng đơn từ khách sạn.</li><li>Đã kiểm chéo: 30 x 2.016.667 ~ 60.500.000 = 17.000.000 + 30 x 1.450.000.</li></ul><p>Đã ghi <code>bao-gia-da-lat-2026-11-03.xlsx</code> (sheet Chi phi, Gia theo so khach, giữ công thức). Bản gửi khách chưa xuất vì còn thiếu vé - giám đốc duyệt giá bán cuối.</p><div class="files"><div class="fcard dark"><span class="fic" style="background:#217346">X</span><span><b>bao-gia-da-lat-2026-11-03.xlsx</b><small>Excel · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="claude-code">
+    <h3>Đề xuất MICE nghỉ mát 120 người ra slide</h3>
+    <div class="meta">Claude Code · skill <code>kv:de-xuat-tour-mice-doan-cong-ty</code></div>
+    <div class="mock mock-term">
+  <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span>claude - ~/cong-viec</span></div>
+  <div class="term-body">
+    <div class="term-user"><span class="term-caret">&gt;</span> Dùng kv:de-xuat-tour-mice-doan-cong-ty soạn đề xuất cho công ty Thành Đạt: 120 nhân viên, tháng 6/2027, 3N2Đ, cần gala dinner và team building, ngân sách khoảng 5 triệu/khách. Yêu cầu khách ở yeu-cau/thanh-dat.md. Xuất PPTX.</div>
+    <div class="term-tool"><span class="dot-or">●</span> Skill(<b>kv:de-xuat-tour-mice-doan-cong-ty</b>)</div>
+    <div class="term-sub">⎿ Đã nạp skill kv:de-xuat-tour-mice-doan-cong-ty</div>
+    <div class="term-tool"><span class="dot-or">●</span> Write(<b>de-xuat-mice-thanh-dat-2026-11-03.pptx</b>)</div><div class="term-sub">⎿ Đã tạo de-xuat-mice-thanh-dat-2026-11-03.pptx</div>
+    <div class="term-reply"><span class="dot-wh">●</span><div><p><strong>Hiểu yêu cầu:</strong> 120 khách, 3N2Đ tháng 6/2027, mục tiêu gắn kết, ngân sách khách nêu khoảng 5.000.000/khách.</p><table><thead><tr><th></th><th>A - Quy Nhơn</th><th>B - Phú Quốc</th><th>C - Hạ Long</th></tr></thead><tbody><tr><td>Phù hợp</td><td>gắn kết, biển yên</td><td>nghỉ dưỡng, gia đình đi kèm</td><td>gần, đi xe được nếu xuất phát miền Bắc</td></tr><tr><td>Hạn chế</td><td>ít chuyến bay giờ đẹp</td><td>vé máy bay hè cao</td><td>mùa hè có thể có bão</td></tr><tr><td>Ngân sách</td><td>[cần báo giá]</td><td>[cần báo giá]</td><td>[cần báo giá]</td></tr></tbody></table><ul><li>Team building bãi biển có phương án trong nhà khi mưa; gala chủ đề do khách chọn.</li><li>Chưa có đơn giá nhà cung cấp nên chưa ghi số tiền theo phương án, chỉ so tương đối.</li></ul><p>Đã ghi <code>de-xuat-mice-thanh-dat-2026-11-03.pptx</code> (12 slide). Chưa dùng logo Thành Đạt vì chưa được cho phép.</p><div class="files"><div class="fcard dark"><span class="fic" style="background:#C43E1C">P</span><span><b>de-xuat-mice-thanh-dat-2026-11-03.pptx</b><small>PowerPoint · Tải xuống</small></span></div></div></div></div>
+  </div></div><div class="mock-label">Minh họa giao diện Claude Code. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div><div class="ex" data-platform="codex">
+    <h3>Dây chuyền hồ sơ tour đoàn 40 khách bị chặn vòng 1</h3>
+    <div class="meta">ChatGPT Codex · skill <code>kv-day-chuyen-ho-so-tour-doan</code></div>
+    <div class="mock mock-cx">
+  <div class="cx-bar"><span class="dots"><i></i><i></i><i></i></span><span class="cx-title">Dây chuyền hồ sơ tour đoàn 40 khách bị chặn vòng 1</span><span class="cx-open">Mở trong ▾</span></div>
+  <div class="cx-wrap">
+    <aside class="cx-side"><b>✎ Luồng mới</b><span>⚡ Tự động hóa</span><span>✦ Skills</span><small>DỰ ÁN</small><span class="on">▸ cong-viec</span><span class="sub">Dây chuyền hồ sơ tour đoàn 40 khách bị chặn vòng 1</span><span class="sub muted">Báo cáo tuần trước</span></aside>
+    <div class="cx-main"><div class="cx-thread"><div class="cx-user"><span class="cx-chip">$kv-day-chuyen-ho-so-tour-doan</span> Dùng kv:day-chuyen-ho-so-tour-doan cho thư mục tour-doan/minh-phat-2027-04. Cần lịch trình Đà Nẵng - Hội An 3N2Đ, bảng chi phí, báo giá gửi khách 3 mốc 30-40-50 khách, bảng kiểm an toàn.</div>
+      <div class="cx-ai"><div class="cx-step"><span class="cx-ic">◇</span> Đã đọc <b>kv-day-chuyen-ho-so-tour-doan</b> · SKILL.md</div>
+      <div class="cx-diff"><div class="cx-diff-h"><b>2 file đã tạo</b><span class="cx-add">+277</span></div><div class="cx-diff-r"><span>lich-trinh-minh-phat-2026-11-03.docx</span><span class="cx-add">mới</span></div><div class="cx-diff-r"><span>bao-gia-minh-phat-2026-11-03.xlsx</span><span class="cx-add">mới</span></div></div><div class="cx-reply"><p>Đã tạo <code>.kv-run/tour-minh-phat-20261103/</code> và chạy 4 khâu.</p><table><thead><tr><th>Khâu</th><th>Agent</th><th>Kết quả</th></tr></thead><tbody><tr><td>Thu thập</td><td>kv-gom-yeu-cau-doan-khach</td><td>9 file; 2 email ghi số khách khác nhau (40 và 42)</td></tr><tr><td>Thực thi</td><td>kv-soan-ho-so-tour</td><td>02-ban-nhap.md, 02-ban-nhap-chi-phi.csv</td></tr><tr><td>Gác cổng vòng 1</td><td>kv-soat-lich-trinh-bao-gia</td><td><strong>CHẶN</strong> - phòng tính 3 đêm, lịch trình 2 đêm; báo giá gửi khách lộ cột giá vốn</td></tr><tr><td>Gác cổng vòng 2</td><td>kv-soat-lich-trinh-bao-gia</td><td><strong>QUA</strong></td></tr><tr><td>Bàn giao</td><td>kv-kiem-dinh-ban-giao</td><td>04-ban-giao.md - đủ 4 sản phẩm theo kế hoạch</td></tr></tbody></table><p><strong>Còn mở:</strong> số khách 40 hay 42 (hỏi chị Hà bên Minh Phát), giá vé Bà Nà [cần bổ sung], giờ mở cửa phố cổ buổi tối [cần xác nhận].<br>Đã xuất <code>lich-trinh-minh-phat-2026-11-03.docx</code> và <code>bao-gia-minh-phat-2026-11-03.xlsx</code>. Trưởng phòng duyệt giá trước khi gửi.</p><div class="files"><div class="fcard"><span class="fic" style="background:#2B579A">W</span><span><b>lich-trinh-minh-phat-2026-11-03.docx</b><small>Word · Tải xuống</small></span></div><div class="fcard"><span class="fic" style="background:#217346">X</span><span><b>bao-gia-minh-phat-2026-11-03.xlsx</b><small>Excel · Tải xuống</small></span></div></div></div></div></div>
+      <div class="cx-input"><span>Hỏi Codex bất cứ điều gì, @ để thêm file, $ để gọi skill</span><div class="cx-chips"><span>＋</span><span>Cục bộ ▾</span><span>GPT-5.5 ▾</span><span>Tự động ▾</span><span class="cx-send">↑</span></div></div>
+    </div>
+  </div></div><div class="mock-label">Minh họa giao diện ChatGPT Codex. Câu trả lời thật sẽ khác tùy dữ liệu của bạn.</div></div></div>
+</div></section>
+
+<section id="luong"><div class="wrap">
+  <h2>Luồng làm việc nhất quán</h2><p class="sub">Mỗi skill kết thúc bằng mục "Luồng tiếp theo", nên các việc nối thành chuỗi cố định. Làm xong bước này, Claude gợi ý đúng bước kế.</p>
+  <div class="luong"><h3>Khách lẻ hỏi tour đến báo giá</h3><p>Sales nhận yêu cầu tour gia đình, nhóm bạn, cần gửi chương trình và giá trong ngày</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:nghien-cuu-diem-den-du-lich</code><span>Nắm nhanh điểm đến, mùa, điều cần xác nhận</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:thiet-ke-lich-trinh-tour</code><span>Dựng chương trình theo ngày có đệm thời gian</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:bao-gia-tour-chi-phi</code><span>Tính giá từ đơn giá nhà cung cấp, tách bản gửi khách</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:kiem-tra-chong-bia</code><span>Soát số tiền, số đêm, số bữa</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:viet-email</code><span>Email gửi chương trình và báo giá cho khách</span></div><span class="arrow">→</span><div class="step"><small>Bước 6</small><code>kv:xuat-word</code><span>Xuất file Word để gửi, nộp hoặc lưu</span></div></div></div><div class="luong"><h3>Đoàn công ty (MICE)</h3><p>Phòng nhân sự công ty khách gửi yêu cầu nghỉ mát, hội nghị, khen thưởng</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:gom-yeu-cau-doan-khach</code><span>Gom yêu cầu và báo giá nhà cung cấp, chỉ chỗ thiếu</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:de-xuat-tour-mice-doan-cong-ty</code><span>Đề xuất 2-3 phương án, ra slide đi gặp khách</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:day-chuyen-ho-so-tour-doan</code><span>Khách chọn phương án, chạy hồ sơ lịch trình + báo giá có gác cổng</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:soat-cam-ket-dich-vu-luu-tru</code><span>Soát cam kết trong báo giá gửi khách</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-pptx</code><span>Xuất file PowerPoint để gửi, nộp hoặc lưu</span></div></div></div><div class="luong"><h3>Hướng dẫn viên chuẩn bị đoàn</h3><p>Trước ngày đi 2-3 ngày, HDV chuẩn bị bài nói và an toàn</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:nghien-cuu-diem-den-du-lich</code><span>Tư liệu điểm tham quan có nguồn</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:thuyet-minh-diem-tham-quan</code><span>Bài thuyết minh theo đối tượng khách và thời lượng</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:checklist-an-toan-tour</code><span>Bảng kiểm an toàn theo chương trình</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:viet-tin-nhan-cong-viec</code><span>Tin nhắn nhóm đoàn: giờ hẹn, đồ cần mang, lưu ý</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-pdf</code><span>Xuất file PDF để gửi, nộp hoặc lưu</span></div></div></div><div class="luong"><h3>Review và khiếu nại hằng tuần</h3><p>Quản lý khách sạn xử lý review mới và sự việc trong tuần</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:xu-ly-overbooking-khieu-nai</code><span>Xử lý các sự việc còn mở, ghi biên bản</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:tra-loi-review-khach-san</code><span>Soạn phản hồi từng review theo ghi nhận nội bộ</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:soat-cam-ket-dich-vu-luu-tru</code><span>Soát cam kết, dữ liệu khách trước khi đăng</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:viet-bao-cao</code><span>Báo cáo tuần về chủ đề khách phàn nàn cho ban giám đốc</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-word</code><span>Xuất file Word để gửi, nộp hoặc lưu</span></div></div></div><div class="luong"><h3>Giá và công suất cuối tháng</h3><p>Chủ khách sạn, homestay xem lại tháng qua và chỉnh giá tháng tới</p>
+    <div class="chain"><div class="step"><small>Bước 1</small><code>kv:bao-cao-cong-suat-phong</code><span>Tính OCC, ADR, RevPAR, kênh, hủy từ file đặt phòng</span></div><span class="arrow">→</span><div class="step"><small>Bước 2</small><code>kv:gia-phong-theo-mua</code><span>Đề xuất chỉnh bảng giá mùa tới để chủ quyết</span></div><span class="arrow">→</span><div class="step"><small>Bước 3</small><code>kv:mo-ta-phong-listing-ota</code><span>Cập nhật mô tả hạng phòng bán chậm</span></div><span class="arrow">→</span><div class="step"><small>Bước 4</small><code>kv:kiem-tra-chong-bia</code><span>Soát số trước khi trình chủ</span></div><span class="arrow">→</span><div class="step"><small>Bước 5</small><code>kv:xuat-excel</code><span>Xuất file Excel để gửi, nộp hoặc lưu</span></div></div></div>
+  <div class="proto"><b>Giao thức chạy dây chuyền:</b> <code>.kv-run/&lt;việc&gt;-&lt;ngày&gt;/</code> → 00 kế hoạch → 01 thu thập → 02 bản nháp → 03 gác cổng (QUA/CHẶN, tối đa 2 vòng) → 04 kiểm định bàn giao → xuất Word/Excel/PDF/PPTX. Mọi khâu để lại file, xem lại và chạy tiếp được.</div>
+</div></section>
+
+<section id="free-pro"><div class="wrap">
+  <h2>Free và Pro</h2><p class="sub">Bản Free làm trọn việc chính. Bản Pro đi sâu hơn ở từng skill và thêm các việc chuyên sâu.</p>
+  <table class="cmp"><thead><tr><th></th><th>Free</th><th>Pro</th></tr></thead><tbody>
+  <tr><td>Skill nghề + kỹ năng nền</td><td>Đủ dùng hằng ngày</td><td class="pro">Gần gấp đôi, thêm skill chuyên sâu</td></tr>
+  <tr><td>Trong mỗi skill</td><td>Làm trọn việc chính</td><td class="pro">Phần nâng cao: mẫu biểu, bảng tra, script, xử lý hàng loạt</td></tr>
+  <tr><td>Dây chuyền nhiều trợ lý</td><td>1</td><td class="pro">3, có điều phối song song, chạy tiếp khi gián đoạn</td></tr>
+  <tr><td>Xuất Word, Excel, PDF, PowerPoint</td><td>Trình bày chuẩn</td><td class="pro">Mẫu thương hiệu riêng (logo, màu, header), xuất hàng loạt</td></tr>
+  <tr><td>Luồng làm việc mẫu</td><td>3-5</td><td class="pro">Thêm luồng chuyên sâu</td></tr>
+  <tr><td>Cập nhật theo quy định mới</td><td>Cộng đồng</td><td class="pro">Ưu tiên</td></tr>
+  </tbody></table>
+  <div class="pros"><div>⭐ 11 skill chuyên sâu mới: quản trị doanh thu, kế hoạch mùa cao điểm, báo cáo chủ đầu tư (GOP, GOPPAR), chỉ số danh tiếng đa kênh, khách thân thiết RFM, rà hợp đồng đối tác, đào tạo 30-60-90 ngày, thuyết minh inbound, kế hoạch khẩn cấp</div><div>⭐ 2 dây chuyền mới có gác cổng QUA/CHẶN: quyết toán đoàn tour và mở tuyến tour mới (nghiên cứu nhiều điểm song song, giá thành 3 mùa) với 4 agent mới</div><div>⭐ 17 script Python chạy thật: công suất + OTB 30-60-90 ngày, giá động theo pickup, quy đổi âm - dương lịch, bảng giá 10 mốc khách có công thức Excel sống, quyết toán lãi lỗ, phân phòng theo ca, kiểm giờ xe</div><div>⭐ 15 skill free được nâng cấp với hơn 40 file mẫu: 30 khung tour, 12 email vòng đời song ngữ, 40 tình huống lễ tân, 25 kịch bản khiếu nại, 15 SOP buồng phòng, thư viện 20 gala + 30 trò team building</div><div>⭐ Danh bạ nguồn bậc 1 đủ 63 tỉnh cũ theo 34 đơn vị hành chính mới, lịch lễ Tết 2027-2029 tính bằng thuật toán âm lịch</div><div>⭐ Thêm tiếng Hàn, Trung, Nhật cho email, listing, câu chào lễ tân; giá vé, giờ mở cửa luôn [cần xác nhận], an toàn khách luôn đặt trước lịch trình</div></div>
+  <div class="cta"><div><h3>Nâng cấp Kit Việt Pro</h3><p>Mỗi skill Free đều có mục "Bản Pro có thêm" ở cuối file. Mở ra xem bạn đang bỏ lỡ gì.</p></div><a class="btn" href="https://mochistudio.io.vn/kit-viet-pro">Xem bản Pro</a></div>
+</div></section>
+
+<section id="hoi-dap"><div class="wrap">
+  <h2>Ba nguyên tắc và hỏi đáp</h2>
+  <div class="rules"><div><b>AI hỗ trợ, bạn chịu trách nhiệm cuối.</b><br>Đọc lại mọi bản trước khi gửi, ký, nộp.</div><div><b>Không để AI tự gửi thay bạn.</b><br>Bộ này chỉ soạn và lưu file.</div><div><b>Che thông tin nhạy cảm trước.</b><br>Dùng <code>kv:an-thong-tin-nhay-cam</code> và <code>kv:soat-bao-mat</code>.</div></div>
+  <div class="faq" style="margin-top:20px">
+    <details><summary>Gõ /kv: không thấy skill nào?</summary>Kiểm tra đường dẫn phải là <code>.claude/skills/kv/.claude-plugin/plugin.json</code>. Nếu thành <code>.claude/skills/claude-code/kv/...</code> là copy thừa một lớp. Sau đó mở lại Claude Code hoặc gõ <code>/reload-plugins</code>.</details>
+    <details><summary>Claude không tự gọi skill?</summary>Gọi thẳng tên: "Dùng skill kv:&lt;tên&gt; để ...". Hoặc mở file SKILL.md, thêm vào dòng description cụm từ bạn hay nói.</details>
+    <details><summary>Không thấy thư mục .claude?</summary>Đây là thư mục ẩn. Windows: File Explorer -> View -> Hidden items. macOS: Cmd + Shift + dấu chấm.</details>
+    <details><summary>Claude web báo lỗi khi tải skill?</summary>Tải từng file zip trong <code>claude-web/</code>, không giải nén. Cần gói trả phí và bật Code execution trong Settings.</details>
+    <details><summary>Cài nhiều bộ nghề cùng lúc được không?</summary>Được. Copy đè các bộ vào cùng thư mục <code>kv</code>, skill dùng chung chỉ giữ một bản. Bản Pro copy đè lên bản Free.</details>
+    <details><summary>Có cần biết lập trình không?</summary>Không. Mọi file là văn bản thường, mở bằng Notepad cũng sửa được. Dùng <code>kv:dong-goi-skill-moi</code> để tạo skill riêng từ việc bạn vừa làm.</details>
+  </div>
+</div></section>
+<footer><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Kit Việt">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvBg)"/>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvShine)"/>
+  <!-- Ba khối xếp chồng: skill, agent, dây chuyền -->
+  <rect x="26" y="80" width="76" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="26" y="96" width="52" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+  <text x="26" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+  <path transform="translate(98 30) scale(1.25)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+</svg>
+
+  <div><b>Kit Việt</b> là sản phẩm của <b>MochiStudio</b> · <a href="https://mochistudio.io.vn">mochistudio.io.vn</a><br>
+  Phiên bản 1.1.0 · Bộ phát hành theo giấy phép MIT, giữ nguyên file LICENSE trong gói. · Giao diện trong trang là minh họa.</div></div></footer>
+<script>
+document.querySelectorAll('[data-tabs]').forEach(box=>{
+  const tabs=box.querySelectorAll('.tab');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.toggle('on',x===t));
+    box.parentElement.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+  }));
+});
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b===btn));
+  const f=btn.dataset.filter;
+  document.querySelectorAll('.ex').forEach(e=>e.style.display=(f==='all'||e.dataset.platform===f)?'':'none');
+}));
+const q=document.getElementById('q');
+if(q)q.addEventListener('input',()=>{
+  const v=q.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+  document.querySelectorAll('.sk').forEach(s=>{
+    const t=s.textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+    s.style.display=t.includes(v)?'':'none';
+  });
+});
+document.querySelectorAll('.tree').forEach(pre=>{
+  const b=document.createElement('button');b.className='copy';b.textContent='Copy';
+  b.onclick=()=>{navigator.clipboard.writeText(pre.dataset.copy||pre.innerText.replace(/^Copy/,''));b.textContent='Đã copy';setTimeout(()=>b.textContent='Copy',1500)};
+  pre.prepend(b);
+});
+</script>
+</body>
+</html>

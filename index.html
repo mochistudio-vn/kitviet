@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Việt - Bộ AI Agent tiếng Việt theo nghề</title>
+<meta name="description" content="Kit Việt - bộ skill và agent tiếng Việt cho Claude và ChatGPT Codex. Sản phẩm của MochiStudio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%20width%3D%22128%22%20height%3D%22128%22%20role%3D%22img%22%20aria-label%3D%22Kit%20Vi%E1%BB%87t%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvBg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E5322D%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23B3121B%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22kvShine%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%22.22%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.55%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvBg)%22%2F%3E%0A%20%20%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2230%22%20fill%3D%22url(%23kvShine)%22%2F%3E%0A%20%20%3C!--%20Ba%20kh%E1%BB%91i%20x%E1%BA%BFp%20ch%E1%BB%93ng%3A%20skill%2C%20agent%2C%20d%C3%A2y%20chuy%E1%BB%81n%20--%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2280%22%20width%3D%2276%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.28%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2296%22%20width%3D%2252%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%22.18%22%2F%3E%0A%20%20%3Ctext%20x%3D%2226%22%20y%3D%2272%22%20font-family%3D%22'Be%20Vietnam%20Pro'%2C'Segoe%20UI'%2C'Inter'%2CArial%2Csans-serif%22%20font-size%3D%2258%22%20font-weight%3D%22800%22%20letter-spacing%3D%22-3%22%20fill%3D%22%23FFFFFF%22%3Ekv%3C%2Ftext%3E%0A%20%20%3Cpath%20transform%3D%22translate(98%2030)%20scale(1.25)%22%20fill%3D%22%23FFCD00%22%20d%3D%22M0%2C-10%20L2.35%2C-3.24%20L9.51%2C-3.09%20L3.8%2C1.24%20L5.88%2C8.09%20L0%2C4%20L-5.88%2C8.09%20L-3.8%2C1.24%20L-9.51%2C-3.09%20L-2.35%2C-3.24%20Z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#D7261E;--brand:#D7261E;--ink:#1C1917;--muted:#6B6460;--line:#E7E2DA;--bg:#FBF8F3;--card:#fff;--soft:#F4EFE7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro','Segoe UI',Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}code{font-family:'JetBrains Mono',Consolas,monospace;font-size:.86em;background:var(--soft);padding:.1em .35em;border-radius:5px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+header.top .logo svg{height:40px;width:auto;display:block}
+nav.menu{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.menu a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}
+nav.menu a:hover{background:var(--soft);color:var(--ink)}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:99px;background:var(--soft);color:var(--muted)}
+.badge.pro{background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff}
+.badge.free{background:#DCFCE7;color:#166534}
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-40% -10% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 22%,transparent),transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:14px 0 12px;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:760px;margin:0 0 22px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;min-width:130px}
+.stat b{display:block;font-size:28px;line-height:1.1;color:var(--accent)}
+.stat span{font-size:13px;color:var(--muted)}
+.who{display:flex;flex-wrap:wrap;gap:8px}.who span{background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:99px;font-size:14px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin:0 0 6px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);padding:9px 16px;border-radius:10px;cursor:pointer;font:inherit;font-size:15px;color:var(--ink)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none}.panel.on{display:block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
+.tree{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:16px 20px;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;white-space:pre;overflow:auto;margin-top:14px}
+.note{background:color-mix(in srgb,var(--accent) 8%,#fff);border:1px solid color-mix(in srgb,var(--accent) 25%,#fff);border-radius:14px;padding:14px 18px;margin-top:14px}
+.search{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;margin-bottom:20px;background:#fff}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.group{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.group h3{margin:0 0 10px;font-size:17px}
+.group.locked{background:repeating-linear-gradient(135deg,#fff,#fff 12px,#FFF8EB 12px,#FFF8EB 24px);border-color:#F3D9A4}
+.sk{display:flex;flex-direction:column;padding:9px 0;border-top:1px dashed var(--line)}
+.sk:first-of-type{border-top:0}
+.sk .nm{font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;color:var(--accent);font-weight:600}
+.sk .vc{font-size:14.5px}
+.sk .ds{font-size:13px;color:var(--muted)}
+.lock{font-size:12px;font-weight:700;color:#B45309;margin-left:6px}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.agcol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.agcol h3{margin:0;font-size:18px}.agcol .k{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.ag{padding:9px 0;border-top:1px dashed var(--line);font-size:14px}
+.ag b{font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;color:var(--accent)}
+.flow{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.flow h3{margin:0 0 12px;font-size:17px}
+.flow .row{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.flow .node{flex:1;min-width:170px;border-radius:12px;padding:10px 12px;background:var(--soft)}
+.flow .node small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.flow .node code{background:#fff}
+.flow .arrow{align-self:center;color:var(--muted);font-size:20px}
+.flow .cmd{margin-top:12px;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.examples{display:grid;gap:26px}
+.ex h3{margin:0 0 4px;font-size:18px}.ex .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.mock{border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(28,25,23,.12);border:1px solid #DDD5CA;font-size:14.5px}
+.mock table{border-collapse:collapse;margin:8px 0;font-size:13.5px;width:100%}
+.mock th,.mock td{border:1px solid rgba(127,127,127,.3);padding:5px 8px;text-align:left;vertical-align:top}
+.mock ul,.mock ol{margin:6px 0;padding-left:20px}.mock p{margin:6px 0}.mock .md-h{font-weight:700;margin-top:10px}
+.dots{display:inline-flex;gap:6px;margin-right:12px}.dots i{width:11px;height:11px;border-radius:50%;background:#FF5F57}.dots i+i{background:#FEBC2E}.dots i+i+i{background:#28C840}
+.web-bar,.desk-bar{display:flex;align-items:center;background:#ECE8E1;padding:9px 14px;font-size:13px;color:#57534E}
+.url{background:#fff;border-radius:8px;padding:3px 14px;flex:0 1 360px}
+.desk-title{margin:0 auto;font-weight:600}
+.web-main,.desk-main{background:#FAF9F5;color:#1F1E1D;font-family:'Noto Serif','Times New Roman',serif}
+.desk-wrap{display:flex}
+.desk-side{width:190px;background:#F2EFE8;border-right:1px solid #E4DED3;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#57534E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.desk-main{flex:1;min-width:0}
+.chat{padding:20px 24px 10px;max-width:760px;margin:0 auto}
+.chat-user{margin-left:auto;max-width:82%;width:fit-content;background:#F0EEE6;border-radius:16px;padding:10px 14px;margin-bottom:16px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.chat-ai{display:flex;gap:10px}
+.ai-mark{color:#D97757;font-size:22px;line-height:1}
+.ai-body{flex:1;min-width:0}
+.ai-chip{display:inline-block;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;font-size:12.5px;background:#fff;border:1px solid #E4DED3;border-radius:8px;padding:3px 10px;color:#57534E;margin-bottom:6px}
+.chat-input{margin:8px 24px 18px;border:1px solid #DDD6CB;border-radius:14px;background:#fff;padding:12px 16px;color:#A8A29E;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;max-width:712px}
+@media (min-width:800px){.chat-input{margin-left:auto;margin-right:auto}}
+.mock-term{background:#1A1A1A;color:#E7E5E4;font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px}
+.term-bar{display:flex;align-items:center;background:#2A2A2A;padding:8px 14px;color:#A8A29E;font-size:12.5px}
+.term-body{padding:16px 18px}
+.term-user{color:#fff;margin-bottom:10px}.term-caret{color:#D97757}
+.term-tool{color:#E7E5E4}.dot-or{color:#D97757}.term-tool b{color:#FDBA74}
+.term-sub{color:#78716C;margin:0 0 10px 18px}
+.term-reply{display:flex;gap:8px}.dot-wh{color:#E7E5E4}
+.mock-term th,.mock-term td{border-color:#44403C}
+.mock-cx{background:#fff;color:#18181B;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;border-color:#E4E4E7}
+.cx-bar{display:flex;align-items:center;background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:9px 14px;font-size:13px;color:#52525B}
+.cx-title{margin:0 auto;font-weight:600;color:#18181B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+.cx-open{font-size:12px;border:1px solid #E4E4E7;background:#fff;border-radius:8px;padding:2px 9px}
+.cx-wrap{display:flex}
+.cx-side{width:190px;background:#FAFAFA;border-right:1px solid #E4E4E7;padding:14px 12px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#52525B}
+.cx-side b{color:#18181B}.cx-side small{font-size:10.5px;letter-spacing:.08em;color:#A1A1AA;margin-top:8px}
+.cx-side .on{color:#18181B;font-weight:600}.cx-side .sub{padding-left:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#EFEFF1;border-radius:6px;padding:3px 8px 3px 14px}.cx-side .sub.muted{background:none}
+.cx-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.cx-thread{padding:20px 24px 8px;max-width:760px;width:100%;margin:0 auto;box-sizing:border-box}
+.cx-user{margin-left:auto;max-width:82%;width:fit-content;background:#F4F4F5;border-radius:16px;padding:10px 14px;margin-bottom:14px}
+.cx-chip{background:#EEF2FF;color:#4338CA;border-radius:6px;padding:1px 7px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}
+.cx-step{color:#71717A;font-size:13px;margin-bottom:8px}.cx-ic{color:#A1A1AA;margin-right:4px}
+.cx-diff{border:1px solid #E4E4E7;border-radius:12px;margin:6px 0 12px;font-size:13px;overflow:hidden}
+.cx-diff-h{display:flex;justify-content:space-between;background:#FAFAFA;padding:7px 12px;border-bottom:1px solid #E4E4E7}
+.cx-diff-r{display:flex;justify-content:space-between;padding:6px 12px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12.5px}.cx-diff-r+.cx-diff-r{border-top:1px solid #F4F4F5}
+.cx-add{color:#16A34A;font-weight:600}
+.cx-reply{line-height:1.6}
+.cx-input{margin:6px 24px 16px;border:1px solid #E4E4E7;border-radius:18px;padding:12px 14px 8px;color:#A1A1AA;font-size:13.5px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.cx-chips{display:flex;gap:8px;margin-top:10px;font-size:12px;color:#52525B;align-items:center}.cx-chips span{border:1px solid #E4E4E7;border-radius:99px;padding:2px 9px}
+.cx-chips .cx-send{margin-left:auto;background:#18181B;color:#fff;border-color:#18181B;border-radius:50%;padding:2px 8px}
+.cx-skills{padding:4px 0}.cx-sk-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}.cx-sk-h span{font-size:12.5px;color:#71717A}
+.cx-sk{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #F4F4F5}.cx-sk>span:nth-child(2){flex:1;min-width:0}.cx-sk b{display:block;font-size:13.5px}.cx-sk small{color:#71717A;font-size:12px}
+.mock-label{font-size:11.5px;color:var(--muted);margin-top:6px}
+.cmp{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.cmp th,.cmp td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{background:var(--soft)}
+.cmp td.pro{background:#FFFBEB;font-weight:600}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:22px;padding:22px 26px;border-radius:18px;background:linear-gradient(135deg,#1C1917,#3B2A20);color:#fff}
+.cta h3{margin:0 0 4px;font-size:22px}.cta p{margin:0;color:#D6CFC6}
+.btn{display:inline-block;background:linear-gradient(135deg,#F59E0B,#EA580C);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+.pros{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
+.pros div{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:12px 14px;font-size:14.5px}
+.luong{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.luong h3{margin:0 0 2px;font-size:17px}.luong p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.chain .step{flex:1;min-width:160px;background:var(--soft);border-radius:12px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;font-size:13.5px}
+.chain .step small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.chain .step code{background:#fff;width:fit-content}
+.chain .arrow{align-self:center;color:var(--muted)}
+.proto{background:#1F1B18;color:#EDE6DC;border-radius:14px;padding:14px 18px;font-size:14.5px}.proto code{background:#3A332E;color:#FDE68A}
+.files{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.fcard{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #E4DED3;border-radius:12px;padding:8px 14px 8px 8px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;min-width:230px}
+.fcard.dark{background:#232323;border-color:#3A3A3A;color:#E7E5E4}
+.fcard b{display:block;font-size:13px}.fcard small{color:#8A8580;font-size:11.5px}
+.fic{width:36px;height:36px;border-radius:8px;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center;font-family:'Be Vietnam Pro',sans-serif}
+.shot-cap{font-size:13px;color:var(--muted);margin:18px 0 8px}
+.shot{max-width:780px}
+.ac{display:flex;gap:14px;padding:3px 8px;border-radius:6px;font-size:13px}.ac b{color:#E7E5E4;min-width:300px;font-weight:500}.ac span{color:#8A8580}
+.ac.on{background:#3A2A22}.ac.on b{color:#FDBA74}
+.sk-page{padding:18px 22px;font-family:'Be Vietnam Pro','Segoe UI',sans-serif}
+.sk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:18px}
+.up{font-size:13px;background:#1F1E1D;color:#fff;padding:6px 12px;border-radius:8px}
+.sk-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #ECE6DC}
+.sk-row b{display:block;font-size:13.5px}.sk-row small{color:#8A8580;font-size:12px}.sk-row>span:nth-child(2){flex:1}
+.sk-ic{width:34px;height:34px;border-radius:9px;background:#D7261E;color:#fff;font-weight:800;font-size:12px;display:grid;place-items:center}
+.tog{width:34px;height:20px;border-radius:99px;background:#D6D3D1;position:relative}.tog:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.tog.on{background:#D97757}.tog.on:after{left:16px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.rules div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:42px;width:auto}
+.copy{float:right;font-size:12px;border:1px solid #57534E;background:none;color:#D6D3D1;border-radius:6px;padding:2px 8px;cursor:pointer;font-family:inherit}
+@media (max-width:760px){nav.menu{display:none}.desk-side,.cx-side{display:none}}
+:root{--accent:#D7261E}</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140" role="img" aria-label="Kit Việt - sản phẩm của MochiStudio">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6 6)">
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvBg)"/>
+    <rect x="0" y="0" width="128" height="128" rx="32" fill="url(#kvShine)"/>
+    <rect x="23" y="80" width="80" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+    <rect x="23" y="97" width="55" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+    <text x="23" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+    <path transform="translate(100 30) scale(1.3)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+  </g>
+  <text x="160" y="82" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5" fill="#1C1917">Kit <tspan fill="#D7261E">Việt</tspan></text>
+  <text x="163" y="118" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="20" font-weight="500" letter-spacing=".3" fill="#78716C">Sản phẩm của <tspan font-weight="700" fill="#44403C">MochiStudio</tspan> · mochistudio.io.vn</text>
+</svg>
+</a></div></header>
+<div class="hero"><div class="wrap"><span class="badge">Kit Việt · v1.1.0</span>
+<h1>Bộ AI Agent tiếng Việt cho <span>20 nghề</span></h1>
+<p class="lead">Skill và trợ lý viết cho người đi làm ở Việt Nam. Copy vào máy là dùng, chạy trên Claude Code, Claude web/Desktop và ChatGPT Codex. Mọi skill có tiền tố <code>kv:</code>.</p></div></div>
+<div class="wrap"><style>.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:10px 0 50px}
+  .kcard{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-top:5px solid var(--c);border-radius:18px;padding:20px;transition:.15s}
+  .kcard:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+  .kcard h3{margin:10px 0 6px;font-size:20px;color:var(--c)}.kcard p{margin:0 0 14px;color:var(--muted);font-size:14.5px}
+  .kn{display:flex;gap:14px;font-size:13px;color:var(--muted)}.kn b{color:var(--ink);font-size:16px}</style><div class="grid"><a class="kcard" href="ke-toan/HUONG-DAN.html" style="--c:#0F766E">
+      <span class="badge free">FREE</span>
+      <h3>Kế toán - Thuế</h3><p>Đối chiếu nhanh, số liệu có nguồn, không bịa một đồng - để kế toán ký với cái đầu nhẹ.</p>
+      <div class="kn"><span><b>36</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="nhan-su/HUONG-DAN.html" style="--c:#B4235A">
+      <span class="badge free">FREE</span>
+      <h3>Nhân sự - Tuyển dụng</h3><p>Tuyển đúng người, đối xử công bằng, giữ kín dữ liệu - từ JD tới ngày làm việc cuối.</p>
+      <div class="kn"><span><b>34</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="marketing/HUONG-DAN.html" style="--c:#DB2777">
+      <span class="badge free">FREE</span>
+      <h3>Marketing - Content</h3><p>Ra nội dung đủ kênh mỗi tuần, đúng giọng thương hiệu, không dính claim cấm.</p>
+      <div class="kn"><span><b>37</b> skill</span><span><b>15</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="ban-hang-online/HUONG-DAN.html" style="--c:#E8590C">
+      <span class="badge free">FREE</span>
+      <h3>Bán hàng online - Thương mại điện tử</h3><p>Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.</p>
+      <div class="kn"><span><b>35</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="kinh-doanh/HUONG-DAN.html" style="--c:#C2410C">
+      <span class="badge free">FREE</span>
+      <h3>Kinh doanh B2B - Chăm sóc khách hàng</h3><p>Chốt deal nhanh hơn mà không hứa thứ chưa được duyệt.</p>
+      <div class="kn"><span><b>33</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="giao-duc/HUONG-DAN.html" style="--c:#B45309">
+      <span class="badge free">FREE</span>
+      <h3>Giáo viên - Đào tạo</h3><p>Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.</p>
+      <div class="kn"><span><b>38</b> skill</span><span><b>15</b> agent</span><span><b>4</b> luồng</span></div></a><a class="kcard" href="xay-dung/HUONG-DAN.html" style="--c:#C2410C">
+      <span class="badge free">FREE</span>
+      <h3>Xây dựng - Kỹ sư công trường</h3><p>Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.</p>
+      <div class="kn"><span><b>35</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="y-te/HUONG-DAN.html" style="--c:#0E7C86">
+      <span class="badge free">FREE</span>
+      <h3>Y tế - Phòng khám, Điều dưỡng, Quản lý y tế</h3><p>Bớt giấy tờ, thêm thời gian cho người bệnh - AI lo phần hành chính, chuyên môn vẫn do người có chứng chỉ quyết.</p>
+      <div class="kn"><span><b>34</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="bat-dong-san/HUONG-DAN.html" style="--c:#9A3412">
+      <span class="badge free">FREE</span>
+      <h3>Môi giới bất động sản</h3><p>Tin đăng đúng sổ, phương án vay đủ cả giai đoạn thả nổi, pháp lý hỏi đúng chỗ - bán nhanh mà không mất uy tín.</p>
+      <div class="kn"><span><b>36</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="phap-ly/HUONG-DAN.html" style="--c:#7F1D1D">
+      <span class="badge free">FREE</span>
+      <h3>Pháp chế - Văn phòng luật</h3><p>Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật.</p>
+      <div class="kn"><span><b>37</b> skill</span><span><b>15</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="hanh-chinh-van-phong/HUONG-DAN.html" style="--c:#1E40AF">
+      <span class="badge free">FREE</span>
+      <h3>Hành chính - Văn phòng</h3><p>Văn bản đúng thể thức, lịch sếp không trùng, chi phí có báo giá - để phòng hành chính chạy êm mà không ai phải nhắc.</p>
+      <div class="kn"><span><b>37</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="xuat-nhap-khau/HUONG-DAN.html" style="--c:#0C4A6E">
+      <span class="badge free">FREE</span>
+      <h3>Xuất nhập khẩu - Logistics</h3><p>Chứng từ khớp từng con số, mã HS có căn cứ, cước so trên cùng mặt bằng - để lô hàng thông quan không phải chờ.</p>
+      <div class="kn"><span><b>32</b> skill</span><span><b>12</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="nha-hang-fnb/HUONG-DAN.html" style="--c:#4D7C0F">
+      <span class="badge free">FREE</span>
+      <h3>Nhà hàng - F&amp;B</h3><p>Giá vốn tính từ hóa đơn thật, dị ứng ghi đúng từng món - để quán đông khách mà vẫn có lời.</p>
+      <div class="kn"><span><b>31</b> skill</span><span><b>12</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="du-lich-khach-san/HUONG-DAN.html" style="--c:#0369A1">
+      <span class="badge free">FREE</span>
+      <h3>Du lịch - Khách sạn</h3><p>Lịch trình chạy được, báo giá cộng đúng, trả lời khách đúng mực - giá vé và giờ mở cửa luôn được xác nhận trước khi gửi.</p>
+      <div class="kn"><span><b>33</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="tai-chinh-ngan-hang/HUONG-DAN.html" style="--c:#14532D">
+      <span class="badge free">FREE</span>
+      <h3>Tài chính - Ngân hàng</h3><p>Số có nguồn, công thức minh bạch, lời tư vấn không hứa suông - để người làm ngân hàng trình hồ sơ và gặp khách với cái đầu vững.</p>
+      <div class="kn"><span><b>34</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="bao-hiem/HUONG-DAN.html" style="--c:#1E5AA8">
+      <span class="badge free">FREE</span>
+      <h3>Tư vấn bảo hiểm</h3><p>Tư vấn đúng nhu cầu, số quyền lợi có trang tài liệu, không một lời hứa sai - để khách tin bạn lâu dài.</p>
+      <div class="kn"><span><b>30</b> skill</span><span><b>12</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="cong-nghe-thong-tin/HUONG-DAN.html" style="--c:#4338CA">
+      <span class="badge free">FREE</span>
+      <h3>Công nghệ thông tin - Phần mềm</h3><p>Yêu cầu rõ, test đủ, log có bằng chứng, báo cáo trung thực - để đội phần mềm giao hàng mà không phải đoán.</p>
+      <div class="kn"><span><b>36</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="bao-chi-truyen-thong/HUONG-DAN.html" style="--c:#1D4E89">
+      <span class="badge free">FREE</span>
+      <h3>Báo chí - Truyền thông - PR</h3><p>Nhanh nhưng không sai: mỗi con số có nguồn, mỗi trích dẫn đúng lời, mỗi bài qua hai lớp gác cổng.</p>
+      <div class="kn"><span><b>32</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="hoc-thuat-nghien-cuu/HUONG-DAN.html" style="--c:#3730A3">
+      <span class="badge free">FREE</span>
+      <h3>Học thuật - Nghiên cứu</h3><p>Tài liệu có thật, dữ liệu là của bạn, chữ là của bạn - AI chỉ giúp bạn làm nghiên cứu chắc tay hơn.</p>
+      <div class="kn"><span><b>35</b> skill</span><span><b>14</b> agent</span><span><b>5</b> luồng</span></div></a><a class="kcard" href="san-xuat-nha-may/HUONG-DAN.html" style="--c:#52606D">
+      <span class="badge free">FREE</span>
+      <h3>Sản xuất - Nhà máy</h3><p>Số ca đúng, lỗi tìm tới gốc, an toàn nêu trước - để nhà máy chạy bằng dữ liệu thật chứ không bằng báo cáo đẹp.</p>
+      <div class="kn"><span><b>33</b> skill</span><span><b>13</b> agent</span><span><b>5</b> luồng</span></div></a></div></div>
+<footer><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Kit Việt">
+  <defs>
+    <linearGradient id="kvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5322D"/>
+      <stop offset="1" stop-color="#B3121B"/>
+    </linearGradient>
+    <linearGradient id="kvShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvBg)"/>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#kvShine)"/>
+  <!-- Ba khối xếp chồng: skill, agent, dây chuyền -->
+  <rect x="26" y="80" width="76" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="26" y="96" width="52" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+  <text x="26" y="72" font-family="'Be Vietnam Pro','Segoe UI','Inter',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#FFFFFF">kv</text>
+  <path transform="translate(98 30) scale(1.25)" fill="#FFCD00" d="M0,-10 L2.35,-3.24 L9.51,-3.09 L3.8,1.24 L5.88,8.09 L0,4 L-5.88,8.09 L-3.8,1.24 L-9.51,-3.09 L-2.35,-3.24 Z"/>
+</svg>
+
+  <div><b>Kit Việt</b> là sản phẩm của <b>MochiStudio</b> · <a href="https://mochistudio.io.vn">mochistudio.io.vn</a><br>
+  Phiên bản 1.1.0 · Bộ phát hành theo giấy phép MIT, giữ nguyên file LICENSE trong gói. · Giao diện trong trang là minh họa.</div></div></footer>
+<script>
+document.querySelectorAll('[data-tabs]').forEach(box=>{
+  const tabs=box.querySelectorAll('.tab');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.toggle('on',x===t));
+    box.parentElement.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+  }));
+});
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b===btn));
+  const f=btn.dataset.filter;
+  document.querySelectorAll('.ex').forEach(e=>e.style.display=(f==='all'||e.dataset.platform===f)?'':'none');
+}));
+const q=document.getElementById('q');
+if(q)q.addEventListener('input',()=>{
+  const v=q.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+  document.querySelectorAll('.sk').forEach(s=>{
+    const t=s.textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+    s.style.display=t.includes(v)?'':'none';
+  });
+});
+document.querySelectorAll('.tree').forEach(pre=>{
+  const b=document.createElement('button');b.className='copy';b.textContent='Copy';
+  b.onclick=()=>{navigator.clipboard.writeText(pre.dataset.copy||pre.innerText.replace(/^Copy/,''));b.textContent='Đã copy';setTimeout(()=>b.textContent='Copy',1500)};
+  pre.prepend(b);
+});
+</script>
+</body>
+</html>
