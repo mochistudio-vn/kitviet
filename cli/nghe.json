@@ -1,6 +1,6 @@
 {
   "brand": "Kit Việt",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "website": "https://mochistudio.io.vn",
   "repo": "mochistudio-vn/kitviet",
   "nghe": [
@@ -83,6 +83,165 @@
     {
       "slug": "san-xuat-nha-may",
       "ten": "Sản xuất - Nhà máy"
+    }
+  ],
+  "nen_tang": [
+    {
+      "id": "claude",
+      "ten": "Claude Code",
+      "dir": "~/.claude/skills/kv",
+      "kind": "claude"
+    },
+    {
+      "id": "codex",
+      "ten": "Codex CLI",
+      "dir": ".agents/skills",
+      "kind": "codex"
+    },
+    {
+      "id": "desktop",
+      "ten": "Claude Desktop / claude.ai",
+      "dir": "KitViet/<nghề>",
+      "kind": "desktop"
+    },
+    {
+      "id": "cursor",
+      "ten": "Cursor",
+      "dir": ".cursor/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "windsurf",
+      "ten": "Windsurf",
+      "dir": ".windsurf/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "antigravity",
+      "ten": "Antigravity",
+      "dir": ".agents/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "copilot",
+      "ten": "GitHub Copilot",
+      "dir": ".github/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "kiro",
+      "ten": "Kiro",
+      "dir": ".kiro/steering",
+      "kind": "skills"
+    },
+    {
+      "id": "qoder",
+      "ten": "Qoder",
+      "dir": ".qoder/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "roocode",
+      "ten": "Roo Code",
+      "dir": ".roo/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "gemini",
+      "ten": "Gemini CLI",
+      "dir": ".gemini/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "trae",
+      "ten": "Trae",
+      "dir": ".trae/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "opencode",
+      "ten": "OpenCode",
+      "dir": ".opencode/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "continue",
+      "ten": "Continue",
+      "dir": ".continue/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "codebuddy",
+      "ten": "CodeBuddy",
+      "dir": ".codebuddy/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "droid",
+      "ten": "Droid (Factory)",
+      "dir": ".factory/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "kilocode",
+      "ten": "KiloCode",
+      "dir": ".kilocode/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "warp",
+      "ten": "Warp",
+      "dir": ".warp/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "augment",
+      "ten": "Augment",
+      "dir": ".augment/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "codewhale",
+      "ten": "CodeWhale",
+      "dir": ".codewhale/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "zcode",
+      "ten": "ZCode",
+      "dir": ".zcode/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "kimi",
+      "ten": "Kimi Code",
+      "dir": ".kimi-code/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "amazonq",
+      "ten": "Amazon Q Developer",
+      "dir": ".amazonq/rules",
+      "kind": "rules"
+    },
+    {
+      "id": "openclaw",
+      "ten": "OpenClaw",
+      "dir": ".agents/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "autoclaw",
+      "ten": "AutoClaw",
+      "dir": "skills",
+      "globalDir": ".openclaw-autoclaw/skills",
+      "kind": "skills"
+    },
+    {
+      "id": "universal",
+      "ten": "Universal / Agent Standard",
+      "dir": ".agents/skills",
+      "kind": "skills"
     }
   ]
 }

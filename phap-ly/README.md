@@ -23,7 +23,7 @@ Bộ skill cho người làm pháp chế doanh nghiệp và văn phòng luật: 
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-phap-ly@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init phap-ly --ai claude
 ```
 

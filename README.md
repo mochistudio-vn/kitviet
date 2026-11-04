@@ -2,9 +2,9 @@
 
 <h1 align="center">Kit Việt - Bộ AI Agent tiếng Việt cho 20 nghề</h1>
 
-<p align="center"><b>Giao việc bằng tiếng Việt, nhận lại file Word, Excel, PDF, PowerPoint đúng thể thức.</b><br>Chạy trên Claude Desktop, Claude web, Claude Code và ChatGPT Codex.</p>
+<p align="center"><b>Giao việc bằng tiếng Việt, nhận lại file Word, Excel, PDF, PowerPoint đúng thể thức.</b><br>Chạy trên Claude Desktop, Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI và 20 AI khác.</p>
 
-<p align="center"><img src="https://img.shields.io/badge/gi%E1%BA%A5y%20ph%C3%A9p-MIT-16a34a?style=flat-square" alt="giấy phép: MIT"> <img src="https://img.shields.io/badge/ngh%E1%BB%81-20-D7261E?style=flat-square" alt="nghề: 20"> <img src="https://img.shields.io/badge/skill%20m%E1%BB%97i%20b%E1%BB%99-30%E2%80%9338-F59E0B?style=flat-square" alt="skill mỗi bộ: 30–38"> <img src="https://img.shields.io/badge/n%E1%BB%81n%20t%E1%BA%A3ng-Claude%20%C2%B7%20Codex-1B1310?style=flat-square" alt="nền tảng: Claude · Codex"> <img src="https://img.shields.io/badge/ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-DA251D?style=flat-square" alt="ngôn ngữ: Tiếng Việt"></p>
+<p align="center"><img src="https://img.shields.io/badge/gi%E1%BA%A5y%20ph%C3%A9p-MIT-16a34a?style=flat-square" alt="giấy phép: MIT"> <img src="https://img.shields.io/badge/ngh%E1%BB%81-20-D7261E?style=flat-square" alt="nghề: 20"> <img src="https://img.shields.io/badge/skill%20m%E1%BB%97i%20b%E1%BB%99-30%E2%80%9338-F59E0B?style=flat-square" alt="skill mỗi bộ: 30–38"> <img src="https://img.shields.io/badge/n%E1%BB%81n%20t%E1%BA%A3ng-26%20AI-1B1310?style=flat-square" alt="nền tảng: 26 AI"> <img src="https://img.shields.io/badge/ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-DA251D?style=flat-square" alt="ngôn ngữ: Tiếng Việt"></p>
 
 <p align="center"><a href="https://mochistudio.io.vn">mochistudio.io.vn</a> · <a href="#cài-đặt-nhanh">Cài đặt</a> · <a href="#20-bộ-theo-nghề">20 bộ theo nghề</a> · <a href="#bản-pro">Bản Pro</a></p>
 
@@ -79,19 +79,45 @@ Hoặc cài CLI cho cả máy rồi dùng lệnh `kitviet`:
 ```bash
 npm install -g github:mochistudio-vn/kitviet
 
-kitviet init ke-toan --ai claude      # Claude Code  -> ~/.claude/skills/kv
-kitviet init ke-toan --ai codex       # ChatGPT Codex -> ./.agents/skills + ./.codex/agents
-kitviet init ke-toan --ai desktop     # Claude Desktop -> ./KitViet/ke-toan/*.zip để tải lên
-kitviet init ke-toan nhan-su --ai all # nhiều nghề, cả 3 nền tảng
-kitviet init                          # không ghi gì: hiện menu chọn nghề, tự nhận biết nền tảng
+kitviet init ke-toan --ai claude         # Claude Code -> ~/.claude/skills/kv
+kitviet init ke-toan --ai cursor         # Cursor -> ./.cursor/skills
+kitviet init ke-toan --ai codex,gemini   # nhiều AI một lần
+kitviet init ke-toan nhan-su --ai copilot # nhiều nghề
+kitviet init                             # không ghi gì: hiện menu chọn nghề, tự nhận biết AI
 ```
 
-Cài cho cả máy (Codex, Desktop):
+Hỗ trợ 26 nền tảng. Skill cài vào thư mục dự án đang mở; thêm `--global` để cài cho cả máy (vào thư mục người dùng `~`). Các AI ngoài Claude Code đều dùng chuẩn Agent Skills (`kv-<tên>/SKILL.md`).
 
-```bash
-kitviet init ke-toan --ai codex --global     # ~/.agents/skills + ~/.codex/agents
-kitviet init ke-toan --ai desktop --global   # ~/Downloads/KitViet
-```
+| `--ai` | Nền tảng | Thư mục cài |
+|---|---|---|
+| `claude` | Claude Code | `~/.claude/skills/kv` |
+| `codex` | Codex CLI | `.agents/skills` |
+| `desktop` | Claude Desktop / claude.ai | `KitViet/<nghề>` |
+| `cursor` | Cursor | `.cursor/skills` |
+| `windsurf` | Windsurf | `.windsurf/skills` |
+| `antigravity` | Antigravity | `.agents/skills` |
+| `copilot` | GitHub Copilot | `.github/skills` |
+| `kiro` | Kiro | `.kiro/steering` |
+| `qoder` | Qoder | `.qoder/skills` |
+| `roocode` | Roo Code | `.roo/skills` |
+| `gemini` | Gemini CLI | `.gemini/skills` |
+| `trae` | Trae | `.trae/skills` |
+| `opencode` | OpenCode | `.opencode/skills` |
+| `continue` | Continue | `.continue/skills` |
+| `codebuddy` | CodeBuddy | `.codebuddy/skills` |
+| `droid` | Droid (Factory) | `.factory/skills` |
+| `kilocode` | KiloCode | `.kilocode/skills` |
+| `warp` | Warp | `.warp/skills` |
+| `augment` | Augment | `.augment/skills` |
+| `codewhale` | CodeWhale | `.codewhale/skills` |
+| `zcode` | ZCode | `.zcode/skills` |
+| `kimi` | Kimi Code | `.kimi-code/skills` |
+| `amazonq` | Amazon Q Developer | `.amazonq/rules` |
+| `openclaw` | OpenClaw | `.agents/skills` |
+| `autoclaw` | AutoClaw | `skills` (`--global`: `~/.openclaw-autoclaw/skills`) |
+| `universal` | Universal / Agent Standard | `.agents/skills` |
+
+Codex cài thêm trợ lý vào `.codex/agents`. Claude Desktop nhận file zip để tải lên (Customize → Skills). `--ai all` cài cho tất cả nền tảng.
 
 Lệnh khác:
 
@@ -100,11 +126,12 @@ kitviet list                  # danh sách nghề
 kitviet versions              # phiên bản đang dùng
 kitviet update                # cài lại các bộ đã cài bằng phiên bản CLI hiện tại
 kitviet init ... --dry-run    # xem trước sẽ chép gì, không ghi file
-kitviet uninstall             # gỡ khỏi Claude Code và Codex
-kitviet uninstall --ai codex --global
+kitviet platforms             # danh sách nền tảng và thư mục cài
+kitviet uninstall             # gỡ khỏi mọi nền tảng đã cài
+kitviet uninstall --ai cursor
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.1.1 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.2.0 init ...`.
 
 ### Cách 3: Cài thủ công
 

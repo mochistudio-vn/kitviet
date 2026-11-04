@@ -23,7 +23,7 @@ Bộ skill cho người làm nhân sự ở doanh nghiệp Việt: viết JD và
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-nhan-su@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init nhan-su --ai claude
 ```
 

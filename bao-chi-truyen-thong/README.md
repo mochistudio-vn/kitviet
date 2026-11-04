@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho phóng viên, biên tập viên, chuyên
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-bao-chi-truyen-thong@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init bao-chi-truyen-thong --ai claude
 ```
 

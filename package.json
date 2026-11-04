@@ -1,7 +1,7 @@
 {
   "name": "kitviet-cli",
-  "version": "1.1.1",
-  "description": "Kit Việt - cài bộ AI Agent tiếng Việt cho 20 nghề vào Claude Code, ChatGPT Codex, Claude Desktop.",
+  "version": "1.2.0",
+  "description": "Kit Việt - cài bộ AI Agent tiếng Việt cho 20 nghề vào Claude Code, Codex, Cursor, Copilot, Gemini CLI và 20 AI khác.",
   "type": "module",
   "bin": {
     "kitviet": "cli/kitviet.mjs"
@@ -20,7 +20,11 @@
     "claude",
     "claude-code",
     "claude-skills",
+    "agent-skills",
     "codex",
+    "cursor",
+    "copilot",
+    "gemini-cli",
     "ai-agents",
     "vietnamese",
     "tieng-viet",

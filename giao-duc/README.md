@@ -23,7 +23,7 @@ Bộ skill cho giáo viên phổ thông và giảng viên: soạn kế hoạch b
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-giao-duc@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init giao-duc --ai claude
 ```
 

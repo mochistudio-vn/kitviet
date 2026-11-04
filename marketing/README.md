@@ -23,7 +23,7 @@ Bộ skill cho người làm content và marketing ở Việt Nam: nghiên cứu
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-marketing@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init marketing --ai claude
 ```
 

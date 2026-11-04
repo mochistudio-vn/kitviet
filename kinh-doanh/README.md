@@ -23,7 +23,7 @@ Bộ skill cho người bán hàng doanh nghiệp và đội CSKH: tìm hiểu k
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-kinh-doanh@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init kinh-doanh --ai claude
 ```
 

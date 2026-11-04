@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho kỹ sư sản xuất, QC/QA, trưởng 
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-san-xuat-nha-may@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init san-xuat-nha-may --ai claude
 ```
 

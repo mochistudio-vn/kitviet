@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho sinh viên làm khóa luận, học viê
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-hoc-thuat-nghien-cuu@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init hoc-thuat-nghien-cuu --ai claude
 ```
 

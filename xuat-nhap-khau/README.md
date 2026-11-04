@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho nhân viên chứng từ, khai báo hả
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-xuat-nhap-khau@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init xuat-nhap-khau --ai claude
 ```
 

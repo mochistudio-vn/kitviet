@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho đại lý, tư vấn viên bảo hiểm
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-bao-hiem@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init bao-hiem --ai claude
 ```
 

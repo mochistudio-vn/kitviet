@@ -23,7 +23,7 @@ Bộ skill và agent cho người bán trên Shopee, TikTok Shop, Lazada, Facebo
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-ban-hang-online@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init ban-hang-online --ai claude
 ```
 

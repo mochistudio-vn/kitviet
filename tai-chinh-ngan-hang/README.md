@@ -23,7 +23,7 @@ Bộ skill và agent tiếng Việt cho RM, thẩm định tín dụng, giao d�
 /plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-tai-chinh-ngan-hang@kitviet
 
-# Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
+# Hoặc dùng CLI (cần Node.js 18+): --ai claude, codex, cursor, copilot, gemini, windsurf... (kitviet platforms)
 npx github:mochistudio-vn/kitviet init tai-chinh-ngan-hang --ai claude
 ```
 
