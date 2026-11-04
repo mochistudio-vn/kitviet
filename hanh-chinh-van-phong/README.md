@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho nhân viên hành chính, thư ký - tr�
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-hanh-chinh-van-phong@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init hanh-chinh-van-phong --ai claude
+npx github:mochistudio-vn/kitviet init hanh-chinh-van-phong --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

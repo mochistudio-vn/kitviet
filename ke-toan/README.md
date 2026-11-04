@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho kế toán doanh nghiệp nhỏ và vừ
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-ke-toan@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init ke-toan --ai claude
+npx github:mochistudio-vn/kitviet init ke-toan --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

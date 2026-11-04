@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho kỹ sư sản xuất, QC/QA, trưởng 
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-san-xuat-nha-may@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init san-xuat-nha-may --ai claude
+npx github:mochistudio-vn/kitviet init san-xuat-nha-may --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

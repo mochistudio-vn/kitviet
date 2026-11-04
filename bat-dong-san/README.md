@@ -20,11 +20,11 @@ Bộ skill cho người làm môi giới nhà phố, căn hộ, đất nền và
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-bat-dong-san@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init bat-dong-san --ai claude
+npx github:mochistudio-vn/kitviet init bat-dong-san --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

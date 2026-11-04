@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho sinh viên làm khóa luận, học viê
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-hoc-thuat-nghien-cuu@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init hoc-thuat-nghien-cuu --ai claude
+npx github:mochistudio-vn/kitviet init hoc-thuat-nghien-cuu --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

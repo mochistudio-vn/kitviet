@@ -20,11 +20,11 @@ Bộ skill cho người làm content và marketing ở Việt Nam: nghiên cứu
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-marketing@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init marketing --ai claude
+npx github:mochistudio-vn/kitviet init marketing --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho nhân viên chứng từ, khai báo hả
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-xuat-nhap-khau@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init xuat-nhap-khau --ai claude
+npx github:mochistudio-vn/kitviet init xuat-nhap-khau --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

@@ -20,11 +20,11 @@ Bộ skill và agent tiếng Việt cho điều dưỡng, phòng khám tư, nha 
 
 ```text
 # Trong Claude Code
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-y-te@kitviet
 
 # Hoặc dùng CLI (cần Node.js 18+), --ai claude | codex | desktop | all
-npx github:nguyenducthang1997/kitviet init y-te --ai claude
+npx github:mochistudio-vn/kitviet init y-te --ai claude
 ```
 
 Cài thủ công từng nền tảng như dưới đây.

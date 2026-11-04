@@ -58,26 +58,26 @@ Có 3 cách. Chọn cách hợp với nơi bạn dùng AI.
 Gõ trong Claude Code:
 
 ```text
-/plugin marketplace add nguyenducthang1997/kitviet
+/plugin marketplace add mochistudio-vn/kitviet
 /plugin install kv-ke-toan@kitviet
 ```
 
 Thay `ke-toan` bằng nghề của bạn, xem tên ở bảng [20 bộ theo nghề](#20-bộ-theo-nghề), ví dụ `kv-xay-dung@kitviet` hay `kv-y-te@kitviet`. Cài xong gõ `/kv:` để xem skill. Cập nhật bằng `/plugin marketplace update kitviet`.
 
-> Nếu báo lỗi *Host key verification failed*, dùng địa chỉ HTTPS: `/plugin marketplace add https://github.com/nguyenducthang1997/kitviet.git`. Trên Windows mà báo *Filename too long* thì chạy một lần `git config --global core.longpaths true`.
+> Nếu báo lỗi *Host key verification failed*, dùng địa chỉ HTTPS: `/plugin marketplace add https://github.com/mochistudio-vn/kitviet.git`. Trên Windows mà báo *Filename too long* thì chạy một lần `git config --global core.longpaths true`.
 
 ### Cách 2: CLI `kitviet` (khuyên dùng)
 
 Cần Node.js 18 trở lên. Chạy thẳng, không cần cài:
 
 ```bash
-npx github:nguyenducthang1997/kitviet init ke-toan --ai claude
+npx github:mochistudio-vn/kitviet init ke-toan --ai claude
 ```
 
 Hoặc cài CLI cho cả máy rồi dùng lệnh `kitviet`:
 
 ```bash
-npm install -g github:nguyenducthang1997/kitviet
+npm install -g github:mochistudio-vn/kitviet
 
 kitviet init ke-toan --ai claude      # Claude Code  -> ~/.claude/skills/kv
 kitviet init ke-toan --ai codex       # ChatGPT Codex -> ./.agents/skills + ./.codex/agents
@@ -104,7 +104,7 @@ kitviet uninstall             # gỡ khỏi Claude Code và Codex
 kitviet uninstall --ai codex --global
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:nguyenducthang1997/kitviet#v1.1.1 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.1.1 init ...`.
 
 ### Cách 3: Cài thủ công
 
