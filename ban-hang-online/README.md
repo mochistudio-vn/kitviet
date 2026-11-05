@@ -8,7 +8,7 @@ Bộ skill và agent cho người bán trên Shopee, TikTok Shop, Lazada, Facebo
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 35 | 14 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 36 | 14 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -79,6 +79,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Kịch bản live theo phút: mở màn, demo, chốt đơn, xử lý bình luận | `kv:kich-ban-livestream-chot-don` |
 | Ý tưởng và kịch bản video TikTok, Shopee Video, Reels quay bằng điện thoại | `kv:y-tuong-video-ngan-ban-hang` |
 | Tin nhắn trả lời khách hỏi giá, xử lý từ chối, xác nhận đơn qua inbox và Zalo | `kv:chot-don-inbox-zalo` |
+| Viết caption TikTok Shop, kịch bản livestream, trả lời bình luận theo giọng Gen Z vừa liều, kèm giải nghĩa từ lóng | `kv:viet-giong-gen-z` |
 
 ### Chăm sóc khách
 
@@ -133,6 +134,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Tìm vì sao sản phẩm bán kém theo phễu, soạn listing và giá mới đã qua soát | `kv:day-chuyen-cuu-san-pham-ban-kem` |
 | Chọn KOC, brief, theo dõi mẫu, đơn, hoa hồng và lãi thật từng KOC | `kv:quan-ly-koc-affiliate-shop` |
 | Mở TikTok Shop, Lazada hay website: điều kiện, giá theo kênh, lộ trình 90 ngày, điểm dừng | `kv:mo-kenh-ban-moi-shop` |
+| Kiểm tra trend/meme đang nổi trước khi làm video bán hàng: rủi ro, độ hợp, cửa sổ thời gian, 3 ý tưởng | `kv:bat-trend-gen-z` |
 | Nghiên cứu thị trường ngành hàng có trích nguồn theo bậc: số liệu sàn, Bộ Công Thương, thống kê trước tiên | `kv:nghien-cuu-thi-truong-nganh-hang-san` |
 | ROAS, ACOS, ROAS hòa vốn từng SKU từ file xuất quảng cáo, chỉ chiến dịch đốt tiền | `kv:phan-tich-quang-cao-san-roas` |
 | So báo cáo thanh toán với đơn hoàn thành: đơn chưa về tiền, về thiếu, phí lạ | `kv:doi-soat-thanh-toan-san` |

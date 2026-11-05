@@ -8,7 +8,7 @@ Bộ skill cho người làm pháp chế doanh nghiệp và văn phòng luật: 
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 37 | 15 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 38 | 15 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -74,6 +74,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Không lỡ hạn báo trước, hạn trả lời, hạn bảo lãnh; thời hiệu được đánh dấu cho luật sư | `kv:lich-thoi-han-phap-ly` |
 | Đọc nhanh bản án đã công bố: tòa nhận định gì, căn cứ gì, xử ra sao | `kv:tom-tat-ban-an` |
 | Vào buổi đàm phán, hòa giải với lập trường, thang nhượng bộ và kịch bản rõ ràng | `kv:chuan-bi-dam-phan-hoa-giai` |
+| Soạn đơn khiếu nại, tố cáo, khởi kiện, đề nghị, xin xác nhận đúng thể thức, nhắc mẫu hiện hành và thời hiệu | `kv:soan-don-tu` |
 
 ### Soạn thảo, nghiên cứu và đào tạo
 

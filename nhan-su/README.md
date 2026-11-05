@@ -8,7 +8,7 @@ Bộ skill cho người làm nhân sự ở doanh nghiệp Việt: viết JD và
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 34 | 13 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 35 | 13 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -73,6 +73,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Kế hoạch đón nhân viên mới và mục tiêu 30-60-90 ngày | `kv:onboarding-30-60-90` |
 | Bộ KPI/OKR có công thức, nguồn dữ liệu, trọng số | `kv:xay-kpi-okr-vi-tri` |
 | Phiếu đánh giá thử việc/định kỳ có bằng chứng và thông báo kết quả | `kv:danh-gia-thu-viec` |
+| Soạn đơn xin nghỉ việc, nghỉ phép, đơn đề nghị, đơn trình bày, đơn khiếu nại kỷ luật đúng thể thức | `kv:soan-don-tu` |
 
 ### Vận hành và gắn kết
 

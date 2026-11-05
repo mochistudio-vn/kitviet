@@ -8,7 +8,7 @@ Bộ skill cho giáo viên phổ thông và giảng viên: soạn kế hoạch b
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 38 | 15 | 4 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 39 | 15 | 4 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -99,6 +99,12 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Lập đề cương chuyên đề sinh hoạt chuyên môn, bồi dưỡng, bài giảng tập huấn khớp mục tiêu - thời lượng | `kv:de-cuong-chuyen-de-bai-giang` |
 | Đề cương NCKHSPƯD: vấn đề, giả thuyết, thiết kế đo trước - sau, công cụ đo - không bịa kết quả | `kv:de-cuong-nckh-su-pham-ung-dung` |
 
+### Truyền thông trường và tuyển sinh
+
+| Việc của bạn | Gọi |
+|---|---|
+| Viết bài tuyển sinh, fanpage trường/trung tâm, thông báo cho học sinh theo giọng gần gũi Gen Z mà vẫn chuẩn mực | `kv:viet-giong-gen-z` |
+
 ### Đi kèm từ bộ chung (core)
 
 | Việc của bạn | Gọi |
@@ -144,6 +150,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Hồ sơ thi GVDG: bài trình bày biện pháp, bài dạy thi, kịch bản lớp lạ, câu hỏi hội đồng | `kv:ho-so-thi-giao-vien-day-gioi` |
 | Tự đánh giá chuẩn nghề nghiệp: ghép minh chứng từng tiêu chí, đề xuất mức, kế hoạch bồi dưỡng | `kv:danh-gia-chuan-nghe-nghiep-giao-vien` |
 | Thiết kế khóa đào tạo doanh nghiệp và kế hoạch đánh giá 4 cấp Kirkpatrick | `kv:khoa-dao-tao-doanh-nghiep-kirkpatrick` |
+| Kiểm tra trend học sinh đang dùng trước khi làm nội dung tuyển sinh: rủi ro, độ phù hợp môi trường giáo dục | `kv:bat-trend-gen-z` |
 
 Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 

@@ -8,7 +8,7 @@ Bộ skill cho người làm content và marketing ở Việt Nam: nghiên cứu
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 37 | 15 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 43 | 15 | 6 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -65,6 +65,8 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Đọc hàng trăm bình luận, review để biết khách thích gì, sợ gì | `kv:insight-tu-binh-luan-review` |
 | Tìm số liệu thị trường từ nguồn uy tín, mỗi số có nguồn, năm, ngày truy cập | `kv:nghien-cuu-thi-truong-marketing` |
 | Đề cương chiến dịch: mục tiêu, thông điệp, kênh, giai đoạn, ngân sách, KPI | `kv:ke-hoach-truyen-thong-chien-dich` |
+| Lập bản đồ từ khóa, cụm chủ đề và lộ trình viết bài SEO từ dữ liệu thật | `kv:nghien-cuu-tu-khoa-topic-cluster` |
+| Lên lịch chiến dịch theo mùa vụ, ngày lễ Việt Nam: chuẩn bị trước bao lâu, ý tưởng theo ngành, điều kiêng kỵ | `kv:lich-marketing-mua-vu` |
 
 ### Viết nội dung
 
@@ -75,6 +77,8 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Bài blog SEO tiếng Việt: ý định tìm kiếm, dàn ý H2/H3, meta | `kv:bai-blog-chuan-seo` |
 | Một webinar/blog thành 8-10 bài cho nhiều kênh | `kv:chuyen-the-noi-dung-da-kenh` |
 | Chuỗi email chào mừng, bỏ giỏ, mua lại có link hủy đăng ký | `kv:chuoi-email-cham-soc` |
+| Viết hoặc viết lại caption, bài đăng, kịch bản TikTok, trả lời bình luận theo giọng Gen Z có liều lượng, kèm bảng giải nghĩa từ lóng | `kv:viet-giong-gen-z` |
+| Soạn brief cho designer/editor và câu lệnh tạo ảnh AI đúng kích thước từng nền tảng | `kv:brief-thiet-ke-key-visual` |
 
 ### Vận hành kênh
 
@@ -90,6 +94,8 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Ad copy Meta/TikTok/Google nhiều biến thể, đếm ký tự, ma trận A/B | `kv:ad-copy-nhieu-bien-the` |
 | Chữ cho landing page theo khối, một mục tiêu chuyển đổi | `kv:noi-dung-landing-page` |
 | Brief KOL/KOC có điều cấm nói, yêu cầu dùng thật, nghiệm thu | `kv:brief-kol-koc` |
+| Soát bài, ad, kịch bản KOL theo Luật Quảng cáo: từ tuyệt đối hóa, câu bắt buộc, ngành hạn chế, ghi rõ quảng cáo | `kv:soat-luat-quang-cao` |
+| Soạn thể lệ minigame, khuyến mại có thưởng đúng luật và chính sách nền tảng, kèm bài công bố kết quả | `kv:the-le-minigame-khuyen-mai` |
 
 ### Đo lường và dây chuyền
 
@@ -138,12 +144,18 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Tỷ lệ khách quay lại theo tháng, doanh thu lũy kế mỗi khách, so theo kênh | `kv:phan-tich-cohort-khach-hang` |
 | Báo cáo tháng một trang cho CEO: kết quả so mục tiêu, CAC, việc cần quyết | `kv:bao-cao-marketing-thang-cho-ceo` |
 | So 2 kỳ Search Console chọn bài tụt, chẩn đoán, viết bản cập nhật giữ URL | `kv:lam-moi-bai-seo-cu` |
+| Thống nhất cách gắn UTM, sự kiện cần đo và giải thích vì sao số Ads lệch số đơn thật | `kv:ke-hoach-do-luong-utm-tracking` |
+| Biết trụ cột, định dạng, khung giờ nào hiệu quả từ file xuất fanpage/TikTok | `kv:kiem-ke-hieu-qua-fanpage` |
+| Tối ưu bài để dễ được AI Overviews, ChatGPT, Perplexity trích dẫn và theo dõi hiển thị | `kv:toi-uu-noi-dung-cho-ai-search` |
 | Duyệt nhiều cấp theo mức rủi ro, tiêu chí và hạn từng cấp, bảng theo dõi trạng thái | `kv:quy-trinh-duyet-noi-dung-nhieu-cap` |
 | Quản trị khủng hoảng mạng xã hội: mức độ, nhật ký, sự thật đã xác minh, thông cáo chờ duyệt | `kv:xu-ly-khung-hoang-mang-xa-hoi` |
 | Ma trận giọng kênh x dòng sản phẩm x tình huống, chỉ dẫn dán cho AI và người viết | `kv:ma-tran-giong-thuong-hieu-da-kenh` |
 | Flow email/Zalo theo hành vi: kích hoạt, rẽ nhánh, điều kiện thoát, holdout đo hiệu quả | `kv:email-tu-dong-theo-hanh-vi` |
+| Dựng nội quy, lịch tương tác, đội trực và chỉ số sức khỏe cho group/cộng đồng Zalo | `kv:quan-tri-cong-dong-group` |
+| Kiểm tra một trend/meme viral trước khi dùng: nguồn gốc, rủi ro, độ hợp, cửa sổ thời gian, kết luận và 3 ý tưởng | `kv:bat-trend-gen-z` |
 | Ra mắt sản phẩm 4 tuần, mỗi tuần một bộ nội dung qua đủ thu thập - soạn - 4 cổng soát | `kv:day-chuyen-ra-mat-san-pham-4-tuan` |
 | Đọc số ads -> tìm mẫu thắng có kiểm định -> viết vòng biến thể mới -> soát thống kê và claim | `kv:day-chuyen-toi-uu-sau-chien-dich` |
+| Làm trọn bộ bài cả tuần cho mọi kênh, đã qua soát giọng và claim, kèm lịch đăng | `kv:day-chuyen-noi-dung-tuan` |
 
 Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
 
@@ -217,6 +229,10 @@ Mỗi skill kết thúc bằng mục **Luồng tiếp theo**, nên các việc n
 **Lắng nghe khách hàng** - Bình luận, review nhiều mà chưa ai đọc kỹ; muốn biết khách nghĩ gì và trả lời cho chuẩn.
 
 `kv:an-thong-tin-nhay-cam` (Che tên, số điện thoại trong file bình luận) -> `kv:insight-tu-binh-luan-review` (Nhóm chủ đề, đếm tần suất, trích lời khách) -> `kv:persona-tu-du-lieu-that` (Cập nhật chân dung khách có bằng chứng) -> `kv:lich-dang-tra-loi-binh-luan` (Bộ trả lời theo loại bình luận và quy tắc chuyển cấp) -> `kv:xuat-excel` (Xuất file Excel để gửi, nộp hoặc lưu)
+
+**Minigame trên fanpage đúng luật** - Khi muốn chạy minigame, tặng quà kéo tương tác mà không vướng luật khuyến mại và chính sách nền tảng
+
+`kv:the-le-minigame-khuyen-mai` (Phân loại chương trình, soạn thể lệ và bảng kiểm thủ tục) -> `kv:viet-giong-gen-z` (Viết bài phát động vui, đúng nhịp mạng xã hội (nếu khách trẻ)) -> `kv:soat-luat-quang-cao` (Soát bài phát động và thể lệ trước khi đăng) -> `kv:lich-dang-tra-loi-binh-luan` (Xếp lịch đăng, mẫu trả lời bình luận và công bố kết quả)
 
 ## Xuất file Word, Excel, PDF, PowerPoint
 

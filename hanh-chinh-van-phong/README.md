@@ -8,7 +8,7 @@ Bộ skill và agent tiếng Việt cho nhân viên hành chính, thư ký - tr�
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 37 | 14 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 38 | 14 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -65,6 +65,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Quy chế, nội quy văn phòng theo chương - điều, có trách nhiệm và biểu mẫu | `kv:soan-quy-che-noi-bo` |
 | Vào sổ văn bản đến - đi, cấp số, theo dõi hạn xử lý, báo trùng | `kv:so-cong-van-den-di` |
 | Danh mục hồ sơ, quy tắc đặt tên file, mượn trả, đề nghị tiêu hủy | `kv:luu-tru-ho-so-van-phong` |
+| Soạn đơn đề nghị, xin xác nhận, tường trình, đề nghị cấp lại giấy tờ đúng thể thức | `kv:soan-don-tu` |
 
 ### Thư ký - trợ lý giám đốc
 

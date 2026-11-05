@@ -4,7 +4,7 @@
 
 <p align="center"><b>Giao việc bằng tiếng Việt, nhận lại file Word, Excel, PDF, PowerPoint đúng thể thức.</b><br>Chạy trên Claude Desktop, Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI và 20 AI khác.</p>
 
-<p align="center"><img src="https://img.shields.io/badge/gi%E1%BA%A5y%20ph%C3%A9p-MIT-16a34a?style=flat-square" alt="giấy phép: MIT"> <img src="https://img.shields.io/badge/ngh%E1%BB%81-20-D7261E?style=flat-square" alt="nghề: 20"> <img src="https://img.shields.io/badge/skill%20m%E1%BB%97i%20b%E1%BB%99-30%E2%80%9338-F59E0B?style=flat-square" alt="skill mỗi bộ: 30–38"> <img src="https://img.shields.io/badge/n%E1%BB%81n%20t%E1%BA%A3ng-26%20AI-1B1310?style=flat-square" alt="nền tảng: 26 AI"> <img src="https://img.shields.io/badge/ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-DA251D?style=flat-square" alt="ngôn ngữ: Tiếng Việt"></p>
+<p align="center"><img src="https://img.shields.io/badge/gi%E1%BA%A5y%20ph%C3%A9p-MIT-16a34a?style=flat-square" alt="giấy phép: MIT"> <img src="https://img.shields.io/badge/ngh%E1%BB%81-20-D7261E?style=flat-square" alt="nghề: 20"> <img src="https://img.shields.io/badge/skill%20m%E1%BB%97i%20b%E1%BB%99-30%E2%80%9343-F59E0B?style=flat-square" alt="skill mỗi bộ: 30–43"> <img src="https://img.shields.io/badge/n%E1%BB%81n%20t%E1%BA%A3ng-26%20AI-1B1310?style=flat-square" alt="nền tảng: 26 AI"> <img src="https://img.shields.io/badge/ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-DA251D?style=flat-square" alt="ngôn ngữ: Tiếng Việt"></p>
 
 <p align="center"><a href="https://mochistudio.io.vn">mochistudio.io.vn</a> · <a href="#cài-đặt-nhanh">Cài đặt</a> · <a href="#20-bộ-theo-nghề">20 bộ theo nghề</a> · <a href="#bản-pro">Bản Pro</a></p>
 
@@ -24,21 +24,21 @@ Kit Việt không phải kho prompt. Đây là các **quy trình nghề đóng g
 
 ## 20 bộ theo nghề
 
-Mỗi bộ có 30–38 skill (gồm 18 kỹ năng nền dùng chung) và 12–15 trợ lý. Mở `HUONG-DAN.html` của từng nghề để xem hướng dẫn có hình và ví dụ thật.
+Mỗi bộ có 30–43 skill (gồm 18 kỹ năng nền dùng chung) và 12–15 trợ lý. Mở `HUONG-DAN.html` của từng nghề để xem hướng dẫn có hình và ví dụ thật.
 
 | Nghề | Skill | Trợ lý | Luồng | Tên để cài | Hướng dẫn |
 |---|:-:|:-:|:-:|---|---|
 | **Kế toán - Thuế**<br><sub>Đối chiếu nhanh, số liệu có nguồn, không bịa một đồng - để kế toán ký với cái đầu nhẹ.</sub> | 36 | 14 | 5 | `kv-ke-toan@kitviet`<br>`kitviet init ke-toan` | [Hướng dẫn](ke-toan/HUONG-DAN.html) · [README](ke-toan/README.md) |
-| **Nhân sự - Tuyển dụng**<br><sub>Tuyển đúng người, đối xử công bằng, giữ kín dữ liệu - từ JD tới ngày làm việc cuối.</sub> | 34 | 13 | 5 | `kv-nhan-su@kitviet`<br>`kitviet init nhan-su` | [Hướng dẫn](nhan-su/HUONG-DAN.html) · [README](nhan-su/README.md) |
-| **Marketing - Content**<br><sub>Ra nội dung đủ kênh mỗi tuần, đúng giọng thương hiệu, không dính claim cấm.</sub> | 37 | 15 | 5 | `kv-marketing@kitviet`<br>`kitviet init marketing` | [Hướng dẫn](marketing/HUONG-DAN.html) · [README](marketing/README.md) |
-| **Bán hàng online - Thương mại điện tử**<br><sub>Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.</sub> | 35 | 14 | 5 | `kv-ban-hang-online@kitviet`<br>`kitviet init ban-hang-online` | [Hướng dẫn](ban-hang-online/HUONG-DAN.html) · [README](ban-hang-online/README.md) |
+| **Nhân sự - Tuyển dụng**<br><sub>Tuyển đúng người, đối xử công bằng, giữ kín dữ liệu - từ JD tới ngày làm việc cuối.</sub> | 35 | 13 | 5 | `kv-nhan-su@kitviet`<br>`kitviet init nhan-su` | [Hướng dẫn](nhan-su/HUONG-DAN.html) · [README](nhan-su/README.md) |
+| **Marketing - Content**<br><sub>Ra nội dung đủ kênh mỗi tuần, đúng giọng thương hiệu, không dính claim cấm.</sub> | 43 | 15 | 6 | `kv-marketing@kitviet`<br>`kitviet init marketing` | [Hướng dẫn](marketing/HUONG-DAN.html) · [README](marketing/README.md) |
+| **Bán hàng online - Thương mại điện tử**<br><sub>Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.</sub> | 36 | 14 | 5 | `kv-ban-hang-online@kitviet`<br>`kitviet init ban-hang-online` | [Hướng dẫn](ban-hang-online/HUONG-DAN.html) · [README](ban-hang-online/README.md) |
 | **Kinh doanh B2B - Chăm sóc khách hàng**<br><sub>Chốt deal nhanh hơn mà không hứa thứ chưa được duyệt.</sub> | 33 | 14 | 5 | `kv-kinh-doanh@kitviet`<br>`kitviet init kinh-doanh` | [Hướng dẫn](kinh-doanh/HUONG-DAN.html) · [README](kinh-doanh/README.md) |
-| **Giáo viên - Đào tạo**<br><sub>Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.</sub> | 38 | 15 | 4 | `kv-giao-duc@kitviet`<br>`kitviet init giao-duc` | [Hướng dẫn](giao-duc/HUONG-DAN.html) · [README](giao-duc/README.md) |
+| **Giáo viên - Đào tạo**<br><sub>Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.</sub> | 39 | 15 | 4 | `kv-giao-duc@kitviet`<br>`kitviet init giao-duc` | [Hướng dẫn](giao-duc/HUONG-DAN.html) · [README](giao-duc/README.md) |
 | **Xây dựng - Kỹ sư công trường**<br><sub>Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.</sub> | 35 | 13 | 5 | `kv-xay-dung@kitviet`<br>`kitviet init xay-dung` | [Hướng dẫn](xay-dung/HUONG-DAN.html) · [README](xay-dung/README.md) |
 | **Y tế - Phòng khám, Điều dưỡng, Quản lý y tế**<br><sub>Bớt giấy tờ, thêm thời gian cho người bệnh - AI lo phần hành chính, chuyên môn vẫn do người có chứng chỉ quyết.</sub> | 34 | 14 | 5 | `kv-y-te@kitviet`<br>`kitviet init y-te` | [Hướng dẫn](y-te/HUONG-DAN.html) · [README](y-te/README.md) |
 | **Môi giới bất động sản**<br><sub>Tin đăng đúng sổ, phương án vay đủ cả giai đoạn thả nổi, pháp lý hỏi đúng chỗ - bán nhanh mà không mất uy tín.</sub> | 36 | 14 | 5 | `kv-bat-dong-san@kitviet`<br>`kitviet init bat-dong-san` | [Hướng dẫn](bat-dong-san/HUONG-DAN.html) · [README](bat-dong-san/README.md) |
-| **Pháp chế - Văn phòng luật**<br><sub>Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật.</sub> | 37 | 15 | 5 | `kv-phap-ly@kitviet`<br>`kitviet init phap-ly` | [Hướng dẫn](phap-ly/HUONG-DAN.html) · [README](phap-ly/README.md) |
-| **Hành chính - Văn phòng**<br><sub>Văn bản đúng thể thức, lịch sếp không trùng, chi phí có báo giá - để phòng hành chính chạy êm mà không ai phải nhắc.</sub> | 37 | 14 | 5 | `kv-hanh-chinh-van-phong@kitviet`<br>`kitviet init hanh-chinh-van-phong` | [Hướng dẫn](hanh-chinh-van-phong/HUONG-DAN.html) · [README](hanh-chinh-van-phong/README.md) |
+| **Pháp chế - Văn phòng luật**<br><sub>Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật.</sub> | 38 | 15 | 5 | `kv-phap-ly@kitviet`<br>`kitviet init phap-ly` | [Hướng dẫn](phap-ly/HUONG-DAN.html) · [README](phap-ly/README.md) |
+| **Hành chính - Văn phòng**<br><sub>Văn bản đúng thể thức, lịch sếp không trùng, chi phí có báo giá - để phòng hành chính chạy êm mà không ai phải nhắc.</sub> | 38 | 14 | 5 | `kv-hanh-chinh-van-phong@kitviet`<br>`kitviet init hanh-chinh-van-phong` | [Hướng dẫn](hanh-chinh-van-phong/HUONG-DAN.html) · [README](hanh-chinh-van-phong/README.md) |
 | **Xuất nhập khẩu - Logistics**<br><sub>Chứng từ khớp từng con số, mã HS có căn cứ, cước so trên cùng mặt bằng - để lô hàng thông quan không phải chờ.</sub> | 32 | 12 | 5 | `kv-xuat-nhap-khau@kitviet`<br>`kitviet init xuat-nhap-khau` | [Hướng dẫn](xuat-nhap-khau/HUONG-DAN.html) · [README](xuat-nhap-khau/README.md) |
 | **Nhà hàng - F&B**<br><sub>Giá vốn tính từ hóa đơn thật, dị ứng ghi đúng từng món - để quán đông khách mà vẫn có lời.</sub> | 31 | 12 | 5 | `kv-nha-hang-fnb@kitviet`<br>`kitviet init nha-hang-fnb` | [Hướng dẫn](nha-hang-fnb/HUONG-DAN.html) · [README](nha-hang-fnb/README.md) |
 | **Du lịch - Khách sạn**<br><sub>Lịch trình chạy được, báo giá cộng đúng, trả lời khách đúng mực - giá vé và giờ mở cửa luôn được xác nhận trước khi gửi.</sub> | 33 | 13 | 5 | `kv-du-lich-khach-san@kitviet`<br>`kitviet init du-lich-khach-san` | [Hướng dẫn](du-lich-khach-san/HUONG-DAN.html) · [README](du-lich-khach-san/README.md) |
@@ -131,7 +131,7 @@ kitviet uninstall             # gỡ khỏi mọi nền tảng đã cài
 kitviet uninstall --ai cursor
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.2.0 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.3.0 init ...`.
 
 ### Cách 3: Cài thủ công
 

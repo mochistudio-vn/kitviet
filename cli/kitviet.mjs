@@ -141,7 +141,7 @@ function apply(steps, dry) {
 }
 
 function readState() { try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch { return { installs: [] }; } }
-function saveState(st) { fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 2) + '\n'); }
+function saveState(st) { fs.mkdirSync(HOME, { recursive: true }); fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 2) + '\n'); }
 
 async function init(o, { quiet = false } = {}) {
   let nghe = o.all ? META.nghe.map(n => n.slug) : o.nghe;
