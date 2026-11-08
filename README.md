@@ -28,7 +28,7 @@ Mỗi bộ có 30–43 skill (gồm 18 kỹ năng nền dùng chung) và 12–15
 
 | Nghề | Skill | Trợ lý | Luồng | Tên để cài | Hướng dẫn |
 |---|:-:|:-:|:-:|---|---|
-| **Kế toán - Thuế**<br><sub>Đối chiếu nhanh, số liệu có nguồn, không bịa một đồng - để kế toán ký với cái đầu nhẹ.</sub> | 36 | 14 | 5 | `kv-ke-toan@kitviet`<br>`kitviet init ke-toan` | [Hướng dẫn](ke-toan/HUONG-DAN.html) · [README](ke-toan/README.md) |
+| **Kế toán - Thuế**<br><sub>Đối chiếu nhanh, số liệu có nguồn, không bịa một đồng - để kế toán ký với cái đầu nhẹ.</sub> | 40 | 14 | 6 | `kv-ke-toan@kitviet`<br>`kitviet init ke-toan` | [Hướng dẫn](ke-toan/HUONG-DAN.html) · [README](ke-toan/README.md) |
 | **Nhân sự - Tuyển dụng**<br><sub>Tuyển đúng người, đối xử công bằng, giữ kín dữ liệu - từ JD tới ngày làm việc cuối.</sub> | 35 | 13 | 5 | `kv-nhan-su@kitviet`<br>`kitviet init nhan-su` | [Hướng dẫn](nhan-su/HUONG-DAN.html) · [README](nhan-su/README.md) |
 | **Marketing - Content**<br><sub>Ra nội dung đủ kênh mỗi tuần, đúng giọng thương hiệu, không dính claim cấm.</sub> | 43 | 15 | 6 | `kv-marketing@kitviet`<br>`kitviet init marketing` | [Hướng dẫn](marketing/HUONG-DAN.html) · [README](marketing/README.md) |
 | **Bán hàng online - Thương mại điện tử**<br><sub>Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.</sub> | 36 | 14 | 5 | `kv-ban-hang-online@kitviet`<br>`kitviet init ban-hang-online` | [Hướng dẫn](ban-hang-online/HUONG-DAN.html) · [README](ban-hang-online/README.md) |
@@ -131,7 +131,7 @@ kitviet uninstall             # gỡ khỏi mọi nền tảng đã cài
 kitviet uninstall --ai cursor
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.3.0 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.4.0 init ...`.
 
 ### Cách 3: Cài thủ công
 

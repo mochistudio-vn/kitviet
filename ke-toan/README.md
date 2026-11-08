@@ -8,7 +8,7 @@ Bộ skill và agent tiếng Việt cho kế toán doanh nghiệp nhỏ và vừ
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 36 | 14 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 40 | 14 | 6 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
@@ -86,6 +86,15 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Giải thích báo cáo tài chính cho chủ doanh nghiệp bằng lời dễ hiểu | `kv:doc-bctc-cho-chu-dn` |
 | Soạn nháp thuyết minh BCTC năm, mọi số khớp bảng cân đối và sổ | `kv:thuyet-minh-bctc-don-gian` |
 
+### Kiểm toán: chuẩn bị và làm việc với kiểm toán viên
+
+| Việc của bạn | Gọi |
+|---|---|
+| Lập danh mục tài liệu (PBC), lịch và tự rà lỗi hay bị điều chỉnh trước khi kiểm toán viên vào | `kv:chuan-bi-kiem-toan-bctc` |
+| Soạn thư xác nhận số dư công nợ, ngân hàng, hàng gửi; theo dõi phản hồi và giải thích chênh lệch | `kv:thu-xac-nhan-so-du-kiem-toan` |
+| Tính biến động, tỷ suất so kỳ trước và soạn giải trình có bằng chứng cho câu kiểm toán viên sẽ hỏi | `kv:phan-tich-bien-dong-bctc` |
+| Trả lời thư quản lý, bút toán điều chỉnh có căn cứ, tính ảnh hưởng lợi nhuận và thuế, lập kế hoạch khắc phục | `kv:tra-loi-thu-quan-ly-kiem-toan` |
+
 ### Dây chuyền
 
 | Việc của bạn | Gọi |
@@ -134,6 +143,10 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Ngân sách năm từ giả định có tên, theo dõi thực hiện và giải thích chênh lệch hằng tháng | `kv:ngan-sach-nam-theo-doi-thuc-hien` |
 | Rà kiểm soát chu trình mua hàng - thanh toán, phân quyền, kiểm thử dữ liệu nghi vấn | `kv:kiem-soat-noi-bo-mua-hang` |
 | Chuẩn hóa file xuất từ MISA, Fast, Bravo thành bảng sạch để lập báo cáo, có kiểm tổng | `kv:chuyen-du-lieu-phan-mem-ke-toan` |
+| Lập kế hoạch kiểm toán nội bộ năm theo rủi ro: chấm điểm chu trình, lịch theo nguồn lực, chương trình kiểm toán từng cuộc | `kv:ke-hoach-kiem-toan-noi-bo` |
+| Chọn mẫu chứng từ tái lập được (seed), lập giấy làm việc và suy rộng sai sót thận trọng | `kv:chon-mau-kiem-tra-chung-tu` |
+| Lọc bút toán cần xem xét từ sổ nhật ký: ngày nghỉ, số tròn, sát khóa sổ, tự duyệt, cặp tài khoản hiếm, Benford | `kv:kiem-tra-but-toan-bat-thuong` |
+| Chạy trọn một cuộc kiểm toán nội bộ chu trình đến báo cáo nháp đã qua gác cổng giấy làm việc | `kv:day-chuyen-kiem-toan-noi-bo-chu-trinh` |
 | Gom số liệu cả năm -> lập hồ sơ TNDN, TNCN, checklist -> gác cổng quyết toán -> bàn giao | `kv:day-chuyen-quyet-toan-nam` |
 | Đọc thông báo thuế -> soạn công văn và hồ sơ đính kèm -> gác cổng căn cứ, số liệu | `kv:day-chuyen-giai-trinh-thue` |
 
@@ -208,6 +221,10 @@ Mỗi skill kết thúc bằng mục **Luồng tiếp theo**, nên các việc n
 **BCTC năm** - Quý 1 năm sau, lập bộ báo cáo tài chính và quyết toán.
 
 `kv:soat-chi-phi-duoc-tru` (Soát chi phí được trừ, hồ sơ còn thiếu) -> `kv:chuan-bi-so-lieu-tncn-tndn` (Gom số liệu quyết toán TNDN, TNCN) -> `kv:thuyet-minh-bctc-don-gian` (Soạn nháp thuyết minh khớp BCTC) -> `kv:soat-khop-thuyet-minh-bctc` (Gác cổng: số không khớp, tổng lệch, chính sách mâu thuẫn) -> `kv:xuat-word` (Xuất thuyết minh Word đính kèm bộ BCTC)
+
+**Mùa kiểm toán báo cáo tài chính** - Từ lúc nhận kế hoạch kiểm toán đến khi chốt bút toán điều chỉnh và thư quản lý
+
+`kv:chuan-bi-kiem-toan-bctc` (Lập danh mục tài liệu, phân công, tự rà lỗi hay bị điều chỉnh) -> `kv:phan-tich-bien-dong-bctc` (Tính biến động, tỷ suất, soạn sẵn giải trình) -> `kv:thu-xac-nhan-so-du-kiem-toan` (Chuẩn bị thư xác nhận, theo dõi phản hồi, giải thích chênh lệch) -> `kv:tra-loi-thu-quan-ly-kiem-toan` (Trả lời bút toán điều chỉnh, thư quản lý, lập kế hoạch khắc phục)
 
 ## Xuất file Word, Excel, PDF, PowerPoint
 

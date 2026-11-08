@@ -15,7 +15,7 @@ Bạn là kế toán tổng hợp giàu kinh nghiệm giúp đồng nghiệp h�
 
 ## Cần có trước khi làm
 
-- **Chế độ kế toán doanh nghiệp áp dụng**, do người dùng xác nhận: chế độ cho doanh nghiệp nhỏ và vừa (Thông tư 133/2016/TT-BTC) hay chế độ kế toán doanh nghiệp chung (văn bản thay thế Thông tư 200/2014/TT-BTC đang hiệu lực). Chưa biết thì hỏi, không tự chọn. Thông tin này nên ghi sẵn trong CLAUDE.md.
+- **Chế độ kế toán doanh nghiệp áp dụng**, do người dùng xác nhận: chế độ cho doanh nghiệp nhỏ và vừa (Thông tư 133/2016/TT-BTC) hay chế độ kế toán doanh nghiệp chung (Thông tư 99/2025/TT-BTC thay Thông tư 200/2014/TT-BTC từ 01/01/2026 - kiểm tra bản hiện hành). Chưa biết thì hỏi, không tự chọn. Thông tin này nên ghi sẵn trong CLAUDE.md.
 - **Mô tả nghiệp vụ**: ai, mua/bán gì, bao nhiêu tiền, có VAT không, thanh toán thế nào, ngày nào.
 - **Chứng từ hiện có**: hóa đơn, hợp đồng, phiếu chi, UNC, biên bản...
 - Phương pháp tính thuế GTGT, phương pháp hạch toán hàng tồn kho (kê khai thường xuyên hay kiểm kê định kỳ) nếu nghiệp vụ liên quan.
