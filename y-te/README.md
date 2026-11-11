@@ -132,7 +132,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Tổng hợp giờ đào tạo liên tục theo chu kỳ, báo người thiếu giờ, lập hồ sơ năng lực nhân viên | `kv:quan-ly-cme-ho-so-nang-luc` |
 | Kịch bản gọi xác nhận trước thủ thuật cho lễ tân: lịch, chuẩn bị, chi phí - chuyển câu hỏi chuyên môn cho bác sĩ | `kv:kich-ban-tu-van-truoc-thu-thuat` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -230,7 +230,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Chấm bằng chứng GRADE rút gọn và 3 mẫu đề cương (PDCA, nghiên cứu cấp cơ sở, đào tạo liên tục) cho hội đồng khoa học
 - ⭐ Mọi script không sửa file gốc, che danh tính người bệnh trước khi xử lý, không chẩn đoán - không kê đơn - không chỉnh liều
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

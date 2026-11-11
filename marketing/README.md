@@ -157,7 +157,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Đọc số ads -> tìm mẫu thắng có kiểm định -> viết vòng biến thể mới -> soát thống kê và claim | `kv:day-chuyen-toi-uu-sau-chien-dich` |
 | Làm trọn bộ bài cả tuần cho mọi kênh, đã qua soát giọng và claim, kèm lịch đăng | `kv:day-chuyen-noi-dung-tuan` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -259,7 +259,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện lớn: 60 hook, 150 câu trả lời bình luận theo 4 ngành, 200 ý tưởng theo trụ cột, 50 mẫu cấu trúc video, 12 khung landing, 8 chuỗi email, 40 tình huống CSKH, bảng kiểm chuyển đổi 30 điểm
 - ⭐ Mọi claim bám tài liệu sản phẩm, bảng từ ngữ rủi ro cho 4 ngành có điều kiện; mọi số có nguồn hoặc [cần bổ sung]; kết quả dự kiến luôn ghi là ước tính
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

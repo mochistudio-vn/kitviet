@@ -131,7 +131,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Đấu thầu cước: RFQ -> gom hồ sơ chào -> chấm có trọng số -> gác cổng -> đề xuất chính/dự phòng theo tuyến | `kv:day-chuyen-dau-thau-cuoc` |
 | Báo cáo XNK tháng cho ban giám đốc: gom số liệu -> KPI và báo cáo -> gác cổng số liệu -> Word/slide | `kv:day-chuyen-bao-cao-xnk-thang` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -227,7 +227,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Bảng tra FTA theo 17 nhóm đối tác và bảng kiểm C/O 14 trường cho mẫu D, E, AK, AJ, VJ, RCEP, EUR.1, tự chứng nhận
 - ⭐ Dây chuyền hồ sơ lô mở rộng: biến thể bộ chứng từ L/C, hàng xuất, chạy hàng loạt cả tháng và nhật ký soát làm bằng chứng kiểm tra sau thông quan
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

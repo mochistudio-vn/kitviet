@@ -135,7 +135,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Thẩm định nhiều khâu: thu thập song song hồ sơ, ngành, tài khoản -> phân tích, chấm điểm -> 2 gác cổng -> bàn giao | `kv:day-chuyen-tham-dinh-tin-dung` |
 | Rà mọi khách đến hạn tái cấp: phiếu từng khách, bảng 3 luồng đủ hồ sơ / thiếu / cần thẩm định sâu | `kv:day-chuyen-tai-cap-han-muc-hang-loat` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -231,7 +231,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Danh mục hồ sơ 12 sản phẩm, bảng kiểm 8 loại TSBĐ, khung 15 ngành hay vay vốn và ma trận rủi ro ngành 5x5
 - ⭐ Mọi lãi suất, phí gắn nhãn [cần xác nhận]; điểm xếp hạng, mức EWS, phân luồng tái cấp đều ghi rõ là tham khảo, phê duyệt thuộc cấp có thẩm quyền
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

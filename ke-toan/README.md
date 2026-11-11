@@ -150,7 +150,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Gom số liệu cả năm -> lập hồ sơ TNDN, TNCN, checklist -> gác cổng quyết toán -> bàn giao | `kv:day-chuyen-quyet-toan-nam` |
 | Đọc thông báo thuế -> soạn công văn và hồ sơ đính kèm -> gác cổng căn cứ, số liệu | `kv:day-chuyen-giai-trinh-thue` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -251,7 +251,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Bảng tra 156 nghiệp vụ định khoản, 62 khoản chi được trừ, 24 tình huống lệch công nợ, checklist khóa sổ 40 mục, bộ 12 mẫu nhắc nợ
 - ⭐ Không tự điền thuế suất, tỷ lệ bảo hiểm, ngưỡng: mọi script dừng và báo [cần xác nhận theo quy định hiện hành] khi thiếu tham số; chỉ chuẩn bị, không nộp
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

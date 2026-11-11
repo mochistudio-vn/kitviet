@@ -151,7 +151,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Xuất cover letter, poster, hồ sơ theo mẫu nhận diện của trường / viện | `kv:mau-tai-lieu-thuong-hieu` |
 | Dựng slide bảo vệ, slide nhóm đọc, poster một trang | `kv:tao-slide` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -249,7 +249,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Kho tra cứu viết sẵn: ngân hàng 120 câu hỏi hội đồng, 30 lý thuyết nền, bộ từ khóa 12 ngành, thang đo đã Việt hóa có nguồn gốc, thư viện câu trả lời phản biện Anh - Việt
 - ⭐ Nâng cấp cả 17 skill free với phần Pro: tóm tắt hàng loạt thư mục PDF, dây chuyền cả luận văn, nhật ký dùng AI tự ghi, báo cáo tiến độ cho giảng viên hướng dẫn
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

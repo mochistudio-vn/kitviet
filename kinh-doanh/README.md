@@ -130,7 +130,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Xây và rà kho câu trả lời CSKH có nguồn chính sách, chủ sở hữu, phiên bản, xuất gói nạp chatbot | `kv:kho-cau-tra-loi-cskh` |
 | Chấm chất lượng cuộc gọi/chat cả tổng đài theo phiếu QA, có hiệu chuẩn và báo cáo theo nhân viên | `kv:day-chuyen-qa-tong-dai` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -228,7 +228,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Thư viện dùng ngay: 40 lời từ chối B2B, 30 mẫu email tiếp cận, 30 tình huống tổng đài, 15 mẫu khiếu nại theo loại x mức, 15 chiến thuật ép giá
 - ⭐ Chạy hàng loạt: 20-50 hồ sơ khách, cả lô ticket, nhiều deal chào giá song song với bảng tổng tình trạng
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

@@ -4,15 +4,15 @@
 
 > Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.
 
-17 skill và 6 agent tiếng Việt cho người làm công trường: nhật ký thi công, báo cáo tuần, biên bản nghiệm thu, checklist an toàn, kiểm tra khối lượng, tiến độ, RFI - phát sinh, báo cáo sự cố, báo cáo ảnh, đề cương thuyết minh có nguồn, hồ sơ hoàn công. AI soạn và soát; kỹ sư có chứng chỉ và người có thẩm quyền vẫn là người tính kết cấu, nghiệm thu và ký.
+25 skill và 6 agent tiếng Việt cho người làm công trường: nhật ký thi công, báo cáo tuần, biên bản nghiệm thu, checklist an toàn, kiểm tra khối lượng, tiến độ, RFI - phát sinh, báo cáo sự cố, báo cáo ảnh, đề cương thuyết minh có nguồn, hồ sơ hoàn công, BIM (EIR, BEP, va chạm, nộp thẩm định) và bóc khối lượng từ bản vẽ AutoCAD. AI soạn và soát; kỹ sư có chứng chỉ và người có thẩm quyền vẫn là người tính kết cấu, nghiệm thu và ký.
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 35 | 13 | 5 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 43 | 13 | 7 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
-**Dành cho:** Kỹ sư giám sát, kỹ sư thi công · Chỉ huy trưởng công trường · QS - kỹ sư khối lượng, dự toán · Cán bộ an toàn lao động · Chủ thầu nhà dân · Ban quản lý dự án
+**Dành cho:** Kỹ sư giám sát, kỹ sư thi công · Chỉ huy trưởng công trường · QS - kỹ sư khối lượng, dự toán · Cán bộ an toàn lao động · Chủ thầu nhà dân · Ban quản lý dự án · Kỹ sư BIM, điều phối BIM
 
 ## Cài đặt
 
@@ -95,6 +95,24 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Ước chi phí sơ bộ từ khối lượng, mỗi đơn giá có nguồn hoặc đánh dấu cần xác nhận | `kv:du-toan-so-bo-cong-trinh` |
 | Lập tiến độ, tìm đường găng, biết việc chậm nào kéo lùi ngày bàn giao | `kv:tien-do-thi-cong-duong-gang` |
 
+### BIM: yêu cầu, kế hoạch, phối hợp
+
+| Việc của bạn | Gọi |
+|---|---|
+| Chủ đầu tư soạn yêu cầu thông tin BIM (EIR): mục tiêu, việc dùng mô hình, mức chi tiết theo giai đoạn, IFC, mốc bàn giao | `kv:lap-eir-yeu-cau-thong-tin-bim` |
+| Tư vấn, nhà thầu soạn kế hoạch thực hiện BIM (BEP) đáp ứng từng mục EIR: tổ chức, phần mềm, phối hợp, kiểm soát chất lượng | `kv:lap-bep-ke-hoach-thuc-hien-bim` |
+| Quy tắc đặt tên file, mô hình và cấu trúc môi trường dữ liệu chung (CDE) với trạng thái, mã duyệt | `kv:quy-tac-dat-ten-cde-bim` |
+| Đọc báo cáo va chạm xuất từ Navisworks/Revit, lọc va chạm giả, gom theo bộ môn, giao người xử lý, lập biên bản phối hợp | `kv:bao-cao-va-cham-bim` |
+| Xác định công trình thuộc diện bắt buộc BIM và soát hồ sơ BIM nộp thẩm định: file gốc, IFC, thuyết minh | `kv:checklist-nop-ho-so-bim-tham-dinh` |
+
+### Bóc khối lượng từ bản vẽ và vật tư
+
+| Việc của bạn | Gọi |
+|---|---|
+| Bóc khối lượng từ bản vẽ AutoCAD qua Data Extraction: ánh xạ layer/block -> công tác, ra bảng khối lượng nhập phần mềm dự toán | `kv:boc-khoi-luong-tu-ban-ve-cad` |
+| So khối lượng xuất từ mô hình Revit hoặc bản vẽ CAD với dự toán/BOQ, chỉ dòng lệch và nguyên nhân | `kv:doi-chieu-khoi-luong-mo-hinh-du-toan` |
+| Tổng hợp vật tư theo hạng mục, tầng từ bảng khối lượng và hao phí định mức người dùng đưa, có hao hụt | `kv:tong-hop-vat-tu-theo-hang-muc` |
+
 ### Dây chuyền nhiều bước
 
 | Việc của bạn | Gọi |
@@ -141,10 +159,19 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Lập HSE plan tổng thể: tổ chức, mối nguy theo giai đoạn, huấn luyện, ứng cứu khẩn cấp, môi trường | `kv:ke-hoach-an-toan-hse-du-an` |
 | Ma trận tuân thủ tiêu chí HSMT và khung đề xuất kỹ thuật, nhân sự - thiết bị chỉ lấy từ hồ sơ thật | `kv:ho-so-du-thau-ky-thuat-xay-dung` |
 | Báo cáo tháng cho CĐT có Gantt kế hoạch - thực tế, giá trị, chất lượng, an toàn, vướng mắc cần quyết | `kv:bao-cao-thang-chu-dau-tu` |
+| Ma trận mức chi tiết LOD/LOI theo hạng mục và giai đoạn, khung khoảng 60 dòng cấu kiện dùng cho EIR và BEP | `kv:ma-tran-lod-theo-giai-doan` |
+| Kế hoạch bàn giao thông tin MIDP/TIDP, ma trận RACI, mốc bàn giao gắn tiến độ | `kv:ke-hoach-ban-giao-thong-tin-midp` |
+| Script đọc file IFC: đếm cấu kiện theo tầng, loại, tìm cấu kiện không gán tầng, thiếu tên, thiếu thuộc tính bắt buộc | `kv:kiem-tra-chat-luong-mo-hinh-ifc` |
+| Ghép mã công việc tiến độ với nhóm cấu kiện để dựng 4D, chỉ cấu kiện chưa gán việc và việc không có cấu kiện | `kv:lien-ket-tien-do-4d` |
+| Danh mục dữ liệu bàn giao vận hành dạng COBie và hồ sơ mô hình hoàn công | `kv:ban-giao-du-lieu-van-hanh-bim` |
+| Chủ đầu tư chấm BEP trước hợp đồng và năng lực BIM nhà thầu theo tiêu chí trọng số, có cờ đỏ | `kv:cham-nang-luc-bim-nha-thau` |
+| Script đọc DXF: đếm block, tổng chiều dài, diện tích theo layer, quy đổi đơn vị, phát hiện đối tượng trùng | `kv:doc-file-dxf-boc-khoi-luong` |
+| Quy chuẩn layer, block, thuộc tính cho đội vẽ, kèm bảng ánh xạ khoảng 100 layer -> công tác cho KT, KC, MEP | `kv:chuan-layer-ban-ve-de-boc-tach` |
 | Đọc HĐ, KL, biên bản -> lập bảng giá trị -> soát khối lượng và hợp đồng song song -> bàn giao | `kv:day-chuyen-thanh-toan-dot-xay-dung` |
 | Rà thư mục hồ sơ -> danh mục đủ/thiếu + kế hoạch bổ sung -> soát trình tự ngày tháng -> bàn giao | `kv:day-chuyen-nghiem-thu-hoan-thanh` |
+| Đọc báo cáo va chạm -> danh sách vấn đề và biên bản họp phối hợp -> gác cổng danh sách vấn đề -> bàn giao | `kv:day-chuyen-phoi-hop-bim-tuan` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -215,6 +242,14 @@ Mỗi skill kết thúc bằng mục **Luồng tiếp theo**, nên các việc n
 
 `kv:bao-cao-anh-hien-truong` (Lập bảng ảnh hiện trường đúng vị trí, giờ chụp, không suy nguyên nhân) -> `kv:bao-cao-su-co-cong-truong` (Soạn báo cáo theo dòng thời gian, việc đã xử lý) -> `kv:soat-an-toan-cong-truong` (Soát câu đổ lỗi, chi tiết bị bỏ sót, câu vượt thẩm quyền) -> `kv:an-thong-tin-nhay-cam` (Che CCCD, số điện thoại người lao động trước khi gửi) -> `kv:xuat-pdf` (Xuất bản chốt PDF để Chỉ huy trưởng ký, gửi)
 
+**Từ yêu cầu BIM đến nộp thẩm định** - Công trình cấp II trở lên chuẩn bị BIM từ giai đoạn lập báo cáo nghiên cứu khả thi đến lúc nộp thẩm định
+
+`kv:checklist-nop-ho-so-bim-tham-dinh` (Xác định công trình có thuộc diện bắt buộc BIM không) -> `kv:lap-eir-yeu-cau-thong-tin-bim` (Chủ đầu tư soạn EIR đưa vào hồ sơ mời thầu) -> `kv:lap-bep-ke-hoach-thuc-hien-bim` (Tư vấn, nhà thầu soạn BEP đáp ứng EIR) -> `kv:quy-tac-dat-ten-cde-bim` (Chốt quy tắc đặt tên và cấu trúc CDE cho mọi bên) -> `kv:bao-cao-va-cham-bim` (Phối hợp mô hình, xử lý va chạm trước khi phát hành) -> `kv:checklist-nop-ho-so-bim-tham-dinh` (Soát bộ hồ sơ BIM trước khi nộp thẩm định)
+
+**Từ bản vẽ CAD đến bảng vật tư** - Có bộ bản vẽ AutoCAD, cần bảng khối lượng nhập phần mềm dự toán và bảng vật tư theo hạng mục
+
+`kv:boc-khoi-luong-tu-ban-ve-cad` (Xuất Data Extraction, ánh xạ layer/block, ra bảng khối lượng chi tiết) -> `kv:kiem-tra-khoi-luong-xay-dung` (Soát đơn vị, số chiều, trùng lặp trong bảng khối lượng) -> `kv:doi-chieu-khoi-luong-mo-hinh-du-toan` (So với dự toán hoặc BOQ hợp đồng, giải thích dòng lệch) -> `kv:tong-hop-vat-tu-theo-hang-muc` (Tổng hợp vật tư theo hạng mục, tầng, có hao hụt) -> `kv:xuat-excel` (Xuất bảng khối lượng và bảng vật tư)
+
 ## Xuất file Word, Excel, PDF, PowerPoint
 
 Skill nào làm ra văn bản, bảng hay slide đều có mục **Xuất file**. Duyệt nội dung xong, nói "xuất ra Word" (hoặc Excel, PDF, PowerPoint): `kv:xuat-word`, `kv:xuat-excel`, `kv:xuat-pdf`, `kv:xuat-pptx` lo phần còn lại. Claude Code và Codex chạy script Python kèm theo (cần `pip install python-docx openpyxl python-pptx reportlab`); Claude web/Desktop dùng tính năng tạo file có sẵn.
@@ -235,12 +270,13 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 | Cập nhật và hỗ trợ | Cộng đồng | Ưu tiên, cập nhật theo quy định mới |
 
 - ⭐ 10 skill Pro mới: hồ sơ thanh toán đợt, dòng tiền, ITP và vật liệu đầu vào, HSE plan, quản lý thầu phụ, checklist quyết toán, HSDT kỹ thuật, báo cáo tháng có Gantt và 2 dây chuyền mới
+- ⭐ 9 skill Pro mới cho BIM và bản vẽ CAD: ma trận LOD, MIDP/RACI, kiểm file IFC, liên kết 4D, bàn giao COBie, chấm năng lực BIM, đọc DXF, chuẩn layer, dây chuyền họp phối hợp BIM tuần
 - ⭐ 4 agent mới, trong đó 2 gác cổng độc lập (soát hợp đồng, soát trình tự ngày tháng hồ sơ) và 1 điều phối lô chạy cả tháng nhật ký hoặc nhiều tầng một lượt
 - ⭐ 17 script python chạy ngay: kiểm bảng khối lượng CSV/Excel, lũy kế nhiều đợt, đường găng + Gantt HTML, đường cong S, quét thư mục hoàn công, đọc EXIF ảnh, dòng tiền, đối chiếu giao hàng
 - ⭐ Thư viện dựng sẵn: 22 mẫu nội dung nghiệm thu, 15 checklist an toàn, 4 mẫu giấy phép làm việc, 12 dàn ý biện pháp, 4 danh mục hồ sơ hoàn công dạng CSV, 3 mẫu tiến độ
 - ⭐ Mọi đơn giá, định mức, tỷ lệ tạm ứng - giữ lại để [cần xác nhận theo văn bản hiện hành]; AI không tính kết cấu, không tự ký, không sửa ngày cho khớp
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

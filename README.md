@@ -34,7 +34,7 @@ Mỗi bộ có 30–43 skill (gồm 18 kỹ năng nền dùng chung) và 12–15
 | **Bán hàng online - Thương mại điện tử**<br><sub>Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.</sub> | 36 | 14 | 5 | `kv-ban-hang-online@kitviet`<br>`kitviet init ban-hang-online` | [Hướng dẫn](ban-hang-online/HUONG-DAN.html) · [README](ban-hang-online/README.md) |
 | **Kinh doanh B2B - Chăm sóc khách hàng**<br><sub>Chốt deal nhanh hơn mà không hứa thứ chưa được duyệt.</sub> | 33 | 14 | 5 | `kv-kinh-doanh@kitviet`<br>`kitviet init kinh-doanh` | [Hướng dẫn](kinh-doanh/HUONG-DAN.html) · [README](kinh-doanh/README.md) |
 | **Giáo viên - Đào tạo**<br><sub>Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.</sub> | 39 | 15 | 4 | `kv-giao-duc@kitviet`<br>`kitviet init giao-duc` | [Hướng dẫn](giao-duc/HUONG-DAN.html) · [README](giao-duc/README.md) |
-| **Xây dựng - Kỹ sư công trường**<br><sub>Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.</sub> | 35 | 13 | 5 | `kv-xay-dung@kitviet`<br>`kitviet init xay-dung` | [Hướng dẫn](xay-dung/HUONG-DAN.html) · [README](xay-dung/README.md) |
+| **Xây dựng - Kỹ sư công trường**<br><sub>Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.</sub> | 43 | 13 | 7 | `kv-xay-dung@kitviet`<br>`kitviet init xay-dung` | [Hướng dẫn](xay-dung/HUONG-DAN.html) · [README](xay-dung/README.md) |
 | **Y tế - Phòng khám, Điều dưỡng, Quản lý y tế**<br><sub>Bớt giấy tờ, thêm thời gian cho người bệnh - AI lo phần hành chính, chuyên môn vẫn do người có chứng chỉ quyết.</sub> | 34 | 14 | 5 | `kv-y-te@kitviet`<br>`kitviet init y-te` | [Hướng dẫn](y-te/HUONG-DAN.html) · [README](y-te/README.md) |
 | **Môi giới bất động sản**<br><sub>Tin đăng đúng sổ, phương án vay đủ cả giai đoạn thả nổi, pháp lý hỏi đúng chỗ - bán nhanh mà không mất uy tín.</sub> | 36 | 14 | 5 | `kv-bat-dong-san@kitviet`<br>`kitviet init bat-dong-san` | [Hướng dẫn](bat-dong-san/HUONG-DAN.html) · [README](bat-dong-san/README.md) |
 | **Pháp chế - Văn phòng luật**<br><sub>Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật.</sub> | 38 | 15 | 5 | `kv-phap-ly@kitviet`<br>`kitviet init phap-ly` | [Hướng dẫn](phap-ly/HUONG-DAN.html) · [README](phap-ly/README.md) |
@@ -131,7 +131,7 @@ kitviet uninstall             # gỡ khỏi mọi nền tảng đã cài
 kitviet uninstall --ai cursor
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.4.0 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.5.0 init ...`.
 
 ### Cách 3: Cài thủ công
 
@@ -170,7 +170,7 @@ Mỗi nghề có bản **Pro**:
 | Xuất file | Trình bày chuẩn | **Theo mẫu thương hiệu riêng** (logo, màu, header) |
 | Cập nhật theo quy định mới | Cộng đồng | **Ưu tiên** |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file `SKILL.md` để bạn xem trước bản Pro làm được gì. Liên hệ nâng cấp: **[mochistudio.io.vn](https://mochistudio.io.vn)**
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file `SKILL.md` để bạn xem trước bản Pro làm được gì. Liên hệ nâng cấp: **[mochistudio.io.vn](https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien)**
 
 ## Cộng đồng
 

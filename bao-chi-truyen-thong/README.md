@@ -131,7 +131,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Loạt bài điều tra: hồ sơ nguồn, sổ bằng chứng nhiều vòng, gác cổng sự thật và nhất quán loạt bài từng kỳ | `kv:day-chuyen-dieu-tra-nhieu-ky` |
 | Cẩm nang khủng hoảng 4-8 kịch bản soạn song song, gác cổng nhất quán, ma trận rủi ro, lịch diễn tập | `kv:day-chuyen-ke-hoach-khung-hoang` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -228,7 +228,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Bảng kiểm ảnh/clip 20 dấu hiệu (gồm nội dung tạo bởi AI), bảng kiểm đạo đức theo 6 đề tài nhạy cảm, mẫu cải chính - xin lỗi
 - ⭐ Ma trận phê duyệt 30 phút, tập dượt phỏng vấn giả lập chấm 12 điểm mỗi câu, điểm báo hằng ngày trước 8 giờ sáng
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

@@ -150,7 +150,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Tài liệu API, release note song ngữ cho đối tác nước ngoài | `kv:viet-song-ngu` |
 | Bản 1 trang cho giám đốc từ báo cáo tiến độ, đề xuất dự án | `kv:tom-tat-cho-sep` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -247,7 +247,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Kho tra cứu viết sẵn: 50 bài tự xử lý helpdesk, 25 runbook Linux / Windows / Docker / Kubernetes, 6 checklist review theo ngôn ngữ (190 mục), 80 câu hỏi khảo sát, 60 story mẫu 4 miền, checklist dữ liệu cá nhân 70 mục, 30 tiêu chí phát hành
 - ⭐ Nâng cấp đủ 18 skill free với phần Pro: báo cáo hai bản cho khách, đề nghị phát sinh, 4 mẫu đề xuất dự án đã điền, thang SEV1-SEV4, thông báo sự cố 4 giai đoạn, diễn tập khôi phục thảm họa đo RTO / RPO
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 

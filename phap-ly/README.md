@@ -142,7 +142,7 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | So luật cũ - mới từ nguyên văn, biết ngay hợp đồng mẫu, quy chế nào phải sửa | `kv:bang-thay-doi-van-ban-luat-cu-moi` |
 | Kế hoạch đào tạo tuân thủ cả năm theo vai trò, có chỉ số đo và hồ sơ đã phổ biến | `kv:lo-trinh-dao-tao-phap-ly-theo-vai-tro` |
 
-Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn
+Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Trợ lý (agent) - xếp theo quyền
 
@@ -240,7 +240,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 - ⭐ Đủ 19 skill Free được nâng cấp, kèm 30 tài liệu mẫu, bảng tra và 9 file mẫu CSV: điều khoản theo 6 loại hợp đồng, câu sửa NDA song ngữ, 6 mẫu công văn, 4 mẫu biên bản thanh lý, 6 câu miễn trừ có chú giải
 - ⭐ Gác cổng mở lại tài liệu gốc cho 100% phát hiện Đỏ; mọi căn cứ phải có nguồn chính thức, mọi kết luận gắn nhãn cần luật sư
 
-**Nâng cấp Pro:** https://mochistudio.io.vn
+**Nâng cấp Pro:** https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
 
 ## Ba nguyên tắc khi dùng
 
