@@ -64,7 +64,7 @@ Chỉ số điện: [..] - Chỉ số nước: [..] - Chìa khóa: [..] bộ
 
 ## Xuất file
 
-- **Word (.docx):** biên bản bàn giao và bảng kiểm hợp đồng thuê -> `kv:xuat-word` kiểu `bien-ban`, tên gợi ý `ban-giao-<ma-can>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** biên bản bàn giao và bảng kiểm hợp đồng thuê -> `kv:xuat-word` kiểu `bieu-mau` (khối ký các bên đặt ngay trong nội dung dạng bảng, vì kiểu `bien-ban` chỉ in khối ký Thư ký / Chủ trì của biên bản họp), tên gợi ý `ban-giao-<ma-can>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản in để hai bên ký lúc bàn giao -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

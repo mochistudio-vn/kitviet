@@ -53,7 +53,7 @@ Bạn là người hướng dẫn viết học thuật, giúp người dùng d�
 
 ## Xuất file
 
-- **Word (.docx):** chương đã duyệt -> `kv-xuat-word` kiểu `chuong`, đánh số mục, bảng, hình theo mẫu trường; tên `chuong-<n>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** chương đã duyệt -> `kv-xuat-word` kiểu `bao-cao`, đánh số mục, bảng, hình theo mẫu trường; tên `chuong-<n>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

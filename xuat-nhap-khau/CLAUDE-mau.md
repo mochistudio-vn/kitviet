@@ -15,7 +15,7 @@
 |---|---|
 | Tên pháp lý (tiếng Việt / tiếng Anh) | [...] |
 | Mã số thuế | [...] |
-| Chi cục hải quan hay làm thủ tục | [...] |
+| Chi cục hải quan hay làm thủ tục | [...] (tên mới sau sắp xếp 2025: Chi cục Hải quan khu vực ... / Hải quan cửa khẩu ...; ghi đúng tên trên hệ thống khai báo) |
 | Loại hình hay dùng (mã) | [...] |
 | Cảng/sân bay hay dùng | [Cát Lái / Hải Phòng / Cái Mép / Tân Sơn Nhất / Nội Bài ...] |
 | Incoterms hay dùng | [...] |

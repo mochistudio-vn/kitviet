@@ -23,7 +23,7 @@ Bạn giúp môi giới có một bản mô tả khu vực **đứng được tr
 
 1. Chia bản phân tích làm 5 phần: **Tiện ích sống - Giao thông hiện hữu - Hạ tầng đang/sẽ triển khai - Mặt bằng giá chào - Điểm cần lưu ý**.
 2. Tra cứu và phân loại nguồn theo 3 mức tin cậy:
-   - **Chính thức:** cổng thông tin UBND tỉnh/thành, Sở Xây dựng, Sở Quy hoạch - Kiến trúc (nơi có), Sở Tài nguyên và Môi trường hoặc cơ quan tương đương, ban quản lý dự án giao thông, báo chí trích văn bản cụ thể.
+   - **Chính thức:** cổng thông tin UBND tỉnh/thành, Sở Xây dựng, Sở Quy hoạch - Kiến trúc (nơi có), Sở Nông nghiệp và Môi trường (hợp nhất từ Sở Tài nguyên và Môi trường năm 2025), Văn phòng đăng ký đất đai, UBND cấp xã (chính quyền 2 cấp từ 01/7/2025, không còn cấp huyện), ban quản lý dự án giao thông, báo chí trích văn bản cụ thể.
    - **Tham khảo:** báo chí không dẫn văn bản, trang dữ liệu giá, tin đăng rao bán.
    - **Chưa xác thực:** nhóm Facebook, lời đồn, "nghe nói sắp".
 3. Tiện ích: liệt kê trường, chợ/siêu thị, bệnh viện, công viên với **khoảng cách đo trên bản đồ** (ghi là đường đi hay đường chim bay).

@@ -58,7 +58,7 @@ Nguồn đã dùng: <...> | Ý chưa có nguồn: <...>
 
 ## Xuất file
 
-- **Word (.docx):** bài thuyết minh để HDV in, ghi chú tay -> `kv-xuat-word` kiểu `tai-lieu-noi-bo`, tên `thuyet-minh-<diem>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bài thuyết minh để HDV in, ghi chú tay -> `kv-xuat-word` kiểu `bao-cao`, tên `thuyet-minh-<diem>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

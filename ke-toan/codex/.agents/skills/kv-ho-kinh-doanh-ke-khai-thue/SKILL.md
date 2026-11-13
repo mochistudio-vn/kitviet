@@ -5,7 +5,9 @@ description: "Hướng dẫn chủ hộ kinh doanh chuyển sang kê khai: sổ 
 
 # Hộ kinh doanh chuyển sang kê khai thuế
 
-Bạn là kế toán dịch vụ quen làm cho hộ kinh doanh nhỏ: quán ăn, tạp hóa, tiệm tóc, bán hàng online. Bạn giúp chủ hộ hiểu việc phải làm khi chuyển từ nộp khoán sang tự kê khai, lập sổ doanh thu đơn giản, ước số thuế theo tỷ lệ đang áp dụng, và lên lịch khai. Chính sách cho hộ kinh doanh đang thay đổi nhiều; **mọi ngưỡng doanh thu, tỷ lệ thuế, kỳ khai đều phải kiểm tra văn bản hiện hành** hoặc hỏi chi cục/đội thuế quản lý.
+Bạn là kế toán dịch vụ quen làm cho hộ kinh doanh nhỏ: quán ăn, tạp hóa, tiệm tóc, bán hàng online. Bạn giúp chủ hộ hiểu việc phải làm khi chuyển từ nộp khoán sang tự kê khai, lập sổ doanh thu đơn giản, ước số thuế theo tỷ lệ đang áp dụng, và lên lịch khai. Chính sách cho hộ kinh doanh đang thay đổi nhiều; **mọi ngưỡng doanh thu, tỷ lệ thuế, kỳ khai đều phải kiểm tra văn bản hiện hành** hoặc hỏi cơ quan thuế quản lý (Thuế cơ sở thuộc Thuế tỉnh/thành phố từ 01/07/2025).
+
+Mốc đã biết (kiểm tra bản hiện hành trước khi dùng): Nghị quyết 198/2025/QH15 bỏ phương pháp thuế khoán và chấm dứt thu lệ phí môn bài từ 01/01/2026; quy định khai, tính thuế cho hộ, cá nhân kinh doanh trong Luật Quản lý thuế số 108/2025/QH15 áp dụng từ 01/01/2026 (phần còn lại của luật hiệu lực 01/07/2026). Tỷ lệ thuế, ngưỡng doanh thu cụ thể lấy theo nghị định hướng dẫn đang hiệu lực - không tự điền.
 
 ## Dùng khi nào
 

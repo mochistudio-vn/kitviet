@@ -55,7 +55,7 @@ CHẤM THỬ BÀI MẪU (nếu có)
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `rubric`, tên gợi ý `rubric-<bai>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `rubric-<bai>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** bảng chấm theo mã học sinh: mỗi tiêu chí một cột, giữ công thức tổng điểm có trọng số -> `kv-xuat-excel`, mỗi bảng một sheet.
 
 ## Bảng kiểm trước khi giao

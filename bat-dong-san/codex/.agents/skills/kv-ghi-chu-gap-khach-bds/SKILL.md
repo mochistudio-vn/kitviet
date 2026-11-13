@@ -64,7 +64,7 @@ Dạ chú Bảy, con xin tóm lại buổi hôm nay: giá chào 6,2 tỷ; phí m
 
 ## Xuất file
 
-- **Word (.docx):** biên bản buổi gặp sau khi người dùng duyệt -> `kv-xuat-word` kiểu `bien-ban`, tên gợi ý `bien-ban-gap-<ma-khach>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** biên bản buổi gặp sau khi người dùng duyệt -> `kv-xuat-word` kiểu `bieu-mau` (khối ký các bên đặt ngay trong nội dung dạng bảng, vì kiểu `bien-ban` chỉ in khối ký Thư ký / Chủ trì của biên bản họp), tên gợi ý `bien-ban-gap-<ma-khach>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt gửi hai bên xác nhận -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

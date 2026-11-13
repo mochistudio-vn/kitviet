@@ -55,7 +55,7 @@ H1: <phát biểu> - Căn cứ: <lý thuyết>; <tác giả (năm)>; <tác giả
 
 ## Xuất file
 
-- **Word (.docx):** phần cơ sở lý thuyết đã duyệt -> `kv:xuat-word` kiểu `chuong`.
+- **Word (.docx):** phần cơ sở lý thuyết đã duyệt -> `kv:xuat-word` kiểu `bao-cao`.
 - **PowerPoint (.pptx):** một slide mô hình để trao đổi với giảng viên -> `kv:xuat-pptx`.
 
 ## Bảng kiểm trước khi giao

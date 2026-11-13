@@ -51,7 +51,7 @@ Mở đầu
 ```
 
 ## Xuất file
-- **Word (.docx):** kịch bản phát cho đội gọi -> `kv:xuat-word` kiểu tài liệu `huong-dan`, tên file `kich-ban-goi-<chien-dich>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** kịch bản phát cho đội gọi -> `kv:xuat-word` kiểu tài liệu `bao-cao` (tài liệu nội bộ), tên file `kich-ban-goi-<chien-dich>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** phiếu ghi cuộc gọi thành bảng theo dõi (một dòng một cuộc gọi) -> `kv:xuat-excel`, giữ công thức tỷ lệ hẹn được.
 
 ## Bảng kiểm trước khi giao

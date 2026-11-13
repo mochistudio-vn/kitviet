@@ -60,7 +60,7 @@ Lưu ý nói: "Ngân hàng không bao giờ hỏi mã OTP hay mật khẩu của
 
 ## Xuất file
 
-- **Word (.docx):** kịch bản in để luyện hoặc chia sẻ cho nhóm -> `kv:xuat-word` kiểu `kich-ban`.
+- **Word (.docx):** kịch bản in để luyện hoặc chia sẻ cho nhóm -> `kv:xuat-word` kiểu `bao-cao` (tài liệu nội bộ, không quốc hiệu).
 - **PowerPoint (.pptx):** khi cần trình bày cho khách doanh nghiệp tại buổi gặp -> `kv:xuat-pptx`.
 
 ## Bảng kiểm trước khi giao

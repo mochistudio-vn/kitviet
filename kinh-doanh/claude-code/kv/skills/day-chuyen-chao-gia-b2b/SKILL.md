@@ -72,7 +72,7 @@ Thư mục chạy: .kv-run/chao-gia-<ma-deal>-<yyyymmdd>/
 ```
 
 ## Xuất file
-- **Word (.docx):** báo giá và proposal bản cuối (bỏ phần nội bộ) -> `kv:xuat-word` kiểu `bao-gia` và `de-xuat`, tên file `bao-gia-<ma-deal>-<yyyy-mm-dd>.docx`, `proposal-<khach>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** báo giá và proposal bản cuối (bỏ phần nội bộ) -> `kv:xuat-word` kiểu `thu` (báo giá) và `bao-cao` (proposal), tên file `bao-gia-<ma-deal>-<yyyy-mm-dd>.docx`, `proposal-<khach>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** `02-ban-nhap-hang-muc.csv` -> `kv:xuat-excel`, giữ công thức thành tiền, VAT, tổng.
 - **PDF:** bản đã ký để gửi khách -> `kv:xuat-pdf`.
 - **PowerPoint (.pptx):** khi có buổi trình bày proposal -> `kv:xuat-pptx`.

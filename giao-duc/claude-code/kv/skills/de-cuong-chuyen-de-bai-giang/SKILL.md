@@ -55,7 +55,7 @@ NGƯỜI PHỤ TRÁCH CẦN CHỐT: ...
 
 ## Xuất file
 
-- **Word (.docx):** sau khi người phụ trách duyệt, dùng `kv:xuat-word` với kiểu tài liệu `de-cuong`, tên gợi ý `de-cuong-chuyen-de-<ten-ngan>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi người phụ trách duyệt, dùng `kv:xuat-word` với kiểu tài liệu `bao-cao`, tên gợi ý `de-cuong-chuyen-de-<ten-ngan>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản trình tổ/khoa duyệt hoặc phát cho người học -> `kv:xuat-pdf`.
 - **PowerPoint (.pptx):** cần trình bày chuyên đề -> `kv:xuat-pptx`, mỗi phần nội dung 2-4 slide.
 

@@ -53,7 +53,7 @@ Bạn giúp nhà nghiên cứu soạn thuyết minh đề tài / hồ sơ xin t�
 
 ## Xuất file
 
-- **Word (.docx):** thuyết minh theo biểu mẫu -> `kv-xuat-word` kiểu `thuyet-minh-de-tai`.
+- **Word (.docx):** thuyết minh theo biểu mẫu -> `kv-xuat-word` kiểu `bao-cao`.
 - **Excel (.xlsx):** dự toán có công thức thành tiền = khối lượng x đơn giá, tổng cộng -> `kv-xuat-excel`.
 
 ## Bảng kiểm trước khi giao

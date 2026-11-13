@@ -50,7 +50,7 @@ Bạn là conversion copywriter. Bạn viết chữ cho landing page theo khối
 
 ## Xuất file
 
-- **Word (.docx):** nội dung theo khối gửi designer/dev -> `kv:xuat-word` với kiểu tài liệu `bai-viet`, mỗi khối một mục có ghi chú hình. Tên file gợi ý `landing-<san-pham>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** nội dung theo khối gửi designer/dev -> `kv:xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu), mỗi khối một mục có ghi chú hình. Tên file gợi ý `landing-<san-pham>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

@@ -47,7 +47,7 @@ TÌNH HUỐNG: Khách đến sớm, phòng chưa sẵn
 
 ## Xuất file
 
-- **Word (.docx):** sổ tay kịch bản lễ tân để in đào tạo -> `kv-xuat-word` kiểu `tai-lieu-dao-tao`, tên `kich-ban-le-tan-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sổ tay kịch bản lễ tân để in đào tạo -> `kv-xuat-word` kiểu `bao-cao`, tên `kich-ban-le-tan-<yyyy-mm-dd>.docx`.
 - **PDF:** bản dán quầy hoặc gửi nhóm nhân viên -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

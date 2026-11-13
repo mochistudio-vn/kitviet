@@ -59,7 +59,7 @@ CẦN XÁC NHẬN TRƯỚC KHI GỬI KHÁCH: <danh sách mục [cần xác nhậ
 
 ## Xuất file
 
-- **Word (.docx):** chương trình gửi khách -> `kv-xuat-word`, kiểu tài liệu `chuong-trinh-tour`, tên `lich-trinh-<ten-tour>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** chương trình gửi khách -> `kv-xuat-word`, kiểu tài liệu `ke-hoach`, tên `lich-trinh-<ten-tour>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt có logo công ty để gửi khách hoặc in phát cho đoàn -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

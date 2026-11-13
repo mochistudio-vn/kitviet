@@ -36,7 +36,7 @@ Thiếu thông tin nào thì hỏi, không tự giả định.
    - TikTok, Zalo: đọc điều khoản khuyến mại/cộng đồng của nền tảng; tránh cơ chế "thả tim nhiều nhất" dễ bị mua tương tác.
 3. **Thiết kế cơ chế công bằng:** mỗi người một lượt (hoặc nói rõ số lượt), loại bình luận trùng, tài khoản ảo, người của đơn vị tổ chức và đối tác.
 4. **Chọn người thắng minh bạch:** công cụ quay số có ghi hình màn hình hoặc livestream; danh sách hợp lệ chốt trước khi quay; có người chứng kiến. Với khuyến mại may rủi, Nghị định 239/2026 yêu cầu việc xác định trúng thưởng có sự chứng kiến trực tiếp hoặc trực tuyến của khách hàng - kiểm tra bản hiện hành. Lập biên bản xác định trúng thưởng.
-5. **Thuế thu nhập cá nhân từ trúng thưởng:** đơn vị trả thưởng khấu trừ 10% trên phần giá trị giải vượt ngưỡng, tính **theo từng lần trúng** (giải hiện vật quy theo giá thị trường). Ngưỡng 10 triệu đồng/lần áp dụng đến 30/6/2026; nhiều nguồn nêu Luật Thuế TNCN 2025 nâng lên 20 triệu đồng/lần từ 01/7/2026 -> **kế toán phải xác minh** trước khi trao giải. Ghi trong thể lệ ai chịu khoản thuế này.
+5. **Thuế thu nhập cá nhân từ trúng thưởng:** đơn vị trả thưởng khấu trừ 10% trên phần giá trị giải vượt ngưỡng, tính **theo từng lần trúng** (giải hiện vật quy theo giá thị trường). Theo Luật Thuế TNCN số 109/2025/QH15, giải nhận từ 01/7/2026 áp dụng ngưỡng 20 triệu đồng/lần (giải nhận đến 30/6/2026: 10 triệu đồng/lần); không cộng gộp các lần trúng khác nhau - kiểm tra bản hiện hành và văn bản hướng dẫn, **kế toán xác minh** trước khi trao giải. Ghi trong thể lệ ai chịu khoản thuế này.
 6. **Dữ liệu cá nhân:** chỉ thu thông tin cần để trao giải; ghi mục đích, thời gian lưu, cách xóa; xin đồng ý nếu dùng tên/ảnh người thắng để công bố.
 7. **Soạn thể lệ, bài phát động, bài công bố** theo mẫu dưới. Lưu bằng chứng: ảnh chụp bài, danh sách hợp lệ, video quay số, biên bản, chứng từ trao giải.
 
@@ -55,6 +55,11 @@ Thiếu thông tin nào thì hỏi, không tự giả định.
 9. Trường hợp không hợp lệ: <tài khoản ảo, gian lận, nội dung vi phạm...>.
 10. Dữ liệu cá nhân: <mục đích, lưu bao lâu, xóa thế nào>.
 11. Giải quyết khiếu nại: <đầu mối, hạn>; quyết định của <đơn vị> là cuối cùng trong khuôn khổ pháp luật.
+-- Thêm khi là khuyến mại (gắn mua hàng/quảng bá hàng hóa), đối chiếu nội dung thể lệ bắt buộc theo quy định hiện hành:
+12. Địa bàn (tỉnh/toàn quốc/trực tuyến) và hàng hóa, dịch vụ được khuyến mại, hàng hóa dùng làm giải.
+13. Bằng chứng xác định trúng thưởng (mã dự thưởng, hóa đơn, đơn hàng) và cách đối chiếu.
+14. Giải không có người trúng: xử lý theo quy định hiện hành (khuyến mại may rủi thường phải trích nộp một phần giá trị giải vào ngân sách - pháp chế xác minh tỷ lệ, thủ tục).
+15. Trách nhiệm thông báo kết quả cho cơ quan quản lý và báo cáo kết thúc chương trình (nếu thuộc diện đăng ký/thông báo).
 
 ## Bảng kiểm pháp lý
 | Hạng mục | Tình trạng | Ai xác minh |
@@ -68,7 +73,7 @@ Thiếu thông tin nào thì hỏi, không tự giả định.
 
 ## Xuất file
 
-- **Word (.docx):** thể lệ và biên bản xác định trúng thưởng -> `kv:xuat-word`. Tên file gợi ý `the-le-<chuong-trinh>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** thể lệ -> `kv:xuat-word` kiểu `bao-cao`; biên bản xác định trúng thưởng -> kiểu `bien-ban`. Tên file gợi ý `the-le-<chuong-trinh>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** danh sách tham gia hợp lệ, danh sách trúng giải và tính thuế -> `kv:xuat-excel`.
 
 ## Bảng kiểm trước khi giao

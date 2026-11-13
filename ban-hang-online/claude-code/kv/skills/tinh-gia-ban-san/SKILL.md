@@ -22,7 +22,7 @@ Hỏi đủ các nhóm sau. Khoản nào người dùng không biết thì ghi `
 - **Chi phí theo đơn (đồng/đơn):** giá vốn (đã gồm ship nhập về chưa?), đóng gói, quà tặng kèm, phí vận chuyển shop chịu, phí cố định mỗi đơn của sàn (nếu có).
 - **Chi phí theo % giá bán:** phí cố định/hoa hồng sàn theo ngành hàng, phí thanh toán, phí chương trình (freeship, hoàn xu, voucher của sàn) shop đã đăng ký, phí affiliate/KOC.
 - **Quảng cáo:** chi phí quảng cáo dự kiến trên doanh thu (% hoặc đồng/đơn).
-- **Thuế:** hình thức kinh doanh (hộ kinh doanh, doanh nghiệp), sàn có khấu trừ thuế thay không, tỷ lệ áp dụng - `[cần xác nhận theo quy định hiện hành và tư vấn kế toán]`.
+- **Thuế:** hình thức kinh doanh (hộ kinh doanh, doanh nghiệp), sàn có khấu trừ thuế thay không, tỷ lệ áp dụng - `[cần xác nhận theo quy định hiện hành và tư vấn kế toán]`. Bối cảnh chung (kiểm tra bản hiện hành): sàn có chức năng thanh toán khấu trừ, nộp thay thuế GTGT, TNCN cho hộ, cá nhân bán hàng theo Nghị định 117/2025/NĐ-CP; hộ kinh doanh không còn nộp thuế khoán từ 01/01/2026, chính sách thuế hộ kinh doanh theo Nghị định 68/2026/NĐ-CP. Không tự điền tỷ lệ; lấy số từ chứng từ khấu trừ của sàn hoặc kế toán.
 - **Hoàn hàng:** tỷ lệ hoàn/hủy thực tế, chi phí mỗi đơn hoàn (ship hai chiều, hàng hỏng).
 - **Biên lợi nhuận mục tiêu** (% trên giá bán).
 

@@ -60,7 +60,7 @@ A. ...  B. ...  C. ...  D. ...
 ## Xuất file
 
 - **PowerPoint (.pptx):** bài tập huấn trình chiếu, mỗi mục nội dung 1-2 slide, slide cuối là câu hỏi ôn tập -> `kv:xuat-pptx`.
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `tai-lieu-dao-tao`. cho tài liệu phát tay, đề kiểm tra và phiếu ký nhận.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bao-cao`. cho tài liệu phát tay, đề kiểm tra và phiếu ký nhận.
 - **PDF:** đề kiểm tra in, tách riêng đáp án -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

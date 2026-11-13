@@ -60,7 +60,7 @@ BẢN ĐẶC TẢ
 ## Xuất file
 
 - **Excel (.xlsx):** ma trận và bản đặc tả (sheet "Ma trận", "Đặc tả"), giữ công thức cộng số câu, số điểm, tỉ lệ % theo mức -> `kv:xuat-excel`, mỗi bảng một sheet.
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `de-kiem-tra`, tên gợi ý `de-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `de-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
 - **PDF:** đề và hướng dẫn chấm bản chốt, sau khi tổ trưởng duyệt -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

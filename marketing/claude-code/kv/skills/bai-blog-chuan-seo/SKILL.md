@@ -60,7 +60,7 @@ Slug: /cach-chon-...
 
 ## Xuất file
 
-- **Word (.docx):** bản gửi duyệt hoặc gửi khách agency -> `kv:xuat-word` với kiểu tài liệu `bai-viet`, giữ đúng cấp H2/H3 và khối meta ở đầu. Tên file gợi ý `blog-<tu-khoa>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bản gửi duyệt hoặc gửi khách agency -> `kv:xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu), giữ đúng cấp H2/H3 và khối meta ở đầu. Tên file gợi ý `blog-<tu-khoa>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

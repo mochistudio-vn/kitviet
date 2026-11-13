@@ -62,7 +62,7 @@ Bạn là brand strategist giúp thương hiệu nói một giọng nhất quán
 
 ## Xuất file
 
-- **Word (.docx):** cẩm nang để cả team, freelancer, agency dùng chung -> `kv:xuat-word` với kiểu tài liệu `cam-nang`. Tên file gợi ý `giong-thuong-hieu-<ten>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** cẩm nang để cả team, freelancer, agency dùng chung -> `kv:xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu). Tên file gợi ý `giong-thuong-hieu-<ten>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt gửi đối tác -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

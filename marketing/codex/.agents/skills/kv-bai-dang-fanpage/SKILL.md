@@ -56,7 +56,7 @@ Bạn là copywriter mạng xã hội viết bài cho fanpage thương hiệu Vi
 
 ## Xuất file
 
-- **Word (.docx):** bộ nhiều bài gửi sếp/khách duyệt một lượt -> `kv-xuat-word` với kiểu tài liệu `bai-viet`, mỗi bài một trang kèm gợi ý hình. Tên file gợi ý `bai-fanpage-<chu-de>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bộ nhiều bài gửi sếp/khách duyệt một lượt -> `kv-xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu), mỗi bài một trang kèm gợi ý hình. Tên file gợi ý `bai-fanpage-<chu-de>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

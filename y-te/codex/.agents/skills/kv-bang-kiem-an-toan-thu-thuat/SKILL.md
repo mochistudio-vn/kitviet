@@ -55,7 +55,7 @@ Dừng thủ thuật vì: ______    Ký: BS ____  ĐD ____
 
 ## Xuất file
 
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bang-kiem`. Tên file gợi ý `bang-kiem-an-toan-<thu-thuat>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bieu-mau`. Tên file gợi ý `bang-kiem-an-toan-<thu-thuat>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt in treo phòng mổ, phòng thủ thuật -> `kv-xuat-pdf`.
 - **Excel (.xlsx):** bảng tổng hợp giám sát tuân thủ theo tháng, mỗi giai đoạn một cột, giữ công thức tỷ lệ tuân thủ -> `kv-xuat-excel`.
 

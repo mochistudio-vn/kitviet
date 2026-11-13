@@ -60,7 +60,7 @@ File xuất: [ten-tai-lieu-yyyy-mm-dd.docx]
 
 ## Xuất file
 
-- **Word (.docx):** SOP, tờ hướng dẫn, tài liệu tập huấn sau khi `04-ban-giao.md` đạt -> `kv:xuat-word` với kiểu `quy-trinh` hoặc `to-roi`.
+- **Word (.docx):** SOP, tờ hướng dẫn, tài liệu tập huấn sau khi `04-ban-giao.md` đạt -> `kv:xuat-word` với kiểu `bao-cao` hoặc `to-roi`.
 - **PDF:** bản đã duyệt chuyên môn để in phát -> `kv:xuat-pdf`.
 - **Excel (.xlsx):** bản nháp dạng bảng (`02-ban-nhap.csv`) -> `kv:xuat-excel`, mỗi bảng một sheet.
 - **PowerPoint (.pptx):** tài liệu tập huấn cần trình chiếu -> `kv:xuat-pptx`.

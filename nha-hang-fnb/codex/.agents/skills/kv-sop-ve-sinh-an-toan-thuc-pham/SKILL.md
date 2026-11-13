@@ -58,7 +58,7 @@ Căn cứ cần đối chiếu: Luật An toàn thực phẩm và văn bản hư
 
 ## Xuất file
 
-- **Word (.docx):** bộ SOP sau khi chủ quán duyệt -> `kv-xuat-word` với kiểu tài liệu `quy-trinh`, mỗi SOP một mục, biểu mẫu ở phụ lục. Tên gợi ý `sop-attp-<ten-quan>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bộ SOP sau khi chủ quán duyệt -> `kv-xuat-word` với kiểu tài liệu `bao-cao`, mỗi SOP một mục, biểu mẫu ở phụ lục. Tên gợi ý `sop-attp-<ten-quan>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản rút gọn 1 trang để dán tại bếp -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

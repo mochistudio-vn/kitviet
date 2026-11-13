@@ -27,7 +27,7 @@ Bạn đọc hợp đồng **bằng con mắt của người sắp xuống tiề
    1. Các bên: đủ họ tên, giấy tờ tùy thân; nếu tài sản chung vợ chồng/hộ gia đình, đã đủ người ký hoặc có ủy quyền hợp lệ chưa?
    2. Tài sản: thửa, tờ, địa chỉ, diện tích **khớp sổ**? Có ghi phần diện tích thực tế ngoài sổ và ai chịu rủi ro phần đó?
    3. Giá: tổng giá, giá ghi trên hợp đồng công chứng có khác giá thật không (rủi ro thuế và tranh chấp)?
-   4. Tiền cọc: số tiền bằng số và chữ khớp nhau; nhận bằng chuyển khoản hay tiền mặt, có biên nhận?
+   4. Tiền cọc: số tiền bằng số và chữ khớp nhau; nhận bằng chuyển khoản hay tiền mặt, có biên nhận? Nếu bên nhận cọc là **chủ đầu tư dự án** (nhà ở, công trình hình thành trong tương lai): Luật Kinh doanh bất động sản số 29/2023/QH15 giới hạn tiền cọc không quá 5% giá bán, chỉ thu khi dự án đã đủ điều kiện đưa vào kinh doanh và hợp đồng cọc phải ghi rõ giá bán - kiểm tra bản hiện hành; cọc vượt mức hoặc "giữ chỗ" khi dự án chưa đủ điều kiện -> xếp **Phải sửa trước khi ký**.
    5. Tiến độ: ngày công chứng, các đợt thanh toán, ngày bàn giao nhà và giấy tờ.
    6. Phạt cọc: vi phạm từ phía bên bán thì sao, từ phía bên mua thì sao - có **cân bằng hai chiều** không?
    7. Thế chấp: nếu sổ đang thế chấp, ai trả nợ, tiền giải chấp đi tài khoản nào, hạn giải chấp?

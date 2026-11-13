@@ -63,7 +63,7 @@ Căn: nhà hẻm [..], P. [..]. Mức sẵn sàng đặt cọc: CHƯA - 2 dòng 
 
 ## Xuất file
 
-- **Word (.docx):** bảng kiểm gửi khách hoặc mang đi công chứng, sau khi người dùng duyệt -> `kv-xuat-word` kiểu tài liệu `bang-kiem`, tên gợi ý `bang-kiem-phap-ly-<ma-can>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bảng kiểm gửi khách hoặc mang đi công chứng, sau khi người dùng duyệt -> `kv-xuat-word` kiểu tài liệu `bieu-mau`, tên gợi ý `bang-kiem-phap-ly-<ma-can>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt để in mang theo buổi xem sổ gốc -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

@@ -60,7 +60,7 @@ Câu hỏi chốt: ...
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `phieu-hoc-tap`, tên gợi ý `phieu-hoc-tap-<bai>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `phieu-hoc-tap-<bai>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản in phát cho học sinh (tách riêng trang đáp án của giáo viên) -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

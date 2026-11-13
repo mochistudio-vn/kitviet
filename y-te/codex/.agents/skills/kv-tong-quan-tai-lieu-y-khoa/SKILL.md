@@ -68,7 +68,7 @@ Câu hỏi: [  ] | Tra ngày: [dd/mm/yyyy] | Khoảng năm: [2016-2026]
 
 ## Xuất file
 
-- **Word (.docx):** đề cương và tổng quan sau khi người dùng duyệt -> `kv-xuat-word` với kiểu tài liệu `de-cuong`. Tên file gợi ý `de-cuong-<chu-de>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** đề cương và tổng quan sau khi người dùng duyệt -> `kv-xuat-word` với kiểu tài liệu `bao-cao`. Tên file gợi ý `de-cuong-<chu-de>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** bảng nguồn và bảng chỉ số theo dõi -> `kv-xuat-excel`, mỗi bảng một sheet.
 - **PDF:** bản chốt nộp hội đồng khoa học -> `kv-xuat-pdf`.
 - **PowerPoint (.pptx):** trình bày đề cương trước hội đồng -> `kv-xuat-pptx`.

@@ -24,7 +24,7 @@ Bạn soạn **bản nháp** biên bản nghiệm thu công việc xây dựng c
 
 1. Xác định loại biên bản: nghiệm thu công việc, nghiệm thu giai đoạn hay hoàn thành hạng mục. Skill này làm loại đầu; loại khác báo người dùng dùng mẫu của dự án.
 2. Điền phần đầu: tên công trình, hạng mục, công việc, vị trí. Tên phải khớp hồ sơ thiết kế, không viết tắt tùy tiện.
-3. Liệt kê căn cứ. Với văn bản pháp quy về quản lý chất lượng công trình, chỉ ghi tên ở mức chung và đánh dấu `[đối chiếu bản hiện hành]` - nghị định và thông tư hướng dẫn có thể đã thay thế.
+3. Liệt kê căn cứ. Văn bản quản lý chất lượng hiện dùng là Nghị định 207/2026/NĐ-CP về quản lý chất lượng, thi công xây dựng và bảo trì công trình (thay Nghị định 06/2021/NĐ-CP từ 01/7/2026) cùng thông tư hướng dẫn của Bộ Xây dựng - ghi tên văn bản kèm `[đối chiếu bản hiện hành]`, không trích số điều, không dùng mẫu biên bản theo Nghị định 06/2021 cho công việc nghiệm thu từ 01/7/2026 nếu chưa đối chiếu quy định chuyển tiếp.
 4. Lập bảng nội dung kiểm tra theo loại công việc (ví dụ cốt thép: chủng loại, đường kính, số lượng, khoảng cách, chiều dài neo nối, lớp bê tông bảo vệ, vệ sinh, kê con kê). Cột kết quả **để trống** nếu chưa có số đo.
 5. Mục tài liệu kèm theo: bản vẽ hoàn công (nếu có), phiếu thí nghiệm, nhật ký ngày liên quan.
 6. Mục kết luận: hai lựa chọn "Chấp nhận nghiệm thu, đồng ý triển khai công việc tiếp theo" / "Không chấp nhận, yêu cầu sửa: ..." - để các bên chọn.
@@ -58,7 +58,7 @@ Công việc: Lắp dựng cốt thép sàn tầng 4, trục 1-4 / A-D, cao đ�
 ```
 
 ## Xuất file
-- **Word (.docx):** sau khi người dùng duyệt khung, dùng `kv-xuat-word` với kiểu tài liệu `bien-ban`, tên gợi ý `bbnt-<cong-viec>-<yyyy-mm-dd>.docx`; giữ trống ô kết quả, kết luận, chữ ký.
+- **Word (.docx):** sau khi người dùng duyệt khung, dùng `kv-xuat-word` với kiểu tài liệu `bien-ban` và khai khối ký các bên trong khối thông tin đầu file: `ben_ky: [Đại diện tư vấn giám sát, Đại diện nhà thầu thi công]` (thêm "Đại diện chủ đầu tư" nếu tham gia), `ten_ky` để trống nếu chưa chốt người ký - không dùng khối ký mặc định "Thư ký / Chủ trì" của biên bản họp. Tên gợi ý `bbnt-<cong-viec>-<yyyy-mm-dd>.docx`; giữ trống ô kết quả, kết luận, chữ ký.
 - **PDF:** bản in mang ra hiện trường cho các bên điền, ký -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

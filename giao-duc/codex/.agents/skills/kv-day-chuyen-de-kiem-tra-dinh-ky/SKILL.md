@@ -68,7 +68,7 @@ File xuất: de-toan-7-hk1-2026-12-15.docx, ma-tran-toan-7-hk1-2026-12-15.xlsx
 
 ## Xuất file
 
-- **Word (.docx):** đề và hướng dẫn chấm, sau khi `04-ban-giao.md` đạt -> `kv-xuat-word` với kiểu tài liệu `de-kiem-tra`, tên gợi ý `de-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** đề và hướng dẫn chấm, sau khi `04-ban-giao.md` đạt -> `kv-xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `de-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** ma trận và bản đặc tả -> `kv-xuat-excel`, mỗi bảng một sheet, giữ công thức cộng số câu, điểm, tỉ lệ % theo mức.
 - **PDF:** bản chốt đã tổ trưởng duyệt để in -> `kv-xuat-pdf`.
 

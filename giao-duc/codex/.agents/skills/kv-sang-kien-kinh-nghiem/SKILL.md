@@ -58,7 +58,7 @@ CẦN GIÁO VIÊN BỔ SUNG
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `sang-kien`, tên gợi ý `sang-kien-<ten-ngan>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bao-cao`, tên gợi ý `sang-kien-<ten-ngan>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt nộp hội đồng xét sáng kiến theo yêu cầu đơn vị -> `kv-xuat-pdf`.
 - **Excel (.xlsx):** bảng số liệu trước - sau, giữ công thức tỉ lệ % để đối chiếu với bài viết -> `kv-xuat-excel`, mỗi bảng một sheet.
 

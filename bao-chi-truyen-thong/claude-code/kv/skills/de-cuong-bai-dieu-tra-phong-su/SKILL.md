@@ -59,7 +59,7 @@ Thể loại: <...> | Số kỳ: <...> | Hạn: <...>
 ```
 
 ## Xuất file
-- **Word (.docx):** đề cương trình duyệt -> `kv:xuat-word` kiểu tài liệu `de-cuong`, tên `de-cuong-<de-tai>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** đề cương trình duyệt -> `kv:xuat-word` kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu), tên `de-cuong-<de-tai>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản đã duyệt để lưu hồ sơ -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

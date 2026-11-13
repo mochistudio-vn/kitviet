@@ -1,6 +1,6 @@
 {
   "name": "kitviet-cli",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Kit Việt - cài bộ AI Agent tiếng Việt cho 20 nghề vào Claude Code, Codex, Cursor, Copilot, Gemini CLI và 20 AI khác.",
   "type": "module",
   "bin": {

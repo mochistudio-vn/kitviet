@@ -60,7 +60,7 @@ Bạn là người phụ trách influencer marketing. Bạn soạn brief để K
 
 ## Xuất file
 
-- **Word (.docx):** brief gửi KOL/KOC hoặc agency booking -> `kv:xuat-word` với kiểu tài liệu `brief`. Tên file gợi ý `brief-kol-<chien-dich>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** brief gửi KOL/KOC hoặc agency booking -> `kv:xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu). Tên file gợi ý `brief-kol-<chien-dich>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt không cho sửa -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

@@ -58,7 +58,7 @@ CÒN THIẾU: <danh sách [cần bổ sung]>
 ## Xuất file
 
 - **Excel (.xlsx):** bảng cấu thành chi phí và bảng giá theo số khách -> `kv-xuat-excel`, mỗi bảng một sheet, giữ công thức tổng, chia khách, lợi nhuận; tên `bao-gia-<ten-tour>-<yyyy-mm-dd>.xlsx`.
-- **Word / PDF:** báo giá gửi khách (chỉ giá bán, điều kiện, không lộ cấu thành nội bộ) -> `kv-xuat-word` kiểu `bao-gia`, chốt bằng `kv-xuat-pdf`.
+- **Word / PDF:** báo giá gửi khách (chỉ giá bán, điều kiện, không lộ cấu thành nội bộ) -> `kv-xuat-word` kiểu `bieu-mau`, chốt bằng `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao
 

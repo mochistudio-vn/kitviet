@@ -69,7 +69,7 @@ Bao gồm: ...  |  Không bao gồm: ...
 ```
 
 ## Xuất file
-- **Word (.docx):** proposal đã duyệt nội dung -> `kv-xuat-word` kiểu tài liệu `de-xuat` theo mẫu công ty trong thư mục `mau/`, tên file `proposal-<khach>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** proposal đã duyệt nội dung -> `kv-xuat-word` kiểu tài liệu `bao-cao` theo mẫu công ty trong thư mục `mau/`, tên file `proposal-<khach>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt gửi khách kèm báo giá -> `kv-xuat-pdf`.
 - **PowerPoint (.pptx):** khi trình bày trực tiếp với hội đồng mua hàng -> `kv-xuat-pptx`, mỗi mục của mẫu thành 1-2 slide, tối đa 12 slide.
 

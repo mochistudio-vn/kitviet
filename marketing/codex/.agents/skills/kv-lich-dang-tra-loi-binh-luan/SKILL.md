@@ -55,7 +55,7 @@ Giờ đăng: theo Meta Business Suite tháng 10 | TikTok: giả định, đo l�
 ## Xuất file
 
 - **Excel (.xlsx):** sheet Lịch đăng + sheet Bộ trả lời + sheet Chuyển cấp -> `kv-xuat-excel`, để cả team trực page dùng chung. Tên file gợi ý `lich-dang-tuan-<yyyy-mm-dd>.xlsx`.
-- **Word (.docx):** quy trình trực page cho nhân viên mới -> `kv-xuat-word` với kiểu tài liệu `quy-trinh`.
+- **Word (.docx):** quy trình trực page cho nhân viên mới -> `kv-xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu).
 
 ## Bảng kiểm trước khi giao
 

@@ -57,7 +57,7 @@ Cần duyệt: Giám đốc (giá trị trên ngưỡng ... theo quy chế).
 
 ## Xuất file
 
-- **Excel (.xlsx):** bảng so sánh có công thức quy đổi VAT và tổng -> `kv:xuat-excel`. Tên gợi ý `so-sanh-bao-gia-<hang>-<yyyy-mm-dd>.xlsx`.
+- **Excel (.xlsx):** bảng so sánh có công thức quy đổi VAT và tổng -> `kv:xuat-excel`. Tên gợi ý `so-sanh-bao-gia-<hang>-<yyyy-mm-dd>.xlsx`. Bảng dùng để trình ký: dưới bảng có khối ký Người lập - Trưởng phòng - Người duyệt (họ tên, ngày), số tiền dạng 1.234.567, ngày dd/mm/yyyy.
 - **Word (.docx):** phiếu đề xuất mua sắm kèm bảng so sánh -> `kv:xuat-word`.
 
 ## Bảng kiểm trước khi giao

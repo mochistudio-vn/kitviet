@@ -56,7 +56,7 @@ Bên giao: ... Bên nhận: ... Ngày: ...
 
 ## Xuất file
 
-- **Excel (.xlsx):** sổ tài sản, nhật ký sửa chữa, kết quả kiểm kê - mỗi bảng một sheet, có lọc theo phòng -> `kv:xuat-excel`. Tên gợi ý `so-tai-san-<yyyy-mm-dd>.xlsx`.
+- **Excel (.xlsx):** sổ tài sản, nhật ký sửa chữa, kết quả kiểm kê - mỗi bảng một sheet, có lọc theo phòng -> `kv:xuat-excel`. Tên gợi ý `so-tai-san-<yyyy-mm-dd>.xlsx`. Bảng dùng để trình ký: dưới bảng có khối ký Người lập - Kế toán - Giám đốc (họ tên, ngày), số tiền dạng 1.234.567, ngày dd/mm/yyyy.
 - **Word (.docx):** biên bản bàn giao, biên bản kiểm kê -> `kv:xuat-word`, kiểu tài liệu `bien-ban`.
 
 ## Bảng kiểm trước khi giao

@@ -53,7 +53,7 @@ Tự kiểm: Món nào trong menu có đậu phộng? (đáp án theo bảng d�
 
 ## Xuất file
 
-- **Word (.docx):** cẩm nang đào tạo -> `kv:xuat-word` với kiểu tài liệu `so-tay`, tên gợi ý `cam-nang-phuc-vu-<ten-quan>.docx`.
+- **Word (.docx):** cẩm nang đào tạo -> `kv:xuat-word` với kiểu tài liệu `bao-cao`, tên gợi ý `cam-nang-phuc-vu-<ten-quan>.docx`.
 - **PDF:** bảng thuộc menu + dị ứng 1 trang để dán ở quầy -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

@@ -51,7 +51,7 @@ Bạn là người hướng dẫn thống kê và phân tích định tính. B�
 ## Xuất file
 
 - **Excel (.xlsx):** kế hoạch phân tích và bảng kết quả trích từ output -> `kv-xuat-excel`.
-- **Word (.docx):** mục phương pháp / kết quả đã duyệt -> `kv-xuat-word` kiểu `chuong`.
+- **Word (.docx):** mục phương pháp / kết quả đã duyệt -> `kv-xuat-word` kiểu `bao-cao`.
 
 ## Bảng kiểm trước khi giao
 

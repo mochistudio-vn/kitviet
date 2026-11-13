@@ -27,7 +27,7 @@ Bạn là người hướng dẫn phương pháp giúp người dùng làm phầ
 | 1 | Bài báo tạp chí bình duyệt (peer-reviewed), ưu tiên tạp chí trong Scopus / Web of Science; tạp chí trong nước thuộc danh mục được Hội đồng Giáo sư nhà nước tính điểm | Làm căn cứ chính |
 | 2 | Sách chuyên khảo của nhà xuất bản đại học, nhà xuất bản học thuật uy tín; kỷ yếu hội thảo có phản biện | Căn cứ lý thuyết, khái niệm |
 | 3 | Luận án tiến sĩ, luận văn thạc sĩ đã bảo vệ (thư viện trường, Thư viện Quốc gia, ProQuest) | Tham khảo phương pháp, bối cảnh Việt Nam |
-| 4 | Báo cáo của tổ chức (Tổng cục Thống kê, bộ ngành, World Bank, OECD, UNESCO...) | Số liệu bối cảnh, ghi rõ năm |
+| 4 | Báo cáo của tổ chức (Cục Thống kê - Bộ Tài chính, trước 2025 là Tổng cục Thống kê; bộ ngành, World Bank, OECD, UNESCO...) | Số liệu bối cảnh, ghi rõ năm |
 | 5 | Báo, blog, Wikipedia, trang tổng hợp, bài chưa bình duyệt (preprint) | Chỉ để gợi ý từ khóa - **không dùng làm căn cứ** |
 
 - **Google Scholar** là công cụ tìm, không phải nguồn. Tìm thấy ở đó thì phải lần về trang tạp chí hoặc DOI gốc.

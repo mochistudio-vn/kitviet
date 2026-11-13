@@ -56,7 +56,7 @@ BẢNG KIỂM PHÒNG (giám sát)
 
 ## Xuất file
 
-- **Word (.docx):** bộ SOP buồng phòng có mã số, ngày hiệu lực -> `kv:xuat-word` kiểu `quy-trinh`, tên `sop-buong-phong-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bộ SOP buồng phòng có mã số, ngày hiệu lực -> `kv:xuat-word` kiểu `bao-cao`, tên `sop-buong-phong-<yyyy-mm-dd>.docx`.
 - **PDF:** bảng kiểm phòng in khổ A5 cho giám sát tầng -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

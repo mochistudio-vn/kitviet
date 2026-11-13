@@ -25,7 +25,9 @@ Bạn biến nội dung **người dùng đã duyệt** thành file .docx trình
 | Hợp đồng | `hop-dong` | Quốc hiệu giữa trang, số hợp đồng, ký Đại diện bên A / bên B |
 | Bố cục báo cáo | `bao-cao`, `ke-hoach`, `mo-ta-cong-viec`, `bieu-mau`, `thu` | Tiêu đề giữa, không quốc hiệu (trừ khi khai `co_quan`) |
 
-Kiểu ngoài bảng: script dùng `bao-cao` và in cảnh báo, không dừng.
+Kiểu ngoài bảng: script dùng `bao-cao` và in cảnh báo, không dừng. Skill khác chỉ được ghi đúng các kiểu trong bảng (build kiểm tra).
+
+**Khối ký nhiều bên** (biên bản nghiệm thu, bàn giao, đối chiếu, hợp đồng ba bên): khai `ben_ky` (danh sách nhãn, mỗi bên một cột) và `ten_ky` (họ tên, có thể để trống) trong khối thông tin đầu file - dùng được với mọi kiểu, thay khối ký mặc định "THƯ KÝ / CHỦ TRÌ" của `bien-ban` hay "BÊN A / BÊN B" của `hop-dong`.
 
 ## Các bước
 
@@ -39,7 +41,10 @@ Kiểu ngoài bảng: script dùng `bao-cao` và in cảnh báo, không dừng.
 ## Quy tắc trình bày (mức phổ biến)
 
 - Khổ A4; lề trên, dưới 2 cm, trái 3 cm, phải 1,5 cm; Times New Roman; nội dung cỡ 13-14; giãn dòng khoảng 1,15; đoạn thụt đầu dòng 1 cm, căn đều hai bên.
-- Quốc hiệu in hoa đậm; tiêu ngữ "Độc lập - Tự do - Hạnh phúc" đậm, có gạch ngang dưới; địa danh, ngày in nghiêng.
+- Quốc hiệu in hoa đậm cỡ 12-13; tiêu ngữ "Độc lập - Tự do - Hạnh phúc" đậm cỡ 13-14, có gạch ngang dưới; tên cơ quan ban hành in hoa đậm, có gạch ngang ngắn dưới.
+- Địa danh, ngày in nghiêng; ngày dưới 10 và tháng 1, 2 thêm số 0 ("ngày 05 tháng 01", "ngày 15 tháng 3").
+- Tên loại văn bản in hoa đậm cỡ 13-14; trích yếu đậm ngay dưới, có gạch ngang ngắn. Công văn: trích yếu "V/v ..." cỡ 12-13 dưới số, ký hiệu.
+- Khối ký: quyền hạn ký (TM., KT., Q., TL., TUQ.) và chức vụ in hoa đậm cỡ 13-14, họ tên đậm; văn bản hành chính để trống chỗ ký, đóng dấu (không in dòng hướng dẫn ký). "Nơi nhận:" cỡ 12 nghiêng đậm, danh sách cỡ 11, mỗi dòng kết thúc ";", dòng cuối "- Lưu: VT, ...".
 - Văn bản hành chính theo quy định về thể thức hiện hành (hiện nay thường dẫn Nghị định 30/2020/NĐ-CP về công tác văn thư). **Luôn dặn người dùng đối chiếu quy định hiện hành và quy chế văn thư của đơn vị** - script chỉ dựng bố cục phổ biến.
 
 ## Mẫu đầu ra

@@ -30,7 +30,7 @@ Soát 8 nhóm, mỗi phát hiện ghi vị trí:
 
 Mức: **Nặng** (phải sửa) / **Vừa** (nên sửa) / **Lưu ý**. Kết luận **CHẶN** nếu có ít nhất 1 mục Nặng.
 
-Luôn dặn: đối chiếu Luật Báo chí, quy định đạo đức nghề nghiệp người làm báo, quy định về bảo vệ dữ liệu cá nhân và quảng cáo hiện hành; không trích số điều khi không có văn bản trong thư mục.
+Luôn dặn: đối chiếu Luật Báo chí (từ 01/7/2026 là Luật Báo chí số 126/2025/QH15 thay Luật Báo chí 2016, kèm Nghị định 237/2026/NĐ-CP hướng dẫn - kiểm tra bản hiện hành), quy định đạo đức nghề nghiệp người làm báo, quy định về bảo vệ dữ liệu cá nhân và quảng cáo hiện hành; không trích số điều khi không có văn bản trong thư mục.
 
 ## Trả về
 

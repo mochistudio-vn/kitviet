@@ -62,7 +62,7 @@ Em mở bài rất gọn và nêu được ý kiến riêng... Lần viết sau,
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `phieu-nhan-xet`, tên gợi ý `phan-hoi-bai-viet-<ma-hs>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `phan-hoi-bai-viet-<ma-hs>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** bảng điểm nháp theo tiêu chí rubric cho cả lớp (theo mã học sinh) -> `kv-xuat-excel`, mỗi bảng một sheet.
 
 ## Bảng kiểm trước khi giao

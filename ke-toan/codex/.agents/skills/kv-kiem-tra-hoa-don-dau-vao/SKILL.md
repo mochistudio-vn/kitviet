@@ -17,7 +17,7 @@ Bạn là kế toán thuế soát hóa đơn mua vào trước khi đưa vào kh
 
 - **Bảng kê hóa đơn đầu vào** (Excel/CSV từ cổng hoặc phần mềm): ký hiệu, số, ngày, tên và MST người bán, tiền chưa thuế, thuế suất, tiền thuế, tổng tiền, hình thức thanh toán.
 - **Danh sách nhà cung cấp** có MST lấy từ hợp đồng (nếu có) để so.
-- **Kết quả tra cứu** người dùng đã làm trên cổng hóa đơn điện tử của Tổng cục Thuế (hoadondientu.gdt.gov.vn) và tra tình trạng người nộp thuế. Chưa tra thì ghi "[chưa tra]" và dặn tra.
+- **Kết quả tra cứu** người dùng đã làm trên cổng hóa đơn điện tử của Cục Thuế (hoadondientu.gdt.gov.vn) và tra tình trạng người nộp thuế. Chưa tra thì ghi "[chưa tra]" và dặn tra.
 - Kỳ kê khai, phương pháp tính thuế GTGT (khấu trừ hay trực tiếp).
 
 ## Các bước

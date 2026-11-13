@@ -55,7 +55,7 @@ TÊN ĐỀ TÀI: <...>
 
 ## Xuất file
 
-- **Word (.docx):** đề cương đã duyệt -> `kv:xuat-word` kiểu `de-cuong`, cỡ chữ và lề theo mẫu của trường; tên `de-cuong-<ten-de-tai>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** đề cương đã duyệt -> `kv:xuat-word` kiểu `bao-cao`, cỡ chữ và lề theo mẫu của trường; tên `de-cuong-<ten-de-tai>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** kế hoạch thực hiện dạng bảng tiến độ -> `kv:xuat-excel`.
 
 ## Bảng kiểm trước khi giao

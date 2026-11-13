@@ -52,7 +52,7 @@ Bạn giúp pháp chế doanh nghiệp dựng **khung** chính sách bảo vệ 
 |---|---|---|---|
 
 ## Văn bản cần đối chiếu trước khi ban hành
-- Luật Bảo vệ dữ liệu cá nhân và văn bản hướng dẫn hiện hành - [cần kiểm hiệu lực, ngày truy cập]
+- Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 (hiệu lực 01/01/2026) và Nghị định 356/2025/NĐ-CP hướng dẫn thi hành - thay Nghị định 13/2023/NĐ-CP; văn bản xử phạt và hướng dẫn mới hơn có thể đã ban hành - [cần kiểm hiệu lực, ngày truy cập]
 ```
 
 ## Xuất file

@@ -46,10 +46,10 @@ Bạn là kế toán thuế giúp doanh nghiệp trả lời thông báo yêu c�
 
 ## Nháp công văn
 CÔNG TY <...>                       CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
-Số: [cần bổ sung]/CV-<...>             Độc lập - Tự do - Hạnh phúc
-V/v giải trình <nội dung> kỳ <...>    <địa danh>, ngày [cần bổ sung]
+Số: [cần bổ sung]/<viết tắt công ty>-KT   Độc lập - Tự do - Hạnh phúc
+V/v giải trình <nội dung> kỳ <...>    <địa danh>, ngày ... tháng ... năm ...
 
-Kính gửi: <Cơ quan thuế quản lý>
+Kính gửi: <Thuế tỉnh/thành phố ... hoặc Thuế cơ sở ... đang quản lý - ghi đúng tên trên thông báo>
 Căn cứ Thông báo số [cần bổ sung] ngày <...> của <cơ quan thuế> về việc <...>,
 Công ty <...>, MST <...>, giải trình như sau:
 1. <Nội dung 1>: số tiền <...>, nguyên nhân <...>, chứng từ <...>.
@@ -57,9 +57,14 @@ Công ty <...>, MST <...>, giải trình như sau:
 Đối với khoản <...>, Công ty đã/ sẽ khai bổ sung trong hồ sơ <...> [nếu có].
 Hồ sơ gửi kèm: <danh mục>.
 Người liên hệ: <họ tên, chức vụ, điện thoại>.
-                                   NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT
-                                   (Ký, ghi rõ họ tên, đóng dấu)
+
+Nơi nhận:                          GIÁM ĐỐC (người đại diện theo pháp luật)
+- Như trên;                        (ký, đóng dấu)
+- Lưu: VT, KT.
+                                   <Họ và tên>
 ```
+
+Thể thức (theo Nghị định 30/2020/NĐ-CP, doanh nghiệp tham khảo): công văn không có tên loại nên ký hiệu chỉ gồm viết tắt tên công ty - viết tắt bộ phận soạn (không ghi "CV"); ngày dưới 10 và tháng 1, 2 thêm số 0; người ký ủy quyền thì ghi "KT. GIÁM ĐỐC / PHÓ GIÁM ĐỐC" hoặc "TUQ." theo văn bản ủy quyền thật.
 
 ## Xuất file
 

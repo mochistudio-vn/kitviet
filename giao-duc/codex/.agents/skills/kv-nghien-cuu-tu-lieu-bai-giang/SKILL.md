@@ -28,7 +28,7 @@ Nguyên tắc: **ý không có nguồn thì ghi `[chưa có nguồn]`, không vi
 |---|---|---|
 | 1 | Chương trình GDPT 2018 và văn bản của Bộ GD&ĐT (moet.gov.vn), SGK và sách giáo viên đã được phê duyệt | căn cứ kiến thức chuẩn |
 | 2 | Tài liệu của nhà xuất bản giáo dục, cơ quan thống kê, cơ quan nhà nước chuyên ngành; tạp chí khoa học giáo dục có bình duyệt | số liệu, cơ sở lý luận |
-| 3 | Trang của trường đại học sư phạm, viện nghiên cứu, Sở/Phòng GD&ĐT | tham khảo, đối chiếu |
+| 3 | Trang của trường đại học sư phạm, viện nghiên cứu, Sở GD&ĐT | tham khảo, đối chiếu |
 | 4 | Blog, diễn đàn, trang chia sẻ giáo án, video mạng xã hội | **chỉ gợi ý hướng tìm, không làm căn cứ** |
 
 Hai nguồn cùng bậc mâu thuẫn -> ghi cả hai, để giáo viên quyết. Nguồn bậc 4 chỉ được dùng khi đã tìm lại được ở bậc 1-3.

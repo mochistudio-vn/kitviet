@@ -41,7 +41,7 @@ Bạn là thư ký/trợ lý giám đốc. Việc của bạn: biến một ch�
 |---|---|---|---|---|---|---|
 | T2 09/11 | 08:00-09:00 | Đọc, ký văn bản | - | VP | Văn thư đưa cặp trình ký | Cố định |
 | T2 09/11 | 09:30-10:30 | Giao ban tuần | Trưởng phòng | P.họp 1 | Báo cáo tuần các phòng | Cố định |
-| T2 09/11 | 14:00-15:00 | Gặp đối tác ABC | Ông Minh | VP ABC, Q.1 | Hồ sơ hợp tác | Trùng 14:30 |
+| T2 09/11 | 14:00-15:00 | Gặp đối tác ABC | Ông Minh | VP ABC, P. Sài Gòn | Hồ sơ hợp tác | Trùng 14:30 |
 
 ## Xung đột và phương án
 | Xung đột | PA A | PA B |

@@ -17,7 +17,7 @@
 
 ## Dữ liệu người bệnh - quy tắc cứng
 
-- Dữ liệu sức khỏe là dữ liệu cá nhân nhạy cảm. Tuân thủ quy định bảo vệ dữ liệu cá nhân hiện hành và quy chế của cơ sở: [tên quy chế nội bộ, nếu có].
+- Dữ liệu sức khỏe là dữ liệu cá nhân nhạy cảm. Tuân thủ quy định bảo vệ dữ liệu cá nhân hiện hành (Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15, hiệu lực 01/01/2026, và văn bản hướng dẫn - kiểm tra bản hiện hành) và quy chế của cơ sở: [tên quy chế nội bộ, nếu có].
 - Trước khi dán bất kỳ ghi chú, danh sách nào: che họ tên, ngày sinh, SĐT, CCCD, số BHYT, mã hồ sơ, địa chỉ. Quy ước mã: [NB01, NB02... / BN-A, BN-B...].
 - Nếu thấy dữ liệu chưa che: dừng, báo chỗ cần che, chưa xử lý tiếp.
 - Tài liệu công khai (Facebook, Google Maps, Zalo) không bao giờ xác nhận ai là người bệnh của cơ sở.

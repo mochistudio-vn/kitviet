@@ -24,7 +24,7 @@ Nguyên tắc: **mỗi kênh một cách đọc, nhưng mọi bản đều cùng
 ## Các bước
 
 1. Rút từ JD 5 thứ ứng viên nhìn đầu tiên: tên vị trí, lương, địa điểm, hình thức làm việc, 3 việc chính.
-2. Đặt **tiêu đề tin** theo cách ứng viên tìm kiếm: "Nhân viên Kế toán Tổng hợp - Q.7 - 12-15 triệu". Không nhét chữ "GẤP", "HOT" quá một lần.
+2. Đặt **tiêu đề tin** theo cách ứng viên tìm kiếm: "Nhân viên Kế toán Tổng hợp - [phường], TP.HCM - 12-15 triệu". Không nhét chữ "GẤP", "HOT" quá một lần.
 3. Viết bản cho từng kênh:
    - **TopCV / VietnamWorks / CareerViet:** đủ mục như JD (mô tả, yêu cầu, quyền lợi, địa điểm, thời gian làm việc), gạch đầu dòng ngắn; điền đúng các trường có sẵn trên form của trang (cấp bậc, kinh nghiệm, ngành nghề).
    - **LinkedIn:** giọng chuyên nghiệp, mở bằng bài toán của đội, 120-200 chữ, vài hashtag.

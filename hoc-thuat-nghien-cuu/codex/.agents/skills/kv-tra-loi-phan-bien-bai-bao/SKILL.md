@@ -49,7 +49,7 @@ Chúng tôi cảm ơn ... Dưới đây là phần trả lời từng ý. Nội 
 
 ## Xuất file
 
-- **Word (.docx):** thư trả lời phản biện / bảng giải trình chỉnh sửa luận văn -> `kv-xuat-word` kiểu `giai-trinh`; tên `tra-loi-phan-bien-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** thư trả lời phản biện / bảng giải trình chỉnh sửa luận văn -> `kv-xuat-word` kiểu `thu`; tên `tra-loi-phan-bien-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

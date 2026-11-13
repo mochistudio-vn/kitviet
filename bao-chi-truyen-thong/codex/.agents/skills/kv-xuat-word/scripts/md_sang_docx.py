@@ -60,6 +60,7 @@ KIEU = KIEU_HANH_CHINH + ("hop-dong",) + KIEU_BO_CUC_BAO_CAO
 FONT = "Times New Roman"
 QUOC_HIEU = "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
 TIEU_NGU = "Độc lập - Tự do - Hạnh phúc"
+DONG_QUYET = {"QUYẾTĐỊNH:", "QUYẾTNGHỊ:", "NGHỊQUYẾT:"}
 TIEU_DE_MAC_DINH = {
     "to-trinh": "TỜ TRÌNH", "quyet-dinh": "QUYẾT ĐỊNH", "thong-bao": "THÔNG BÁO", "quy-che": "QUY CHẾ",
     "bien-ban": "BIÊN BẢN", "hop-dong": "HỢP ĐỒNG", "bao-cao": "BÁO CÁO", "ke-hoach": "KẾ HOẠCH",
@@ -300,15 +301,21 @@ def dong_o(cell, text, size, bold=False, italic=False, align=WD_ALIGN_PARAGRAPH.
     return p
 
 
+def ghi_ngay(dia, ngay, thang, nam):
+    """Thể thức văn bản hành chính: ngày dưới 10 và tháng 1, 2 thêm số 0 ở trước; tháng 3-12 giữ nguyên."""
+    th = f"{thang:02d}" if thang <= 2 else str(thang)
+    return f"{dia}, ngày {ngay:02d} tháng {th} năm {nam}"
+
+
 def ngay_thang(meta):
     dia = meta.get("dia_danh") or "[địa danh]"
     ngay = meta.get("ngay") or ""
     if ngay == "hom-nay":
         d = datetime.date.today()
-        return f"{dia}, ngày {d.day:02d} tháng {d.month:02d} năm {d.year}"
+        return ghi_ngay(dia, d.day, d.month, d.year)
     m = re.match(r"^(\d{1,2})[/-](\d{1,2})[/-](\d{4})$", str(ngay))
     if m:
-        return f"{dia}, ngày {int(m.group(1)):02d} tháng {int(m.group(2)):02d} năm {m.group(3)}"
+        return ghi_ngay(dia, int(m.group(1)), int(m.group(2)), m.group(3))
     return f"{dia}, ngày ... tháng ... năm ......"
 
 
@@ -368,7 +375,10 @@ def tieu_de(doc, text, phu=None, co_chu=14):
         p2 = doc.add_paragraph()
         p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p2.paragraph_format.space_before = Pt(0)
+        p2.paragraph_format.keep_with_next = True
         them_chu(p2, phu, co_chu, bold=True)
+        # Dưới trích yếu có đường kẻ ngang nét liền, dài khoảng 1/3 - 1/2 dòng chữ.
+        ke_duoi(doc.add_paragraph(), 5.5, 16.5)
 
 
 def kinh_gui(doc, meta, co_chu):
@@ -403,6 +413,12 @@ def ghi_than(doc, blocks, co_chu, bo_tieu_de_dau=False):
             them_chu(h, b[2], co_chu)
         elif kind == "para":
             p = doc.add_paragraph()
+            if re.sub(r"[*_\s]", "", b[1]).upper() in DONG_QUYET:
+                # "QUYẾT ĐỊNH:" trước các Điều: căn giữa, in hoa đậm, không thụt dòng.
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                p.paragraph_format.keep_with_next = True
+                them_chu(p, re.sub(r"[*_]", "", b[1]).strip().upper(), co_chu, bold=True)
+                continue
             p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             p.paragraph_format.first_line_indent = Cm(1.0)
             them_chu(p, b[1], co_chu)
@@ -459,8 +475,26 @@ def lap_header(row):
     tr_pr.append(el)
 
 
+def khoi_ky_nhieu_ben(doc, nhan, ten, co_ky):
+    """Khối ký nhiều bên ngang hàng (biên bản nghiệm thu, bàn giao, hợp đồng ba bên): mỗi bên một cột."""
+    t = doc.add_table(rows=1, cols=len(nhan))
+    bo_vien_bang(t)
+    for i, cell in enumerate(t.rows[0].cells):
+        dong_o(cell, str(nhan[i]).upper(), co_ky, bold=True, first=True)
+        dong_o(cell, "(Ký, ghi rõ họ tên)", 12, italic=True)
+        for _ in range(3):
+            cell.add_paragraph()
+        dong_o(cell, str(ten[i] if i < len(ten) else ""), co_ky, bold=True)
+
+
 def khoi_ky(doc, meta, kieu, co_chu):
     doc.add_paragraph()
+    co_ky = max(co_chu - 1, 13)  # chức vụ, họ tên người ký: cỡ 13-14, in đậm
+    nhan = as_list(meta.get("ben_ky"))
+    if nhan:
+        # Khai trong khối thông tin: ben_ky: [ĐẠI DIỆN CHỦ ĐẦU TƯ, ĐẠI DIỆN NHÀ THẦU...], ten_ky: [họ tên...]
+        khoi_ky_nhieu_ben(doc, nhan, as_list(meta.get("ten_ky")), co_ky)
+        return
     t = doc.add_table(rows=1, cols=2)
     bo_vien_bang(t)
     trai, phai = t.rows[0].cells
@@ -471,11 +505,11 @@ def khoi_ky(doc, meta, kieu, co_chu):
         else:
             cot = (("THƯ KÝ", meta.get("thu_ky")), ("CHỦ TRÌ", meta.get("chu_tri")))
         for cell, (nhan, ten) in zip((trai, phai), cot):
-            dong_o(cell, nhan, co_chu - 1, bold=True, first=True)
+            dong_o(cell, nhan, co_ky, bold=True, first=True)
             dong_o(cell, "(Ký, ghi rõ họ tên)", 12, italic=True)
             for _ in range(3):
                 cell.add_paragraph()
-            dong_o(cell, str(ten or ""), co_chu - 1, bold=True)
+            dong_o(cell, str(ten or ""), co_ky, bold=True)
         return
     nn = as_list(meta.get("noi_nhan"))
     if nn:
@@ -484,13 +518,13 @@ def khoi_ky(doc, meta, kieu, co_chu):
             dong_o(trai, f"- {x}", 11, align=WD_ALIGN_PARAGRAPH.LEFT)
     first = True
     if meta.get("ky_thay"):
-        dong_o(phai, str(meta["ky_thay"]).upper(), co_chu - 1, bold=True, first=True)
+        dong_o(phai, str(meta["ky_thay"]).upper(), co_ky, bold=True, first=True)
         first = False
-    dong_o(phai, str(meta.get("chuc_vu") or "[CHỨC VỤ NGƯỜI KÝ]").upper(), co_chu - 1, bold=True, first=first)
-    dong_o(phai, "(Ký, ghi rõ họ tên, đóng dấu)", 12, italic=True)
-    for _ in range(3):
+    dong_o(phai, str(meta.get("chuc_vu") or "[CHỨC VỤ NGƯỜI KÝ]").upper(), co_ky, bold=True, first=first)
+    # Văn bản hành chính không in dòng hướng dẫn ký; để trống chỗ ký, đóng dấu.
+    for _ in range(4):
         phai.add_paragraph()
-    dong_o(phai, str(meta.get("nguoi_ky") or ""), co_chu - 1, bold=True)
+    dong_o(phai, str(meta.get("nguoi_ky") or ""), co_ky, bold=True)
 
 
 def tieu_de_tu_than(blocks):
@@ -531,7 +565,7 @@ def tao_van_ban(md_text, kieu, co_chu=None):
         if kieu in ("to-trinh", "thu"):
             kinh_gui(doc, meta, co_chu)
     ghi_than(doc, blocks, co_chu, bo_tieu_de_dau=kieu != "cong-van" or bool(ten and not meta.get("tieu_de")))
-    if hanh_chinh or kieu == "hop-dong" or meta.get("chuc_vu"):
+    if hanh_chinh or kieu == "hop-dong" or meta.get("chuc_vu") or meta.get("ben_ky"):
         khoi_ky(doc, meta, kieu, co_chu)
     return doc, meta
 

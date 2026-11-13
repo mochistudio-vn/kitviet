@@ -57,7 +57,7 @@ Chân: <Tên DN> - <địa chỉ> - Bạn nhận email này vì đã đăng ký 
 ## Xuất file
 
 - **Excel (.xlsx):** bảng chuỗi (email, điều kiện kích hoạt, độ trễ, tiêu đề, preheader, CTA) -> `kv:xuat-excel`, để người cài tool email nhập theo. Tên file gợi ý `chuoi-email-<ten>-<yyyy-mm-dd>.xlsx`.
-- **Word (.docx):** toàn văn các email để duyệt -> `kv:xuat-word` với kiểu tài liệu `bai-viet`.
+- **Word (.docx):** toàn văn các email để duyệt -> `kv:xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu).
 
 ## Bảng kiểm trước khi giao
 

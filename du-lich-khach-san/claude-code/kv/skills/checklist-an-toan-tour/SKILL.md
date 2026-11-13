@@ -67,7 +67,7 @@ LIÊN LẠC KHẨN CẤP
 ## Xuất file
 
 - **PDF:** bảng kiểm in cho HDV mang theo -> `kv:xuat-pdf`, tên `an-toan-<tour>-<yyyy-mm-dd>.pdf`.
-- **Word (.docx):** bản nội bộ để chỉnh theo từng đoàn -> `kv:xuat-word` kiểu `bang-kiem`.
+- **Word (.docx):** bản nội bộ để chỉnh theo từng đoàn -> `kv:xuat-word` kiểu `bieu-mau`.
 
 ## Bảng kiểm trước khi giao
 

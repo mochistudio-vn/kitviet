@@ -64,7 +64,7 @@ Mã câu gợi ý: `<môn+lớp>-<chương>-<mức><số>` để lọc và trộ
 ## Xuất file
 
 - **Excel (.xlsx):** kho câu (mã câu, mức, nội dung, A-D, đáp án, lý do nhiễu), thêm dòng đếm đáp án A/B/C/D bằng COUNTIF -> `kv:xuat-excel`, mỗi bảng một sheet.
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `de-kiem-tra`, tên gợi ý `ngan-hang-<mon>-<lop>-<bai>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `ngan-hang-<mon>-<lop>-<bai>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

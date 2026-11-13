@@ -37,6 +37,7 @@ FMT_INT = "#,##0"
 FMT_DEC = "#,##0.00"
 FMT_PCT = "0.0%"
 FMT_DATE = "dd/mm/yyyy"
+FONT = "Times New Roman"  # cùng font với file Word xuất ra, cỡ 12 dễ đọc khi in bảng kê, bảng lương
 VIEN = Side(style="thin", color="BFBFBF")
 
 
@@ -109,6 +110,10 @@ def chuyen_gia_tri(s, kieu_so="vn"):
     t = s.replace(" ", "").replace(" ", "")
     if re.match(r"^0\d+$", t):
         return s, "@"  # giữ số 0 đầu: SĐT, mã số thuế, mã hàng
+    if re.match(r"^\d{10,}$", t):
+        # Chuỗi số dài không dấu ngăn là mã (MST, số tài khoản, CCCD, số hóa đơn dài):
+        # giữ dạng chữ để không hiện "4.300.123.456" và không mất chữ số sau chữ số thứ 15.
+        return s, "@"
     phan_tram = t.endswith("%")
     if phan_tram:
         t = t[:-1]
@@ -152,12 +157,13 @@ def ghi_sheet(ws, rows, kieu_so="vn"):
             cell = ws.cell(row=r_idx, column=c_idx)
             if r_idx == 1:
                 cell.value = re.sub(r"^\*\*(.*)\*\*$", r"\1", raw.strip())
-                cell.font = Font(bold=True)
+                cell.font = Font(name=FONT, size=12, bold=True)
                 cell.fill = PatternFill("solid", fgColor="E7E6E6")
                 cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
             else:
                 val, fmt = chuyen_gia_tri(raw, kieu_so)
                 cell.value = val
+                cell.font = Font(name=FONT, size=12, bold=raw.strip().startswith("**"))
                 if fmt:
                     cell.number_format = fmt
                 if isinstance(val, str) and not val.startswith("="):
@@ -168,6 +174,20 @@ def ghi_sheet(ws, rows, kieu_so="vn"):
         ws.column_dimensions[get_column_letter(i)].width = max(8, w + 2)
     ws.freeze_panes = "A2"
     ws.auto_filter.ref = f"A1:{get_column_letter(ncol)}{len(rows)}"
+    dat_in(ws, ncol, sum(ws.column_dimensions[get_column_letter(i)].width for i in range(1, ncol + 1)))
+
+
+def dat_in(ws, ncol, tong_rong):
+    """Thiết lập in: A4, bảng rộng thì xoay ngang, vừa 1 trang ngang, lặp dòng tiêu đề, số trang ở chân."""
+    ws.page_setup.paperSize = ws.PAPERSIZE_A4
+    ws.page_setup.orientation = "landscape" if ncol > 7 or tong_rong > 95 else "portrait"
+    ws.page_setup.fitToWidth, ws.page_setup.fitToHeight = 1, 0
+    ws.sheet_properties.pageSetUpPr.fitToPage = True
+    ws.print_title_rows = "1:1"
+    ws.page_margins.left = ws.page_margins.right = 0.5
+    ws.page_margins.top = ws.page_margins.bottom = 0.6
+    ws.oddFooter.center.text = "Trang &P/&N"
+    ws.print_options.horizontalCentered = True
 
 
 def doc_nguon(paths):

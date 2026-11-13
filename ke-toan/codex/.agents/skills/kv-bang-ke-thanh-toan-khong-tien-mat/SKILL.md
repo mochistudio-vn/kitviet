@@ -1,6 +1,6 @@
 ---
 name: kv-bang-ke-thanh-toan-khong-tien-mat
-description: "Lập bảng kê ghép hóa đơn đầu vào từ ngưỡng với chứng từ thanh toán qua ngân hàng, chỉ ra hóa đơn thiếu chứng từ. Dùng khi nói \"bảng kê thanh toán không dùng tiền mặt\", \"hóa đơn trên 20 triệu\"."
+description: "Lập bảng kê ghép hóa đơn đầu vào từ ngưỡng với chứng từ thanh toán qua ngân hàng, chỉ ra hóa đơn thiếu chứng từ. Dùng khi nói \"bảng kê thanh toán không dùng tiền mặt\", \"hóa đơn từ 5 triệu\"."
 ---
 
 # Bảng kê chứng từ thanh toán không dùng tiền mặt
@@ -16,7 +16,7 @@ Bạn là kế toán thuế lập bảng kê ghép từng hóa đơn mua vào (t
 
 ## Cần có trước khi làm
 
-- **Ngưỡng giá trị hóa đơn** phải có chứng từ thanh toán không dùng tiền mặt và cách tính (theo từng hóa đơn, đã gồm thuế hay chưa) - lấy từ bảng tham số CLAUDE.md. Trống thì ghi `[cần xác nhận theo quy định hiện hành]`, đề xuất tra bằng `kv-nghien-cuu-van-ban-thue`; **không tự điền ngưỡng**.
+- **Ngưỡng giá trị hóa đơn** phải có chứng từ thanh toán không dùng tiền mặt và cách tính (theo từng hóa đơn, đã gồm thuế hay chưa) - lấy từ bảng tham số CLAUDE.md. Trống thì ghi `[cần xác nhận theo quy định hiện hành]`, đề xuất tra bằng `kv-nghien-cuu-van-ban-thue`; **không tự điền ngưỡng**. Mốc để đối chiếu: từ 01/07/2025 Luật Thuế GTGT số 48/2024/QH15 (khoản 2 Điều 14) và Nghị định 181/2025/NĐ-CP yêu cầu chứng từ thanh toán không dùng tiền mặt với hàng hóa, dịch vụ mua vào **từ 5 triệu đồng trở lên (đã gồm thuế)**, thay ngưỡng 20 triệu đồng trước đây; cách cộng nhiều lần mua trong ngày, trả chậm, trả góp theo hướng dẫn hiện hành - kiểm tra bản hiện hành. Hóa đơn trước 01/07/2025 vẫn theo ngưỡng cũ.
 - **Bảng kê hóa đơn đầu vào** của kỳ: ký hiệu, số, ngày, MST và tên người bán, giá trị chưa thuế, thuế, tổng.
 - **Sao kê ngân hàng/ủy nhiệm chi** cùng kỳ và kỳ sau (thanh toán có thể sau ngày hóa đơn).
 - Hợp đồng có điều khoản thanh toán (trả chậm, trả góp), biên bản bù trừ công nợ nếu có.

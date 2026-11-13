@@ -51,7 +51,7 @@ dừng bất cứ lúc nào. [ ] Tôi đồng ý tham gia
 
 ## Xuất file
 
-- **Word (.docx):** phiếu khảo sát để in hoặc nộp kèm đề cương -> `kv-xuat-word` kiểu `phieu-khao-sat`.
+- **Word (.docx):** phiếu khảo sát để in hoặc nộp kèm đề cương -> `kv-xuat-word` kiểu `bieu-mau`.
 - **Excel (.xlsx):** bảng mã (codebook) -> `kv-xuat-excel`, sheet "Codebook", dùng khi nhập dữ liệu vào SPSS/R.
 
 ## Bảng kiểm trước khi giao

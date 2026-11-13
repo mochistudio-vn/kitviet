@@ -56,7 +56,7 @@ Thông điệp: <10 chữ>
 
 ## Xuất file
 
-- **Word (.docx):** kịch bản gửi người quay/KOC -> `kv-xuat-word` với kiểu tài liệu `kich-ban`, bảng phân cảnh giữ nguyên cột. Tên file gợi ý `kich-ban-<chu-de>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** kịch bản gửi người quay/KOC -> `kv-xuat-word` với kiểu tài liệu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu), bảng phân cảnh giữ nguyên cột. Tên file gợi ý `kich-ban-<chu-de>-<yyyy-mm-dd>.docx`.
 
 ## Bảng kiểm trước khi giao
 

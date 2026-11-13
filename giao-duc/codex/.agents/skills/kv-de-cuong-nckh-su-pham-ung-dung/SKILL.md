@@ -58,7 +58,7 @@ CẦN GIÁO VIÊN BỔ SUNG/XÁC NHẬN: ...
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt, dùng `kv-xuat-word` với kiểu tài liệu `de-cuong`, tên gợi ý `de-cuong-nckhspud-<ten-ngan>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt, dùng `kv-xuat-word` với kiểu tài liệu `bao-cao`, tên gợi ý `de-cuong-nckhspud-<ten-ngan>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** bảng thu thập điểm trước - sau theo mã học sinh (để trống, chờ số thật) -> `kv-xuat-excel`, giữ công thức trung bình, chênh lệch.
 - **PDF:** bản chốt nộp hội đồng -> `kv-xuat-pdf`.
 

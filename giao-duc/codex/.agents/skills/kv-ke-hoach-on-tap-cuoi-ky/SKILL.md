@@ -52,7 +52,7 @@ GIÁO VIÊN CẦN KIỂM LẠI: phạm vi khớp thông báo của tổ; ...
 
 ## Xuất file
 
-- **Word (.docx):** đề cương ôn tập phát học sinh và kế hoạch ôn -> `kv-xuat-word` với kiểu tài liệu `de-cuong-on-tap`, tên gợi ý `de-cuong-on-tap-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** đề cương ôn tập phát học sinh và kế hoạch ôn -> `kv-xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `de-cuong-on-tap-<mon>-<lop>-<ky>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** lịch ôn theo buổi và bảng theo dõi kiểm tra nhanh theo mã học sinh -> `kv-xuat-excel`, mỗi bảng một sheet.
 - **PDF:** đề cương bản in phát lớp -> `kv-xuat-pdf`.
 

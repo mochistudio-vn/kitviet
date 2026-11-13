@@ -59,7 +59,7 @@ Cần bổ sung trước khi chép vào sổ: ...
 ```
 
 ## Xuất file
-- **Word (.docx):** sau khi người dùng duyệt, dùng `kv:xuat-word` với kiểu tài liệu `bien-ban`, tên gợi ý `nhat-ky-thi-cong-<yyyy-mm-dd>.docx` - bản đánh máy để chép vào sổ hoặc in đính kèm.
+- **Word (.docx):** sau khi người dùng duyệt, dùng `kv:xuat-word` với kiểu tài liệu `bieu-mau` (chữ ký cán bộ kỹ thuật nhà thầu và giám sát ghi trên sổ, không dùng khối ký biên bản họp), tên gợi ý `nhat-ky-thi-cong-<yyyy-mm-dd>.docx` - bản đánh máy để chép vào sổ hoặc in đính kèm.
 - **PDF:** bản chốt lưu hồ sơ -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

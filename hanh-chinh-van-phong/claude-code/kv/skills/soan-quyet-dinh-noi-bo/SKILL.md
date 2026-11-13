@@ -30,7 +30,7 @@ Không có căn cứ thẩm quyền thì vẫn soạn nhưng để `[cần bổ 
 1. Xác định loại quyết định và hỏi rõ: quyết định cá biệt (cho người/việc cụ thể) hay ban hành văn bản kèm theo.
 2. Viết tên loại "QUYẾT ĐỊNH" và trích yếu "Về việc ..." (hoặc "Ban hành ..." khi kèm quy chế).
 3. Dòng thẩm quyền: "<CHỨC VỤ NGƯỜI KÝ> <TÊN ĐƠN VỊ>" viết in hoa, ngay dưới trích yếu.
-4. Phần căn cứ: mỗi căn cứ một dòng, bắt đầu "Căn cứ", kết thúc bằng dấu chấm phẩy; căn cứ cuối là đề nghị của bộ phận ("Xét đề nghị của Trưởng phòng ..."). Thứ tự: văn bản pháp lý chung -> điều lệ/quy chế -> đề nghị cụ thể. Chỉ ghi căn cứ người dùng đưa.
+4. Phần căn cứ: mỗi căn cứ một dòng, bắt đầu "Căn cứ", kết thúc bằng dấu chấm phẩy; dòng cuối là đề nghị của bộ phận, kết thúc bằng dấu chấm ("Theo đề nghị của Trưởng phòng ...."). Mỗi căn cứ in nghiêng khi xuất Word. Thứ tự: văn bản pháp lý chung -> điều lệ/quy chế -> đề nghị cụ thể. Chỉ ghi căn cứ người dùng đưa.
 5. Chữ "QUYẾT ĐỊNH:" rồi các Điều:
    - Điều 1: nội dung chính (ai, việc gì, từ khi nào, phạm vi).
    - Điều 2: quyền hạn, trách nhiệm, chế độ kèm theo (nếu có).
@@ -50,7 +50,7 @@ Số: .../QĐ-<ký hiệu>                        Độc lập - Tự do - Hạn
                     GIÁM ĐỐC CÔNG TY <...>
 Căn cứ Điều lệ Công ty <...>;
 Căn cứ <quy chế ...>;
-Xét đề nghị của Trưởng phòng Hành chính - Nhân sự,
+Theo đề nghị của Trưởng phòng Hành chính - Nhân sự.
                               QUYẾT ĐỊNH:
 Điều 1. Thành lập Ban tổ chức ... gồm các ông (bà) có tên sau: ...
 Điều 2. Ban tổ chức có nhiệm vụ ... Ban tự giải thể sau khi hoàn thành nhiệm vụ.

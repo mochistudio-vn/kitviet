@@ -51,7 +51,7 @@ Ví dụ trên là khung định dạng, không phải tài liệu có thật; k
 
 ## Xuất file
 
-- **Word (.docx):** danh mục tài liệu tham khảo đã chuẩn -> `kv-xuat-word` kiểu `tai-lieu-tham-khao`, thụt dòng treo.
+- **Word (.docx):** danh mục tài liệu tham khảo đã chuẩn -> `kv-xuat-word` kiểu `bao-cao`, thụt dòng treo.
 - **Excel (.xlsx):** bảng lỗi đối chiếu trích dẫn -> `kv-xuat-excel`.
 
 ## Bảng kiểm trước khi giao

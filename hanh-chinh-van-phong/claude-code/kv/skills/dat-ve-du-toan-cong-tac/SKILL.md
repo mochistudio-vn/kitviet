@@ -60,7 +60,7 @@ Số tiền: ... đồng (Bằng chữ: ...). Thanh toán tạm ứng trước n
 
 ## Xuất file
 
-- **Excel (.xlsx):** dự toán công tác có công thức, sheet riêng so sánh phương án -> `kv:xuat-excel`. Tên gợi ý `du-toan-cong-tac-<noi-den>-<yyyy-mm-dd>.xlsx`.
+- **Excel (.xlsx):** dự toán công tác có công thức, sheet riêng so sánh phương án -> `kv:xuat-excel`. Tên gợi ý `du-toan-cong-tac-<noi-den>-<yyyy-mm-dd>.xlsx`. Bảng dùng để trình ký: dưới bảng có khối ký Người đề nghị - Kế toán - Giám đốc duyệt (họ tên, ngày), số tiền dạng 1.234.567, ngày dd/mm/yyyy.
 - **Word (.docx):** giấy đề nghị tạm ứng, giấy cử đi công tác -> `kv:xuat-word`.
 
 ## Bảng kiểm trước khi giao

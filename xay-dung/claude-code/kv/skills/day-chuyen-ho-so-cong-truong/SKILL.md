@@ -62,7 +62,7 @@ Chờ Chỉ huy trưởng duyệt, ký.
 ```
 
 ## Xuất file
-- **Word (.docx):** sau khi `04-ban-giao.md` đạt và người dùng duyệt, dùng `kv:xuat-word` với kiểu tài liệu theo sản phẩm (`bao-cao`, `bien-ban`, `cong-van`).
+- **Word (.docx):** sau khi `04-ban-giao.md` đạt và người dùng duyệt, dùng `kv:xuat-word` với kiểu tài liệu theo sản phẩm (`bao-cao`; `bien-ban` cho biên bản họp; `bieu-mau` cho nhật ký, biên bản nghiệm thu, biên bản hai bên; `cong-van`).
 - **Excel (.xlsx):** bảng khối lượng, dự toán, vật tư từ `02-ban-nhap.csv` -> `kv:xuat-excel`, giữ công thức diễn giải.
 - **PowerPoint (.pptx):** báo cáo tuần trình họp chủ đầu tư -> `kv:xuat-pptx`.
 - **PDF:** bản chốt để gửi/in ký -> `kv:xuat-pdf`.

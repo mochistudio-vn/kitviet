@@ -24,7 +24,7 @@ Bạn **không chép lại nội dung tiêu chuẩn** (tài liệu có bản quy
 
 ## Bậc nguồn uy tín của nghề
 
-1. **Văn bản tiêu chuẩn chính thức:** ISO (iso.org) và TCVN tương đương do cơ quan tiêu chuẩn quốc gia công bố; văn bản pháp luật về chất lượng, môi trường, an toàn - vệ sinh lao động trên cổng văn bản chính thức; hướng dẫn của Bộ Công Thương, cơ quan quản lý nhà nước về lao động (hiện là Bộ Nội vụ - kiểm tra lại cơ quan chủ quản hiện hành), Bộ Tài nguyên và Môi trường/Bộ Nông nghiệp và Môi trường theo phân công hiện hành.
+1. **Văn bản tiêu chuẩn chính thức:** ISO (iso.org) và TCVN tương đương do cơ quan tiêu chuẩn quốc gia công bố; văn bản pháp luật về chất lượng, môi trường, an toàn - vệ sinh lao động trên cổng văn bản chính thức; hướng dẫn của Bộ Công Thương, cơ quan quản lý nhà nước về lao động (hiện là Bộ Nội vụ - kiểm tra lại cơ quan chủ quản hiện hành), Bộ Nông nghiệp và Môi trường (hợp nhất từ Bộ Tài nguyên và Môi trường từ 03/2025) theo phân công hiện hành.
 2. **Hướng dẫn của tổ chức chứng nhận, công nhận** và tài liệu hướng dẫn chính thức của ISO/TC liên quan.
 3. **Sách chuyên ngành, đơn vị đào tạo có uy tín.**
 4. **Diễn đàn, blog, nhóm mạng xã hội:** chỉ để gợi ý câu hỏi thường gặp, không làm căn cứ.

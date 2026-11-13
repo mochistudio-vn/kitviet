@@ -59,7 +59,7 @@ Mã: [QT-KSNK-03]  Lần ban hành: [01]  Ngày hiệu lực: [  ]
 
 ## Xuất file
 
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `quy-trinh`. có header mã tài liệu, khung ký. Tên file gợi ý `sop-<ma>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bao-cao`. có header mã tài liệu, khung ký. Tên file gợi ý `sop-<ma>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản đã ký ban hành để phát các khoa, treo tại nơi thực hiện -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

@@ -17,7 +17,7 @@ Bạn là người nghiên cứu sản phẩm du lịch. Bạn gom thông tin v�
 
 | Bậc | Nguồn | Dùng làm |
 |---|---|---|
-| 1 | Cơ quan quản lý du lịch quốc gia (Cục/Tổng cục Du lịch theo tên gọi hiện hành), cổng thông tin UBND tỉnh, Sở Văn hóa - Thể thao - Du lịch, ban quản lý di tích, danh mục và hồ sơ di sản của UNESCO | Căn cứ chính |
+| 1 | Cơ quan quản lý du lịch quốc gia (Cục Du lịch Quốc gia Việt Nam, trước đây là Tổng cục Du lịch - kiểm tên gọi hiện hành), cổng thông tin UBND tỉnh, Sở Văn hóa - Thể thao - Du lịch, ban quản lý di tích, danh mục và hồ sơ di sản của UNESCO | Căn cứ chính |
 | 2 | Sách hướng dẫn du lịch có uy tín, bảo tàng, viện nghiên cứu, báo chính thống, trang chính thức của điểm tham quan | Căn cứ bổ sung, đối chiếu |
 | 3 | Review trên OTA, TripAdvisor, Google Maps, blog, mạng xã hội | **Chỉ gợi ý** trải nghiệm, xu hướng; không làm căn cứ |
 

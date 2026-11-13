@@ -8,7 +8,7 @@
 - Vai trò: [môi giới độc lập / nhân viên sàn ... / trưởng nhóm kinh doanh / chủ nhà cho thuê]
 - Chứng chỉ hành nghề môi giới: [có - số ..., hoặc chưa] (không ghi số này vào tin đăng nếu không cần)
 - Sàn/doanh nghiệp: [...]
-- Địa bàn chính: [quận/huyện, phường/xã ... - tỉnh/thành]
+- Địa bàn chính: [phường/xã ... - tỉnh/thành] (địa chỉ mới theo chính quyền 2 cấp từ 01/7/2025; ghi thêm quận/huyện cũ trong ngoặc nếu khách quen gọi tên cũ)
 - Sản phẩm chính: [nhà phố hẻm / căn hộ dự án ... / đất nền / cho thuê phòng trọ, căn hộ]
 - Tầm giá thường làm: [...] tỷ
 

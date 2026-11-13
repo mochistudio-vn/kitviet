@@ -65,7 +65,7 @@ Trạng thái: <QUA / CHẶN - còn n lỗi> | Vòng soát: <1/2>
 
 ## Xuất file
 
-- **Word (.docx):** sau `04-ban-giao.md` và khi người dùng duyệt -> `kv-xuat-word` kiểu `chuong`; tên `chuong-<n>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau `04-ban-giao.md` và khi người dùng duyệt -> `kv-xuat-word` kiểu `bao-cao`; tên `chuong-<n>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** `02-ma-tran.csv` -> `kv-xuat-excel` làm ma trận tài liệu.
 
 ## Bảng kiểm trước khi giao

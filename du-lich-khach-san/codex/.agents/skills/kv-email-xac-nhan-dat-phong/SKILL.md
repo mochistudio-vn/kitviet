@@ -65,7 +65,7 @@ Trân trọng, / Best regards,
 ## Xuất file
 
 - **PDF:** bản xác nhận đính kèm cho khách đoàn, khách công ty -> `kv-xuat-pdf`, tên `xac-nhan-dat-phong-<ma>-<yyyy-mm-dd>.pdf`.
-- **Word (.docx):** khi công ty khách cần bản có thể chỉnh, đóng dấu -> `kv-xuat-word` kiểu `xac-nhan-dich-vu`.
+- **Word (.docx):** khi công ty khách cần bản có thể chỉnh, đóng dấu -> `kv-xuat-word` kiểu `thu`.
 
 ## Bảng kiểm trước khi giao
 

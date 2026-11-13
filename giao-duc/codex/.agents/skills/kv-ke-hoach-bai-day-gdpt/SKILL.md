@@ -21,7 +21,7 @@ Thiếu mục nào thì hỏi, không đoán:
 
 - **Môn, lớp, bộ sách** (Kết nối tri thức, Chân trời sáng tạo, Cánh Diều...) và **tên bài, số tiết**.
 - **Yêu cầu cần đạt** của bài (trích từ chương trình môn hoặc sách giáo viên). Nếu người dùng không có, ghi `[cần bổ sung: yêu cầu cần đạt theo chương trình môn]` và soạn tạm theo nội dung bài - không tự bịa câu chữ của chương trình.
-- **Mẫu KHBD trường/Phòng đang dùng.** Với THCS/THPT thường theo Phụ lục kế hoạch bài dạy của Công văn 5512/BGDĐT-GDTrH; tiểu học theo hướng dẫn riêng (ví dụ Công văn 2345/BGDĐT-GDTH). **Dặn người dùng kiểm tra bản hướng dẫn hiện hành và mẫu của Sở/Phòng/trường**, vì nhiều nơi có mẫu điều chỉnh.
+- **Mẫu KHBD trường/Sở đang dùng.** Với THCS/THPT thường theo Phụ lục kế hoạch bài dạy của Công văn 5512/BGDĐT-GDTrH; tiểu học theo hướng dẫn riêng (ví dụ Công văn 2345/BGDĐT-GDTH). **Dặn người dùng kiểm tra bản hướng dẫn hiện hành và mẫu của Sở/Phòng/trường**, vì nhiều nơi có mẫu điều chỉnh.
 - Đặc điểm lớp: sĩ số, trình độ chung, thiết bị có sẵn (tivi, máy chiếu, phòng bộ môn, mạng).
 
 ## Các bước
@@ -80,7 +80,7 @@ GIÁO VIÊN CẦN KIỂM LẠI
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `giao-an`, tên gợi ý `khbd-<mon>-<lop>-bai-<so>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `ke-hoach`, tên gợi ý `khbd-<mon>-<lop>-bai-<so>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản nộp tổ chuyên môn/ban giám hiệu duyệt, bản in dự giờ -> `kv-xuat-pdf`.
 - **PowerPoint (.pptx):** cần bài trình chiếu lên lớp: dựng dàn slide bằng `kv-bai-trinh-chieu-tu-giao-an` rồi xuất -> `kv-xuat-pptx`.
 

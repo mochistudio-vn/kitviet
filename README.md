@@ -131,7 +131,7 @@ kitviet uninstall             # gỡ khỏi mọi nền tảng đã cài
 kitviet uninstall --ai cursor
 ```
 
-Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.5.0 init ...`.
+Muốn dùng đúng một phiên bản: `npx github:mochistudio-vn/kitviet#v1.5.1 init ...`.
 
 ### Cách 3: Cài thủ công
 

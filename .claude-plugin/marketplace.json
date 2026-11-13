@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Kit Việt - bộ skill và agent tiếng Việt cho 20 nghề. Sản phẩm của MochiStudio.",
-    "version": "1.5.0"
+    "version": "1.5.1"
   },
   "plugins": [
     {
       "name": "kv-ke-toan",
       "source": "./ke-toan/claude-code/kv",
       "description": "Kế toán - Thuế: Đối chiếu nhanh, số liệu có nguồn, không bịa một đồng - để kế toán ký với cái đầu nhẹ.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -31,7 +31,7 @@
       "name": "kv-nhan-su",
       "source": "./nhan-su/claude-code/kv",
       "description": "Nhân sự - Tuyển dụng: Tuyển đúng người, đối xử công bằng, giữ kín dữ liệu - từ JD tới ngày làm việc cuối.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -49,7 +49,7 @@
       "name": "kv-marketing",
       "source": "./marketing/claude-code/kv",
       "description": "Marketing - Content: Ra nội dung đủ kênh mỗi tuần, đúng giọng thương hiệu, không dính claim cấm.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -67,7 +67,7 @@
       "name": "kv-ban-hang-online",
       "source": "./ban-hang-online/claude-code/kv",
       "description": "Bán hàng online - Thương mại điện tử: Lên sản phẩm chuẩn sàn, tính giá không lỗ, chăm khách không hứa quá - bằng tiếng Việt, theo đúng cách shop Việt đang bán.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -85,7 +85,7 @@
       "name": "kv-kinh-doanh",
       "source": "./kinh-doanh/claude-code/kv",
       "description": "Kinh doanh B2B - Chăm sóc khách hàng: Chốt deal nhanh hơn mà không hứa thứ chưa được duyệt.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -103,7 +103,7 @@
       "name": "kv-giao-duc",
       "source": "./giao-duc/claude-code/kv",
       "description": "Giáo viên - Đào tạo: Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -121,7 +121,7 @@
       "name": "kv-xay-dung",
       "source": "./xay-dung/claude-code/kv",
       "description": "Xây dựng - Kỹ sư công trường: Hồ sơ công trường đúng sự thật, khối lượng có công thức, an toàn không bị bỏ sót.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -139,7 +139,7 @@
       "name": "kv-y-te",
       "source": "./y-te/claude-code/kv",
       "description": "Y tế - Phòng khám, Điều dưỡng, Quản lý y tế: Bớt giấy tờ, thêm thời gian cho người bệnh - AI lo phần hành chính, chuyên môn vẫn do người có chứng chỉ quyết.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -157,7 +157,7 @@
       "name": "kv-bat-dong-san",
       "source": "./bat-dong-san/claude-code/kv",
       "description": "Môi giới bất động sản: Tin đăng đúng sổ, phương án vay đủ cả giai đoạn thả nổi, pháp lý hỏi đúng chỗ - bán nhanh mà không mất uy tín.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -175,7 +175,7 @@
       "name": "kv-phap-ly",
       "source": "./phap-ly/claude-code/kv",
       "description": "Pháp chế - Văn phòng luật: Rà hợp đồng kỹ hơn, soạn văn bản nhanh hơn - và không bao giờ bịa một số điều luật.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -193,7 +193,7 @@
       "name": "kv-hanh-chinh-van-phong",
       "source": "./hanh-chinh-van-phong/claude-code/kv",
       "description": "Hành chính - Văn phòng: Văn bản đúng thể thức, lịch sếp không trùng, chi phí có báo giá - để phòng hành chính chạy êm mà không ai phải nhắc.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -211,7 +211,7 @@
       "name": "kv-xuat-nhap-khau",
       "source": "./xuat-nhap-khau/claude-code/kv",
       "description": "Xuất nhập khẩu - Logistics: Chứng từ khớp từng con số, mã HS có căn cứ, cước so trên cùng mặt bằng - để lô hàng thông quan không phải chờ.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -229,7 +229,7 @@
       "name": "kv-nha-hang-fnb",
       "source": "./nha-hang-fnb/claude-code/kv",
       "description": "Nhà hàng - F&B: Giá vốn tính từ hóa đơn thật, dị ứng ghi đúng từng món - để quán đông khách mà vẫn có lời.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -247,7 +247,7 @@
       "name": "kv-du-lich-khach-san",
       "source": "./du-lich-khach-san/claude-code/kv",
       "description": "Du lịch - Khách sạn: Lịch trình chạy được, báo giá cộng đúng, trả lời khách đúng mực - giá vé và giờ mở cửa luôn được xác nhận trước khi gửi.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -265,7 +265,7 @@
       "name": "kv-tai-chinh-ngan-hang",
       "source": "./tai-chinh-ngan-hang/claude-code/kv",
       "description": "Tài chính - Ngân hàng: Số có nguồn, công thức minh bạch, lời tư vấn không hứa suông - để người làm ngân hàng trình hồ sơ và gặp khách với cái đầu vững.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -283,7 +283,7 @@
       "name": "kv-bao-hiem",
       "source": "./bao-hiem/claude-code/kv",
       "description": "Tư vấn bảo hiểm: Tư vấn đúng nhu cầu, số quyền lợi có trang tài liệu, không một lời hứa sai - để khách tin bạn lâu dài.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -301,7 +301,7 @@
       "name": "kv-cong-nghe-thong-tin",
       "source": "./cong-nghe-thong-tin/claude-code/kv",
       "description": "Công nghệ thông tin - Phần mềm: Yêu cầu rõ, test đủ, log có bằng chứng, báo cáo trung thực - để đội phần mềm giao hàng mà không phải đoán.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -319,7 +319,7 @@
       "name": "kv-bao-chi-truyen-thong",
       "source": "./bao-chi-truyen-thong/claude-code/kv",
       "description": "Báo chí - Truyền thông - PR: Nhanh nhưng không sai: mỗi con số có nguồn, mỗi trích dẫn đúng lời, mỗi bài qua hai lớp gác cổng.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -337,7 +337,7 @@
       "name": "kv-hoc-thuat-nghien-cuu",
       "source": "./hoc-thuat-nghien-cuu/claude-code/kv",
       "description": "Học thuật - Nghiên cứu: Tài liệu có thật, dữ liệu là của bạn, chữ là của bạn - AI chỉ giúp bạn làm nghiên cứu chắc tay hơn.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"
@@ -355,7 +355,7 @@
       "name": "kv-san-xuat-nha-may",
       "source": "./san-xuat-nha-may/claude-code/kv",
       "description": "Sản xuất - Nhà máy: Số ca đúng, lỗi tìm tới gốc, an toàn nêu trước - để nhà máy chạy bằng dữ liệu thật chứ không bằng báo cáo đẹp.",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": {
         "name": "MochiStudio",
         "url": "https://mochistudio.io.vn"

@@ -59,7 +59,7 @@ Hài lòng = điểm 4-5 / số phiếu hợp lệ của câu
 
 - **Excel (.xlsx):** dữ liệu phiếu đã làm sạch, bảng tỷ lệ hài lòng theo câu và theo khoa, mỗi bảng một sheet, giữ công thức tính tỷ lệ -> `kv:xuat-excel`.
 - **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bao-cao`. cho báo cáo kết quả khảo sát.
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `phieu-khao-sat`. cho phiếu in phát tại quầy.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bieu-mau`. cho phiếu in phát tại quầy.
 
 ## Bảng kiểm trước khi giao
 

@@ -18,7 +18,7 @@ Nguyên tắc: **giấy phép F&B phụ thuộc loại hình, quy mô, địa ph
 ## Cần có trước khi làm
 
 - **Loại hình**: hộ kinh doanh hay doanh nghiệp; quán ăn, cafe, nhà hàng, quán nhậu, bếp chỉ bán online.
-- **Địa điểm**: tỉnh/thành, quận/huyện/phường (sau sắp xếp đơn vị hành chính - người dùng xác nhận tên đơn vị hiện tại), diện tích, số tầng, nhà riêng hay thuê, trong chung cư/trung tâm thương mại hay mặt phố.
+- **Địa điểm**: tỉnh/thành, xã/phường/đặc khu (chính quyền địa phương 2 cấp từ 01/7/2025, không còn cấp quận/huyện - người dùng xác nhận tên đơn vị hiện tại; giấy tờ cũ có thể còn ghi quận/huyện), diện tích, số tầng, nhà riêng hay thuê, trong chung cư/trung tâm thương mại hay mặt phố.
 - **Quy mô và hoạt động**: số chỗ ngồi, số nhân viên, có bán rượu/bia/thuốc lá, có phát nhạc/biểu diễn, có biển hiệu lớn, có giao đồ ăn qua app, có lắp máy tính tiền.
 - **Giấy tờ đã có** (ảnh chụp/ghi chú).
 

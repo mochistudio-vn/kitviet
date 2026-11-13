@@ -60,7 +60,7 @@ Chào anh ..., để hoàn tất hồ sơ, anh bổ sung giúp em 3 giấy sau: 
 ## Xuất file
 
 - **Excel (.xlsx):** bảng kiểm có cột trạng thái và ngày nhận -> `kv:xuat-excel`, tên gợi ý `bang-kiem-ho-so-<khach>-2026-11-03.xlsx`.
-- **Word (.docx):** danh mục hồ sơ in cho khách -> `kv:xuat-word` kiểu `danh-muc`.
+- **Word (.docx):** danh mục hồ sơ in cho khách -> `kv:xuat-word` kiểu `bieu-mau`.
 
 ## Bảng kiểm trước khi giao
 

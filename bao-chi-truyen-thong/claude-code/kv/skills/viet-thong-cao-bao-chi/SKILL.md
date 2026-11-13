@@ -61,7 +61,7 @@ Phụ lục số liệu và nguồn
 ```
 
 ## Xuất file
-- **Word (.docx):** bản nháp gửi duyệt nội bộ -> `kv:xuat-word` kiểu `thong-cao`, tên `thong-cao-<chu-de>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** bản nháp gửi duyệt nội bộ -> `kv:xuat-word` kiểu `bao-cao` (bố cục tiêu đề giữa, không quốc hiệu) - thông cáo báo chí không dùng thể thức công văn hành chính, tên `thong-cao-<chu-de>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt gửi phóng viên -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

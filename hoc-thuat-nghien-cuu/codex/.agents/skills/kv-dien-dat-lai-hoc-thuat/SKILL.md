@@ -55,7 +55,7 @@ B. <đoạn> (Tác giả, năm)
 
 ## Xuất file
 
-- Thường dán thẳng vào bản thảo; khi chỉnh cả chương dùng `kv-xuat-word` kiểu `chuong` sau khi người dùng duyệt.
+- Thường dán thẳng vào bản thảo; khi chỉnh cả chương dùng `kv-xuat-word` kiểu `bao-cao` sau khi người dùng duyệt.
 
 ## Bảng kiểm trước khi giao
 

@@ -57,7 +57,7 @@ Bạn là nhân viên hành chính giữ kho văn phòng phẩm (VPP) và đồ 
 
 ## Xuất file
 
-- **Excel (.xlsx):** sổ nhập - xuất - tồn (giữ công thức tồn cuối), mức dùng theo phòng, đơn đề xuất mua - mỗi bảng một sheet -> `kv:xuat-excel`. Tên gợi ý `vpp-<yyyy-mm>.xlsx`.
+- **Excel (.xlsx):** sổ nhập - xuất - tồn (giữ công thức tồn cuối), mức dùng theo phòng, đơn đề xuất mua - mỗi bảng một sheet -> `kv:xuat-excel`. Tên gợi ý `vpp-<yyyy-mm>.xlsx`. Bảng dùng để trình ký: dưới bảng có khối ký Người lập - Thủ kho/HCNS - Người duyệt (họ tên, ngày), số tiền dạng 1.234.567, ngày dd/mm/yyyy.
 - **Word (.docx):** phiếu đề xuất mua để trình ký -> `kv:xuat-word`.
 
 ## Bảng kiểm trước khi giao

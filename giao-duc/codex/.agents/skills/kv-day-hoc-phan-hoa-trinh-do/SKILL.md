@@ -57,7 +57,7 @@ KẾ HOẠCH PHỤ ĐẠO (nếu cần)
 
 ## Xuất file
 
-- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `phieu-hoc-tap`, tên gợi ý `nhiem-vu-phan-hoa-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi giáo viên duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bieu-mau`, tên gợi ý `nhiem-vu-phan-hoa-<yyyy-mm-dd>.docx`.
 - **PDF:** phiếu nhiệm vụ 3 mức để in phát cho từng nhóm -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

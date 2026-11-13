@@ -67,7 +67,7 @@ Kèm bảng đối chiếu cho người duyệt:
 
 ## Xuất file
 
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `to-roi`. khổ A5 hoặc A4 gấp đôi, chữ cỡ lớn. Tên file gợi ý `gdsk-<chu-de>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv-xuat-word` với kiểu tài liệu `bao-cao`. khổ A5 hoặc A4 gấp đôi, chữ cỡ lớn. Tên file gợi ý `gdsk-<chu-de>-<yyyy-mm-dd>.docx`.
 - **PDF:** bản chốt đã duyệt chuyên môn để in phát -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

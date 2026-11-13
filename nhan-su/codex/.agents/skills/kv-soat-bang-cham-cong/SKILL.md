@@ -63,7 +63,7 @@ Chưa chốt công - 9 dòng cần xác minh, 1 nhân viên vượt trần làm 
 
 ## Xuất file
 
-- **Excel (.xlsx):** danh sách bất thường và làm thêm cộng dồn -> `kv-xuat-excel`, mỗi bảng một sheet, chỉ mã NV, giữ công thức cộng giờ, tên `soat-cong-<yyyy-mm>.xlsx`.
+- **Excel (.xlsx):** danh sách bất thường và làm thêm cộng dồn -> `kv-xuat-excel`, mỗi bảng một sheet, chỉ mã NV, giữ công thức cộng giờ, tên `soat-cong-<yyyy-mm>.xlsx`. Bảng dùng để trình ký: dưới bảng có khối ký Người lập - Trưởng bộ phận - Giám đốc (họ tên, ngày), số tiền dạng 1.234.567, ngày dd/mm/yyyy.
 
 ## Bảng kiểm trước khi giao
 

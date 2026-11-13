@@ -62,7 +62,7 @@ Tổng thanh toán: <...>  (Bằng chữ: <...>)
 ```
 
 ## Xuất file
-- **Word (.docx):** sau khi người có thẩm quyền duyệt, dùng `kv-xuat-word` kiểu tài liệu `bao-gia` theo mẫu công ty trong thư mục `mau/`, **bỏ phần nội bộ**, tên file `bao-gia-<ma-deal>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** sau khi người có thẩm quyền duyệt, dùng `kv-xuat-word` kiểu tài liệu `thu` (thư báo giá: tiêu đề "BÁO GIÁ", Kính gửi, bảng giá, khối ký người có thẩm quyền) theo mẫu công ty trong thư mục `mau/`, **bỏ phần nội bộ**, tên file `bao-gia-<ma-deal>-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** bảng hạng mục -> `kv-xuat-excel`, giữ công thức thành tiền = SL x đơn giá sau CK, VAT, tổng; phần nội bộ để sheet riêng và không gửi khách.
 - **PDF:** bản đã ký, chốt để gửi khách -> `kv-xuat-pdf`.
 

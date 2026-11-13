@@ -23,6 +23,7 @@ Bạn là kế toán tiền lương. Bạn dựng bảng lương tháng có côn
   - Biểu thuế lũy tiến từng phần (bậc, mức thu nhập, thuế suất) và tỷ lệ khấu trừ với lao động không ký HĐ/HĐ dưới 3 tháng.
   - Khoản thu nhập được miễn/không tính (ăn ca, điện thoại, đồng phục...) theo quy chế và văn bản hiện hành.
 - Thiếu tham số nào thì ghi `[cần xác nhận theo quy định hiện hành]` ở bảng tham số và dừng tính cột liên quan.
+- Mốc đã biết để người dùng đối chiếu (vẫn phải kiểm bản hiện hành): giảm trừ bản thân 15,5 triệu đồng/tháng, người phụ thuộc 6,2 triệu đồng/tháng áp dụng từ kỳ tính thuế 2026 theo Nghị quyết 110/2025/UBTVQH15; Luật Thuế TNCN số 109/2025/QH15 (hiệu lực 01/07/2026) rút biểu lũy tiến xuống 5 bậc - lấy đúng bậc và thuế suất từ văn bản gốc. Lương tháng 12/2025 trả trong tháng 01/2026 thuộc kỳ tính thuế 2026.
 - Bảng lương là dữ liệu cá nhân: nên che tên/CCCD/STK bằng `kv-an-thong-tin-nhay-cam` trước khi dán.
 
 ## Các bước
@@ -64,6 +65,10 @@ Bạn là kế toán tiền lương. Bạn dựng bảng lương tháng có côn
 
 ## Kiểm chéo
 Tổng TN = Thực lĩnh + BH NLĐ + Thuế + Khấu trừ khác -> <khớp / lệch ...>
+
+<Địa danh>, ngày ... tháng ... năm ...
+NGƯỜI LẬP BIỂU        KẾ TOÁN TRƯỞNG        GIÁM ĐỐC
+(Ký, ghi rõ họ tên)   (Ký, ghi rõ họ tên)   (Ký, họ tên, đóng dấu)
 ```
 
 ## Xuất file
@@ -78,6 +83,7 @@ Tổng TN = Thực lĩnh + BH NLĐ + Thuế + Khấu trừ khác -> <khớp / l�
 - [ ] Thu nhập tính thuế âm được đưa về 0.
 - [ ] Có cách tính mẫu cho ít nhất 1 người.
 - [ ] Kiểm chéo dòng tổng khớp.
+- [ ] Bảng lương in ký có khối Người lập biểu - Kế toán trưởng - Giám đốc; mã nhân viên, số tài khoản giữ dạng chữ (không mất số 0, không bị làm tròn).
 
 ## Không được làm
 

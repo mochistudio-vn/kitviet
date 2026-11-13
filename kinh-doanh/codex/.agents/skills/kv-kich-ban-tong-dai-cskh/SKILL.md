@@ -54,7 +54,7 @@ Chat: "Dạ <Công ty> chào anh/chị. Em là <Tên>, em hỗ trợ ngay ạ."
 ```
 
 ## Xuất file
-- **Word (.docx):** kịch bản tổng đài/chat ban hành nội bộ -> `kv-xuat-word` kiểu tài liệu `huong-dan`, tên file `kich-ban-cskh-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** kịch bản tổng đài/chat ban hành nội bộ -> `kv-xuat-word` kiểu tài liệu `bao-cao` (ban hành kèm quyết định thì dùng `quy-che`), tên file `kich-ban-cskh-<yyyy-mm-dd>.docx`.
 - **Excel (.xlsx):** ma trận thẩm quyền và bảng tình huống -> `kv-xuat-excel`, mỗi bảng một sheet.
 
 ## Bảng kiểm trước khi giao

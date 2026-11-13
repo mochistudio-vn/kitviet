@@ -23,7 +23,7 @@ Bạn là chuyên viên hành chính viết tờ trình để lãnh đạo duy�
 
 ## Các bước
 
-1. Viết tiêu đề "TỜ TRÌNH - V/v <xin phê duyệt ...>", kính gửi đúng người duyệt.
+1. Viết tên loại "TỜ TRÌNH", dưới là trích yếu "Về việc <xin phê duyệt ...>" (chữ "V/v" chỉ dùng cho công văn không có tên loại), kính gửi đúng người duyệt.
 2. Mục 1 - Sự cần thiết: hiện trạng bằng số liệu người dùng đưa, hệ quả nếu không làm. Tối đa 5 dòng.
 3. Mục 2 - Phương án đề xuất: bảng so sánh khi có ≥ 2 phương án (chi phí, thời gian, ưu, nhược). Ghi rõ phương án bộ phận khuyến nghị và vì sao.
 4. Mục 3 - Kinh phí: tổng tiền, đã gồm VAT chưa, nguồn kinh phí, tiến độ thanh toán. Số lấy từ báo giá; tính lại tổng và ghi "theo tính toán từ báo giá ...".
@@ -35,11 +35,12 @@ Bạn là chuyên viên hành chính viết tờ trình để lãnh đạo duy�
 ## Mẫu đầu ra
 
 ```
-<TÊN ĐƠN VỊ> - <PHÒNG/BAN>
-Số: .../TTr-<ký hiệu>                               <Địa danh>, ngày ... tháng ... năm 20..
+<TÊN ĐƠN VỊ>                          CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+<PHÒNG/BAN TRÌNH>                           Độc lập - Tự do - Hạnh phúc
+Số: .../TTr-<ký hiệu>                  <Địa danh>, ngày ... tháng ... năm 20..
 
                              TỜ TRÌNH
-            V/v xin phê duyệt thay thế máy photocopy tầng 3
+          Về việc xin phê duyệt thay thế máy photocopy tầng 3
                    Kính gửi: Giám đốc Công ty
 
 1. Sự cần thiết

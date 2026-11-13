@@ -62,7 +62,7 @@ Cần bạn xác nhận với chủ nhà: tình trạng thế chấp, ai chịu 
 
 ## Xuất file
 
-- **Word (.docx):** chỉ sau khi `04-ban-giao.md` ghi QUA - bản tin đăng gửi chủ nhà duyệt -> `kv-xuat-word` kiểu `tai-lieu`, tên gợi ý `tin-dang-<ma-can>-<yyyy-mm-dd>.docx`.
+- **Word (.docx):** chỉ sau khi `04-ban-giao.md` ghi QUA - bản tin đăng gửi chủ nhà duyệt -> `kv-xuat-word` kiểu `bao-cao`, tên gợi ý `tin-dang-<ma-can>-<yyyy-mm-dd>.docx`.
 - **PDF:** cần bản gọn cho chủ nhà ký xác nhận nội dung tin -> `kv-xuat-pdf`.
 
 ## Bảng kiểm trước khi giao

@@ -53,7 +53,7 @@ Người tóm tắt: [  ] | Ngày: [  ] | Bản gốc: [tên file]
 
 ## Xuất file
 
-- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `ban-ghi-nho`. để lưu nội bộ khoa.
+- **Word (.docx):** sau khi người dùng duyệt nội dung, dùng `kv:xuat-word` với kiểu tài liệu `bao-cao`. để lưu nội bộ khoa.
 - **PDF:** bản chốt phát cho nhân viên đọc trước giao ban -> `kv:xuat-pdf`.
 
 ## Bảng kiểm trước khi giao
