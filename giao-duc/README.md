@@ -1,18 +1,18 @@
 <p align="center"><img src="brand/logo.svg" alt="Kit Việt" width="420"></p>
 
-# Kit Việt · Giáo viên - Đào tạo - Bản Free
+# Kit Việt · Giáo viên - Giảng viên - Đào tạo - Bản Free
 
 > Bớt giấy tờ, thêm thời gian cho học trò - giáo án, đề, nhận xét đúng chuẩn mà không lộ dữ liệu của trẻ.
 
-Bộ skill cho giáo viên phổ thông và giảng viên: soạn kế hoạch bài dạy theo GDPT 2018, tìm tư liệu có nguồn, dựng slide lên lớp, ra đề có ma trận - đặc tả - đáp án đã soát độc lập, viết nhận xét học bạ, nhắn phụ huynh, lo hồ sơ chủ nhiệm và tổ chuyên môn. Mọi skill nhắc che tên học sinh trước khi dán AI, không bịa số liệu sáng kiến, và luôn dặn đối chiếu văn bản hướng dẫn hiện hành của Bộ, Sở, Phòng.
+Bộ skill cho giáo viên phổ thông, giảng viên đại học và trainer doanh nghiệp: kế hoạch bài dạy theo GDPT 2018, dạy nội dung giáo dục AI, đề có ma trận - đáp án đã soát độc lập, nhận xét học bạ, chủ nhiệm và xử lý tình huống sư phạm; đề cương học phần theo chuẩn đầu ra, đề thi kết thúc học phần, hướng dẫn khóa luận, thuyết minh đề tài cấp cơ sở, phân tích lấy ý kiến người học; phân tích nhu cầu và thiết kế khóa đào tạo. Mọi skill nhắc che tên học sinh, sinh viên trước khi dán AI, không bịa số liệu, và dặn đối chiếu văn bản hướng dẫn hiện hành.
 
 | Skill | Trợ lý (agent) | Luồng làm việc | Xuất file | Nền tảng |
 |---|---|---|---|---|
-| 39 | 15 | 4 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
+| 50 | 15 | 6 | Word · Excel · PDF · PowerPoint | Claude Code · Claude web/Desktop · ChatGPT Codex |
 
 **Mở file `HUONG-DAN.html` bằng trình duyệt** để xem hướng dẫn có hình minh họa và ví dụ thực tế.
 
-**Dành cho:** Giáo viên tiểu học, THCS, THPT · Giáo viên chủ nhiệm · Tổ trưởng, tổ phó chuyên môn · Giảng viên, trainer trung tâm
+**Dành cho:** Giáo viên tiểu học, THCS, THPT · Giáo viên chủ nhiệm · Tổ trưởng, tổ phó chuyên môn · Giảng viên đại học, cao đẳng · Phòng đào tạo, đảm bảo chất lượng · Trainer, L&D doanh nghiệp, trung tâm
 
 ## Cài đặt
 
@@ -99,6 +99,37 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Lập đề cương chuyên đề sinh hoạt chuyên môn, bồi dưỡng, bài giảng tập huấn khớp mục tiêu - thời lượng | `kv:de-cuong-chuyen-de-bai-giang` |
 | Đề cương NCKHSPƯD: vấn đề, giả thuyết, thiết kế đo trước - sau, công cụ đo - không bịa kết quả | `kv:de-cuong-nckh-su-pham-ung-dung` |
 
+### Giảng dạy đại học
+
+| Việc của bạn | Gọi |
+|---|---|
+| Đề cương chi tiết học phần theo chuẩn đầu ra: CLO theo Bloom, ánh xạ CLO-PLO, kế hoạch 15 tuần, đánh giá, học liệu | `kv:de-cuong-hoc-phan-obe` |
+| Đề thi kết thúc học phần kèm đáp án, thang điểm, ma trận phủ CLO và đề tương đương | `kv:de-thi-ket-thuc-hoc-phan` |
+| Phân tích khảo sát lấy ý kiến người học về học phần, gom ý kiến mở, lập kế hoạch cải tiến | `kv:phan-tich-lay-y-kien-nguoi-hoc` |
+
+### Nghiên cứu khoa học và hướng dẫn sinh viên
+
+| Việc của bạn | Gọi |
+|---|---|
+| Lịch hướng dẫn, duyệt đề cương, phiếu nhận xét và rubric chấm bảo vệ khóa luận, đồ án | `kv:huong-dan-khoa-luan-do-an` |
+| Thuyết minh đề tài khoa học cấp cơ sở, cấp trường theo mẫu của trường, dự toán theo quy chế | `kv:thuyet-minh-de-tai-nckh-giang-vien` |
+| Hướng dẫn nhóm sinh viên nghiên cứu khoa học, chuẩn bị dự thi giải thưởng, giữ liêm chính học thuật | `kv:huong-dan-sinh-vien-nckh` |
+
+### Giáo dục AI và hoạt động giáo dục
+
+| Việc của bạn | Gọi |
+|---|---|
+| Kế hoạch bài dạy giáo dục trí tuệ nhân tạo, quy định học sinh dùng AI, xử lý bài nghi làm bằng AI | `kv:day-hoc-giao-duc-ai` |
+| Kế hoạch chủ đề hoạt động trải nghiệm, hướng nghiệp: mục tiêu, tiến trình, sản phẩm, an toàn | `kv:hoat-dong-trai-nghiem-huong-nghiep` |
+| Xử lý bắt nạt, xung đột, học sinh có dấu hiệu khủng hoảng: ghi nhận, báo cáo, phối hợp gia đình | `kv:xu-ly-tinh-huong-su-pham` |
+
+### Đào tạo doanh nghiệp, trung tâm
+
+| Việc của bạn | Gọi |
+|---|---|
+| Phân tích nhu cầu đào tạo 3 cấp, tách vấn đề đào tạo giải được với vấn đề quy trình, ưu tiên khóa học | `kv:phan-tich-nhu-cau-dao-tao` |
+| Thiết kế khóa học theo ADDIE: mục tiêu đo được, module, thời lượng, hoạt động, đánh giá | `kv:thiet-ke-khoa-hoc-addie` |
+
 ### Truyền thông trường và tuyển sinh
 
 | Việc của bạn | Gọi |
@@ -150,6 +181,18 @@ Tên gọi theo nền tảng: Claude Code dùng `kv:<tên>`, Claude web và Code
 | Hồ sơ thi GVDG: bài trình bày biện pháp, bài dạy thi, kịch bản lớp lạ, câu hỏi hội đồng | `kv:ho-so-thi-giao-vien-day-gioi` |
 | Tự đánh giá chuẩn nghề nghiệp: ghép minh chứng từng tiêu chí, đề xuất mức, kế hoạch bồi dưỡng | `kv:danh-gia-chuan-nghe-nghiep-giao-vien` |
 | Thiết kế khóa đào tạo doanh nghiệp và kế hoạch đánh giá 4 cấp Kirkpatrick | `kv:khoa-dao-tao-doanh-nghiep-kirkpatrick` |
+| Ma trận PLO - PI - CLO toàn chương trình, script đo mức đạt chuẩn đầu ra từ bảng điểm theo CLO | `kv:ma-tran-chuan-dau-ra-ctdt` |
+| Báo cáo tự đánh giá chương trình theo 8 tiêu chuẩn, 52 tiêu chí Thông tư 04/2025, mã hóa minh chứng | `kv:bao-cao-tu-danh-gia-ctdt` |
+| Học phần trực tuyến, kết hợp trên LMS: module, hoạt động, đánh giá trực tuyến, chống gian lận | `kv:thiet-ke-hoc-phan-truc-tuyen` |
+| Ứng viên tự rà điểm công trình, giờ giảng, hướng dẫn theo tiêu chuẩn GS, PGS; script cộng điểm, chỉ phần thiếu | `kv:ho-so-xet-chuc-danh-gs-pgs` |
+| Kê khai giờ chuẩn giảng dạy, NCKH theo định mức trường; script tính giờ thiếu hoặc vượt | `kv:ke-khai-gio-giang-nckh` |
+| Đọc đề cương -> soạn đề và đáp án -> gác cổng đối chiếu CLO -> bàn giao | `kv:day-chuyen-hoc-phan-den-de-thi` |
+| Biến thực nghiệm giảng dạy thành bài báo khoa học giáo dục, đạo đức với sinh viên tham gia | `kv:bai-bao-tu-thuc-tien-giang-day` |
+| Báo cáo tổng kết, hồ sơ nghiệm thu đề tài cấp cơ sở, đối chiếu sản phẩm với thuyết minh | `kv:nghiem-thu-de-tai-nckh-co-so` |
+| Kế hoạch dạy học của tổ chuyên môn và kế hoạch giáo dục nhà trường theo phụ lục hướng dẫn | `kv:ke-hoach-giao-duc-nha-truong` |
+| Bảng kiểm dạy thêm, học thêm theo quy định hiện hành: trường hợp không được dạy, công khai, đăng ký | `kv:ho-so-day-them-hoc-them` |
+| Bộ tài liệu đứng lớp: hướng dẫn giảng theo phút, slide, tài liệu phát tay, bài tập, kiểm tra trước - sau | `kv:bo-tai-lieu-giang-vien-khoa-hoc` |
+| Chia khóa thành bài 5-10 phút, câu hỏi nhanh, lịch nhắc ôn giãn cách | `kv:chuoi-bai-hoc-microlearning` |
 | Kiểm tra trend học sinh đang dùng trước khi làm nội dung tuyển sinh: rủi ro, độ phù hợp môi trường giáo dục | `kv:bat-trend-gen-z` |
 
 Mỗi skill Free đều có mục **"Bản Pro có thêm"** ở cuối file cho biết bản Pro làm sâu hơn những gì. Xem tại https://mochistudio.io.vn/sources/kit-viet-pro-vinh-vien
@@ -221,6 +264,14 @@ Mỗi skill kết thúc bằng mục **Luồng tiếp theo**, nên các việc n
 
 `kv:tim-tu-lieu-bai-giang` (Thu thập cơ sở lý luận có nguồn) -> `kv:de-cuong-nckh-su-pham-ung-dung` (Lập đề cương: giả thuyết, thiết kế, công cụ đo) -> `kv:soat-nguon-tu-lieu-giang-day` (Soát trích nguồn, chặn kết quả không có số gốc) -> `kv:xuat-word` (Xuất đề cương nộp hội đồng)
 
+**Chuẩn bị học phần đại học** - Đầu học kỳ giảng viên chuẩn bị đề cương, kế hoạch đánh giá, cuối kỳ ra đề và đọc ý kiến người học
+
+`kv:de-cuong-hoc-phan-obe` (Viết đề cương: CLO, ánh xạ PLO, kế hoạch 15 tuần, tỷ trọng đánh giá) -> `kv:rubric-cham-bai-hoc-sinh` (Rubric cho bài tập lớn, thuyết trình gắn CLO) -> `kv:de-thi-ket-thuc-hoc-phan` (Đề thi, đáp án, ma trận phủ CLO, đề tương đương) -> `kv:phan-tich-lay-y-kien-nguoi-hoc` (Đọc khảo sát cuối kỳ, lập kế hoạch cải tiến cho kỳ sau)
+
+**Từ nhu cầu đến khóa đào tạo doanh nghiệp** - Phòng nhân sự hoặc trainer cần biết đào tạo gì, rồi thiết kế khóa
+
+`kv:phan-tich-nhu-cau-dao-tao` (Phân tích khoảng cách năng lực, chọn vấn đề đào tạo giải được) -> `kv:thiet-ke-khoa-hoc-addie` (Thiết kế khóa: mục tiêu, module, hoạt động, đánh giá) -> `kv:xuat-pptx` (Xuất slide từ đề cương khóa đã duyệt)
+
 ## Xuất file Word, Excel, PDF, PowerPoint
 
 Skill nào làm ra văn bản, bảng hay slide đều có mục **Xuất file**. Duyệt nội dung xong, nói "xuất ra Word" (hoặc Excel, PDF, PowerPoint): `kv:xuat-word`, `kv:xuat-excel`, `kv:xuat-pdf`, `kv:xuat-pptx` lo phần còn lại. Claude Code và Codex chạy script Python kèm theo (cần `pip install python-docx openpyxl python-pptx reportlab`); Claude web/Desktop dùng tính năng tạo file có sẵn.
@@ -240,6 +291,7 @@ Việc nhiều khâu chạy theo `kv:dieu-phoi-day-chuyen`: tạo thư mục `.k
 | Luồng làm việc mẫu | 3-5 | Thêm 2-3 luồng chuyên sâu |
 | Cập nhật và hỗ trợ | Cộng đồng | Ưu tiên, cập nhật theo quy định mới |
 
+- ⭐ 23 skill mới cho giảng viên đại học, giáo dục AI và trainer doanh nghiệp: đề cương OBE, đề thi theo CLO, đo mức đạt chuẩn đầu ra, tự đánh giá kiểm định Thông tư 04/2025, hồ sơ GS-PGS, giờ chuẩn, đề tài cấp cơ sở, TNA, ADDIE
 - ⭐ 13 skill Pro mới: phân tích kết quả kiểm tra từ file điểm, kế hoạch dạy học cả năm, STEM - dự án, KHGDCN, kịch bản video E-learning, đề ôn thi theo cấu trúc, hồ sơ thi GVDG, nghiên cứu bài học, đánh giá Kirkpatrick...
 - ⭐ 2 dây chuyền mới với 7 agent Pro: phân tích điểm -> phụ đạo có khâu tự tính lại số liệu, và bộ bài giảng chủ đề soát theo 12 tiêu chí dự giờ
 - ⭐ Nhật ký dây chuyền nhiều vòng: so phiên bản bản nháp, thống kê lỗi theo loại qua từng vòng, tự chỉ khâu chạy tiếp khi bị gián đoạn

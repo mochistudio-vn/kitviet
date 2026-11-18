@@ -1,6 +1,6 @@
 {
   "brand": "Kit Việt",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "website": "https://mochistudio.io.vn",
   "repo": "mochistudio-vn/kitviet",
   "nghe": [
@@ -26,7 +26,7 @@
     },
     {
       "slug": "giao-duc",
-      "ten": "Giáo viên - Đào tạo"
+      "ten": "Giáo viên - Giảng viên - Đào tạo"
     },
     {
       "slug": "xay-dung",
